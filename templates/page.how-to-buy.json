@@ -75,6 +75,100 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23"
+      }
+    },
+    "app_card10_KDme87": {
+      "type": "app-card10",
+      "blocks": {
+        "left_option_HedkXc": {
+          "type": "left_option",
+          "settings": {
+            "text": "90-second scanning vs. hours for traditional silicone methods to generate a mold"
+          }
+        },
+        "left_option_a93JqH": {
+          "type": "left_option",
+          "settings": {
+            "text": "Medical-grade precision to two-micron accuracy"
+          }
+        },
+        "left_option_67tPFB": {
+          "type": "left_option",
+          "settings": {
+            "text": "Zero-contact scanning eliminates safety concerns"
+          }
+        },
+        "left_option_cmFrPA": {
+          "type": "left_option",
+          "settings": {
+            "text": "Permanent digital profiles for lifetime support"
+          }
+        },
+        "right_option_WgAj3c": {
+          "type": "right_option",
+          "settings": {
+            "text": "Only Aware Defense's proprietary eFit scanner captures the critical second bend geometry that ensures perfect seal integrity.",
+            "show_bg": false
+          }
+        },
+        "right_option_W4Uwnz": {
+          "type": "right_option",
+          "settings": {
+            "text": "Hearing loss affects over 50% of combat soldiers and represents the #1 cause of veteran disability claims.",
+            "show_bg": true
+          }
+        },
+        "bottom_option_GMQBQG": {
+          "type": "bottom_option",
+          "settings": {
+            "card_icon": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "title": "Direct Contracting",
+            "text": "Sole-source contracts up to $4.5M without competitive requirements. Awards cannot be protested."
+          }
+        },
+        "bottom_option_kJEmhx": {
+          "type": "bottom_option",
+          "settings": {
+            "card_icon": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "title": "Small Business Goals",
+            "text": "Satisfies agency small business and 8(a) contracting goals while supporting disadvantaged business development."
+          }
+        },
+        "bottom_option_wAycBz": {
+          "type": "bottom_option",
+          "settings": {
+            "card_icon": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "title": "Reduced Timeline",
+            "text": "Streamlined approval process reduces procurement timeline from months to weeks."
+          }
+        }
+      },
+      "block_order": [
+        "left_option_HedkXc",
+        "left_option_a93JqH",
+        "left_option_67tPFB",
+        "left_option_cmFrPA",
+        "right_option_WgAj3c",
+        "right_option_W4Uwnz",
+        "bottom_option_GMQBQG",
+        "bottom_option_kJEmhx",
+        "bottom_option_wAycBz"
+      ],
+      "name": "Procurement Card",
+      "settings": {
+        "title": "FEDERAL PROCUREMENT JUSTIFICATION",
+        "left_title": "PROPRIETARY TECHNOLOGY",
+        "left_sub_title": "Aware Defense's eFit 3D scanner represents the world's only FDA-cleared, non-contact ear scanning technology.",
+        "Right_title": "MISSION-CRITICAL DIFFERENTIATION",
+        "right_sub_title": "Traditional foam hearing protection fails 92% of the time due to improper fit.",
+        "bottom_sub_title": "STREAMLINED PROCUREMENT THROUGH CERTIFIED 8(a) PARTNER",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "outline",
+        "background_color": "#0d0d0d",
         "primary_color": "#AFA38E",
         "secondary_color": "#7B0F23"
       }
@@ -82,6 +176,7 @@
   },
   "order": [
     "main",
-    "app_card11_QnfmTz"
+    "app_card11_QnfmTz",
+    "app_card10_KDme87"
   ]
 }
