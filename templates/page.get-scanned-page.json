@@ -20,9 +20,53 @@
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23"
       }
+    },
+    "app_card6_kh8mFt": {
+      "type": "app-card6",
+      "blocks": {
+        "reason_tdVqWz": {
+          "type": "reason",
+          "settings": {
+            "text": "No contact, no silicone, zero infection risk"
+          }
+        },
+        "reason_AwJCGh": {
+          "type": "reason",
+          "settings": {
+            "text": "Digitally captures full ear geometry, including the second bend"
+          }
+        },
+        "reason_LMNBDb": {
+          "type": "reason",
+          "settings": {
+            "text": "Enables perfect repeatability and biometric upgrades"
+          }
+        },
+        "reason_8MFctH": {
+          "type": "reason",
+          "settings": {
+            "text": "Scans take less than 90 seconds minutes per person"
+          }
+        }
+      },
+      "block_order": [
+        "reason_tdVqWz",
+        "reason_AwJCGh",
+        "reason_LMNBDb",
+        "reason_8MFctH"
+      ],
+      "name": "Image Left Cols Card",
+      "settings": {
+        "title": "WHY eFIT MATTERS",
+        "background_color": "#0d0d0d",
+        "primary_color": "#B6AC87",
+        "secondary_color": "#7B0F23",
+        "right_image": "shopify://shop_images/manEar.png"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "app_card6_kh8mFt"
   ]
 }
