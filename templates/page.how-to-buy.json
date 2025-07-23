@@ -183,7 +183,42 @@
         "order": "Bulk orders: Priority timelines available",
         "store": "Digital scan files stored for remakes",
         "background_color": "#0d0d0d",
-        "primary_color": "#AFA38E",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23"
+      }
+    },
+    "app_card_9_Ei6BDr": {
+      "type": "app-card-9",
+      "blocks": {
+        "button_Vhydrx": {
+          "type": "button",
+          "settings": {
+            "button_text": "TALK TO OUR TEAM",
+            "button_url": "shopify://collections",
+            "button_type": "outline"
+          }
+        },
+        "button_gLJKFk": {
+          "type": "button",
+          "settings": {
+            "button_text": "REQUEST A QUOTE",
+            "button_url": "shopify://collections",
+            "button_type": "fill"
+          }
+        }
+      },
+      "block_order": [
+        "button_Vhydrx",
+        "button_gLJKFk"
+      ],
+      "name": "Full With Card",
+      "settings": {
+        "background_color": "#0d0d0d",
+        "title": "HAVE QUESTIONS BEFORE YOU BUY?",
+        "text": "We'll walk you through what to order, how to scan, and how to deploy Aware products fast.",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#B6AC87",
         "secondary_color": "#7B0F23"
       }
     }
@@ -192,6 +227,7 @@
     "main",
     "app_card11_QnfmTz",
     "app_card10_KDme87",
-    "app_card12_mFBp3f"
+    "app_card12_mFBp3f",
+    "app_card_9_Ei6BDr"
   ]
 }
