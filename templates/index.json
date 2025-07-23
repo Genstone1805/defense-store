@@ -53,6 +53,7 @@
             "title": "Comfort Failure",
             "text": "Constant readjustment and fatique during extended operations.",
             "badge": "",
+            "image": "shopify://shop_images/download_17.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -62,6 +63,7 @@
             "title": "Communication Breakdown",
             "text": "Muffled radio communications compromise situational awareness.",
             "badge": "",
+            "image": "shopify://shop_images/download_16.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -71,6 +73,7 @@
             "title": "Mission Compromise",
             "text": "Operators remove protection to perform critical tasks.",
             "badge": "",
+            "image": "shopify://shop_images/download_15.svg",
             "bg_color": "#0d0d0d"
           }
         }
@@ -91,7 +94,7 @@
         "primary_color": "#afa38e",
         "secondary_color": "#7b0f23",
         "tertiary_color": "#695e49",
-        "background_image": "shopify://shop_images/imgi_42_2ee77062-fb5d-436a-95a8-68fb4628e3ae.png"
+        "background_image": "shopify://shop_images/dark-bg.png"
       }
     },
     "app_card2_TPBDJn": {
@@ -131,6 +134,7 @@
         "text": "Sample Card TeDefense delivers proven, field-tested solutions that enhance rather than hinder performance.xt",
         "button_text": "See additional use cases",
         "button_url": "shopify://pages/collection-page-lovable",
+        "side_image": "shopify://shop_images/imgi_3_cbfb1a8a-8b83-4766-abd6-811dab90c759.png",
         "background_color": "#262626",
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23",
@@ -146,6 +150,7 @@
             "title": "Zero Contact. Zero Risk. 100% Fit.",
             "text": "Our patented, non-contact 3D ear scanner captures the full geometry of the ear—including the critical second bend—in just 90 seconds.",
             "badge": "",
+            "image": "shopify://shop_images/download_13.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -155,6 +160,7 @@
             "title": "Scan Once, Fit For Your Career.",
             "text": "Permanent digital profile for fast remakes and future upgrades. Your ear geometry is stored securely for life.",
             "badge": "",
+            "image": "shopify://shop_images/download_12.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -164,6 +170,7 @@
             "title": "Seamless Integration",
             "text": "Works with your existing comms and helmet systems. We don't replace your gear—we make it better.",
             "badge": "",
+            "image": "shopify://shop_images/download_11.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -173,6 +180,7 @@
             "title": "Future-Proof Platform",
             "text": "Ready for advanced biometrics and health monitoring as your operational needs evolve.",
             "badge": "",
+            "image": "shopify://shop_images/download_10.svg",
             "bg_color": "#0d0d0d"
           }
         }
@@ -193,7 +201,8 @@
         "button_style": "fill",
         "primary_color": "#afa38e",
         "secondary_color": "#7b0f23",
-        "tertiary_color": "#695e49"
+        "tertiary_color": "#695e49",
+        "background_image": "shopify://shop_images/dark-bg.png"
       }
     },
     "app_card1_3_RC7Hrn": {
@@ -205,6 +214,7 @@
             "title": "Schedule a Meeting",
             "text": "Review your mission requirements with an Aware Defense expert",
             "badge": "1",
+            "image": "shopify://shop_images/download_9.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -214,6 +224,7 @@
             "title": "Get Scanned",
             "text": "We deploy our FDA-cleared 3D ear scanner to capture your team's ear profiles",
             "badge": "2",
+            "image": "shopify://shop_images/download_8.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -223,6 +234,7 @@
             "title": "Equip & Scale",
             "text": "Outfit your team with precision-fit protection and upgrade to biometrics as needs evolve",
             "badge": "3",
+            "image": "shopify://shop_images/download_7.svg",
             "bg_color": "#0d0d0d"
           }
         }
@@ -252,18 +264,21 @@
         "card_BXyBXB": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/imgi_4_3a90284f-b504-4a79-aec4-72a9b5469446.png",
             "bg_color": "#000000"
           }
         },
         "card_eiYNUn": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/imgi_5_71a992fd-155b-4df3-a294-21f188459041.png",
             "bg_color": "#000000"
           }
         },
         "card_b6yLAL": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/imgi_6_bed92e28-b372-401f-b191-c06f75d54160.png",
             "bg_color": "#000000"
           }
         }
@@ -283,7 +298,8 @@
         "button_style": "outline",
         "primary_color": "#afa38e",
         "secondary_color": "#7b0f23",
-        "tertiary_color": "#695e49"
+        "tertiary_color": "#695e49",
+        "background_image": "shopify://shop_images/dark-bg.png"
       }
     },
     "app_card3_KmkpTM": {
@@ -326,27 +342,39 @@
         },
         "supporters_peyLbJ": {
           "type": "supporters",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/imgi_11_2e7ebe91-8198-46cc-8c0f-a99ad3760169.png"
+          }
         },
         "supporters_g8nJrQ": {
           "type": "supporters",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/imgi_8_889ccf25-6998-4119-8a67-f431b97da35a.png"
+          }
         },
         "supporters_T8dg7C": {
           "type": "supporters",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/imgi_12_9ab5019f-203f-404b-89b1-a6411e681421.png"
+          }
         },
         "supporters_n9Qfzg": {
           "type": "supporters",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/imgi_13_801cc443-a322-4d8a-80c8-57f9cc359f15.png"
+          }
         },
         "supporters_xa9BcH": {
           "type": "supporters",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/imgi_7_d59ab18c-d11d-4598-8ecf-85b9b65b9f8d.png"
+          }
         },
         "supporters_k8mTkr": {
           "type": "supporters",
-          "settings": {}
+          "settings": {
+            "logo": "shopify://shop_images/imgi_9_0c24dfc3-6782-4c71-a3db-e2f04154ac88.png"
+          }
         }
       },
       "block_order": [
@@ -365,7 +393,8 @@
       "name": "Testimony Card",
       "settings": {
         "primary_color": "#afa38e",
-        "secondary_color": "#7b0f23"
+        "secondary_color": "#7b0f23",
+        "background_image": "shopify://shop_images/dark-bg.png"
       }
     },
     "app_card4_nttdBQ": {
@@ -438,7 +467,9 @@
       "settings": {
         "background_color": "#0d0d0d",
         "primary_color": "#b6ac87",
-        "secondary_color": "#7b0f23"
+        "secondary_color": "#7b0f23",
+        "side_image1": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+        "side_image2": "shopify://shop_images/imgi_15_e319426e-8e90-469b-bc84-bde45b072745.png"
       }
     },
     "app_card5_PJP6kQ": {
