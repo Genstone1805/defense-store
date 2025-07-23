@@ -1,0 +1,248 @@
+<section
+  class=" py-20 text-center text-white object-cover"
+  style="background-color:{{ section.settings.background_color }}"
+>
+  <!-- Section Title -->
+  <div class="max-w-[1100px] mx-auto">
+    <div class="mx-auto mb-12 px-8">
+      <p class="text-[48px]/20 font-semibold uppercase" style="color:{{ section.settings.primary_color }}">
+        {{ section.settings.card_title }}
+      </p>
+      <p
+        class="text-[32px]/20 text-gray-300 font-semibold mt-2 mb-4 tracking-wide uppercase"
+        style="color:{{section.settings.secondary_color }}"
+      >
+        {{ section.settings.card_sub_title }}
+      </p>
+      <p
+        class="text-[22px] tracking-wide"
+        style="color:{{section.settings.primary_color }}"
+      >
+        {{ section.settings.text }}
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="w-full flex items-center px-12 md:px-4 mb-10">
+      <div class="app-grid gap-10 w-full mx-auto px-4">
+        {% for block in section.blocks %}
+          {% if block.type == 'card' %}
+            <!-- Card 1 -->
+            <div
+              class="border spacce-y-5 p-6 hover:shadow-lg min-h-83 flex items-center justify-center  flex-col relative rounded-2xl"
+              style="border-color:{{section.settings.primary_color }}; background-color:{{ block.settings.bg_color }}; background-color: rgba(153, 153, 153, 0.08);"
+            >
+              {% if block.settings.image %}
+                <div
+                  class=" rounded-lg mx-auto flex items-center p-6 mb-8 justify-center"
+                  style="background-color:{{ section.settings.primary_color }}"
+                >
+                  <img
+                    src="{{ block.settings.image | image_url  }}"
+                    alt="{{ block.settings.title }}"
+                    class="size-[32px] object-contain rounded"
+                    width="32"
+                    height="32"
+                  >
+                </div>
+              {% endif %}
+
+              <p class="font-bold text-5xl capitalize mb-6" style="color:{{ section.settings.primary_color }}">
+                {{ block.settings.title }}
+              </p>
+              <p class="text-3xl">{{ block.settings.text }}</p>
+              {% if block.settings.button_text != blank %}
+                <a
+                  href="{{ block.settings.button_url }}"
+                  class="text-white px-4 py-2  w-9/12 text-2xl font-bold rounded-lg uppercase mt-6 transition-color duration-150"
+                  style="background-color:{{ section.settings.primary_color }}"
+                >
+                  {{ block.settings.button_text }}
+                </a>
+              {% endif %}
+              {% if block.settings.badge != blank %}
+                <div
+                  class="absolute size-18 rounded-full -top-8 -left-8 flex items-center justify-center text-4xl font-semibold z-20"
+                  style="background-color:{{ section.settings.secondary_color }}"
+                >
+                  {{ block.settings.badge }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% if section.settings.button_text != blank %}
+      <div class="w-full flex justify-center">
+        {% if section.settings.button_style == 'outline' %}
+          <a
+            href="{{ section.settings.button_url }}"
+            class="text-white px-4 py-2 text-4xl border-2 bg-black transition-color duration-150"
+            style="border-color:{{ section.settings.secondary_color }}"
+            onmouseover="this.style.backgroundColor='{{ section.settings.secondary_color }}'"
+            onmouseout="this.style.backgroundColor=''"
+            *
+          >
+            {{ section.settings.button_text }}
+          </a>
+        {% else %}
+          <a
+            href="{{ section.settings.button_url }}"
+            class="text-white px-4 py-2 text-4xl transition-transform duration-150 hover:-translate-y-0.5"
+            style="background-color:{{ section.settings.primary_color }}"
+          >
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .app-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .app-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Two Cols Card No Image",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "card_title",
+      "label": "Card Title",
+      "default": "Card Title"
+    },
+    {
+      "type": "text",
+      "id": "card_sub_title",
+      "label": "Card Sub Title",
+      "default": "Card Sub Title"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Card Text",
+      "default": "Card Text"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "See More"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button url"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button Style",
+      "options": [
+        {
+          "value": "fill",
+          "label": "Filled"
+        },
+        {
+          "value": "outline",
+          "label": "Outline"
+        }
+      ],
+      "default": "outline"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#0d0d0d"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "card",
+      "name": "card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card Title",
+          "default": "Sample Card Title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Card text",
+          "default": "This is the description for this card."
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Card Badge",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Click me"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button Url"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card Icon"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color",
+          "default": "#0d0d0d"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Two Cols Card No Image",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

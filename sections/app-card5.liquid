@@ -1,0 +1,198 @@
+<div
+  class="text-white py-20 px-4 text-center font-sans"
+  style="background-color:{{ section.settings.background_color }}"
+>
+  {%- comment -%} Headline {%- endcomment -%}
+  {% if section.settings.headline %}
+    <p class="text-5xl md:text-6xl font-bold uppercase">
+      {{ section.settings.headline }}
+    </p>
+  {% endif %}
+
+  {%- comment -%} Subtext {%- endcomment -%}
+  {% if section.settings.subtext %}
+    <p class="mt-4 text-3xl" style="color:{{ section.settings.primary_color }}">
+      {{ section.settings.subtext }}
+    </p>
+  {% endif %}
+
+  {%- comment -%} Buttons {%- endcomment -%}
+  {% assign button_blocks = section.blocks | where: 'type', 'button' %}
+  {% if button_blocks.size > 0 %}
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
+      {% for block in button_blocks %}
+        {% if block.settings.button_color == 'primary' %}
+          <a
+            href="{{ block.settings.button_link }}"
+            class=" px-6 py-1 uppercase font-wide transition-color duration-300 border bg-black"
+            style="border-color:{{ section.settings.primary_color }}"
+            onmouseover="this.style.backgroundColor='{{ section.settings.primary_color }}'"
+            onmouseout="this.style.backgroundColor=''"
+          >
+            {{ block.settings.button_text }}
+          </a>
+        {% else %}
+          <a
+            href="{{ block.settings.button_link }}"
+            class=" px-6 py-1 uppercase font-wide transition-color duration-300 border bg-black"
+            style="border-color:{{ section.settings.secondary_color }}"
+            onmouseover="this.style.backgroundColor='{{ section.settings.secondary_color }}'"
+            onmouseout="this.style.backgroundColor=''"
+          >
+            {{ block.settings.button_text }}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {%- comment -%} Dynamic Results {%- endcomment -%}
+  {% assign result_blocks = section.blocks | where: 'type', 'result' %}
+  {% if result_blocks.size > 0 %}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-5xl mx-auto">
+      {% for block in result_blocks %}
+        <div
+          class="flex items-start justify-start flex-col border-l-2 px-2"
+          style="border-color: {{ section.settings.secondary_color }}; color:{{ section.settings.primary_color }}"
+        >
+          <p
+            class="font-bold uppercase pl-2 opacity-80"
+          >
+            {{ block.settings.title }}
+          </p>
+          <p class="text-xl pl-2">{{ block.settings.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {%- comment -%} Footer CTA {%- endcomment -%}
+  {% if section.settings.footer_cta %}
+    <div class="mt-20 border-t pt-12" style="border-color:{{section.settings.primary_color }}">
+      <p class="font-bold text-4xl uppercase tracking-wide" style="color:{{ section.settings.secondary_color }}">
+        {{ section.settings.footer_cta }}
+      </p>
+    </div>
+  {% endif %}
+</div>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
+
+    /* Small screens (≥640px) */
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+
+    /* Medium screens (≥768px) */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Team Protection Card",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#0d0d0d"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#B6AC87"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Ready to protect your team and future-proof your mission?"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Schedule a meeting to review your requirements with an Aware Defense expert."
+    },
+    {
+      "type": "text",
+      "id": "footer_cta",
+      "label": "Footer CTA",
+      "default": "Fit to Fight, Built to Endure"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Title",
+          "default": "Click Me"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "select",
+          "id": "button_color",
+          "label": "Button Color",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
+        }
+      ]
+    },
+    {
+      "type": "result",
+      "name": "Result Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Result Title",
+          "default": "Result Title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Result Description",
+          "default": "Result Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Team Protection Card",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

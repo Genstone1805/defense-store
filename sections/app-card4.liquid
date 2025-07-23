@@ -1,0 +1,268 @@
+<div class="bg-[#262626] flex items-center justify-center flex-col text-white py-16 px-4 font-sans">
+  <div class="max-w-7xl">
+    <p class="text-center text-[40px]/20 md:text-[48px]/20 font-semibold uppercase">
+      Don't Compromise When the Mission Depends On It
+    </p>
+
+    <div class="mt-12 grid gap-8 mx-auto">
+      <!-- Table -->
+      <div class="overflow-x-hidden w-full col-span-2">
+        <table
+          class="w-full border border-collapse text-sm md:text-xl"
+          style="border-color:{{ section.settings.secondary_color }}; color:{{section.settings.primary_color }}"
+        >
+          <thead>
+            <tr class="uppercase" style="background-color:{{section.settings.background_color }}">
+              <th
+                class="border px-4 py-3 font-semibold text-left"
+                style="border-color:{{section.settings.secondary_color }}"
+              >
+                Feature
+              </th>
+              <th
+                class="border px-8 py-3 text-white font-semibold"
+                style="border-color:{{section.settings.secondary_color }}"
+              >
+                Aware
+              </th>
+              <th class="border px-4 py-3 font-semibold" style="border-color:{{section.settings.secondary_color }}">
+                Traditional
+              </th>
+              <th class="border px-8 py-3 font-semibold" style="border-color:{{section.settings.secondary_color }}">
+                Foam
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for block in section.blocks %}
+              {% if block.type == 'table' %}
+                <tr style="background-color:{{ section.settings.background_color }}">
+                  <!-- Feature Name -->
+                  <td
+                    class="border px-4 py-3 text-white text-xl"
+                    style="border-color:{{section.settings.secondary_color}}"
+                  >
+                    {{ block.settings.featured }}
+                  </td>
+
+                  <!-- Aware Column -->
+                  <td class="border text-center" style="border-color:{{section.settings.secondary_color}}">
+                    {% case block.settings.aware %}
+                      {% when 'yes' %}
+                        <span class="flex items-center justify-center text-white">
+                          <!-- Checkmark -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                            <path fill="currentColor" fill-rule="evenodd" d="M28.928 10.3a3.25 3.25 0 0 1-.137 4.595L13.94 28.89a3.25 3.25 0 0 1-4.557-.098l-6.264-6.435a3.25 3.25 0 0 1 4.658-4.534l4.033 4.143l12.525-11.802a3.25 3.25 0 0 1 4.594.136" clip-rule="evenodd"/>
+                          </svg>
+                        </span>
+                      {% when 'no' %}
+                        <span class="text-2xl font-semibold flex items-center justify-center">
+                          <!-- Cross -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94z"/>
+                          </svg>
+                        </span>
+                      {% when 'limited' %}
+                        <span class="uppercase">Limited</span>
+                    {% endcase %}
+                  </td>
+
+                  <!-- Traditional Column -->
+                  <td class="border text-center" style="border-color:{{section.settings.secondary_color}}">
+                    {% case block.settings.traditional %}
+                      {% when 'yes' %}
+                        <span class="flex items-center justify-center text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                            <path fill="currentColor" fill-rule="evenodd" d="M28.928 10.3a3.25 3.25 0 0 1-.137 4.595L13.94 28.89a3.25 3.25 0 0 1-4.557-.098l-6.264-6.435a3.25 3.25 0 0 1 4.658-4.534l4.033 4.143l12.525-11.802a3.25 3.25 0 0 1 4.594.136" clip-rule="evenodd"/>
+                          </svg>
+                        </span>
+                      {% when 'no' %}
+                        <span class="text-2xl font-semibold flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94z"/>
+                          </svg>
+                        </span>
+                      {% when 'limited' %}
+                        <span class="uppercase">Limited</span>
+                    {% endcase %}
+                  </td>
+
+                  <!-- Foam Column -->
+                  <td class="border text-center" style="border-color:{{section.settings.secondary_color}}">
+                    {% case block.settings.foam %}
+                      {% when 'yes' %}
+                        <span class="flex items-center justify-center text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                            <path fill="currentColor" fill-rule="evenodd" d="M28.928 10.3a3.25 3.25 0 0 1-.137 4.595L13.94 28.89a3.25 3.25 0 0 1-4.557-.098l-6.264-6.435a3.25 3.25 0 0 1 4.658-4.534l4.033 4.143l12.525-11.802a3.25 3.25 0 0 1 4.594.136" clip-rule="evenodd"/>
+                          </svg>
+                        </span>
+                      {% when 'no' %}
+                        <span class="text-2xl font-semibold flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94z"/>
+                          </svg>
+                        </span>
+                      {% when 'limited' %}
+                        <span class="uppercase">Limited</span>
+                    {% endcase %}
+                  </td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Image -->
+      <div
+        class="flex items-center justify-center flex-col border rounded-lg p-4"
+        style="border-color:{{section.settings.secondary_color }}; background-color:{{section.settings.background_color }}"
+      >
+        <img
+          src="{{ section.settings.side_image1 | image_url }}"
+          alt="first image"
+          class="size-[264px] object-contain"
+          width="264"
+          height="264"
+        >
+        <img
+          src="{{ section.settings.side_image2 | image_url }}"
+          alt="second image"
+          class="size-[96px] object-contain"
+          width="96"
+          height="96"
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr); /* 2 columns on small screens */
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Comparisom Card",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Primary Color",
+      "default": "#0d0d0d"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#B6AC87"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "image_picker",
+      "id": "side_image1",
+      "label": "First Side Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "side_image2",
+      "label": "Second Side Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "table",
+      "name": "table",
+      "settings": [
+        {
+          "type": "text",
+          "id": "featured",
+          "label": "Featured Text",
+          "default": "Enter Featured Text"
+        },
+        {
+          "type": "select",
+          "id": "aware",
+          "label": "Aware Options",
+          "default": "yes",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "limited",
+              "label": "Limited"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "traditional",
+          "label": "Traditional Options",
+          "default": "no",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "limited",
+              "label": "Limited"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "foam",
+          "label": "Foam Options",
+          "default": "no",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "limited",
+              "label": "Limited"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparisom Card",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

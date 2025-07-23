@@ -1,0 +1,228 @@
+<section class=" py-20 text-center card bg-[#0d0d0d] text-white object-cover">
+  <!-- Section Title -->
+  <div class="max-w-[1100px] mx-auto">
+    <div class="mx-auto mb-12 px-8">
+      <p class="text-[48px]/20 font-extrabold uppercase">{{ section.settings.card_title }}</p>
+      <p
+        class="text-[32px]/20 text-gray-300 font-semibold mt-2 mb-4 tracking-wide uppercase"
+        style="color:{{section.settings.tertiary_color }}"
+      >
+        {{ section.settings.card_sub_title }}
+      </p>
+      <p
+        class="text-[22px] tracking-wide"
+        style="color:{{section.settings.primary_color }}"
+      >
+        {{ section.settings.text }}
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="w-full flex items-center px-12 md:px-4 mb-10">
+      <div class="grid gap-10 w-full mx-auto px-4">
+        {% for block in section.blocks %}
+          {% if block.type == 'card' %}
+            <!-- Card 1 -->
+            <div
+              class="border p-6 hover:shadow-lg min-h-83 flex items-center justify-center flex-col relative bg-[#0d0d0d7a]"
+              style="border-color:{{section.settings.tertiary_color }};"
+            >
+              {% if block.settings.image %}
+                <img
+                  src="{{ block.settings.image | image_url  }}"
+                  alt="{{ block.settings.title }}"
+                  class="w-full h-20 object-contain rounded mb-4"
+                  width="50"
+                  height="50"
+                >
+              {% endif %}
+
+              <p class="font-bold text-4xl uppercase mb-6">{{ block.settings.title }}</p>
+              <p class="text-2xl">{{ block.settings.text }}</p>
+              {% if block.settings.badge != blank %}
+                <div
+                  class="absolute size-18 rounded-full -top-8 -left-8 flex items-center justify-center text-4xl font-semibold z-20"
+                  style="background-color:{{ section.settings.secondary_color }}"
+                >
+                  {{ block.settings.badge }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% if section.settings.button_text != blank %}
+      <div class="w-full flex justify-center">
+        {% if section.settings.button_style == 'outline' %}
+          <a
+            href="{{ section.settings.button_url }}"
+            class="text-white px-4 py-2 text-4xl border-2 bg-black transition-color duration-150"
+            style="border-color:{{ section.settings.secondary_color }}"
+            onmouseover="this.style.backgroundColor='{{ section.settings.secondary_color }}'"
+            onmouseout="this.style.backgroundColor=''"
+            *
+          >
+            {{ section.settings.button_text }}
+          </a>
+        {% else %}
+          <a
+            href="{{ section.settings.button_url }}"
+            class="text-white px-4 py-2 text-4xl transition-transform duration-150 hover:-translate-y-0.5"
+            style="background-color:{{ section.settings.primary_color }}"
+          >
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .card {
+    background-image: url('{{ section.settings.background_image | image_url: width: 1600 }}');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Three Cols Card",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "card_title",
+      "label": "Card Title",
+      "default": "Card Title"
+    },
+    {
+      "type": "text",
+      "id": "card_sub_title",
+      "label": "Card Sub Title",
+      "default": "Card Sub Title"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Card Text",
+      "default": "Card Text"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "See More"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button url"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button Style",
+      "options": [
+        {
+          "value": "fill",
+          "label": "Filled"
+        },
+        {
+          "value": "outline",
+          "label": "Outline"
+        }
+      ],
+      "default": "outline"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#695e49"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "card",
+      "name": "card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card Title",
+          "default": "Sample Card Title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Card text",
+          "default": "This is the description for this card."
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Card Badge",
+          "default": "1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card Icon"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color",
+          "default": "#0d0d0d"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Three Cols Card",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

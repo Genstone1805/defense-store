@@ -1,0 +1,155 @@
+<section class="text-white px-6 py-20" style="background-color:{{ section.settings.background_color }}">
+  <div class="flex px-3 items-center justify-center">
+    <div class="grid justify-center items-center px-8 gap-8 space-y-10">
+      <!-- Left: Text Content -->
+      <div class="w-full">
+        <p class="font-extrabold mb-2 text-7xl/20">{{ section.settings.title }}</p>
+        <p class="text-5xl font-normal mb-6" style="color:{{section.settings.tertiary_color }}">
+          {{ section.settings.sub_title }}
+        </p>
+        <p class="mb-8 font-semibold">{{ section.settings.text }}</p>
+
+        <ul class="space-y-6 mb-10">
+          {% for block in section.blocks %}
+            <li class="flex items-start gap-y-3 gap-x-6">
+              <span class="text-4xl mt-1" style="color:{{ section.settings.secondary_color }}">✔</span>
+              <div>
+                <p class="text-white font-semibold text-3xl" style="color:{{ section.settings.primary_color }}">
+                  {{ block.settings.title }}
+                </p>
+                <p class="">{{ block.setting.text }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+        {% if section.settings.button_text != blank %}
+          <a
+            href="{{ section.settings.button_url }}"
+            class="mt-10 bg-[#8c7a57] text-white font-normal tracking-wide px-8 py-3 rounded hover:bg-[#a48d63] transition"
+          >
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
+
+      <!-- Right: Image -->
+      {% if section.settings.side_image != blank %}
+        <div class="">
+          <img
+            src="{{ section.settings.side_image | image_url}}"
+            alt="banner Image size-full"
+            class="rounded-lg"
+            width="100%"
+            height="100%"
+          >
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Operation Card",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Card Title",
+      "default": "Sample Card Title"
+    },
+    {
+      "type": "text",
+      "id": "sub_title",
+      "label": "Card Sub Title",
+      "default": "Sample Card Sub Title"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Card Text",
+      "default": "Sample Card Text"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Click Me"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"
+    },
+    {
+      "type": "image_picker",
+      "id": "side_image",
+      "label": "Side Image"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Primary Color",
+      "default": "#262626"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#B6AC87"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#6C6846"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Block Title",
+          "default": "Sample Block Title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Block Text",
+          "default": "Sample Block Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Operation Card",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,192 @@
+<footer
+  class="px-8 py-12 flex items-center flex-col justify-center text-center"
+  style="background-color:{{ section.settings.background_color }}; color:{{section.settings.primary_color }}"
+>
+  <div class="w-full items-center justify-center border-t h-0.5 opacity-40"><p></p></div>
+  <div class="grid flex-col items-center justify-center md:grid-cols-3 gap-8 my-20 max-w-[1200px]">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center flex-col justify-center">
+        <img
+          src="{{ section.settings.store_logo | image_url }}"
+          alt="Aware Defense Logo"
+          class="h-[64px] w-[192px] object-contain"
+          width="192"
+          height="64"
+        >
+        <img
+          src="{{ section.settings.store_location | image_url }}"
+          alt="Aware Defense Logo"
+          class="h-[96px] w-[128px] object-contain"
+          width="128"
+          height="96"
+        >
+      </div>
+      <div class="flex space-x-6 mt-6 md:mt-0">
+        {% render 'social-icons' %}
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center flex-col justify-center">
+        <img
+          src="{{ section.settings.store_icon | image_url }}"
+          alt="Aware Defense Logo"
+          class="h-[160px] w-[160px] object-contain"
+          width="160"
+          height="160"
+        >
+      </div>
+      <div class="flex space-x-6 mt-6 md:mt-0">
+        {% render 'social-icons' %}
+      </div>
+    </div>
+    {% for block in section.blocks %}
+      <div>
+        <p class="font-semibold text-3xl mb-2 uppercase opacity-80">{{ block.settings.office_name }}</p>
+        <p>
+          {{ block.settings.office_address -}}
+          <br>
+          {{ block.settings.office_state -}}
+          <br>
+          {{ block.settings.office_box }}
+        </p>
+        {% if block.settings.office_email != blank %}
+          <a
+            href="mailto:{{block.settings.office_email }}"
+            class="hover:underline"
+            style="color:{{section.settings.secondary_color }}"
+          >
+            {{- block.settings.office_email -}}
+          </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    <div>
+      <p class="font-semibold text-3xl mb-2 uppercase opacity-80">STAY UPDATED</p>
+      <p class="mb-4">Find out more about our Ear-Powered Innovations!</p>
+      <form class="flex space-x-2">
+        <input
+          type="email"
+          placeholder="your-email@example.com"
+          class="flex-grow p-2 border rounded-l focus:outline-none"
+        >
+        <button
+          type="submit"
+          class="p-2 rounded-r text-white transition-transform duration-300 hover:-translate-y-0.5"
+          style="background-color:{{ section.settings.primary_color }}"
+        >
+          →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="w-full items-center justify-center border-t h-0.5 opacity-40"><p></p></div>
+  <div class="mt-10 mb-20 text-center text-lg flex w-full justify-between max-w-[1200px]">
+    <p class="text-xl">© AWARE DEFENSE 2025</p>
+    <p>This site is protected by hCaptcha and the hCaptcha Privacy Policy and Terms of Service apply.</p>
+  </div>
+</footer>
+
+<style>
+  .grid {
+    display: flex;
+
+    /* Small screens (≥640px) */
+    @media (min-width: 640px) {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 2 columns */
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "App Foooter",
+  "tag": "footer",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#0d0d0d"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#B6AC87"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "image_picker",
+      "id": "store_logo",
+      "label": "Store Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "store_location",
+      "label": "Store Location"
+    },
+    {
+      "type": "url",
+      "id": "store_icon_url",
+      "label": "Footer Imaage Url"
+    },
+    {
+      "type": "image_picker",
+      "id": "store_icon",
+      "label": "Footer Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "office",
+      "name": "office",
+      "settings": [
+        {
+          "type": "text",
+          "id": "office_name",
+          "label": "Office Name",
+          "default": "Demo Office"
+        },
+        {
+          "type": "textarea",
+          "id": "office_address",
+          "label": "Office Address",
+          "default": "Office Address"
+        },
+        {
+          "type": "text",
+          "id": "office_state",
+          "label": "Office State",
+          "default": "Office State"
+        },
+        {
+          "type": "text",
+          "id": "office_box",
+          "label": "Office Box",
+          "default": "Office Box"
+        },
+        {
+          "type": "text",
+          "id": "office_email",
+          "label": "Office Email",
+          "default": "Office E-mail"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "App Footer",
+      "category": "Footer"
+    }
+  ]
+}
+{% endschema %}
