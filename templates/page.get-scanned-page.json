@@ -105,15 +105,84 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23",
         "background_image": "shopify://shop_images/dark-bg.png"
+      }
+    },
+    "app_card8_ynrjeb": {
+      "type": "app-card8",
+      "blocks": {
+        "card_ntheYc": {
+          "type": "card",
+          "settings": {
+            "calender": "SOF Week 2026",
+            "location": "May 18–22, 2026 — Tampa, Florida",
+            "description": "Meet Aware Defense and get scanned on-site during SOF Week. Reserve your spot in advance.",
+            "badge": "",
+            "button_text": "LEARN MORE ABOUT SOF WEEK",
+            "button_url": "",
+            "bg_color": "#0d0d0d"
+          }
+        }
+      },
+      "block_order": [
+        "card_ntheYc"
+      ],
+      "name": "Event Card",
+      "settings": {
+        "card_title": "WHERE TO FIND US NEXT",
+        "card_sub_title": "",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "outline",
+        "background_color": "#0d0d0d",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23"
+      }
+    },
+    "app_card_9_64K9Fq": {
+      "type": "app-card-9",
+      "blocks": {
+        "button_dYhBYW": {
+          "type": "button",
+          "settings": {
+            "button_text": "REQUEST A CONSULTATION",
+            "button_url": "shopify://collections/all",
+            "button_type": "fill"
+          }
+        },
+        "button_BrtLTb": {
+          "type": "button",
+          "settings": {
+            "button_text": "CONTACT US",
+            "button_url": "shopify://collections/all",
+            "button_type": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "button_dYhBYW",
+        "button_BrtLTb"
+      ],
+      "name": "Full With Card",
+      "settings": {
+        "background_color": "#0d0d0d",
+        "title": "GET YOUR TEAM MISSION-READY",
+        "text": "Schedule a scan, get gear that fits, and prepare for the next evolution in protection.",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#B6AC87",
+        "secondary_color": "#7B0F23"
       }
     }
   },
   "order": [
     "main",
     "app_card6_kh8mFt",
-    "app_card7_9btgeG"
+    "app_card7_9btgeG",
+    "app_card8_ynrjeb",
+    "app_card_9_64K9Fq"
   ]
 }
