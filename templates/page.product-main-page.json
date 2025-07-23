@@ -11,10 +11,239 @@
   "sections": {
     "main": {
       "type": "app-page",
-      "settings": {}
+      "settings": {
+        "background_color": "#0d0d0d",
+        "title": "REVOLUTIONIZING HEARING PROTECTION",
+        "text": "FOR MISSION-CRITICAL ENVIRONMENTS",
+        "button_text": "LEARN ABOUT OUR TECHNOLOGY",
+        "button_url": "shopify://products/aware-musicplugs",
+        "primary_color": "#b6ac87",
+        "secondary_color": "#7b0f23"
+      }
+    },
+    "app_card17_Ygt79P": {
+      "type": "app-card17",
+      "name": "Why Fit Matters",
+      "settings": {
+        "left_percentage": "92%",
+        "left_title": "UNIVERSAL FIT FAILS 92% OF THE TIME",
+        "left_text": "Only Aware accurately captures the second bend of the ear for superior fit and performance, even beyond traditional silicone pour methods.",
+        "right_title": "WHY CUSTOM FIT MATTERS",
+        "right_text": "Every ear is unique. Our patented FDA-cleared 3D scanner creates a precise ear profile, enabling superior protection, comfort, and sensor integration. With zero risk, and 100% fit. ",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_card15_kEnd3P": {
+      "type": "app-card15",
+      "blocks": {
+        "card_YpydCM": {
+          "type": "card",
+          "settings": {
+            "title": "EarShield",
+            "text": "Highest NRR, comms-compatible, all-day mission endurance",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_xebVhG": {
+          "type": "card",
+          "settings": {
+            "title": "EarDefender",
+            "text": "Reliable tactical protection with sealed fit for high-noise ops",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_QjQMif": {
+          "type": "card",
+          "settings": {
+            "title": "RADIOCOMM",
+            "text": "Comms-integrated custom earpiece for real-time clarity",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        }
+      },
+      "block_order": [
+        "card_YpydCM",
+        "card_xebVhG",
+        "card_QjQMif"
+      ],
+      "name": "Three Cols Card",
+      "settings": {
+        "card_title": "FOR WARFIGHTERS, AVIATORS, AND TACTICAL OPERATORS",
+        "card_sub_title": "",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "outline",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_card15_3T8JKx": {
+      "type": "app-card15",
+      "blocks": {
+        "card_aiVJVJ": {
+          "type": "card",
+          "settings": {
+            "title": "EarShield",
+            "text": "Highest NRR, comms-compatible, all-day mission endurance",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_Q7hYhn": {
+          "type": "card",
+          "settings": {
+            "title": "EarDefender",
+            "text": "Reliable tactical protection with sealed fit for high-noise ops",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_jr9rti": {
+          "type": "card",
+          "settings": {
+            "title": "RADIOCOMM",
+            "text": "Comms-integrated custom earpiece for real-time clarity",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        }
+      },
+      "block_order": [
+        "card_aiVJVJ",
+        "card_Q7hYhn",
+        "card_jr9rti"
+      ],
+      "name": "Three Cols Card",
+      "settings": {
+        "card_title": "INDUSTRIAL-GRADE SAFETY FOR DEMANDING ENVIRONMENTS",
+        "card_sub_title": "",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "outline",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_card16_JDTjnh": {
+      "type": "app-card16",
+      "blocks": {
+        "card_mV9AXC": {
+          "type": "card",
+          "settings": {
+            "title": "MusicPlugs",
+            "text": "Audio protection with crystal clarity",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_JHDETY": {
+          "type": "card",
+          "settings": {
+            "title": "MusicPlugs",
+            "text": "Audio protection with crystal clarity",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_TiwNJ6": {
+          "type": "card",
+          "settings": {
+            "title": "MusicPlugs",
+            "text": "Audio protection with crystal clarity",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_B8Ct9U": {
+          "type": "card",
+          "settings": {
+            "title": "MusicPlugs",
+            "text": "Audio protection with crystal clarity",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d"
+          }
+        }
+      },
+      "block_order": [
+        "card_mV9AXC",
+        "card_JHDETY",
+        "card_TiwNJ6",
+        "card_B8Ct9U"
+      ],
+      "name": "Four Cols Card",
+      "settings": {
+        "card_title": "",
+        "card_sub_title": "PRECISION FIT FOR PERFORMANCE, RECREATION, AND REST",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "outline",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_card_9_b88DMD": {
+      "type": "app-card-9",
+      "blocks": {
+        "button_Me8bBt": {
+          "type": "button",
+          "settings": {
+            "button_text": "SCHEDULE A MEETING",
+            "button_url": "shopify://collections/all",
+            "button_type": "outline"
+          }
+        },
+        "button_EWeWCi": {
+          "type": "button",
+          "settings": {
+            "button_text": "LEARN ABOUT OUR SCANNER",
+            "button_url": "shopify://products/aware-cep",
+            "button_type": "fill"
+          }
+        }
+      },
+      "block_order": [
+        "button_Me8bBt",
+        "button_EWeWCi"
+      ],
+      "name": "Full With Card",
+      "settings": {
+        "background_color": "#0d0d0d",
+        "title": "READY TO PROTECT YOUR TEAM AND YOUR HEARING?",
+        "text": "Custom-fit comfort. Field-tested performance. Future-ready gear.",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#B6AC87",
+        "secondary_color": "#7B0F23"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "app_card17_Ygt79P",
+    "app_card15_kEnd3P",
+    "app_card15_3T8JKx",
+    "app_card16_JDTjnh",
+    "app_card_9_b88DMD"
   ]
 }
