@@ -15,9 +15,20 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "app_card23_KzAwtL": {
+      "type": "app-card23",
+      "name": "Use Cases",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "app_card23_KzAwtL"
   ]
 }
