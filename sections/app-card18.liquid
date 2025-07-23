@@ -1,0 +1,213 @@
+<section
+  class="py-20 transition-all duration-1000 delay-200 opacity-100 translate-y-0 bg-[#0d0d0d]"
+>
+  <div class="container mx-auto px-4 bg-[#0d0d0d]">
+    <div class="max-w-[1100px] mx-auto">
+      <div class="app-card-18-grid">
+        <div
+          class="border text-card-foreground shadow-sm bg-[#afa38e]/10 border-[#afa38e]/30 rounded-xl transition-all duration-700 delay-400 opacity-100 translate-x-0"
+        >
+          <div class="p-8 text-center">
+            <p
+              class="text-4xl font-bold text-white mb-6"
+              data-measuring="true"
+            >
+              {{ section.settings.left_title }}
+            </p>
+            <div
+              class="w-48 h-48 mx-auto mb-6 bg-combat-black rounded-lg flex items-center justify-center overflow-hidden"
+            >
+              {% if section.settings.left_image %}
+                <img
+                  src="{{ section.settings.left_image | image_url  }}"
+                  alt="Image"
+                  alt="eFit 3D Scanner"
+                  class="w-full h-full object-contain p-4"
+                  width="50"
+                  height="50"
+                >
+              {% endif %}
+            </div>
+            <p class="text-[#afa38e] mb-8 leading-relaxed">{{ section.settings.left_text }}</p>
+            <a
+              href="{{ section.settings.left_button_url }}"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-[#0d0d0d] h-10 px-4 py-2 w-full font-semibold uppercase tracking-wide border-[#827867] text-[#827867] hover:bg-[#827867] hover:text-white"
+            >
+              {{ section.settings.left_text }}
+            </a>
+          </div>
+        </div>
+        <div
+          class="border text-card-foreground shadow-sm bg-[#afa38e]/10 border-[#afa38e]/30 rounded-xl transition-all duration-700 delay-600 opacity-100 translate-x-0"
+        >
+          <div class="p-8 text-center">
+            <p class="text-4xl font-bold text-white mb-6">{{ section.settings.right_title }}</p>
+            <div
+              class="w-48 h-48 mx-auto mb-6 bg-combat-black rounded-lg flex items-center justify-center overflow-hidden"
+            >
+              {% if section.settings.right_image %}
+                <img
+                  src="{{ section.settings.right_image | image_url  }}"
+                  alt="Image"
+                  alt="eFit 3D Scanner"
+                  class="w-full h-full object-contain p-4"
+                  width="50"
+                  height="50"
+                >
+              {% endif %}
+            </div>
+            <p class="text-[#afa38e] mb-8 leading-relaxed">{{ section.settings.right_text }}</p>
+            <a
+              href="{{ section.settings.right_button_url }}"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-[#0d0d0d] h-10 px-4 py-2 w-full font-semibold uppercase tracking-wide border-[#827867] text-[#827867] hover:bg-[#827867] hover:text-white"
+            >
+              {{ section.settings.right_button_text }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .app-card-18-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .app-card-18-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Two Cols",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left Image"
+    },
+    {
+      "type": "text",
+      "id": "left_title",
+      "label": "Left Title",
+      "default": "Left Title"
+    },
+    {
+      "type": "text",
+      "id": "left_text",
+      "label": "Left Text",
+      "default": "Left Text"
+    },
+    {
+      "type": "text",
+      "id": "left_button_text",
+      "label": "Left Button Text",
+      "default": "Left Button Text"
+    },
+    {
+      "type": "url",
+      "id": "left_button_url",
+      "label": "Left Button Url"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Image"
+    },
+    {
+      "type": "text",
+      "id": "right_title",
+      "label": "Right Title",
+      "default": "Right Title"
+    },
+    {
+      "type": "text",
+      "id": "right_text",
+      "label": "Right Text",
+      "default": "Right Text"
+    },
+    {
+      "type": "text",
+      "id": "right_button_text",
+      "label": "Right Button Text",
+      "default": "Right Button Text"
+    },
+    {
+      "type": "url",
+      "id": "right_button_url",
+      "label": "Right Button Url"
+    },
+
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#695e49"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "card",
+      "name": "card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card Title",
+          "default": "Sample Card Title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Card text",
+          "default": "This is the description for this card."
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Card Badge",
+          "default": "1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card Icon"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color",
+          "default": "#0d0d0d"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Two COls",
+      "category": "Technology Cards"
+    }
+  ]
+}
+{% endschema %}

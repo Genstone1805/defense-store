@@ -1,0 +1,141 @@
+<section class="py-20 px-6 relative scroll-slide-in visible bg-black">
+  <div class="max-w-[1100px] mx-auto">
+    <div class="app-card-17-grid gap-12 items-center">
+      <div class="space-y-8">
+        <div class="bg-background rounded-lg p-8 border-2 border-[#6C6846]">
+          <div class="text-center space-y-6">
+            <div class="text-8xl font-bold text-scarlet-red" style="color:{{ section.settings.secondary_color }}">
+              {{ section.settings.left_percentage }}
+            </div>
+            <p class="heading-tactical font-semibold text-primary text-4xl">{{ section.settings.left_title }}</p>
+            <div class="mt-8">
+              <p class="text-secondary text-3xl font-normal text-center">{{ section.settings.left_text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-6">
+        <p class="heading-tactical text-primary font-bold text-5xl md:text-6xl">{{ section.settings.right_title }}</p>
+        <p class="body-tactical text-signal-white text-3xl text-white leading-relaxed">
+          {{ section.settings.right_text }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .app-card-17-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .app-card-17-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Why Fit Matters",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "left_percentage",
+      "label": "Left Percentage",
+      "default": "92%"
+    },
+    {
+      "type": "text",
+      "id": "left_title",
+      "label": "Left Title",
+      "default": "Left Title"
+    },
+    {
+      "type": "text",
+      "id": "left_text",
+      "label": "Left Text",
+      "default": "Left Text"
+    },
+    {
+      "type": "text",
+      "id": "right_title",
+      "label": "Right Title",
+      "default": "Right Title"
+    },
+    {
+      "type": "text",
+      "id": "right_text",
+      "label": "Right Text",
+      "default": "Right Text"
+    },
+
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#695e49"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "card",
+      "name": "card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card Title",
+          "default": "Sample Card Title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Card text",
+          "default": "This is the description for this card."
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Card Badge",
+          "default": "1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Card Icon"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color",
+          "default": "#0d0d0d"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Why Fit Matters",
+      "category": "Product Card"
+    }
+  ]
+}
+{% endschema %}

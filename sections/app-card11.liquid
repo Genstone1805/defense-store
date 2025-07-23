@@ -5,12 +5,11 @@
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto">
     <div class="mx-auto mb-12 px-8">
-      <p class="text-[48px]/20 font-semibold uppercase" style="color:{{ section.settings.primary_color }}">
+      <p class="text-[48px]/20 font-semibold uppercase text-white">
         {{ section.settings.card_title }}
       </p>
       <p
-        class="text-[32px]/20 text-gray-300 font-semibold mt-2 mb-4 tracking-wide uppercase"
-        style="color:{{section.settings.secondary_color }}"
+        class="text-[32px]/20 font-semibold mt-2 mb-4 tracking-wide uppercase text-white"
       >
         {{ section.settings.card_sub_title }}
       </p>
@@ -24,7 +23,7 @@
 
     <!-- Cards -->
     <div class="w-full flex items-center px-12 md:px-4 mb-10">
-      <div class="card-7-grid gap-10 w-full mx-auto px-4">
+      <div class="app-grid gap-10 w-full mx-auto px-4">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
             <!-- Card 1 -->
@@ -35,7 +34,7 @@
               {% if block.settings.image %}
                 <div
                   class=" rounded-lg mx-auto flex items-center p-6 mb-8 justify-center"
-                  style="background-color:{{ section.settings.primary_color }}"
+                  style="background-color:{{ section.settings.secondary_color }}"
                 >
                   <img
                     src="{{ block.settings.image | image_url  }}"
@@ -101,15 +100,15 @@
 </section>
 
 <style>
-  .card-7-grid {
+  .app-grid {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(1, 1fr);
   }
 
   @media (min-width: 640px) {
-    .card-7-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .app-grid {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   }
@@ -117,7 +116,7 @@
 
 {% schema %}
 {
-  "name": "Two Cols Card No Image",
+  "name": "Three Cols Card No Image",
   "tag": "section",
   "settings": [
     {
@@ -240,8 +239,8 @@
   ],
   "presets": [
     {
-      "name": "Two Cols Card No Image",
-      "category": "Custom"
+      "name": "Three Cols Card",
+      "category": "How to buy Card"
     }
   ]
 }

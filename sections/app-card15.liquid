@@ -1,16 +1,11 @@
-<section
-  class=" py-20 text-center text-white object-cover"
-  style="background-color:{{ section.settings.background_color }}"
->
+<section class=" py-20 text-center card bg-[#0d0d0d] object-cover" style="color:{{ section.settings.primary_color }}">
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto">
     <div class="mx-auto mb-12 px-8">
-      <p class="text-[48px]/20 font-semibold uppercase" style="color:{{ section.settings.primary_color }}">
-        {{ section.settings.card_title }}
-      </p>
+      <p class="text-[48px]/20 font-extrabold uppercase">{{ section.settings.card_title }}</p>
       <p
         class="text-[32px]/20 text-gray-300 font-semibold mt-2 mb-4 tracking-wide uppercase"
-        style="color:{{section.settings.secondary_color }}"
+        style="color:{{section.settings.tertiary_color }}"
       >
         {{ section.settings.card_sub_title }}
       </p>
@@ -23,43 +18,27 @@
     </div>
 
     <!-- Cards -->
-    <div class="w-full flex items-center px-12 md:px-4 mb-10">
-      <div class="card-7-grid gap-10 w-full mx-auto px-4">
+    <div class="w-full flex items-center px-12 md:px-4 mb-10" style="min-height: 356px">
+      <div class="app-card-15-grid gap-10 w-full mx-auto px-4">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
             <!-- Card 1 -->
             <div
-              class="border spacce-y-5 p-6 hover:shadow-lg min-h-83 flex items-center justify-center  flex-col relative rounded-2xl"
-              style="border-color:{{section.settings.primary_color }}; background-color:{{ block.settings.bg_color }}; background-color: rgba(153, 153, 153, 0.08);"
+              class="border p-6 hover:shadow-lg item-card15 min-h-83 flex items-center justify-center flex-col relative bg-[#0d0d0d7a]"
             >
               {% if block.settings.image %}
-                <div
-                  class=" rounded-lg mx-auto flex items-center p-6 mb-8 justify-center"
-                  style="background-color:{{ section.settings.primary_color }}"
+                <img
+                  src="{{ block.settings.image | image_url  }}"
+                  alt="{{ block.settings.title }}"
+                  class="w-full object-contain rounded mb-4"
+                  style="width:128px; height:128px"
+                  width="128"
+                  height="128"
                 >
-                  <img
-                    src="{{ block.settings.image | image_url  }}"
-                    alt="{{ block.settings.title }}"
-                    class="size-[32px] object-contain rounded"
-                    width="32"
-                    height="32"
-                  >
-                </div>
               {% endif %}
 
-              <p class="font-bold text-5xl capitalize mb-6" style="color:{{ section.settings.primary_color }}">
-                {{ block.settings.title }}
-              </p>
-              <p class="text-3xl">{{ block.settings.text }}</p>
-              {% if block.settings.button_text != blank %}
-                <a
-                  href="{{ block.settings.button_url }}"
-                  class="text-white px-4 py-2  w-9/12 text-2xl font-bold rounded-lg uppercase mt-6 transition-color duration-150"
-                  style="background-color:{{ section.settings.primary_color }}"
-                >
-                  {{ block.settings.button_text }}
-                </a>
-              {% endif %}
+              <p class="font-bold text-4xl uppercase mb-6">{{ block.settings.title }}</p>
+              <p class="text-2xl">{{ block.settings.text }}</p>
               {% if block.settings.badge != blank %}
                 <div
                   class="absolute size-18 rounded-full -top-8 -left-8 flex items-center justify-center text-4xl font-semibold z-20"
@@ -101,23 +80,35 @@
 </section>
 
 <style>
-  .card-7-grid {
+  .item-card15{
+    border-color:{{section.settings.primary_color }}
+  }
+  .item-card15:hover{
+    border-color:{{section.settings.secondary_color }}
+  }
+  .card {
+    background-image: url('{{ section.settings.background_image | image_url: width: 1600 }}');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .app-card-15-grid {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(1, 1fr);
   }
 
   @media (min-width: 640px) {
-    .card-7-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .app-card-15-grid {
+      grid-template-columns: repeat(3, 1fr);
     }
-  }
   }
 </style>
 
 {% schema %}
 {
-  "name": "Two Cols Card No Image",
+  "name": "Three Cols Card",
   "tag": "section",
   "settings": [
     {
@@ -167,12 +158,6 @@
     },
     {
       "type": "color",
-      "id": "background_color",
-      "label": "Background Color",
-      "default": "#0d0d0d"
-    },
-    {
-      "type": "color",
       "id": "primary_color",
       "label": "Primary Color",
       "default": "#AFA38E"
@@ -182,6 +167,12 @@
       "id": "secondary_color",
       "label": "Secondary Color",
       "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#695e49"
     },
     {
       "type": "image_picker",
@@ -214,17 +205,6 @@
           "default": "1"
         },
         {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button Text",
-          "default": "Click me"
-        },
-        {
-          "type": "url",
-          "id": "button_url",
-          "label": "Button Url"
-        },
-        {
           "type": "image_picker",
           "id": "image",
           "label": "Card Icon"
@@ -240,8 +220,8 @@
   ],
   "presets": [
     {
-      "name": "Two Cols Card No Image",
-      "category": "Custom"
+      "name": "Three Cols Card",
+      "category": "Product Card"
     }
   ]
 }

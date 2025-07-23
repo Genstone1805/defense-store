@@ -1,0 +1,257 @@
+<section
+  class="py-20 transition-all duration-1000 delay-400 opacity-100 translate-y-0 bg-black"
+>
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-5xl font-bold text-white mb-8 uppercase">{{ section.settings.title }}</p>
+      <p class="text-3xl text-[#afa38e] leading-relaxed mb-10">{{ section.settings.sub_title }}</p>
+      <div
+        class="bg-combat-black/80 border border-[#afa38e]/30 rounded-xl overflow-hidden"
+      >
+        <table class="w-full">
+          <thead>
+            <tr class="bg-[#7b0f23]/20 border-b border-[#afa38e]/20">
+              <th
+                class="text-left p-4 text-[#afa38e] font-semibold uppercase tracking-wide"
+              >
+                FEATURE
+              </th>
+              <th
+                class="text-center p-4 text-[#7b0f23] font-bold uppercase tracking-wide"
+              >
+                AWARE
+              </th>
+              <th
+                class="text-center p-4 text-[#afa38e] font-semibold uppercase tracking-wide"
+              >
+                TRADITIONAL
+              </th>
+              <th
+                class="text-center p-4 text-[#afa38e] font-semibold uppercase tracking-wide"
+              >
+                FOAM
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for block in section.blocks %}
+              {% if block.type == 'table' %}
+                <tr class="border-b border-[#afa38e]/10">
+                  <td class="p-4 text-left text-white text-xl">{{ block.settings.featured }}</td>
+
+                  <td class="p-4 text-center">
+                    {% case block.settings.aware %}
+                      {% when 'yes' %}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-circle-check-big size-6 text-[#7b0f23] mx-auto"
+                        >
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                          <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                      {% when 'no' %}
+                        <span class="text-2xl font-semibold flex items-center justify-center">
+                          <!-- Cross -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94z"/>
+                          </svg>
+                        </span>
+                      {% when 'limited' %}
+                        <span class="uppercase">Limited</span>
+                    {% endcase %}
+                  </td>
+                  <td class="p-4 text-center">
+                    {% case block.settings.traditional %}
+                      {% when 'yes' %}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-circle-check-big size-6 text-[#7b0f23] mx-auto"
+                        >
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                          <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                      {% when 'no' %}
+                        <span class="text-2xl font-semibold flex items-center justify-center">
+                          <!-- Cross -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94z"/>
+                          </svg>
+                        </span>
+                      {% when 'limited' %}
+                        <span class="uppercase">Limited</span>
+                    {% endcase %}
+                  </td>
+                  <td class="p-4 text-center">
+                    {% case block.settings.foam %}
+                      {% when 'yes' %}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-circle-check-big size-6 text-[#7b0f23] mx-auto"
+                        >
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                          <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                      {% when 'no' %}
+                        <span class="text-2xl font-semibold flex items-center justify-center">
+                          <!-- Cross -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94z"/>
+                          </svg>
+                        </span>
+                      {% when 'limited' %}
+                        <span class="uppercase">Limited</span>
+                    {% endcase %}
+                  </td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Table",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Default Title"
+    },
+    {
+      "type": "text",
+      "id": "sub_title",
+      "label": "Sub Title",
+      "default": "Default Sub Title"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#695e49"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "table",
+      "name": "table",
+      "settings": [
+        {
+          "type": "text",
+          "id": "featured",
+          "label": "Featured Text",
+          "default": "Enter Featured Text"
+        },
+        {
+          "type": "select",
+          "id": "aware",
+          "label": "Aware Options",
+          "default": "yes",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "limited",
+              "label": "Limited"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "traditional",
+          "label": "Traditional Options",
+          "default": "no",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "limited",
+              "label": "Limited"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "foam",
+          "label": "Foam Options",
+          "default": "no",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "limited",
+              "label": "Limited"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Table",
+      "category": "Technology Cards"
+    }
+  ]
+}
+{% endschema %}

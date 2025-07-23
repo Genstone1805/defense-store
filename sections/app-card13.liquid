@@ -30,12 +30,12 @@
             <!-- Card 1 -->
             <div
               class="border spacce-y-5 p-6 hover:shadow-lg min-h-83 flex items-center justify-center  flex-col relative rounded-2xl"
-              style="border-color:{{section.settings.primary_color }}; background-color:{{ block.settings.bg_color }}; background-color: rgba(153, 153, 153, 0.08);"
+              style="width:430px; border-color:{{section.settings.primary_color }}; background-color:{{ block.settings.bg_color }}; background-color: rgba(153, 153, 153, 0.08);"
             >
               {% if block.settings.image %}
                 <div
-                  class=" rounded-lg mx-auto flex items-center p-6 mb-8 justify-center"
-                  style="background-color:{{ section.settings.primary_color }}"
+                  class="rounded-lg mx-auto flex items-center p-6 mb-8 justify-center class"
+                  style="background-color:{{ section.settings.secondary_color }};"
                 >
                   <img
                     src="{{ block.settings.image | image_url  }}"
@@ -117,7 +117,7 @@
 
 {% schema %}
 {
-  "name": "Two Cols Card No Image",
+  "name": "instrument and care cards",
   "tag": "section",
   "settings": [
     {
@@ -241,7 +241,7 @@
   "presets": [
     {
       "name": "Two Cols Card No Image",
-      "category": "Custom"
+      "category": "instrument and care cards"
     }
   ]
 }

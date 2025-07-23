@@ -1,0 +1,184 @@
+<section
+  class="py-20 relative transition-all bg-black duration-1000 delay-400 opacity-100 translate-y-0"
+>
+  <div class="flex items-center justify-center mx-auto px-4">
+    <div class="flex flex-col items-center justify-center mx-auto bg-white">
+      <p class="text-4xl text-white font-bold text-signal-white text-center mb-16">
+        {{ section.settings.title }}
+      </p>
+      <div class="card-12-grid items-center w-full justify-center">
+        <div
+          class="border flex flex-col items-center justify-center text-card-foreground shadow-sm rounded-xl"
+          style="max-width:430px; min-height:172px"
+        >
+          <div class="p-8 space-y-6">
+            <div class="flex items-start space-x-4">
+              <svg
+                style="color:{{ section.settings.secondary_color }}"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-credit-card size-6 text-scarlet mt-1 flex-shrink-0"
+              >
+                <rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line>
+              </svg>
+              <p class="text-3xl text-white">{{ section.settings.payment }}</p>
+            </div>
+            <div class="flex items-start space-x-4">
+              <svg
+                style="color:{{ section.settings.secondary_color }}"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-truck size-6 text-scarlet mt-1 flex-shrink-0"
+              >
+                <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path><path d="M15 18H9"></path><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path><circle cx="17" cy="18" r="2"></circle><circle cx="7" cy="18" r="2"></circle>
+              </svg>
+              <p class="text-3xl text-white text-signal-white">{{ section.settings.delivery }}</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border flex items-center justify-center flex-col text-card-foreground shadow-sm rounded-xl"
+          style="max-width:430px; min-height:172px"
+        >
+          <div class="p-8 space-y-6">
+            <div class="flex items-start space-x-4">
+              <svg
+                style="color:{{ section.settings.secondary_color }}"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-clock size-6 text-scarlet mt-1 flex-shrink-0"
+              >
+                <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <p class="text-3xl text-white text-signal-white">{{ section.settings.order }}</p>
+            </div>
+            <div class="flex items-start space-x-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                style="color:{{ section.settings.secondary_color }}"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-file-text size-6 text-scarlet mt-1 flex-shrink-0"
+              >
+                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>
+              </svg>
+              <p class="text-3xl text-white text-signal-white">{{ section.settings.store }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .card-12-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .card-12-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Billing Card",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "payment",
+      "label": "Payment Text",
+      "default": "Payment Text"
+    },
+    {
+      "type": "text",
+      "id": "delivery",
+      "label": "Delivery Text",
+      "default": "Delivery Text"
+    },
+    {
+      "type": "text",
+      "id": "order",
+      "label": "Order Text",
+      "default": "Order Text"
+    },
+    {
+      "type": "text",
+      "id": "store",
+      "label": "Store Text",
+      "default": "Store Text"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#0d0d0d"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Billing Card",
+      "category": "How to buy Card"
+    }
+  ]
+}
+{% endschema %}

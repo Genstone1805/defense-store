@@ -1,188 +1,112 @@
 <section
   class="py-20 bg-muted/10 transition-all duration-1000 delay-300 opacity-100 translate-y-0"
+  style="background-color:{{ section.settings.background_color }}"
   data-selected="true"
   data-label-id="0"
 >
-  <div class="container mx-auto px-4">
-    <div class="max-w-7xl mx-auto">
-      <p class="text-6xl font-bold text-signal-white text-center mb-16">FEDERAL PROCUREMENT JUSTIFICATION</p>
+  <div class="mx-auto px-4">
+    <div class="max-w-[1200px] mx-auto">
+      <p class="text-6xl font-bold text-signal-white text-center mb-16">{{ section.settings.title }}</p>
       <div class="card-grid gap-12 mb-16 w-full">
-        <div class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-500 opacity-100 translate-x-0">
+        <div
+          class="border text-card-foreground shadow-sm rounded-xl transition-all duration-700 delay-500 opacity-100 translate-x-0"
+          style="background-color: rgba(153, 153, 153, 0.2);"
+        >
           <div class="p-8">
-            <h3 class="text-2xl font-bold text-signal-white mb-6">PROPRIETARY TECHNOLOGY</h3>
+            <p class="text-4xl font-extrabold text-white text-signal-white mb-6">{{ section.settings.left_title }}</p>
             <div class="space-y-4 text-signal-white">
-              <p class="font-semibold text-desert-tan">
-                Aware Defense's eFit 3D scanner represents the world's only FDA-cleared, non-contact ear scanning
-                technology.
+              <p class="text-desert-tan font-semibold" style="color:{{ section.settings.primary_color }}">
+                {{ section.settings.left_sub_title }}
               </p>
-              <div class="space-y-3">
-                <div class="flex items-start space-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-circle-check-big h-5 w-5 text-scarlet mt-1 flex-shrink-0"
-                  >
-                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path>
-                  </svg>
-                  <p>90-second scanning vs. hours for traditional silicone methods to generate a mold</p>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-circle-check-big h-5 w-5 text-scarlet mt-1 flex-shrink-0"
-                  >
-                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path>
-                  </svg>
-                  <p>Medical-grade precision to two-micron accuracy</p>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-circle-check-big h-5 w-5 text-scarlet mt-1 flex-shrink-0"
-                  >
-                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path>
-                  </svg>
-                  <p>Zero-contact scanning eliminates safety concerns</p>
-                </div>
-                <div class="flex items-start space-x-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-circle-check-big h-5 w-5 text-scarlet mt-1 flex-shrink-0"
-                  >
-                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path>
-                  </svg>
-                  <p>Permanent digital profiles for lifetime support</p>
-                </div>
+              <div class="space-y-3 text-white">
+                {% for block in section.blocks %}
+                  {% if block.type == 'left_option' %}
+                    <div class="flex items-start space-x-3">
+                      <svg
+                        style="color:{{ section.settings.secondary_color }}"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-circle-check-big size-5 text-scarlet mt-1 flex-shrink-0"
+                      >
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path>
+                      </svg>
+                      <p>{{ block.settings.text }}</p>
+                    </div>
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>
         </div>
-        <div class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-700 opacity-100 translate-x-0">
+        <div
+          class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-700 opacity-100 translate-x-0"
+          style="background-color: rgba(153, 153, 153, 0.2);"
+        >
           <div class="p-8">
-            <h3 class="text-2xl font-bold text-signal-white mb-6">MISSION-CRITICAL DIFFERENTIATION</h3>
+            <p class="text-4xl font-bold text-signal-white text-white mb-6">{{ section.settings.Right_title }}</p>
             <div class="space-y-4 text-signal-white">
-              <p class="font-semibold text-desert-tan">
-                Traditional foam hearing protection fails <span class="text-scarlet">92%</span> of the time due to
-                improper fit.
+              <p class="font-semibold text-desert-tan" style="color:{{ section.settings.primary_color }}">
+                {{ section.settings.right_sub_title }}
               </p>
-              <p>
-                Only Aware Defense's proprietary eFit scanner captures the critical second bend geometry that ensures
-                perfect seal integrity.
-              </p>
-              <div class="bg-combat-black/30 p-4 rounded-lg mt-4">
-                <p class="text-signal-white">
-                  Hearing loss affects over 50% of combat soldiers and represents the #1 cause of veteran disability
-                  claims.
-                </p>
-              </div>
+              {% for block in section.blocks %}
+                {% if block.type == 'right_option' %}
+                  {% if block.settings.show_bg %}
+                    <div
+                      class="p-4 rounded-lg mt-4 text-white bg-black"
+                    >
+                      <p class="text-signal-white">
+                        {{ block.settings.text }}
+                      </p>
+                    </div>
+                  {% else %}
+                    <p class="text-white">
+                      {{ block.settings.text }}
+                    </p>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
             </div>
           </div>
         </div>
       </div>
-      <div class="border text-card-foreground shadow-sm bg-scarlet/10 border-scarlet/30 rounded-xl transition-all duration-700 delay-900 opacity-100 translate-y-0">
+      <div
+        class="border text-card-foreground shadow-sm bg-scarlet/10 border-scarlet/30 rounded-xl transition-all duration-700 delay-900 opacity-100 translate-y-0"
+        style="background-color: rgba(123, 15, 35, 0.2); border-color:rgba(123, 15, 35, 0.3);"
+      >
         <div class="p-8">
-          <h3 class="text-2xl font-bold text-signal-white text-center mb-8">
-            STREAMLINED PROCUREMENT THROUGH CERTIFIED 8(a) PARTNER
-          </h3>
+          <p class="text-4xl text-white font-bold text-signal-white text-center mb-8">
+            {{ section.settings.bottom_sub_title }}
+          </p>
           <div class="child-card-grid gap-8">
-            <div class="text-center space-y-4">
-              <div class="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-file-text h-8 w-8 text-signal-white"
-                >
-                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>
-                </svg>
-              </div>
-              <h4 class="font-bold" style="color: rgb(182, 166, 135);">Direct Contracting</h4>
-              <p class="text-signal-white text-sm">
-                Sole-source contracts up to $4.5M without competitive requirements. Awards cannot be protested.
-              </p>
-            </div>
-            <div class="text-center space-y-4">
-              <div class="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-circle-check-big h-8 w-8 text-signal-white"
-                >
-                  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path>
-                </svg>
-              </div>
-              <h4 class="font-bold" style="color: rgb(182, 166, 135);">Small Business Goals</h4>
-              <p class="text-signal-white text-sm">
-                Satisfies agency small business and 8(a) contracting goals while supporting disadvantaged business
-                development.
-              </p>
-            </div>
-            <div class="text-center space-y-4">
-              <div class="w-16 h-16 bg-scarlet rounded-lg mx-auto flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-clock h-8 w-8 text-signal-white"
-                >
-                  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-              </div>
-              <h4 class="font-bold" style="color: rgb(182, 166, 135);">Reduced Timeline</h4>
-              <p class="text-signal-white text-sm">
-                Streamlined approval process reduces procurement timeline from months to weeks.
-              </p>
-            </div>
+            {% for block in section.blocks %}
+              {% if block.type == 'bottom_option' %}
+                <div class="text-center space-y-4">
+                  {% if block.settings.card_icon %}
+                    <div
+                      class=" rounded-lg mx-auto w-48 flex items-center p-6 mb-8 justify-center"
+                      style="background-color:{{ section.settings.secondary_color }}"
+                    >
+                      <img
+                        src="{{ block.settings.card_icon | image_url  }}"
+                        alt="icon"
+                        class="size-[32px] object-contain rounded"
+                        width="32"
+                        height="32"
+                      >
+                    </div>
+                  {% endif %}
+                  <p class="font-bold text-3xl" style="color: rgb(182, 166, 135);">{{ block.settings.title }}</p>
+                  <p class="text-signal-white text-2xl">{{ block.settings.text }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -365,7 +289,7 @@
   "presets": [
     {
       "name": "Procurement Card",
-      "category": "Custom"
+      "category": "How to buy Card"
     }
   ]
 }
