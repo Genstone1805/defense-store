@@ -169,6 +169,20 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23"
+      }
+    },
+    "app_card12_mFBp3f": {
+      "type": "app-card12",
+      "name": "Billing Card",
+      "settings": {
+        "title": "BILLING, SHIPPING, & LEAD TIME",
+        "payment": "Payment: PO, credit card, and federal EFT accepted",
+        "delivery": "Delivery: 2–3 weeks from scan date",
+        "order": "Bulk orders: Priority timelines available",
+        "store": "Digital scan files stored for remakes",
+        "background_color": "#0d0d0d",
         "primary_color": "#AFA38E",
         "secondary_color": "#7B0F23"
       }
@@ -177,6 +191,7 @@
   "order": [
     "main",
     "app_card11_QnfmTz",
-    "app_card10_KDme87"
+    "app_card10_KDme87",
+    "app_card12_mFBp3f"
   ]
 }
