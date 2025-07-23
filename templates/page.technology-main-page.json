@@ -15,15 +15,154 @@
         "background_color": "#0d0d0d",
         "title": "TECH THAT FITS. TECH THAT PERFORMS.",
         "text": "The only platform that unites precision scanning, mission-grade hearing protection, and biometric upgrade paths — all built for field use.",
-        "button_text": "Button Text",
-        "button_url": "",
+        "button_text": "REQUEST A DEMO",
+        "button_url": "shopify://collections",
         "primary_color": "#7b0f23",
         "secondary_color": "#7b0f23",
         "background_image": "shopify://shop_images/jakub-zerdzicki-kVuzH0KFs1w-unsplash.jpg"
       }
+    },
+    "app_card18_XzzcWU": {
+      "type": "app-card18",
+      "name": "Two COls",
+      "settings": {
+        "left_image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+        "left_title": "FDA-CLEARED. NON-CONTACT.",
+        "left_text": "Our scanner captures precise ear canal geometry in under 2 minutes — no foam, no silicone, and zero infection risk.",
+        "left_button_text": "LEARN ABOUT EFIT SCANNING",
+        "left_button_url": "shopify://products/aware-earshield",
+        "right_image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+        "right_title": "FUTURE-READY SENSOR INTEGRATION",
+        "right_text": "Our platform is built for next-gen performance: biometric data, EEG sensing, readiness tracking, and cognitive monitoring.",
+        "right_button_text": "LEARN ABOUT BIOMETRICS",
+        "right_button_url": "shopify://products/aware-musicfilters",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_card19_WwAapF": {
+      "type": "app-card19",
+      "name": "Platforms",
+      "settings": {
+        "title": "A PLATFORM BUILT FOR REAL-WORLD DEPLOYMENT",
+        "text1": "No physical impressions required",
+        "text2": "Same-day scan + ship capability",
+        "text3": "Passive biometric readiness built-in",
+        "text4": "Comms compatibility built into design",
+        "text5": "Digitally stored profiles for lifetime access",
+        "text6": "Mission-grade durability standards",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_card20_8EtMUU": {
+      "type": "app-card20",
+      "blocks": {
+        "table_a4Xfat": {
+          "type": "table",
+          "settings": {
+            "featured": "FDA-cleared, non-contact 3D scanning",
+            "aware": "yes",
+            "traditional": "no",
+            "foam": "no"
+          }
+        },
+        "table_7LpTgj": {
+          "type": "table",
+          "settings": {
+            "featured": "Perfectly captures second bend for superior fit",
+            "aware": "yes",
+            "traditional": "no",
+            "foam": "no"
+          }
+        },
+        "table_iW79Np": {
+          "type": "table",
+          "settings": {
+            "featured": "Permanent digital profile",
+            "aware": "yes",
+            "traditional": "no",
+            "foam": "no"
+          }
+        },
+        "table_bUxFW6": {
+          "type": "table",
+          "settings": {
+            "featured": "Seamless comms integration",
+            "aware": "yes",
+            "traditional": "limited",
+            "foam": "no"
+          }
+        },
+        "table_aitNzW": {
+          "type": "table",
+          "settings": {
+            "featured": "Future-proof biometric platform",
+            "aware": "yes",
+            "traditional": "no",
+            "foam": "no"
+          }
+        }
+      },
+      "block_order": [
+        "table_a4Xfat",
+        "table_7LpTgj",
+        "table_iW79Np",
+        "table_bUxFW6",
+        "table_aitNzW"
+      ],
+      "name": "Table",
+      "settings": {
+        "title": "THE ONLY FDA-CLEARED NON-CONTACT SYSTEM",
+        "sub_title": "Compare our patented scanner and data platform to outdated foam plug workflows. Trust the tech that elite units rely on.",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_card_9_CDH6b9": {
+      "type": "app-card-9",
+      "blocks": {
+        "button_DDT3Aq": {
+          "type": "button",
+          "settings": {
+            "button_text": "REQUEST A TECHNOLOGY DEMO",
+            "button_url": "",
+            "button_type": "fill"
+          }
+        },
+        "button_GAfnr6": {
+          "type": "button",
+          "settings": {
+            "button_text": "CONTACT OUR TEAM",
+            "button_url": "shopify://products/aware-cep",
+            "button_type": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "button_DDT3Aq",
+        "button_GAfnr6"
+      ],
+      "name": "Full With Card",
+      "settings": {
+        "background_color": "#0d0d0d",
+        "title": "WANT TO SEE IT IN ACTION?",
+        "text": "We'll show you how Aware's platform deploys fast, scales efficiently, and delivers unmatched results in the field.",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#B6AC87",
+        "secondary_color": "#7B0F23"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "app_card18_XzzcWU",
+    "app_card19_WwAapF",
+    "app_card20_8EtMUU",
+    "app_card_9_CDH6b9"
   ]
 }
