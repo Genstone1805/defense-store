@@ -1,10 +1,10 @@
 <section class="text-white px-6 py-20" style="background-color:{{ section.settings.background_color }}">
   <div class="flex px-3 items-center justify-center">
-    <div class="grid justify-center items-center px-8 gap-8 space-y-10">
+    <div class="app-card-3-grid justify-center items-center px-8 gap-8 space-y-10 max-w-[1200px]">
       <!-- Left: Text Content -->
       <div class="w-full">
         <p class="font-extrabold mb-2 text-7xl/20">{{ section.settings.title }}</p>
-        <p class="text-5xl font-normal mb-6" style="color:{{section.settings.tertiary_color }}">
+        <p class="text-5xl font-semibold mb-6" style="color:{{section.settings.tertiary_color }}">
           {{ section.settings.sub_title }}
         </p>
         <p class="mb-8 font-semibold">{{ section.settings.text }}</p>
@@ -14,10 +14,10 @@
             <li class="flex items-start gap-y-3 gap-x-6">
               <span class="text-4xl mt-1" style="color:{{ section.settings.secondary_color }}">✔</span>
               <div>
-                <p class="text-white font-semibold text-3xl" style="color:{{ section.settings.primary_color }}">
+                <p class="text-white font-semibold text-3xl" style="color:{{ section.settings.primary_color }}; ">
                   {{ block.settings.title }}
                 </p>
-                <p class="">{{ block.setting.text }}</p>
+                <p class="">{{ block.settings.text }}</p>
               </div>
             </li>
           {% endfor %}
@@ -49,13 +49,13 @@
 </section>
 
 <style>
-  .grid {
+  .app-card-3-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
   }
 
   @media (min-width: 640px) {
-    .grid {
+    .app-card-3-grid {
       grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
     }
   }

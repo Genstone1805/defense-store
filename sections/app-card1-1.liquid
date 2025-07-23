@@ -19,7 +19,7 @@
 
     <!-- Cards -->
     <div class="w-full flex items-center px-12 md:px-4 mb-10">
-      <div class="grid gap-10 w-full mx-auto px-4">
+      <div class="app-card-1-grid gap-10 w-full mx-auto px-4">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
             <!-- Card 1 -->
@@ -87,14 +87,14 @@
     background-size: cover;
   }
 
-  .grid {
+  .app-card-1-grid {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(1, 1fr);
   }
 
   @media (min-width: 640px) {
-    .grid {
+    .app-card-1-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }

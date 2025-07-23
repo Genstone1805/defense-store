@@ -4,7 +4,7 @@
       Don't Compromise When the Mission Depends On It
     </p>
 
-    <div class="mt-12 grid gap-8 mx-auto">
+    <div class="mt-12 card-4-grid gap-8 mx-auto">
       <!-- Table -->
       <div class="overflow-x-hidden w-full col-span-2">
         <table
@@ -40,7 +40,7 @@
                   <!-- Feature Name -->
                   <td
                     class="border px-4 py-3 text-white text-xl"
-                    style="border-color:{{section.settings.secondary_color}}"
+                    style="border-color:{{section.settings.secondary_color}}; padding-top:20px; padding-bottom:20px"
                   >
                     {{ block.settings.featured }}
                   </td>
@@ -115,7 +115,7 @@
 
       <!-- Image -->
       <div
-        class="flex items-center justify-center flex-col border rounded-lg p-4"
+        class="flex items-center justify-center flex-col border rounded-lg p-4 w-full"
         style="border-color:{{section.settings.secondary_color }}; background-color:{{section.settings.background_color }}"
       >
         <img
@@ -138,13 +138,13 @@
 </div>
 
 <style>
-  .grid {
+  .card-4-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
   }
 
   @media (min-width: 640px) {
-    .grid {
+    .card-4-grid {
       grid-template-columns: repeat(3, 1fr); /* 2 columns on small screens */
     }
   }

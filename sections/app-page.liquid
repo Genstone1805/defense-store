@@ -1,0 +1,92 @@
+<section
+  class="relative banner bg-cover bg-center min-h-[440px] text-white"
+>
+  <div
+    class="bg-black/70 min-h-[440px] flex items-center justify-center px-6 text-center"
+  >
+    <div class="max-w-7xl space-y-6">
+      <p class="md:text-[48px]/20 text-[40px]/20 font-bold leading-tight">
+        {{ section.settings.title }}
+      </p>
+      <p class="text-4xl">{{ section.settings.text }}</p>
+      <a
+        href="{{ section.settings.button_url }}"
+        class="px-6 py-3 rounded text-xl font-semibold"
+        style="background-color:{{ section.settings.primary_color }}"
+      >
+        {{ section.settings.button_text }}
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ page.content }}
+
+<style>
+  .banner {
+    background-image: url('{{ section.settings.background_image | image_url: width: 1600 }}');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: 640px) {
+      background-size: 130%;
+    }
+  }
+</style>
+
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#0d0d0d"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Banner Title",
+      "default": "Banner Title"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Banner Text",
+      "default": "Banner Text"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#B6AC87"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ]
+}
+{% endschema %}
