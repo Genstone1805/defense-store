@@ -20,9 +20,68 @@
         "primary_color": "#7b0f23",
         "secondary_color": "#7b0f23"
       }
+    },
+    "app_card11_QnfmTz": {
+      "type": "app-card11",
+      "blocks": {
+        "card_Cripn7": {
+          "type": "card",
+          "settings": {
+            "title": "Federal Buyers",
+            "text": "Buy through Sole Source Justification or through an 8a Parnter",
+            "badge": "",
+            "button_text": "Contact our Procurement team",
+            "button_url": "shopify://collections",
+            "image": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_TTLcNg": {
+          "type": "card",
+          "settings": {
+            "title": "Teams & Organizations",
+            "text": "Request a scanning event, or leverage a scanner lease for larger implementations",
+            "badge": "",
+            "button_text": "request consultation",
+            "button_url": "shopify://collections",
+            "image": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_xmQEGQ": {
+          "type": "card",
+          "settings": {
+            "title": "Individual Users",
+            "text": "Book a scan at an event near youGear delivered after fitting",
+            "badge": "",
+            "button_text": "Get Scanned",
+            "button_url": "shopify://collections",
+            "image": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "bg_color": "#0d0d0d"
+          }
+        }
+      },
+      "block_order": [
+        "card_Cripn7",
+        "card_TTLcNg",
+        "card_xmQEGQ"
+      ],
+      "name": "Three Cols Card",
+      "settings": {
+        "card_title": "",
+        "card_sub_title": "CHOOSE YOUR PATH TO MISSION-READY PROTECTION",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "outline",
+        "background_color": "#0d0d0d",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "app_card11_QnfmTz"
   ]
 }
