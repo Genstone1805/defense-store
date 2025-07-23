@@ -59,14 +59,61 @@
       "settings": {
         "title": "WHY eFIT MATTERS",
         "background_color": "#0d0d0d",
-        "primary_color": "#B6AC87",
-        "secondary_color": "#7B0F23",
+        "primary_color": "#b6ac87",
+        "secondary_color": "#7b0f23",
         "right_image": "shopify://shop_images/manEar.png"
+      }
+    },
+    "app_card7_9btgeG": {
+      "type": "app-card7",
+      "blocks": {
+        "card_H6Q8ar": {
+          "type": "card",
+          "settings": {
+            "title": "Teams & Organizations",
+            "text": "Schedule a scanner deployment to your unit or facility.",
+            "badge": "",
+            "button_text": "Request a scanning event for your team",
+            "button_url": "",
+            "image": "shopify://shop_images/download_19.svg",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_gQPFje": {
+          "type": "card",
+          "settings": {
+            "title": "Individuals",
+            "text": "Join us at a scheduled scanning event near you.",
+            "badge": "",
+            "button_text": "SEE UPCOMING EVENTS",
+            "button_url": "shopify://collections/all",
+            "image": "shopify://shop_images/download_3.svg",
+            "bg_color": "#0d0d0d"
+          }
+        }
+      },
+      "block_order": [
+        "card_H6Q8ar",
+        "card_gQPFje"
+      ],
+      "name": "Two Cols Card No Image",
+      "settings": {
+        "card_title": "TWO WAYS TO GET SCANNED",
+        "card_sub_title": "",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "outline",
+        "background_color": "#0d0d0d",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "background_image": "shopify://shop_images/dark-bg.png"
       }
     }
   },
   "order": [
     "main",
-    "app_card6_kh8mFt"
+    "app_card6_kh8mFt",
+    "app_card7_9btgeG"
   ]
 }
