@@ -25,50 +25,92 @@
       "type": "app-bio1",
       "name": "What we Measure",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "WHAT WE CAN MEASURE — RIGHT FROM THE EAR",
+        "title1": "Core Temperature",
+        "text1": "Real-time thermal data from internal ear canal",
+        "title2": "EEG Signals",
+        "text2": "Brainwave + fatigue data from consistent earpiece positioning",
+        "title3": "Cardiovascular Monitoring",
+        "text3": "Passive HRV / pulse via optical sensors",
+        "title4": "Cognitive Readiness",
+        "text4": "Future-state: focus, reaction time, alertness data"
       }
     },
     "app_bio2_mBizmz": {
       "type": "app-bio2",
+      "blocks": {
+        "option_RiBgnE": {
+          "type": "option",
+          "settings": {
+            "text1": "Improved sensor contact",
+            "text2": "Consistent positioning ensures reliable data collection"
+          }
+        },
+        "option_P3Wg34": {
+          "type": "option",
+          "settings": {
+            "text1": "Shielded from environmental noise",
+            "text2": "Protected from temperature fluctuations and interference"
+          }
+        },
+        "option_qzpinG": {
+          "type": "option",
+          "settings": {
+            "text1": "More accurate EEG and core temp data",
+            "text2": "Proximity to brain and core temperature source"
+          }
+        },
+        "option_rHjGTJ": {
+          "type": "option",
+          "settings": {
+            "text1": "No interference with gear",
+            "text2": "Compatible with uniforms, gloves, and weapons handling"
+          }
+        }
+      },
+      "block_order": [
+        "option_RiBgnE",
+        "option_P3Wg34",
+        "option_qzpinG",
+        "option_rHjGTJ"
+      ],
       "name": "Why the ear and wrist",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "WHY THE EAR BEATS THE WRIST",
+        "image": "shopify://shop_images/4b42e1ce-24c0-46cc-beee-1f4ea95bc5ec.png"
       }
     },
     "app_bio3_jVNAE3": {
       "type": "app-bio3",
       "name": "Fits into systems",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "FITS INTO EXISTING SYSTEMS",
+        "title1": "Wireless Sync",
+        "text1": "BLE-compatible with tactical radios and wearables",
+        "title2": "Secure Data",
+        "text2": "AES-256 encryption, zero local storage",
+        "title3": "Comms + Sensor Compatible",
+        "text3": "One device, dual function — hearing + health"
       }
     },
     "app_bio4_3xhw6t": {
       "type": "app-bio4",
       "name": "Operation ready",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "OPERATOR-READY",
+        "text1": "Cognitive performance monitoring",
+        "text2": "Warfighter readiness tracking",
+        "text3": "Real-time health analytics"
       }
     },
     "app_bio5_ag8nqQ": {
       "type": "app-bio5",
       "name": "Join Us",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "JOIN US",
+        "card_sub_title": "Let's evolve together.",
+        "button_text": "SCHEDULE A DEMO",
+        "button_url": ""
       }
     }
   },
