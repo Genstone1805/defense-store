@@ -75,7 +75,7 @@
             "badge": "",
             "button_text": "Request a scanning event for your team",
             "button_url": "",
-            "image": "shopify://shop_images/download_19.svg",
+            "image": "shopify://shop_images/svgviewer-png-output.png",
             "bg_color": "#0d0d0d"
           }
         },
@@ -87,7 +87,7 @@
             "badge": "",
             "button_text": "SEE UPCOMING EVENTS",
             "button_url": "shopify://collections/all",
-            "image": "shopify://shop_images/download_3.svg",
+            "image": "shopify://shop_images/svgviewer-png-output_1.png",
             "bg_color": "#0d0d0d"
           }
         }
@@ -138,8 +138,8 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23"
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23"
       }
     },
     "app_card_9_64K9Fq": {
@@ -173,8 +173,8 @@
         "text": "Schedule a scan, get gear that fits, and prepare for the next evolution in protection.",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#B6AC87",
-        "secondary_color": "#7B0F23"
+        "primary_color": "#b6ac87",
+        "secondary_color": "#7b0f23"
       }
     }
   },
