@@ -555,6 +555,41 @@
         "bottom_title": "Featured Products",
         "side_image": "shopify://shop_images/imgi_35_864a9bfd-9667-4c95-b683-2c86443241bc.png"
       }
+    },
+    "app_card_9_mXTn4g": {
+      "type": "app-card-9",
+      "blocks": {
+        "button_hYtTA7": {
+          "type": "button",
+          "settings": {
+            "button_text": "REQUEST A CONSULTATION",
+            "button_url": "",
+            "button_type": "fill"
+          }
+        },
+        "button_ahLaJw": {
+          "type": "button",
+          "settings": {
+            "button_text": "CONTACT OUR TEAM",
+            "button_url": "",
+            "button_type": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "button_hYtTA7",
+        "button_ahLaJw"
+      ],
+      "name": "Full With Card",
+      "settings": {
+        "background_color": "#0d0d0d",
+        "title": "HAVE A SPECIFIC USE CASE?",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#B6AC87",
+        "secondary_color": "#7B0F23"
+      }
     }
   },
   "order": [
@@ -567,6 +602,7 @@
     "app_uses2_jPQCjU",
     "app_uses2_VWDAqX",
     "app_uses2_bfcYRH",
-    "app_uses2_yWeq8q"
+    "app_uses2_yWeq8q",
+    "app_card_9_mXTn4g"
   ]
 }
