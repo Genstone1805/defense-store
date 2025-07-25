@@ -1,22 +1,13 @@
-
-      <section
-        class="py-16 bg-muted/5 transition-all duration-1000 delay-200 opacity-100 translate-y-0"
-      >
-        <div class="container mx-auto px-4">
-          <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-black text-white mb-6 uppercase">
-              Hearing Protection That Scales Across Every High-Noise Environment
-            </h2>
-            <p class="text-lg text-[#afa38e] leading-relaxed mb-8">
-              More than 22 million U.S. workers are exposed to hazardous noise
-              each year, yet most universal earplugs fail to seal properly.
-              Aware Defense combines the FDA-cleared eFit 3D Scanner with
-              custom-molded ear protection and optional biometric sensors so
-              organizations can deploy mission-grade safety at enterprise scale.
-            </p>
-          </div>
-        </div>
-      </section>
+<section
+  class="py-20 bg-muted/5 transition-all duration-1000 delay-200 opacity-100 bg-[#0d0d0d]"
+>
+  <div class="mx-auto px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-5xl font-black text-white mb-6 uppercase">{{ section.settings.card_title }}</p>
+      <p class="text-[15px] text-[#afa38e] leading-relaxed mb-8">{{ section.settings.text }}</p>
+    </div>
+  </div>
+</section>
 
 {% schema %}
 {
@@ -25,27 +16,15 @@
   "settings": [
     {
       "type": "text",
-      "id": "title",
+      "id": "card_title",
       "label": "Title",
-      "default": "Default Title"
+      "default": "Hearing Protection That Scales Across Every High-Noise Environment"
     },
     {
-      "type": "color",
-      "id": "primary_color",
-      "label": "Primary Color",
-      "default": "#AFA38E"
-    },
-    {
-      "type": "color",
-      "id": "secondary_color",
-      "label": "Secondary Color",
-      "default": "#7B0F23"
-    },
-    {
-      "type": "color",
-      "id": "tertiary_color",
-      "label": "tertiary Color",
-      "default": "#695e49"
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "More than 22 million U.S. workers are exposed to hazardous noise each year, yet most universal earplugs fail to seal properly. Aware Defense combines the FDA-cleared eFit 3D Scanner with custom-molded ear protection and optional biometric sensors so organizations can deploy mission-grade safety at enterprise scale."
     }
   ],
 

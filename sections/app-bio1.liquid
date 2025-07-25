@@ -1,20 +1,20 @@
 <section
-  class="py-20 transition-all duration-1000 delay-200 opacity-100 translate-y-0"
+  class="py-20 transition-all duration-1000 delay-200 opacity-100 translate-y-0 bg-[#0d0d0d]"
 >
-  <div class="container mx-auto px-4">
-    <div class="max-w-6xl mx-auto">
-      <h2
-        class="text-4xl font-black text-white text-center mb-16 uppercase"
+  <div class="mx-auto px-4">
+    <div class="max-w-[1100px] mx-auto">
+      <p
+        class="text-6xl font-black text-white text-center mb-16 uppercase"
       >
-        WHAT WE CAN MEASURE — RIGHT FROM THE EAR
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {{ section.settings.card_title }}
+      </p>
+      <div class="app-bio-1-grid">
         <div
           class="border text-card-foreground shadow-sm h-full bg-[#afa38e]/10 border-[#afa38e]/30 rounded-xl transition-all duration-700 delay-400 opacity-100 translate-y-0"
         >
-          <div class="p-6 text-center h-full flex flex-col">
+          <div class="px-6 py-12 text-center h-full flex flex-col">
             <div
-              class="w-16 h-16 bg-[#7b0f23] rounded-lg mx-auto mb-6 flex items-center justify-center"
+              class="size-24 bg-[#7b0f23] rounded-lg mx-auto mb-6 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-activity h-8 w-8 text-white"
+                class="lucide lucide-activity size-14 text-white"
               >
                 <path
                   d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
@@ -36,21 +36,21 @@
             <h3
               class="text-lg font-black text-[#afa38e] mb-4 uppercase min-h-[3rem] flex items-center justify-center"
             >
-              Core Temperature
+              {{ section.settings.title1 }}
             </h3>
             <p
-              class="text-white text-sm leading-relaxed flex-1 flex items-center"
+              class="text-white text-[14px] leading-relaxed flex-1 flex items-center"
             >
-              Real-time thermal data from internal ear canal
+              {{ section.settings.text1 }}
             </p>
           </div>
         </div>
         <div
           class="border text-card-foreground shadow-sm h-full bg-[#afa38e]/10 border-[#afa38e]/30 rounded-xl transition-all duration-700 delay-500 opacity-100 translate-y-0"
         >
-          <div class="p-6 text-center h-full flex flex-col">
+          <div class="px-6 py-12 text-center h-full flex flex-col">
             <div
-              class="w-16 h-16 bg-[#7b0f23] rounded-lg mx-auto mb-6 flex items-center justify-center"
+              class="size-24 bg-[#7b0f23] rounded-lg mx-auto mb-6 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-brain h-8 w-8 text-white"
+                class="lucide lucide-brain size-14 text-white"
               >
                 <path
                   d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
@@ -84,21 +84,21 @@
             <h3
               class="text-lg font-black text-[#afa38e] mb-4 uppercase min-h-[3rem] flex items-center justify-center"
             >
-              EEG Signals
+              {{ section.settings.title2 }}
             </h3>
             <p
-              class="text-white text-sm leading-relaxed flex-1 flex items-center"
+              class="text-white text-[14px] leading-relaxed flex-1 flex items-center"
             >
-              Brainwave + fatigue data from consistent earpiece positioning
+              {{ section.settings.text2 }}
             </p>
           </div>
         </div>
         <div
           class="border text-card-foreground shadow-sm h-full bg-[#afa38e]/10 border-[#afa38e]/30 rounded-xl transition-all duration-700 delay-600 opacity-100 translate-y-0"
         >
-          <div class="p-6 text-center h-full flex flex-col">
+          <div class="px-6 py-12 text-center h-full flex flex-col">
             <div
-              class="w-16 h-16 bg-[#7b0f23] rounded-lg mx-auto mb-6 flex items-center justify-center"
+              class="size-24 bg-[#7b0f23] rounded-lg mx-auto mb-6 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +110,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-heart h-8 w-8 text-white"
+                class="lucide lucide-heart size-14 text-white"
               >
                 <path
                   d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
@@ -120,21 +120,21 @@
             <h3
               class="text-lg font-black text-[#afa38e] mb-4 uppercase min-h-[3rem] flex items-center justify-center"
             >
-              Cardiovascular Monitoring
+              {{ section.settings.title3 }}
             </h3>
             <p
-              class="text-white text-sm leading-relaxed flex-1 flex items-center"
+              class="text-white text-[14px] leading-relaxed flex-1 flex items-center"
             >
-              Passive HRV / pulse via optical sensors
+              {{ section.settings.text3 }}
             </p>
           </div>
         </div>
         <div
           class="border text-card-foreground shadow-sm h-full bg-[#afa38e]/10 border-[#afa38e]/30 rounded-xl transition-all duration-700 delay-700 opacity-100 translate-y-0"
         >
-          <div class="p-6 text-center h-full flex flex-col">
+          <div class="px-6 py-12 text-center h-full flex flex-col">
             <div
-              class="w-16 h-16 bg-[#7b0f23] rounded-lg mx-auto mb-6 flex items-center justify-center"
+              class="size-24 bg-[#7b0f23] rounded-lg mx-auto mb-6 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +146,7 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-eye h-8 w-8 text-white"
+                class="lucide lucide-eye size-14 text-white"
               >
                 <path
                   d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
@@ -157,12 +157,12 @@
             <h3
               class="text-lg font-black text-[#afa38e] mb-4 uppercase min-h-[3rem] flex items-center justify-center"
             >
-              Cognitive Readiness
+              {{ section.settings.title4 }}
             </h3>
             <p
-              class="text-white text-sm leading-relaxed flex-1 flex items-center"
+              class="text-white text-[14px] leading-relaxed flex-1 flex items-center"
             >
-              Future-state: focus, reaction time, alertness data
+              {{ section.settings.text4 }}
             </p>
           </div>
         </div>
@@ -171,6 +171,26 @@
   </div>
 </section>
 
+<style>
+  .app-bio-1-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .app-bio-1-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .app-bio-1-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
+
 {% schema %}
 {
   "name": "What we Measure",
@@ -178,27 +198,57 @@
   "settings": [
     {
       "type": "text",
-      "id": "title",
+      "id": "card_title",
       "label": "Title",
-      "default": "Default Title"
+      "default": "WHAT WE CAN MEASURE — RIGHT FROM THE EAR"
     },
     {
-      "type": "color",
-      "id": "primary_color",
-      "label": "Primary Color",
-      "default": "#AFA38E"
+      "type": "text",
+      "id": "title1",
+      "label": "Title 1",
+      "default": "Core Temperature"
     },
     {
-      "type": "color",
-      "id": "secondary_color",
-      "label": "Secondary Color",
-      "default": "#7B0F23"
+      "type": "text",
+      "id": "text1",
+      "label": "Text 1",
+      "default": "Real-time thermal data from internal ear canal"
     },
     {
-      "type": "color",
-      "id": "tertiary_color",
-      "label": "tertiary Color",
-      "default": "#695e49"
+      "type": "text",
+      "id": "title2",
+      "label": "Title 2",
+      "default": "EEG Signals"
+    },
+    {
+      "type": "text",
+      "id": "text2",
+      "label": "Text 2",
+      "default": "Brainwave + fatigue data from consistent earpiece positioning"
+    },
+    {
+      "type": "text",
+      "id": "title3",
+      "label": "Title 3",
+      "default": "Cardiovascular Monitoring"
+    },
+    {
+      "type": "text",
+      "id": "text3",
+      "label": "Text 3",
+      "default": "Passive HRV / pulse via optical sensors"
+    },
+    {
+      "type": "text",
+      "id": "title4",
+      "label": "Title 4",
+      "default": "Cognitive Readiness"
+    },
+    {
+      "type": "text",
+      "id": "text4",
+      "label": "Text 4",
+      "default": "Future-state: focus, reaction time, alertness data"
     }
   ],
 

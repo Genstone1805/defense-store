@@ -1,32 +1,35 @@
 <section
-  class="py-20 transition-all duration-1000 delay-600 translate-y-8"
+  class="py-20 transition-all duration-1000 delay-600 bg-[#0d0d0d]"
 >
   <div class="container mx-auto px-4">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl font-black text-white mb-8 uppercase">JOIN US</h2>
-      <p class="text-xl text-[#afa38e] leading-relaxed mb-10">Let's evolve together.</p>
+      <p class="text-6xl font-black text-white mb-8 uppercase">JOIN US</p>
+      <p class="text-[18px] text-[#afa38e] leading-relaxed mb-10">Let's evolve together.</p>
       <div class="flex justify-center">
-        <button
-          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
-          style="background-color: rgb(149, 24, 43)"
-        >
-          SCHEDULE A DEMO
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-arrow-right ml-2 h-5 w-5"
+        <div class="text-center mt-12">
+          <a
+            href="{{ section.settings.button_url }}"
+            class="inline-flex text-[17px] items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors  bg-primary hover:bg-primary/90  text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
+            style="background-color: rgb(149, 24, 43)"
           >
-            <path d="M5 12h14"></path>
-            <path d="m12 5 7 7-7 7"></path>
-          </svg>
-        </button>
+            {{ section.settings.button_text }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right ml-2 size-7"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -39,27 +42,26 @@
   "settings": [
     {
       "type": "text",
-      "id": "title",
+      "id": "card_title",
       "label": "Title",
-      "default": "Default Title"
+      "default": "JOIN US"
     },
     {
-      "type": "color",
-      "id": "primary_color",
-      "label": "Primary Color",
-      "default": "#AFA38E"
+      "type": "text",
+      "id": "card_sub_title",
+      "label": "Sub Title",
+      "default": "Let's evolve together."
     },
     {
-      "type": "color",
-      "id": "secondary_color",
-      "label": "Secondary Color",
-      "default": "#7B0F23"
+      "type": "text",
+      "id": "button_text",
+      "label": "Buttton Title",
+      "default": "SCHEDULE A DEMO"
     },
     {
-      "type": "color",
-      "id": "tertiary_color",
-      "label": "tertiary Color",
-      "default": "#695e49"
+      "type": "url",
+      "id": "button_url",
+      "label": "Buttton Url"
     }
   ],
 

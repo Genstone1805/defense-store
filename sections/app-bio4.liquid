@@ -1,19 +1,19 @@
 <section
-  class="py-20 bg-[#2626261a]/10 transition-all duration-1000 delay-500 translate-y-8"
+  class="py-20 bg-[#0d0d0d] transition-all duration-1000 delay-500"
 >
-  <div class="container mx-auto px-4">
-    <div class="max-w-6xl mx-auto">
-      <h2
-        class="text-4xl font-black text-white text-center mb-16 uppercase"
+  <div class="mx-auto px-4">
+    <div class="max-w-[1100px] mx-auto">
+      <p
+        class="text-6xl font-black text-white text-center mb-12 uppercase"
       >
-        OPERATOR-READY
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {{ section.settings.card_title }}
+      </p>
+      <div class="app-bio-4-grid">
         <div
           class="bg-[#afa38e]/20 border border-[#afa38e]/30 rounded-lg p-6 text-center transition-all duration-500 delay-600 translate-y-4"
         >
           <div
-            class="w-12 h-12 bg-[#7b0f23] rounded-lg mx-auto mb-4 flex items-center justify-center"
+            class="size-20 bg-[#7b0f23] rounded-lg mx-auto mb-4 flex items-center justify-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-brain h-6 w-6 text-white"
+              class="lucide lucide-brain size-10 text-white"
             >
               <path
                 d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
@@ -44,13 +44,13 @@
               <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
             </svg>
           </div>
-          <p class="text-[#afa38e] font-black text-sm uppercase">Cognitive performance monitoring</p>
+          <p class="text-[#afa38e] font-black text-[14px] uppercase">{{ section.settings.text1 }}</p>
         </div>
         <div
           class="bg-[#afa38e]/20 border border-[#afa38e]/30 rounded-lg p-6 text-center transition-all duration-500 delay-700 translate-y-4"
         >
           <div
-            class="w-12 h-12 bg-[#7b0f23] rounded-lg mx-auto mb-4 flex items-center justify-center"
+            class="size-20 bg-[#7b0f23] rounded-lg mx-auto mb-4 flex items-center justify-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,20 +62,20 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-target h-6 w-6 text-white"
+              class="lucide lucide-target size-10 text-white"
             >
               <circle cx="12" cy="12" r="10"></circle>
               <circle cx="12" cy="12" r="6"></circle>
               <circle cx="12" cy="12" r="2"></circle>
             </svg>
           </div>
-          <p class="text-[#afa38e] font-black text-sm uppercase">Warfighter readiness tracking</p>
+          <p class="text-[#afa38e] font-black text-[14px] uppercase">{{ section.settings.text2 }}</p>
         </div>
         <div
           class="bg-[#afa38e]/20 border border-[#afa38e]/30 rounded-lg p-6 text-center transition-all duration-500 delay-800 translate-y-4"
         >
           <div
-            class="w-12 h-12 bg-[#7b0f23] rounded-lg mx-auto mb-4 flex items-center justify-center"
+            class="size-20 bg-[#7b0f23] rounded-lg mx-auto mb-4 flex items-center justify-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -87,19 +87,33 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-zap h-6 w-6 text-white"
+              class="lucide lucide-zap size-10 text-white"
             >
               <path
                 d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
               ></path>
             </svg>
           </div>
-          <p class="text-[#afa38e] font-black text-sm uppercase">Real-time health analytics</p>
+          <p class="text-[#afa38e] font-black text-[14px] uppercase">{{ section.settings.text3 }}</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .app-bio-4-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .app-bio-4-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
 
 {% schema %}
 {
@@ -108,27 +122,27 @@
   "settings": [
     {
       "type": "text",
-      "id": "title",
+      "id": "card_title",
       "label": "Title",
-      "default": "Default Title"
+      "default": "OPERATOR-READY"
     },
     {
-      "type": "color",
-      "id": "primary_color",
-      "label": "Primary Color",
-      "default": "#AFA38E"
+      "type": "text",
+      "id": "text1",
+      "label": "Text 1",
+      "default": "Cognitive performance monitoring"
     },
     {
-      "type": "color",
-      "id": "secondary_color",
-      "label": "Secondary Color",
-      "default": "#7B0F23"
+      "type": "text",
+      "id": "text2",
+      "label": "Text 2",
+      "default": "Warfighter readiness tracking"
     },
     {
-      "type": "color",
-      "id": "tertiary_color",
-      "label": "tertiary Color",
-      "default": "#695e49"
+      "type": "text",
+      "id": "text3",
+      "label": "Text 3",
+      "default": "Real-time health analytics"
     }
   ],
 

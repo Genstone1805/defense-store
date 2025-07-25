@@ -1,69 +1,64 @@
 <section
-  class="py-20 bg-[#2626261a]/10 transition-all duration-1000 delay-300 opacity-100 translate-y-0"
+  class="py-20 bg-[#0d0d0d] transition-all duration-1000 delay-300 opacity-100 translate-y-0"
 >
-  <div class="container mx-auto px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <div class="mx-auto px-4">
+    <div class="max-w-[1100px] mx-auto">
+      <div class="app-bio-2-grid items-center">
         <div
           class="transition-all duration-700 delay-500 opacity-100 translate-x-0"
         >
           <div
             class="w-full h-96 bg-[#0d0d0d]/50 rounded-xl flex items-center justify-center border border-[#afa38e]/30"
           >
-            <img
-              src="/lovable-uploads/4b42e1ce-24c0-46cc-beee-1f4ea95bc5ec.png"
-              alt="Biometric Ear Device"
-              class="w-full h-full object-contain p-8"
-            >
+            {% if section.settings.image %}
+              <img
+                src="{{ section.settings.image | image_url }}"
+                alt="Biometric Ear Device"
+                class="w-full h-full object-contain p-8"
+                width="550"
+                height="382"
+              >
+            {% endif %}
           </div>
         </div>
         <div
           class="transition-all duration-700 delay-700 opacity-100 translate-x-0"
         >
-          <h2 class="text-3xl font-black text-white mb-8 uppercase">WHY THE EAR BEATS THE WRIST</h2>
+          <h2 class="text-3xl font-black text-white mb-8 uppercase">{{ section.settings.card_title }}</h2>
           <div class="space-y-6">
-            <div class="flex items-start space-x-4">
-              <div
-                class="w-2 h-2 bg-[#7b0f23] rounded-full mt-3 flex-shrink-0"
-              ></div>
-              <p class="text-white leading-relaxed">
-                <span class="font-semibold text-[#afa38e]">Improved sensor contact</span>
-                — Consistent positioning ensures reliable data collection
-              </p>
-            </div>
-            <div class="flex items-start space-x-4">
-              <div
-                class="w-2 h-2 bg-[#7b0f23] rounded-full mt-3 flex-shrink-0"
-              ></div>
-              <p class="text-white leading-relaxed">
-                <span class="font-semibold text-[#afa38e]">Shielded from environmental noise</span>
-                — Protected from temperature fluctuations and interference
-              </p>
-            </div>
-            <div class="flex items-start space-x-4">
-              <div
-                class="w-2 h-2 bg-[#7b0f23] rounded-full mt-3 flex-shrink-0"
-              ></div>
-              <p class="text-white leading-relaxed">
-                <span class="font-semibold text-[#afa38e]">More accurate EEG and core temp data</span>
-                — Proximity to brain and core temperature source
-              </p>
-            </div>
-            <div class="flex items-start space-x-4">
-              <div
-                class="w-2 h-2 bg-[#7b0f23] rounded-full mt-3 flex-shrink-0"
-              ></div>
-              <p class="text-white leading-relaxed">
-                <span class="font-semibold text-[#afa38e]">No interference with gear</span>
-                — Compatible with uniforms, gloves, and weapons handling
-              </p>
-            </div>
+            {% for block in section.blocks %}
+              <div class="flex items-start space-x-4">
+                <div
+                  class="size-4 bg-[#7b0f23] rounded-full mt-3 flex-shrink-0"
+                >
+                  <p></p>
+                </div>
+                <p class="text-white leading-relaxed">
+                  <span class="font-semibold text-[#afa38e]">{{ block.settigs.text1 }}</span>
+                  — {{ block.settings.text2 }}
+                </p>
+              </div>
+            {% endfor %}
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .app-bio-2-grid {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .app-bio-2-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
 
 {% schema %}
 {
@@ -72,31 +67,37 @@
   "settings": [
     {
       "type": "text",
-      "id": "title",
+      "id": "card_title",
       "label": "Title",
-      "default": "Default Title"
+      "default": "WHY THE EAR BEATS THE WRIST"
     },
     {
-      "type": "color",
-      "id": "primary_color",
-      "label": "Primary Color",
-      "default": "#AFA38E"
-    },
-    {
-      "type": "color",
-      "id": "secondary_color",
-      "label": "Secondary Color",
-      "default": "#7B0F23"
-    },
-    {
-      "type": "color",
-      "id": "tertiary_color",
-      "label": "tertiary Color",
-      "default": "#695e49"
+      "type": "image_picker",
+      "id": "image",
+      "label": "Side Image"
     }
   ],
 
-  "blocks": [],
+  "blocks": [
+    {
+      "type": "option",
+      "name": "Option",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text1",
+          "label": "Text 1",
+          "default": "Text 1"
+        },
+        {
+          "type": "text",
+          "id": "text2",
+          "label": "Text 2",
+          "default": "Text 2"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Why the ear and wrist",
