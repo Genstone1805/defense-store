@@ -25,45 +25,66 @@
       "type": "app-book1",
       "name": "Video Card",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "top_text": "The eFit 3D Scanner represents a breakthrough in non-contact ear scanning technology, delivering the precision and safety that traditional methods simply cannot match. As the world's only FDA-cleared, non-contact 3D ear scanner, the eFit system transforms how custom hearing protection is created while establishing the foundation for advanced biometric capabilities.",
+        "video_title": "Zero Contact. Zero Risk. Maximum Precision.",
+        "video_url": "https://www.canva.com/design/DAGtO6bmHNg/1fMTN4pC8ZG6c2waB1oo8w/watch?embed",
+        "bottom_text": "Revolutionary Non-Contact Technology"
       }
     },
     "app_book2_bxQr3b": {
       "type": "app-book2",
       "name": "Key Tech",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "Key Technical Advantages",
+        "text1": "FDA-cleared for medical device applications",
+        "text2": "Non-contact scanning eliminates safety risks - no risk of eardrum puncture or injury",
+        "text3": "Two-micron precision - medical-grade accuracy for perfect fit",
+        "text4": "90-second scanning time - rapid data collection without discomfort",
+        "text5": "Captures the critical second bend - the only technology capable of accurately mapping this vital area"
       }
     },
     "app_book3_V4Lyri": {
       "type": "app-book3",
       "name": "Only Tech",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "The Only Technology to Capture the Second Bend",
+        "top_text": "What sets the eFit apart from all other scanning technologies is its unique ability to accurately capture the second bend of the ear canal. This anatomical feature, located deep within the ear canal, is critical for:",
+        "text1": "Perfect seal integrity for hearing protection effectiveness",
+        "text2": "Perfect seal integrity for hearing protection effectiveness",
+        "text3": "Perfect seal integrity for hearing protection effectiveness",
+        "text4": "Perfect seal integrity for hearing protection effectiveness",
+        "bottom_text": "The second bend is strategically positioned close to the brain, major blood vessels, and Arnold's nerve (the auricular branch of the vagus nerve). This proximity enables the collection of medical-grade data that universal, one-size-fits-all devices cannot consistently capture."
       }
     },
     "app_book4_dK4x4F": {
       "type": "app-book4",
       "name": "Tech Specification",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "Technical Specifications and Capabilities",
+        "left_card_title": "Precision Engineering",
+        "top_left_card_title": "Scanning Accuracy:",
+        "bottom_left_card_title": "Scanning Technology:",
+        "right_card_title": "Safety and Compliance",
+        "top_right_card_title": "Medical Device Clearance:",
+        "bottom_right_card_title": "Operational Safety:"
       }
     },
     "app_book5_NTgbFR": {
       "type": "app-book5",
       "name": "Military Application",
+      "settings": {
+        "card_title": "Military and Defense Applications",
+        "card_sub_title": "Mission-Critical Reliability",
+        "top_text": "The eFit scanner has been validated by Special Operations Forces, Navy aviators, and elite military units across multiple service branches. Field testing has demonstrated superior performance in the most demanding operational environments.",
+        "left_title": "Deployment Advantages:",
+        "right_title": "Operational Validation:",
+        "button_text": "SEE OTHER USE CASES",
+        "button_url": ""
+      }
+    },
+    "app_book6_jhk38i": {
+      "type": "app-book6",
+      "name": "Proof Architecture",
       "settings": {
         "title": "Default Title",
         "primary_color": "#AFA38E",
@@ -76,8 +97,8 @@
       "name": "Future Proof",
       "settings": {
         "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23",
         "tertiary_color": "#695e49"
       }
     }
@@ -89,6 +110,7 @@
     "app_book3_V4Lyri",
     "app_book4_dK4x4F",
     "app_book5_NTgbFR",
+    "app_book6_jhk38i",
     "app_book7_PwAHaQ"
   ]
 }
