@@ -21,9 +21,59 @@
         "secondary_color": "#7b0f23"
       }
     },
-    "app_card21_ckDWWi": {
-      "type": "app-card21",
-      "name": "3D Scanner",
+    "app_book1_RFKDwG": {
+      "type": "app-book1",
+      "name": "Video Card",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_book2_bxQr3b": {
+      "type": "app-book2",
+      "name": "Key Tech",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_book3_V4Lyri": {
+      "type": "app-book3",
+      "name": "Only Tech",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_book4_dK4x4F": {
+      "type": "app-book4",
+      "name": "Tech Specification",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_book5_NTgbFR": {
+      "type": "app-book5",
+      "name": "Military Application",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_book7_PwAHaQ": {
+      "type": "app-book7",
+      "name": "Future Proof",
       "settings": {
         "title": "Default Title",
         "primary_color": "#AFA38E",
@@ -34,6 +84,11 @@
   },
   "order": [
     "main",
-    "app_card21_ckDWWi"
+    "app_book1_RFKDwG",
+    "app_book2_bxQr3b",
+    "app_book3_V4Lyri",
+    "app_book4_dK4x4F",
+    "app_book5_NTgbFR",
+    "app_book7_PwAHaQ"
   ]
 }

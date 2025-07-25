@@ -20,20 +20,9 @@
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23"
       }
-    },
-    "app_card22_iMRGrR": {
-      "type": "app-card22",
-      "name": "Biometrics",
-      "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
-      }
     }
   },
   "order": [
-    "main",
-    "app_card22_iMRGrR"
+    "main"
   ]
 }
