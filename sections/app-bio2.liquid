@@ -1,0 +1,107 @@
+<section
+  class="py-20 bg-[#2626261a]/10 transition-all duration-1000 delay-300 opacity-100 translate-y-0"
+>
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div
+          class="transition-all duration-700 delay-500 opacity-100 translate-x-0"
+        >
+          <div
+            class="w-full h-96 bg-[#0d0d0d]/50 rounded-xl flex items-center justify-center border border-[#afa38e]/30"
+          >
+            <img
+              src="/lovable-uploads/4b42e1ce-24c0-46cc-beee-1f4ea95bc5ec.png"
+              alt="Biometric Ear Device"
+              class="w-full h-full object-contain p-8"
+            >
+          </div>
+        </div>
+        <div
+          class="transition-all duration-700 delay-700 opacity-100 translate-x-0"
+        >
+          <h2 class="text-3xl font-black text-white mb-8 uppercase">WHY THE EAR BEATS THE WRIST</h2>
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-2 h-2 bg-[#7b0f23] rounded-full mt-3 flex-shrink-0"
+              ></div>
+              <p class="text-white leading-relaxed">
+                <span class="font-semibold text-[#afa38e]">Improved sensor contact</span>
+                — Consistent positioning ensures reliable data collection
+              </p>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-2 h-2 bg-[#7b0f23] rounded-full mt-3 flex-shrink-0"
+              ></div>
+              <p class="text-white leading-relaxed">
+                <span class="font-semibold text-[#afa38e]">Shielded from environmental noise</span>
+                — Protected from temperature fluctuations and interference
+              </p>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-2 h-2 bg-[#7b0f23] rounded-full mt-3 flex-shrink-0"
+              ></div>
+              <p class="text-white leading-relaxed">
+                <span class="font-semibold text-[#afa38e]">More accurate EEG and core temp data</span>
+                — Proximity to brain and core temperature source
+              </p>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div
+                class="w-2 h-2 bg-[#7b0f23] rounded-full mt-3 flex-shrink-0"
+              ></div>
+              <p class="text-white leading-relaxed">
+                <span class="font-semibold text-[#afa38e]">No interference with gear</span>
+                — Compatible with uniforms, gloves, and weapons handling
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Biometrics",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Default Title"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#695e49"
+    }
+  ],
+
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Biometrics",
+      "category": "Uneditable"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,102 @@
+<section
+  class="py-20 bg-muted/10 transition-all duration-1000 delay-400 opacity-100 translate-y-0"
+>
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-white text-center mb-16">Technical Specifications and Capabilities</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div
+          class="border text-card-foreground shadow-sm bg-[#afa38e]/10 border-[#afa38e]/30 rounded-xl"
+        >
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-white mb-6">Precision Engineering</h3>
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-bold text-[#695e49] mb-3">Scanning Accuracy:</h4>
+                <div class="space-y-2 text-[#afa38e]">
+                  <p>• Volumetric accuracy to 90 microns (0.09mm)</p>
+                  <p>• Two-micron precision for critical measurement points</p>
+                  <p>• Over 1 million data points captured per scan</p>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-bold text-[#695e49] mb-3">Scanning Technology:</h4>
+                <div class="space-y-2 text-[#afa38e]">
+                  <p>• Patented radial-light scanning system</p>
+                  <p>• Integrated 3D tracking system for precise positioning</p>
+                  <p>• Advanced laser scanning with three scanning modes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border text-card-foreground shadow-sm bg-[#afa38e]/10 border-[#afa38e]/30 rounded-xl"
+        >
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-white mb-6">Safety and Compliance</h3>
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-bold text-[#695e49] mb-3">Medical Device Clearance:</h4>
+                <div class="space-y-2 text-[#afa38e]">
+                  <p>• FDA 510(k) clearance for medical device classification</p>
+                  <p>• CE marking for European compliance</p>
+                  <p>• Class 2 laser product certification (EN 60825)</p>
+                  <p>• LED photobiological safety (EN 62471)</p>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-bold text-[#695e49] mb-3">Operational Safety:</h4>
+                <div class="space-y-2 text-[#afa38e]">
+                  <p>• Zero contact eliminates risk of ear canal injury</p>
+                  <p>• No silicone injection removes risk of eardrum puncture</p>
+                  <p>• No special certification required for operators</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Tech Specification",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Default Title"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#695e49"
+    }
+  ],
+
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Tech Specification",
+      "category": "3D Scanner cards"
+    }
+  ]
+}
+{% endschema %}

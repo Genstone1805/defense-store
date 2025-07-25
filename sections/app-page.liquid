@@ -1,5 +1,5 @@
 <section
-  class="relative banner bg-cover bg-center min-h-[440px] text-white"
+  class="relative banner bg-cover bg-center min-h-[440px] text-white page-card"
 >
   <div
     class="bg-black/70 min-h-[440px] flex items-center justify-center px-6 text-center"
@@ -23,6 +23,13 @@
 {{ page.content }}
 
 <style>
+  .page-card {
+    background-image: url('{{ section.settings.page_image | image_url: width: 1600 }}');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   .banner {
     background-image: url('{{ section.settings.background_image | image_url: width: 1600 }}');
     background-repeat: no-repeat;
@@ -33,7 +40,6 @@
     }
   }
 </style>
-
 
 {% schema %}
 {
@@ -85,7 +91,12 @@
     {
       "type": "image_picker",
       "id": "background_image",
-      "label": "Background Image"
+      "label": "Banner Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "page_image",
+      "label": "Page Background Image"
     }
   ]
 }

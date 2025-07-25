@@ -1,0 +1,167 @@
+<section
+  class="py-20 transition-all duration-1000 delay-400 translate-y-8"
+>
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2
+        class="text-4xl font-black text-white text-center mb-16 uppercase"
+      >
+        FITS INTO EXISTING SYSTEMS
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="border text-card-foreground shadow-sm h-full bg-[#7b0f23]/10 border-[#7b0f23]/30 rounded-xl transition-all duration-700 delay-600 translate-y-8"
+        >
+          <div class="p-8 text-center h-full flex flex-col">
+            <div
+              class="w-16 h-16 bg-olive-drab rounded-lg mx-auto mb-6 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-wifi h-8 w-8 text-white"
+              >
+                <path d="M12 20h.01"></path>
+                <path d="M2 8.82a15 15 0 0 1 20 0"></path>
+                <path d="M5 12.859a10 10 0 0 1 14 0"></path>
+                <path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-black text-white mb-4 uppercase min-h-[3rem] flex items-center justify-center"
+            >
+              Wireless Sync
+            </h3>
+            <p
+              class="text-[#afa38e] leading-relaxed flex-1 flex items-center"
+            >
+              BLE-compatible with tactical radios and wearables
+            </p>
+          </div>
+        </div>
+        <div
+          class="border text-card-foreground shadow-sm h-full bg-[#7b0f23]/10 border-[#7b0f23]/30 rounded-xl transition-all duration-700 delay-700 translate-y-8"
+        >
+          <div class="p-8 text-center h-full flex flex-col">
+            <div
+              class="w-16 h-16 bg-olive-drab rounded-lg mx-auto mb-6 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shield h-8 w-8 text-white"
+              >
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                ></path>
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-black text-white mb-4 uppercase min-h-[3rem] flex items-center justify-center"
+            >
+              Secure Data
+            </h3>
+            <p
+              class="text-[#afa38e] leading-relaxed flex-1 flex items-center"
+            >
+              AES-256 encryption, zero local storage
+            </p>
+          </div>
+        </div>
+        <div
+          class="border text-card-foreground shadow-sm h-full bg-[#7b0f23]/10 border-[#7b0f23]/30 rounded-xl transition-all duration-700 delay-800 translate-y-8"
+        >
+          <div class="p-8 text-center h-full flex flex-col">
+            <div
+              class="w-16 h-16 bg-olive-drab rounded-lg mx-auto mb-6 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-radio h-8 w-8 text-white"
+              >
+                <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path>
+                <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path>
+                <circle cx="12" cy="12" r="2"></circle>
+                <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path>
+                <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"></path>
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-black text-white mb-4 uppercase min-h-[3rem] flex items-center justify-center"
+            >
+              Comms + Sensor Compatible
+            </h3>
+            <p
+              class="text-[#afa38e] leading-relaxed flex-1 flex items-center"
+            >
+              One device, dual function — hearing + health
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Fit the ear",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Default Title"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#695e49"
+    }
+  ],
+
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Fit the ear",
+      "category": "Uneditable"
+    }
+  ]
+}
+{% endschema %}

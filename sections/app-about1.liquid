@@ -1,0 +1,69 @@
+<section
+  class="py-20 transition-all duration-1000 delay-200 translate-y-8"
+>
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-lg overflow-hidden">
+        <img
+          src="./Founder in tactical setting.png"
+          alt="Founder in tactical setting"
+          class="w-full h-[500px] object-cover"
+        >
+      </div>
+      <div>
+        <h2 class="text-5xl font-black text-[#695e49] mb-8 uppercase">AWARE BEGAN IN THE FIELD</h2>
+        <div class="space-y-6 text-xl text-white leading-relaxed">
+          <p>
+            Aware Defense was founded by a team of U.S. military veterans, engineers, and field medics who knew the pain
+            points firsthand.
+          </p>
+          <p>
+            What started as a mission to make better ear protection has grown into a platform for protection,
+            performance, and passive sensing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Aware in Field",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Default Title"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#AFA38E"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#7B0F23"
+    },
+    {
+      "type": "color",
+      "id": "tertiary_color",
+      "label": "tertiary Color",
+      "default": "#695e49"
+    }
+  ],
+
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Aware in Field",
+      "category": "About Us"
+    }
+  ]
+}
+{% endschema %}
