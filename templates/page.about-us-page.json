@@ -13,40 +13,133 @@
       "type": "app-page",
       "settings": {
         "background_color": "#0d0d0d",
-        "title": "Banner Title",
-        "text": "Banner Text",
-        "button_text": "Button Text",
+        "title": "BUILT BY OPERATORS",
+        "text": "TRUSTED BY ELITE UNITS",
+        "button_text": "",
         "button_url": "",
         "primary_color": "#b6ac87",
-        "secondary_color": "#7b0f23"
+        "secondary_color": "#7b0f23",
+        "background_image": "shopify://shop_images/imgi_27_fe973eea-926b-4ab5-9991-92cb270bd128.png"
       }
     },
     "app_about1_jmHPHi": {
       "type": "app-about1",
       "name": "Aware in Field",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "AWARE BEGAN IN THE FIELD",
+        "text1": "Aware Defense was founded by a team of U.S. military veterans, engineers, and field medics who knew the pain points firsthand.",
+        "text2": "What started as a mission to make better ear protection has grown into a platform for protection, performance, and passive sensing.",
+        "image": "shopify://shop_images/imgi_2_6d2d7d54-557a-44a3-98ce-ddba1d0dc62b.png"
       }
     },
     "app_about2_c4f9NW": {
       "type": "app-about2",
       "name": "Operation Principles",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "OUR OPERATING PRINCIPLES",
+        "sub_title": "Humans are more important than hardware",
+        "title1": "Fit Comes First",
+        "text1": "If it's not worn, it doesn't work. Comfort drives compliance in the field.",
+        "title2": "Communication Critical",
+        "text2": "Protection shouldn't block communication. Clear comms save lives.",
+        "title3": "Scalable Solutions",
+        "text3": "Everything we build must deploy at scale across diverse operations.",
+        "title4": "Future Ready Design",
+        "text4": "Our platform evolves with the mission and emerging technologies."
       }
     },
     "app_card3_eQqRLh": {
       "type": "app-card3",
+      "blocks": {
+        "card_GbRBLR": {
+          "type": "card",
+          "settings": {
+            "text": "\"We operate in some of the harshest conditions in the world. Aware's EarDefenders held up to salt, sand, and sustained flight hours. The passive protection is solid, and our aircrew say they actually want to wear them. These aren't just another issued item—they're mission-critical.\"",
+            "name": "– Osprey Pilot and Safety Officer"
+          }
+        },
+        "card_VxgBX6": {
+          "type": "card",
+          "settings": {
+            "text": "\"The Aware team showed up on time, set up quickly, and scanned our entire aircrew within a day. Their custom hearing protection fits flawlessly under our helmets and provides the best seal we've ever had with CEP over-molds. Professional, efficient, and 100% tailored for naval aviation.\"",
+            "name": "– Aviation Safety Officer"
+          }
+        },
+        "card_gt6FtW": {
+          "type": "card",
+          "settings": {
+            "text": "\"Aware Defense impressed me not only with their product quality but with their deep respect for the law enforcement community. Their support helps us continue our mission: ensuring that officers leave the job with the same level of protection and care they had while wearing the badge.\"",
+            "name": "– Retired Law Enforcement Professional"
+          }
+        },
+        "card_9C7yEH": {
+          "type": "card",
+          "settings": {
+            "text": "\"This experience has been extremely positive and I'm looking forward to helping your company provide invaluable hearing protection to our Sailors…and for years to come. It was like I felt a shift in morale when folks walked in and walked out (after scanning) and I'll be the first to admit that we needed this.\"",
+            "name": "– Combat Aviation Brigade"
+          }
+        },
+        "card_fRr8qE": {
+          "type": "card",
+          "settings": {
+            "text": "\"We've tried other 'custom' hearing protection solutions before, but nothing came close to the precision and comfort of what Aware Defense delivered. The 3D scans were fast and accurate, and our team had custom plugs in hand before the next rotation. This is what right looks like.\"",
+            "name": "– SERE Specialist"
+          }
+        },
+        "supporters_VA4YGf": {
+          "type": "supporters",
+          "settings": {
+            "logo": "shopify://shop_images/imgi_12_9ab5019f-203f-404b-89b1-a6411e681421.png"
+          }
+        },
+        "supporters_Mn6XHp": {
+          "type": "supporters",
+          "settings": {
+            "logo": "shopify://shop_images/imgi_11_2e7ebe91-8198-46cc-8c0f-a99ad3760169.png"
+          }
+        },
+        "supporters_Bqwb9r": {
+          "type": "supporters",
+          "settings": {
+            "logo": "shopify://shop_images/imgi_8_889ccf25-6998-4119-8a67-f431b97da35a.png"
+          }
+        },
+        "supporters_aaBfzp": {
+          "type": "supporters",
+          "settings": {
+            "logo": "shopify://shop_images/imgi_10_a8e2387b-c26e-4705-9bf5-6050903737c5.png"
+          }
+        },
+        "supporters_4WPwzQ": {
+          "type": "supporters",
+          "settings": {
+            "logo": "shopify://shop_images/imgi_7_d59ab18c-d11d-4598-8ecf-85b9b65b9f8d.png"
+          }
+        },
+        "supporters_w9dVbL": {
+          "type": "supporters",
+          "settings": {
+            "logo": "shopify://shop_images/imgi_9_0c24dfc3-6782-4c71-a3db-e2f04154ac88.png"
+          }
+        }
+      },
+      "block_order": [
+        "card_GbRBLR",
+        "card_VxgBX6",
+        "card_gt6FtW",
+        "card_9C7yEH",
+        "card_fRr8qE",
+        "supporters_VA4YGf",
+        "supporters_Mn6XHp",
+        "supporters_Bqwb9r",
+        "supporters_aaBfzp",
+        "supporters_4WPwzQ",
+        "supporters_w9dVbL"
+      ],
       "name": "Testimony Card",
       "settings": {
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23"
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23"
       }
     }
   },
