@@ -32,7 +32,7 @@
             "badge": "",
             "button_text": "Contact our Procurement team",
             "button_url": "shopify://collections",
-            "image": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "image": "shopify://shop_images/svgviewer-png-output_6.png",
             "bg_color": "#0d0d0d"
           }
         },
@@ -44,7 +44,7 @@
             "badge": "",
             "button_text": "request consultation",
             "button_url": "shopify://collections",
-            "image": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "image": "shopify://shop_images/svgviewer-png-output.png",
             "bg_color": "#0d0d0d"
           }
         },
@@ -56,7 +56,7 @@
             "badge": "",
             "button_text": "Get Scanned",
             "button_url": "shopify://collections",
-            "image": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "image": "shopify://shop_images/svgviewer-png-output_3.png",
             "bg_color": "#0d0d0d"
           }
         }
@@ -123,7 +123,7 @@
         "bottom_option_GMQBQG": {
           "type": "bottom_option",
           "settings": {
-            "card_icon": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "card_icon": "shopify://shop_images/svgviewer-png-output_6.png",
             "title": "Direct Contracting",
             "text": "Sole-source contracts up to $4.5M without competitive requirements. Awards cannot be protested."
           }
@@ -131,7 +131,7 @@
         "bottom_option_kJEmhx": {
           "type": "bottom_option",
           "settings": {
-            "card_icon": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "card_icon": "shopify://shop_images/svgviewer-png-output_5.png",
             "title": "Small Business Goals",
             "text": "Satisfies agency small business and 8(a) contracting goals while supporting disadvantaged business development."
           }
@@ -139,7 +139,7 @@
         "bottom_option_wAycBz": {
           "type": "bottom_option",
           "settings": {
-            "card_icon": "shopify://shop_images/download_7_ba523352-82cf-4d34-8404-3e2572ee3c4f.svg",
+            "card_icon": "shopify://shop_images/svgviewer-png-output_4.png",
             "title": "Reduced Timeline",
             "text": "Streamlined approval process reduces procurement timeline from months to weeks."
           }
@@ -218,8 +218,8 @@
         "text": "We'll walk you through what to order, how to scan, and how to deploy Aware products fast.",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#B6AC87",
-        "secondary_color": "#7B0F23"
+        "primary_color": "#b6ac87",
+        "secondary_color": "#7b0f23"
       }
     }
   },
