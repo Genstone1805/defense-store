@@ -299,6 +299,262 @@
         "bottom_title": "Featured Products",
         "side_image": "shopify://shop_images/imgi_19_cb89dbec-314e-409b-b792-21da7b98292e.png"
       }
+    },
+    "app_uses2_jPQCjU": {
+      "type": "app-uses2",
+      "blocks": {
+        "option_q3EKMG": {
+          "type": "option",
+          "settings": {
+            "text": "Oil and gas operations require explosion-proof hearing protection"
+          }
+        },
+        "option_re6Qgk": {
+          "type": "option",
+          "settings": {
+            "text": "Power generation facilities demand protection from turbine and generator noise"
+          }
+        },
+        "option_A9hRa9": {
+          "type": "option",
+          "settings": {
+            "text": "Remote operations benefit from biometric monitoring capabilities"
+          }
+        },
+        "option_gnLrTV": {
+          "type": "option",
+          "settings": {
+            "text": "MSHA compliance with strict hearing conservation program requirements"
+          }
+        },
+        "image_m9HENf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_20_4b95c70a-27c5-400a-a838-b2203455961f.png"
+          }
+        },
+        "image_9rDf88": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png"
+          }
+        },
+        "image_QwMcAB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png"
+          }
+        }
+      },
+      "block_order": [
+        "option_q3EKMG",
+        "option_re6Qgk",
+        "option_A9hRa9",
+        "option_gnLrTV",
+        "image_m9HENf",
+        "image_9rDf88",
+        "image_QwMcAB"
+      ],
+      "name": "Uses",
+      "settings": {
+        "card_title": "Mining & Energy",
+        "sub_title": "Extreme Environment Solutions",
+        "text": "An estimated 90% of miners have developed hearing impairment by age 50. Construction sand & gravel miners experience the highest industry hearing-loss prevalence at 36%. Aware Defense ear-pro withstands dust, vibration and extreme temperatures.",
+        "bottom_title": "Featured Products",
+        "side_image": "shopify://shop_images/imgi_23_b4eb3490-cc39-4921-8158-e59860c99aa1.png"
+      }
+    },
+    "app_uses2_VWDAqX": {
+      "type": "app-uses2",
+      "blocks": {
+        "option_xQpQ8B": {
+          "type": "option",
+          "settings": {
+            "text": "Radio communication for coordination and safety"
+          }
+        },
+        "option_H7nDrr": {
+          "type": "option",
+          "settings": {
+            "text": "All-weather durability for outdoor loading and transport operations"
+          }
+        },
+        "option_Rg7MbP": {
+          "type": "option",
+          "settings": {
+            "text": "Comfort for extended wear during long-haul operations"
+          }
+        },
+        "option_jCC3GJ": {
+          "type": "option",
+          "settings": {
+            "text": "Quick insertion/removal for varied work environments throughout shifts"
+          }
+        },
+        "image_DHjXJH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_24_46f89658-3f71-426b-922d-d3d4d545d211.png"
+          }
+        },
+        "image_f7Hi44": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png"
+          }
+        },
+        "image_qzdWRH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png"
+          }
+        }
+      },
+      "block_order": [
+        "option_xQpQ8B",
+        "option_H7nDrr",
+        "option_Rg7MbP",
+        "option_jCC3GJ",
+        "image_DHjXJH",
+        "image_f7Hi44",
+        "image_qzdWRH"
+      ],
+      "name": "Uses",
+      "settings": {
+        "card_title": "Transportation & Logistics",
+        "sub_title": "Mobile Workforce Protection",
+        "text": "Transportation workers face unique hearing challenges from diverse noise sources including diesel engines, hydraulic systems, loading equipment, and traffic noise combined with constant communication requirements.",
+        "bottom_title": "Featured Products",
+        "side_image": "shopify://shop_images/imgi_27_0395ed94-f56e-4c2d-a713-7753eee8d533.png"
+      }
+    },
+    "app_uses2_bfcYRH": {
+      "type": "app-uses2",
+      "blocks": {
+        "option_RT69YL": {
+          "type": "option",
+          "settings": {
+            "text": "SWAT and tactical units require impulse protection with communication clarity"
+          }
+        },
+        "option_C9UAyM": {
+          "type": "option",
+          "settings": {
+            "text": "Traffic enforcement officers face continuous highway and siren noise"
+          }
+        },
+        "option_4CNFYY": {
+          "type": "option",
+          "settings": {
+            "text": "Emergency responders need rapid deployment hearing protection"
+          }
+        },
+        "option_g3fdap": {
+          "type": "option",
+          "settings": {
+            "text": "Training facilities require protection for firearms and scenario training"
+          }
+        },
+        "image_Ea8xeX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png"
+          }
+        },
+        "image_DTcQEk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_29_be18c3de-9beb-44fe-81a8-625c16ec03d9.png"
+          }
+        },
+        "image_dG3xk4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_5_9f9bbe24-dd20-4c25-bde2-39c543e94c8f.png"
+          }
+        }
+      },
+      "block_order": [
+        "option_RT69YL",
+        "option_C9UAyM",
+        "option_4CNFYY",
+        "option_g3fdap",
+        "image_Ea8xeX",
+        "image_DTcQEk",
+        "image_dG3xk4"
+      ],
+      "name": "Uses",
+      "settings": {
+        "card_title": "Public Safety & Law Enforcement",
+        "sub_title": "Tactical Audio Solutions",
+        "text": "Police officers are 19% more likely to have hearing loss than the general population. SWAT operators and patrol officers need split-second audio cues while facing exposure from sirens (120 dB) and gunfire (160+ dB).",
+        "bottom_title": "Featured Products",
+        "side_image": "shopify://shop_images/imgi_31_80b794a0-00ea-493c-8eae-b5e4a067075b.png"
+      }
+    },
+    "app_uses2_yWeq8q": {
+      "type": "app-uses2",
+      "blocks": {
+        "option_VgATJp": {
+          "type": "option",
+          "settings": {
+            "text": "Range officer commands become clear and audible"
+          }
+        },
+        "option_NHgEDQ": {
+          "type": "option",
+          "settings": {
+            "text": "Environmental awareness critical for situational timing is preserved"
+          }
+        },
+        "option_q48znk": {
+          "type": "option",
+          "settings": {
+            "text": "Shot timing feedback from steel targets remains clear"
+          }
+        },
+        "option_kHe3wm": {
+          "type": "option",
+          "settings": {
+            "text": "Equipment malfunction alerts are not masked"
+          }
+        },
+        "image_NcMy4Y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/manEar.png"
+          }
+        },
+        "image_aU4KUc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/dark-bg.png"
+          }
+        },
+        "image_yLMWPn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png"
+          }
+        }
+      },
+      "block_order": [
+        "option_VgATJp",
+        "option_NHgEDQ",
+        "option_q48znk",
+        "option_kHe3wm",
+        "image_NcMy4Y",
+        "image_aU4KUc",
+        "image_yLMWPn"
+      ],
+      "name": "Uses",
+      "settings": {
+        "card_title": "Recreational & Competitive Shooting",
+        "sub_title": "Precision Meets Protection",
+        "text": "Shooting sports represent America's fastest-growing recreational activity, with participation increasing 24.1% from 2009 to 2022. Yet only 58% of recreational shooters consistently use hearing protection, with 20% of high-volume shooters never using protection.",
+        "bottom_title": "Featured Products",
+        "side_image": "shopify://shop_images/imgi_35_864a9bfd-9667-4c95-b683-2c86443241bc.png"
+      }
     }
   },
   "order": [
@@ -307,6 +563,10 @@
     "app_uses2_NfP8QC",
     "app_uses2_6iqhGb",
     "app_uses2_WrxQXr",
-    "app_uses2_fRWfCt"
+    "app_uses2_fRWfCt",
+    "app_uses2_jPQCjU",
+    "app_uses2_VWDAqX",
+    "app_uses2_bfcYRH",
+    "app_uses2_yWeq8q"
   ]
 }
