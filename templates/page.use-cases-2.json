@@ -11,10 +11,302 @@
   "sections": {
     "main": {
       "type": "app-page",
-      "settings": {}
+      "settings": {
+        "background_color": "#0d0d0d",
+        "title": "PROVEN IN THE FIELD",
+        "text": "Explore how Aware Defense supports real-world missions across military, aviation, industrial, and medical domains.",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#b6ac87",
+        "secondary_color": "#7b0f23",
+        "background_image": "shopify://shop_images/imgi_49_58f8e7d8-4eae-435b-97e4-5d655310aec9.png"
+      }
+    },
+    "app_uses1_ziHxnY": {
+      "type": "app-uses1",
+      "name": "High Noise Protection",
+      "settings": {
+        "card_title": "Hearing Protection That Scales Across Every High-Noise Environment",
+        "text": "More than 22 million U.S. workers are exposed to hazardous noise each year, yet most universal earplugs fail to seal properly. Aware Defense combines the FDA-cleared eFit 3D Scanner with custom-molded ear protection and optional biometric sensors so organizations can deploy mission-grade safety at enterprise scale."
+      }
+    },
+    "app_uses2_NfP8QC": {
+      "type": "app-uses2",
+      "blocks": {
+        "option_Rj98yy": {
+          "type": "option",
+          "settings": {
+            "text": "Special Operations Forces field validation with outstanding results"
+          }
+        },
+        "option_CPCrgi": {
+          "type": "option",
+          "settings": {
+            "text": "Aviation units report improved compliance and aircrew satisfaction"
+          }
+        },
+        "option_k39JBz": {
+          "type": "option",
+          "settings": {
+            "text": "Training environments require protection without communication barriers"
+          }
+        },
+        "option_Xi9Xcz": {
+          "type": "option",
+          "settings": {
+            "text": "Combat zones demand reliable protection with situational awareness"
+          }
+        },
+        "image_iXKQLB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_2_f3ca1a0a-0b90-4aea-90c0-d793af035f66.png"
+          }
+        },
+        "image_EarpKP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png"
+          }
+        },
+        "image_gwzWUf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png"
+          }
+        },
+        "image_YKKEzQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png"
+          }
+        },
+        "image_ydejm7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_10_1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png"
+          }
+        }
+      },
+      "block_order": [
+        "option_Rj98yy",
+        "option_CPCrgi",
+        "option_k39JBz",
+        "option_Xi9Xcz",
+        "image_iXKQLB",
+        "image_EarpKP",
+        "image_gwzWUf",
+        "image_YKKEzQ",
+        "image_ydejm7"
+      ],
+      "name": "Uses",
+      "settings": {
+        "card_title": "Defense & Federal Government",
+        "sub_title": "Mission-Critical Applications",
+        "text": "Warfighters rank hearing loss as the #1 service-connected disability. Aware Defense custom molds integrate seamlessly with comms suites from Gentex, Invisio, Axil, and more, delivering full-seal impulse protection without blocking situational audio.",
+        "bottom_title": "Featured Products",
+        "side_image": "shopify://shop_images/Defense_and_FG_operation.png"
+      }
+    },
+    "app_uses2_6iqhGb": {
+      "type": "app-uses2",
+      "blocks": {
+        "option_ac7HHM": {
+          "type": "option",
+          "settings": {
+            "text": "All-day comfort enables consistent wear throughout 12-hour shifts"
+          }
+        },
+        "option_xNHRQe": {
+          "type": "option",
+          "settings": {
+            "text": "Communication integration maintains productivity and safety coordination"
+          }
+        },
+        "option_zDMd6L": {
+          "type": "option",
+          "settings": {
+            "text": "Moisture resistance withstands demanding manufacturing conditions"
+          }
+        },
+        "option_FmXHFe": {
+          "type": "option",
+          "settings": {
+            "text": "Digital documentation streamlines OSHA compliance reporting"
+          }
+        },
+        "image_NGXbLB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_2_f3ca1a0a-0b90-4aea-90c0-d793af035f66.png"
+          }
+        },
+        "image_KwPpQT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png"
+          }
+        },
+        "image_3gA6BC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_10_1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png"
+          }
+        }
+      },
+      "block_order": [
+        "option_ac7HHM",
+        "option_xNHRQe",
+        "option_zDMd6L",
+        "option_FmXHFe",
+        "image_NGXbLB",
+        "image_KwPpQT",
+        "image_3gA6BC"
+      ],
+      "name": "Uses",
+      "settings": {
+        "card_title": "Manufacturing & Heavy Industry",
+        "sub_title": "Enterprise-Scale Safety Solutions",
+        "text": "Manufacturing generates 14,500 recordable hearing-loss cases annually—76% occur in this sector alone. Custom protection reduces remake rates, speeds shift changeovers, and raises PPE compliance in plants where traditional foam plugs are correctly inserted only 8% of the time.",
+        "bottom_title": "Featured Products",
+        "side_image": "shopify://shop_images/imgi_11_ec0fc2c8-2cc0-4cb1-b6d4-ad1a9f439054.png"
+      }
+    },
+    "app_uses2_WrxQXr": {
+      "type": "app-uses2",
+      "blocks": {
+        "option_EtqQfj": {
+          "type": "option",
+          "settings": {
+            "text": "Impact resistance for debris and falling objects"
+          }
+        },
+        "option_RbBqQy": {
+          "type": "option",
+          "settings": {
+            "text": "Radio compatibility for construction communication systems"
+          }
+        },
+        "option_BcxYDK": {
+          "type": "option",
+          "settings": {
+            "text": "Sweat resistance for outdoor work in all weather conditions"
+          }
+        },
+        "option_CWBMqf": {
+          "type": "option",
+          "settings": {
+            "text": "Quick insertion/removal for varied noise exposure throughout the day"
+          }
+        },
+        "image_ytrgyk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_12_2fb8b4fd-e6de-4d0f-b680-df22b6d05b76.png"
+          }
+        },
+        "image_tHRQ6g": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png"
+          }
+        },
+        "image_p3TUkM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_10_1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png"
+          }
+        }
+      },
+      "block_order": [
+        "option_EtqQfj",
+        "option_RbBqQy",
+        "option_BcxYDK",
+        "option_CWBMqf",
+        "image_ytrgyk",
+        "image_tHRQ6g",
+        "image_p3TUkM"
+      ],
+      "name": "Uses",
+      "settings": {
+        "card_title": "Construction & Infrastructure",
+        "sub_title": "High-Risk Environment Protection",
+        "text": "51% of construction workers have been exposed to hazardous noise levels, yet 52% report not wearing hearing protection. Jackhammers, nail guns and concrete saws create bursts exceeding 120 dB. Our lock-and-key custom fit guarantees proper attenuation.",
+        "bottom_title": "Featured Products",
+        "side_image": "shopify://shop_images/Construction_Infrastructure.png"
+      }
+    },
+    "app_uses2_fRWfCt": {
+      "type": "app-uses2",
+      "blocks": {
+        "option_EMfh6D": {
+          "type": "option",
+          "settings": {
+            "text": "Headset compatibility for air traffic control and ground crew communication"
+          }
+        },
+        "option_pN4CpF": {
+          "type": "option",
+          "settings": {
+            "text": "Rapid deployment for emergency response teams"
+          }
+        },
+        "option_MLTqgL": {
+          "type": "option",
+          "settings": {
+            "text": "Multiple noise environments from quiet offices to flight line operations"
+          }
+        },
+        "option_PbJrEd": {
+          "type": "option",
+          "settings": {
+            "text": "Regulatory compliance with FAA and OSHA hearing conservation standards"
+          }
+        },
+        "image_wVp87x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png"
+          }
+        },
+        "image_kT9pc4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_16_ef310f2d-7afe-464d-816e-302392b965e4.png"
+          }
+        },
+        "image_HmAdfg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png"
+          }
+        }
+      },
+      "block_order": [
+        "option_EMfh6D",
+        "option_pN4CpF",
+        "option_MLTqgL",
+        "option_PbJrEd",
+        "image_wVp87x",
+        "image_kT9pc4",
+        "image_HmAdfg"
+      ],
+      "name": "Uses",
+      "settings": {
+        "card_title": "Aviation & Airports",
+        "sub_title": "Ground Crew & Maintenance Safety",
+        "text": "Ramp crews, fuel attendants and maintenance teams endure continuous jet and ground-power unit noise. eFit mobile scanning allows mass fittings during shift rotations, and slim custom molds fit comfortably under double hearing protection.",
+        "bottom_title": "Featured Products",
+        "side_image": "shopify://shop_images/imgi_19_cb89dbec-314e-409b-b792-21da7b98292e.png"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "app_uses1_ziHxnY",
+    "app_uses2_NfP8QC",
+    "app_uses2_6iqhGb",
+    "app_uses2_WrxQXr",
+    "app_uses2_fRWfCt"
   ]
 }

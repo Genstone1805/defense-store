@@ -12,28 +12,26 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "app_uses1_kgMMfR": {
       "type": "app-uses1",
       "name": "High Noise Protection",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "Hearing Protection That Scales Across Every High-Noise Environment",
+        "text": "More than 22 million U.S. workers are exposed to hazardous noise each year, yet most universal earplugs fail to seal properly. Aware Defense combines the FDA-cleared eFit 3D Scanner with custom-molded ear protection and optional biometric sensors so organizations can deploy mission-grade safety at enterprise scale."
       }
     },
     "app_uses2_dN9Hkc": {
       "type": "app-uses2",
       "name": "Uses",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "Defense & Federal Government",
+        "sub_title": "Mission-Critical Applications",
+        "text": "Warfighters rank hearing loss as the #1 service-connected disability. Aware Defense custom molds integrate seamlessly with comms suites from Gentex, Invisio, Axil, and more, delivering full-seal impulse protection without blocking situational audio.",
+        "bottom_title": "Featured Products"
       }
     }
   },
