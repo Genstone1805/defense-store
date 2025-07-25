@@ -16,9 +16,19 @@
         "padding_bottom": 28
       }
     },
-    "app_card23_KzAwtL": {
-      "type": "app-card23",
-      "name": "Use Cases",
+    "app_uses1_kgMMfR": {
+      "type": "app-uses1",
+      "name": "High Noise Protection",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_uses2_dN9Hkc": {
+      "type": "app-uses2",
+      "name": "Uses",
       "settings": {
         "title": "Default Title",
         "primary_color": "#AFA38E",
@@ -29,6 +39,7 @@
   },
   "order": [
     "main",
-    "app_card23_KzAwtL"
+    "app_uses1_kgMMfR",
+    "app_uses2_dN9Hkc"
   ]
 }

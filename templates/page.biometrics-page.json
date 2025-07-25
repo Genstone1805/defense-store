@@ -20,9 +20,64 @@
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23"
       }
+    },
+    "app_bio1_CUWiY3": {
+      "type": "app-bio1",
+      "name": "What we Measure",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_bio2_mBizmz": {
+      "type": "app-bio2",
+      "name": "Why the ear and wrist",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_bio3_jVNAE3": {
+      "type": "app-bio3",
+      "name": "Fits into systems",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_bio4_3xhw6t": {
+      "type": "app-bio4",
+      "name": "Operation ready",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_bio5_ag8nqQ": {
+      "type": "app-bio5",
+      "name": "Join Us",
+      "settings": {
+        "title": "Default Title",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23",
+        "tertiary_color": "#695e49"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "app_bio1_CUWiY3",
+    "app_bio2_mBizmz",
+    "app_bio3_jVNAE3",
+    "app_bio4_3xhw6t",
+    "app_bio5_ag8nqQ"
   ]
 }
