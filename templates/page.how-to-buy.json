@@ -31,7 +31,7 @@
             "text": "Buy through Sole Source Justification or through an 8a Parnter",
             "badge": "",
             "button_text": "Contact our Procurement team",
-            "button_url": "shopify://collections",
+            "button_url": "",
             "image": "shopify://shop_images/svgviewer-png-output_6.png",
             "bg_color": "#0d0d0d"
           }
@@ -43,7 +43,7 @@
             "text": "Request a scanning event, or leverage a scanner lease for larger implementations",
             "badge": "",
             "button_text": "request consultation",
-            "button_url": "shopify://collections",
+            "button_url": "",
             "image": "shopify://shop_images/svgviewer-png-output.png",
             "bg_color": "#0d0d0d"
           }
@@ -55,7 +55,7 @@
             "text": "Book a scan at an event near youGear delivered after fitting",
             "badge": "",
             "button_text": "Get Scanned",
-            "button_url": "shopify://collections",
+            "button_url": "",
             "image": "shopify://shop_images/svgviewer-png-output_3.png",
             "bg_color": "#0d0d0d"
           }
@@ -194,7 +194,7 @@
           "type": "button",
           "settings": {
             "button_text": "TALK TO OUR TEAM",
-            "button_url": "shopify://collections",
+            "button_url": "",
             "button_type": "outline"
           }
         },
@@ -202,7 +202,7 @@
           "type": "button",
           "settings": {
             "button_text": "REQUEST A QUOTE",
-            "button_url": "shopify://collections",
+            "button_url": "",
             "button_type": "fill"
           }
         }
