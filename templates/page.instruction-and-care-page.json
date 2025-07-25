@@ -75,8 +75,8 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23"
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23"
       }
     },
     "app_card13_hfXKR4": {
@@ -120,6 +120,23 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23"
+      }
+    },
+    "app_card14_DMG6mM": {
+      "type": "app-card14",
+      "name": "Daily Cleaning Card",
+      "settings": {
+        "title1": "DAILY CLEANING",
+        "title2": "DEEP CLEANING (AS NEEDED)",
+        "top_text1": "Wipe with a dry, lint-free cloth or provided cleaning tool",
+        "top_text2": "Do not use alcohol or harsh solvents",
+        "top_text3": "Store in provided case when not in use",
+        "bottom_text1": "Warm water and mild soap",
+        "bottom_text2": "Air dry fully before storing",
+        "bottom_text3": "Never submerge electronic components (e.g., CEP inserts)",
+        "background_color": "#0d0d0d",
         "primary_color": "#AFA38E",
         "secondary_color": "#7B0F23"
       }
@@ -128,6 +145,7 @@
   "order": [
     "main",
     "app_card13_ikmnrq",
-    "app_card13_hfXKR4"
+    "app_card13_hfXKR4",
+    "app_card14_DMG6mM"
   ]
 }
