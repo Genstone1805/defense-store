@@ -1,12 +1,9 @@
-<section class="py-20 bg-black">
+<section class="py-20 bg-[#0d0d0d]">
   <div class="container mx-auto px-4">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-4xl font-bold text-white text-center mb-8">The Only Technology to Capture the Second Bend</h2>
-      <p class="text-lg text-[#afa38e] leading-relaxed mb-8">
-        What sets the eFit apart from all other scanning technologies is its unique ability to accurately capture the
-        second bend of the ear canal. This anatomical feature, located deep within the ear canal, is critical for:
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <p class="text-5xl font-bold text-white text-center mb-8">{{ section.settings.card_title }}</p>
+      <p class="text-[17px] text-[#afa38e] leading-relaxed mb-8">{{ section.settings.top_text }}</p>
+      <div class="app-book-3-grid">
         <div class="flex items-start space-x-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,12 +15,12 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
+            class="lucide lucide-circle-check-big size-8 text-[#7b0f23] mt-1 flex-shrink-0"
           >
             <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
             <path d="m9 11 3 3L22 4"></path>
           </svg>
-          <p class="text-white">Perfect seal integrity for hearing protection effectiveness</p>
+          <p class="text-white">{{ section.settings.text1 }}</p>
         </div>
         <div class="flex items-start space-x-3">
           <svg
@@ -36,12 +33,12 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
+            class="lucide lucide-circle-check-big size-8 text-[#7b0f23] mt-1 flex-shrink-0"
           >
             <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
             <path d="m9 11 3 3L22 4"></path>
           </svg>
-          <p class="text-white">Medical-grade biometric sensor placement for accurate data collection</p>
+          <p class="text-white">{{ section.settings.text2 }}</p>
         </div>
         <div class="flex items-start space-x-3">
           <svg
@@ -54,12 +51,12 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
+            class="lucide lucide-circle-check-big size-8 text-[#7b0f23] mt-1 flex-shrink-0"
           >
             <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
             <path d="m9 11 3 3L22 4"></path>
           </svg>
-          <p class="text-white">Optimal comfort through precise anatomical mapping</p>
+          <p class="text-white">{{ section.settings.text3 }}</p>
         </div>
         <div class="flex items-start space-x-3">
           <svg
@@ -72,22 +69,32 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
+            class="lucide lucide-circle-check-big size-8 text-[#7b0f23] mt-1 flex-shrink-0"
           >
             <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
             <path d="m9 11 3 3L22 4"></path>
           </svg>
-          <p class="text-white">Future-proof platform for advanced sensor integration</p>
+          <p class="text-white">{{ section.settings.text4 }}</p>
         </div>
       </div>
-      <p class="text-[#afa38e] leading-relaxed mt-8">
-        The second bend is strategically positioned close to the brain, major blood vessels, and Arnold's nerve (the
-        auricular branch of the vagus nerve). This proximity enables the collection of medical-grade data that
-        universal, one-size-fits-all devices cannot consistently capture.
-      </p>
+      <p class="text-[#afa38e] leading-relaxed mt-8 text-[17px]">{{ section.settings.bottom_text }}</p>
     </div>
   </div>
 </section>
+
+<style>
+  .app-book-3-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .app-book-3-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
 {% schema %}
 {
   "name": "Only Tech",
@@ -95,27 +102,45 @@
   "settings": [
     {
       "type": "text",
-      "id": "title",
+      "id": "card_title",
       "label": "Title",
-      "default": "Default Title"
+      "default": "The Only Technology to Capture the Second Bend"
     },
     {
-      "type": "color",
-      "id": "primary_color",
-      "label": "Primary Color",
-      "default": "#AFA38E"
+      "type": "text",
+      "id": "top_text",
+      "label": "Top Text",
+      "default": "What sets the eFit apart from all other scanning technologies is its unique ability to accurately capture the second bend of the ear canal. This anatomical feature, located deep within the ear canal, is critical for:"
     },
     {
-      "type": "color",
-      "id": "secondary_color",
-      "label": "Secondary Color",
-      "default": "#7B0F23"
+      "type": "text",
+      "id": "text1",
+      "label": "Text 1",
+      "default": "Perfect seal integrity for hearing protection effectiveness"
     },
     {
-      "type": "color",
-      "id": "tertiary_color",
-      "label": "tertiary Color",
-      "default": "#695e49"
+      "type": "text",
+      "id": "text2",
+      "label": "Text 2",
+      "default": "Perfect seal integrity for hearing protection effectiveness"
+    },
+    {
+      "type": "text",
+      "id": "text3",
+      "label": "Text 3",
+      "default": "Perfect seal integrity for hearing protection effectiveness"
+    },
+    {
+      "type": "text",
+      "id": "text4",
+      "label": "Text 4",
+      "default": "Perfect seal integrity for hearing protection effectiveness"
+    },
+    {
+      "type": "text",
+      "id": "bottom_text",
+      "label": "Bottom Text",
+      "default": "The second bend is strategically positioned close to the brain, major blood vessels, and Arnold's nerve (the auricular branch of the vagus nerve). This proximity enables the collection of medical-grade data that universal, one-size-fits-all devices cannot consistently capture."
     }
   ],
 

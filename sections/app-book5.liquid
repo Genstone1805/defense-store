@@ -1,179 +1,78 @@
 <section
-  class="py-20 transition-all duration-1000 bg-black delay-500 opacity-100 translate-y-0"
+  class="py-20 transition-all duration-1000 bg-[#0d0d0d] delay-500 opacity-100 translate-y-0"
 >
-  <div class="container mx-auto px-4">
+  <div class="mx-auto px-4">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-4xl font-bold text-white text-center mb-8">Military and Defense Applications</h2>
-      <h3 class="text-2xl font-bold text-[#695e49] text-center mb-8">Mission-Critical Reliability</h3>
+      <p class="text-5xl font-bold text-white text-center mb-8">{{ section.settings.left_title }}</p>
+      <p class="text-4xl font-bold text-[#695e49] text-center mb-8">{{ section.settings.left_sub_title }}</p>
       <p
-        class="text-lg text-[#afa38e] leading-relaxed text-center mb-12"
+        class="text-[16px] text-[#afa38e] leading-relaxed text-center mb-12"
       >
-        The eFit scanner has been validated by Special Operations Forces, Navy aviators, and elite military units across
-        multiple service branches. Field testing has demonstrated superior performance in the most demanding operational
-        environments.
+        {{ section.settings.top_text }}
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="app-book-5-grid">
         <div>
-          <h4 class="font-bold text-white mb-4">Deployment Advantages:</h4>
+          <p class="font-bold text-white mb-4">{{ section.settings.left_title }}</p>
           <div class="space-y-3">
-            <div class="flex items-start space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                <path d="m9 11 3 3L22 4"></path>
-              </svg>
-              <p class="text-[#afa38e]">Rapid mass scanning capability - entire units can be scanned in hours</p>
-            </div>
-            <div class="flex items-start space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                <path d="m9 11 3 3L22 4"></path>
-              </svg>
-              <p class="text-[#afa38e]">Field-portable design enables forward deployment</p>
-            </div>
-            <div class="flex items-start space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                <path d="m9 11 3 3L22 4"></path>
-              </svg>
-              <p class="text-[#afa38e]">No consumable materials required - sustainable operations</p>
-            </div>
-            <div class="flex items-start space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                <path d="m9 11 3 3L22 4"></path>
-              </svg>
-              <p class="text-[#afa38e]">Digital profiles enable rapid resupply without re-scanning</p>
-            </div>
+            {% for block in section.blocks %}
+              {% if block.type == 'left_option' %}
+                <div class="flex items-start space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check-big size-7 text-[#7b0f23] mt-1 flex-shrink-0"
+                  >
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                    <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <p class="text-[#afa38e]">{{ block.text }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
         <div>
-          <h4 class="font-bold text-white mb-4">Operational Validation:</h4>
+          <p class="font-bold text-white mb-4">Operational Validation:</p>
           <div class="space-y-3">
-            <div class="flex items-start space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                <path d="m9 11 3 3L22 4"></path>
-              </svg>
-              <p class="text-[#afa38e]">DoD installations have validated superior performance</p>
-            </div>
-            <div class="flex items-start space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                <path d="m9 11 3 3L22 4"></path>
-              </svg>
-              <p class="text-[#afa38e]">Special Operations units report outstanding field results</p>
-            </div>
-            <div class="flex items-start space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                <path d="m9 11 3 3L22 4"></path>
-              </svg>
-              <p class="text-[#afa38e]">Aviation communities demonstrate improved compliance</p>
-            </div>
-            <div class="flex items-start space-x-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-circle-check-big h-5 w-5 text-[#7b0f23] mt-1 flex-shrink-0"
-              >
-                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                <path d="m9 11 3 3L22 4"></path>
-              </svg>
-              <p class="text-[#afa38e]">US Navy studies show superior fit compared to traditional methods</p>
-            </div>
+            {% for block in section.blocks %}
+              {% if block.type == 'right_option' %}
+                <div class="flex items-start space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check-big size-7 text-[#7b0f23] mt-1 flex-shrink-0"
+                  >
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                    <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                  <p class="text-[#afa38e]">{{ block.text }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
       </div>
       <div class="text-center mt-12">
-        <button
-          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
+        <a
+          href="{{ section.settings.button_url }}"
+          class="inline-flex text-[17px] items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors  bg-primary hover:bg-primary/90  text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
           style="background-color: rgb(149, 24, 43)"
         >
-          SEE OTHER USE CASES
+          {{ section.settings.button_text }}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -184,16 +83,31 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-arrow-right ml-2 h-5 w-5"
+            class="lucide lucide-arrow-right ml-2 size-7"
           >
             <path d="M5 12h14"></path>
             <path d="m12 5 7 7-7 7"></path>
           </svg>
-        </button>
+        </a>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .app-book-5-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 640px) {
+    .app-book-5-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
 {% schema %}
 {
   "name": "Military Application",
@@ -201,31 +115,73 @@
   "settings": [
     {
       "type": "text",
-      "id": "title",
+      "id": "card_title",
       "label": "Title",
-      "default": "Default Title"
+      "default": "Military and Defense Applications"
     },
     {
-      "type": "color",
-      "id": "primary_color",
-      "label": "Primary Color",
-      "default": "#AFA38E"
+      "type": "text",
+      "id": "card_sub_title",
+      "label": "Sub Title",
+      "default": "Mission-Critical Reliability"
     },
     {
-      "type": "color",
-      "id": "secondary_color",
-      "label": "Secondary Color",
-      "default": "#7B0F23"
+      "type": "text",
+      "id": "top_text",
+      "label": "Top Text",
+      "default": "The eFit scanner has been validated by Special Operations Forces, Navy aviators, and elite military units across multiple service branches. Field testing has demonstrated superior performance in the most demanding operational environments."
     },
     {
-      "type": "color",
-      "id": "tertiary_color",
-      "label": "tertiary Color",
-      "default": "#695e49"
+      "type": "text",
+      "id": "left_title",
+      "label": "Left Title",
+      "default": "Deployment Advantages:"
+    },
+    {
+      "type": "text",
+      "id": "right_title",
+      "label": "Right Title",
+      "default": "Operational Validation:"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "SEE OTHER USE CASES"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Title"
     }
   ],
 
-  "blocks": [],
+  "blocks": [
+    {
+      "type": "left_option",
+      "name": "Left Option",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Default Right Option"
+        }
+      ]
+    },
+    {
+      "type": "right_option",
+      "name": "Right Option",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Default Right Option"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Military Application",
