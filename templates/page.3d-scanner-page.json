@@ -13,12 +13,13 @@
       "type": "app-page",
       "settings": {
         "background_color": "#0d0d0d",
-        "title": "Banner Title",
-        "text": "Banner Text",
-        "button_text": "Button Text",
+        "title": "GET SCANNED FOR CUSTOM-FIT GEAR IN JUST 90 SECONDS",
+        "text": "Our FDA-cleared eFit 3D scanner captures the exact geometry of your ear — no contact, no silicone. Just perfect fit, every time.",
+        "button_text": "REQUEST A SCAN CONSULTATION",
         "button_url": "",
         "primary_color": "#b6ac87",
-        "secondary_color": "#7b0f23"
+        "secondary_color": "#7b0f23",
+        "background_image": "shopify://shop_images/manEar.png"
       }
     },
     "app_book1_RFKDwG": {
@@ -58,6 +59,101 @@
     },
     "app_book4_dK4x4F": {
       "type": "app-book4",
+      "blocks": {
+        "top_left_option_MFNqJg": {
+          "type": "top_left_option",
+          "settings": {
+            "text": "Volumetric accuracy to 90 microns (0.09mm)"
+          }
+        },
+        "top_left_option_RQJyEM": {
+          "type": "top_left_option",
+          "settings": {
+            "text": "Two-micron precision for critical measurement points"
+          }
+        },
+        "top_left_option_4mBfpd": {
+          "type": "top_left_option",
+          "settings": {
+            "text": "Over 1 million data points captured per scan"
+          }
+        },
+        "bottom_left_option_NAYiNU": {
+          "type": "bottom_left_option",
+          "settings": {
+            "text": "Patented radial-light scanning system"
+          }
+        },
+        "bottom_left_option_3HFicd": {
+          "type": "bottom_left_option",
+          "settings": {
+            "text": "Integrated 3D tracking system for precise positioning"
+          }
+        },
+        "bottom_left_option_7hrztY": {
+          "type": "bottom_left_option",
+          "settings": {
+            "text": "Advanced laser scanning with three scanning modes"
+          }
+        },
+        "top_right_option_J3rzQK": {
+          "type": "top_right_option",
+          "settings": {
+            "text": "FDA 510(k) clearance for medical device classification"
+          }
+        },
+        "top_right_option_TitUFC": {
+          "type": "top_right_option",
+          "settings": {
+            "text": "CE marking for European compliance"
+          }
+        },
+        "top_right_option_VKbgdE": {
+          "type": "top_right_option",
+          "settings": {
+            "text": "Class 2 laser product certification (EN 60825)"
+          }
+        },
+        "top_right_option_AgEyKg": {
+          "type": "top_right_option",
+          "settings": {
+            "text": "LED photobiological safety (EN 62471)"
+          }
+        },
+        "bottom_right_option_9PBiwy": {
+          "type": "bottom_right_option",
+          "settings": {
+            "text": "Zero contact eliminates risk of ear canal injury"
+          }
+        },
+        "bottom_right_option_kdE9RM": {
+          "type": "bottom_right_option",
+          "settings": {
+            "text": "No silicone injection removes risk of eardrum puncture"
+          }
+        },
+        "bottom_right_option_RD8QQH": {
+          "type": "bottom_right_option",
+          "settings": {
+            "text": "No special certification required for operators"
+          }
+        }
+      },
+      "block_order": [
+        "top_left_option_MFNqJg",
+        "top_left_option_RQJyEM",
+        "top_left_option_4mBfpd",
+        "bottom_left_option_NAYiNU",
+        "bottom_left_option_3HFicd",
+        "bottom_left_option_7hrztY",
+        "top_right_option_J3rzQK",
+        "top_right_option_TitUFC",
+        "top_right_option_VKbgdE",
+        "top_right_option_AgEyKg",
+        "bottom_right_option_9PBiwy",
+        "bottom_right_option_kdE9RM",
+        "bottom_right_option_RD8QQH"
+      ],
       "name": "Tech Specification",
       "settings": {
         "card_title": "Technical Specifications and Capabilities",
@@ -71,6 +167,66 @@
     },
     "app_book5_NTgbFR": {
       "type": "app-book5",
+      "blocks": {
+        "left_option_zpnKzc": {
+          "type": "left_option",
+          "settings": {
+            "text": "Rapid mass scanning capability - entire units can be scanned in hours"
+          }
+        },
+        "left_option_diFUex": {
+          "type": "left_option",
+          "settings": {
+            "text": "Field-portable design enables forward deployment"
+          }
+        },
+        "left_option_4xAU9b": {
+          "type": "left_option",
+          "settings": {
+            "text": "No consumable materials required - sustainable operations"
+          }
+        },
+        "left_option_jppjBY": {
+          "type": "left_option",
+          "settings": {
+            "text": "Digital profiles enable rapid resupply without re-scanning"
+          }
+        },
+        "right_option_NKYCye": {
+          "type": "right_option",
+          "settings": {
+            "text": "DoD installations have validated superior performance"
+          }
+        },
+        "right_option_KUVz4q": {
+          "type": "right_option",
+          "settings": {
+            "text": "Special Operations units report outstanding field results"
+          }
+        },
+        "right_option_hEmPTk": {
+          "type": "right_option",
+          "settings": {
+            "text": "Aviation communities demonstrate improved compliance"
+          }
+        },
+        "right_option_KKTmb7": {
+          "type": "right_option",
+          "settings": {
+            "text": "US Navy studies show superior fit compared to traditional methods"
+          }
+        }
+      },
+      "block_order": [
+        "left_option_zpnKzc",
+        "left_option_diFUex",
+        "left_option_4xAU9b",
+        "left_option_jppjBY",
+        "right_option_NKYCye",
+        "right_option_KUVz4q",
+        "right_option_hEmPTk",
+        "right_option_KKTmb7"
+      ],
       "name": "Military Application",
       "settings": {
         "card_title": "Military and Defense Applications",
@@ -84,22 +240,91 @@
     },
     "app_book6_jhk38i": {
       "type": "app-book6",
+      "blocks": {
+        "left_option_r7VrLB": {
+          "type": "left_option",
+          "settings": {
+            "text": "Custom sensor placement in the critical second bend"
+          }
+        },
+        "left_option_fkeWBP": {
+          "type": "left_option",
+          "settings": {
+            "text": "Medical-grade EEG capability validated by Emory University"
+          }
+        },
+        "left_option_baUVLw": {
+          "type": "left_option",
+          "settings": {
+            "text": "Continuous physiological monitoring"
+          }
+        },
+        "left_option_Ar3NbM": {
+          "type": "left_option",
+          "settings": {
+            "text": "Advanced neuromodulation through precise electrode placement"
+          }
+        },
+        "right_option_EYnAca": {
+          "type": "right_option",
+          "settings": {
+            "text": "Scanner lease programs enable rapid evaluation"
+          }
+        },
+        "right_option_t38pNT": {
+          "type": "right_option",
+          "settings": {
+            "text": "Training programs for organizational independence"
+          }
+        },
+        "right_option_VeaDj6": {
+          "type": "right_option",
+          "settings": {
+            "text": "Distributed manufacturing reduces logistics burden"
+          }
+        },
+        "right_option_cq3Uji": {
+          "type": "right_option",
+          "settings": {
+            "text": "Cloud-based data management for enterprise deployment"
+          }
+        }
+      },
+      "block_order": [
+        "left_option_r7VrLB",
+        "left_option_fkeWBP",
+        "left_option_baUVLw",
+        "left_option_Ar3NbM",
+        "right_option_EYnAca",
+        "right_option_t38pNT",
+        "right_option_VeaDj6",
+        "right_option_cq3Uji"
+      ],
       "name": "Proof Architecture",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
+        "card_title": "Future-Proof Platform Architecture",
+        "left_title": "Biometric Integration",
+        "right_title": "Scalable Implementation",
+        "button_text": "LEARN MORE ABOUT BIOMETRICS",
+        "button_url": ""
       }
     },
     "app_book7_PwAHaQ": {
       "type": "app-book7",
       "name": "Future Proof",
       "settings": {
-        "title": "Default Title",
-        "primary_color": "#afa38e",
-        "secondary_color": "#7b0f23",
-        "tertiary_color": "#695e49"
+        "card_title": "Ready to Protect Your Team and Future-Proof Your Mission?",
+        "card_sub_title": "When mission success depends on equipment that personnel will actually wear, choose the scanning technology that delivers perfect fit, uncompromised safety, and unlimited potential for operational enhancement.",
+        "title1": "Scanner Leasing",
+        "text1": "With training programs available",
+        "title2": "Proven Results",
+        "text2": "Field-Tested at numerous DoD installations",
+        "title3": "Best Value",
+        "text3": "Lower cost than foam in just 12 months",
+        "button1_text": "SCHEDULE A CONSULTATION",
+        "button1_url": "",
+        "button2_text": "LEARN MORE ABOUT OUR TECHNOLOGY",
+        "button2_url": ""
       }
     }
   },
