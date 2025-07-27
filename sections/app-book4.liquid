@@ -16,7 +16,7 @@
                 <div class="space-y-2 text-[#afa38e] text-[15px]">
                   {% for block in section.blocks %}
                     {% if block.type == 'top_left_option' %}
-                      <p>• {{ block.text }}</p>
+                      <p>• {{ block.settings.text }}</p>
                     {% endif %}
                   {% endfor %}
                 </div>
@@ -26,7 +26,7 @@
                 <div class="space-y-2 text-[#afa38e] text-[15px]">
                   {% for block in section.blocks %}
                     {% if block.type == 'bottom_left_option' %}
-                      <p>• {{ block.text }}</p>
+                      <p>• {{ block.settings.text }}</p>
                     {% endif %}
                   {% endfor %}
                 </div>
@@ -45,7 +45,7 @@
                 <div class="space-y-2 text-[#afa38e] text-[15px]">
                   {% for block in section.blocks %}
                     {% if block.type == 'top_right_option' %}
-                      <p>• {{ block.text }}</p>
+                      <p>• {{ block.settings.text }}</p>
                     {% endif %}
                   {% endfor %}
                 </div>
@@ -55,7 +55,7 @@
                 <div class="space-y-2 text-[#afa38e] text-[15px]">
                   {% for block in section.blocks %}
                     {% if block.type == 'bottom_right_option' %}
-                      <p>• {{ block.text }}</p>
+                      <p>• {{ block.settings.text }}</p>
                     {% endif %}
                   {% endfor %}
                 </div>
