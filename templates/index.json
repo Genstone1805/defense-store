@@ -53,7 +53,7 @@
             "title": "Comfort Failure",
             "text": "Constant readjustment and fatique during extended operations.",
             "badge": "",
-            "image": "shopify://shop_images/download_17.svg",
+            "image": "shopify://shop_images/download_17_b1a1447d-71b5-4a27-b539-10cf8b104da8.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -93,8 +93,7 @@
         "button_style": "outline",
         "primary_color": "#afa38e",
         "secondary_color": "#7b0f23",
-        "tertiary_color": "#695e49",
-        "background_image": "shopify://shop_images/dark-bg.png"
+        "tertiary_color": "#695e49"
       }
     },
     "app_card2_TPBDJn": {
@@ -201,8 +200,7 @@
         "button_style": "fill",
         "primary_color": "#afa38e",
         "secondary_color": "#7b0f23",
-        "tertiary_color": "#695e49",
-        "background_image": "shopify://shop_images/dark-bg.png"
+        "tertiary_color": "#695e49"
       }
     },
     "app_card1_3_RC7Hrn": {
@@ -214,7 +212,7 @@
             "title": "Schedule a Meeting",
             "text": "Review your mission requirements with an Aware Defense expert",
             "badge": "1",
-            "image": "shopify://shop_images/download_9.svg",
+            "image": "shopify://shop_images/download_9_41762c94-8b36-4a19-ae49-383c0b40ae07.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -224,7 +222,7 @@
             "title": "Get Scanned",
             "text": "We deploy our FDA-cleared 3D ear scanner to capture your team's ear profiles",
             "badge": "2",
-            "image": "shopify://shop_images/download_8.svg",
+            "image": "shopify://shop_images/download_8_fe34cda2-aa66-4dfe-9986-6297042b2daf.svg",
             "bg_color": "#0d0d0d"
           }
         },
@@ -234,7 +232,7 @@
             "title": "Equip & Scale",
             "text": "Outfit your team with precision-fit protection and upgrade to biometrics as needs evolve",
             "badge": "3",
-            "image": "shopify://shop_images/download_7.svg",
+            "image": "shopify://shop_images/download_7_d4f49b38-e74a-4c7d-bdd7-b3f59ce40200.svg",
             "bg_color": "#0d0d0d"
           }
         }
@@ -298,8 +296,7 @@
         "button_style": "outline",
         "primary_color": "#afa38e",
         "secondary_color": "#7b0f23",
-        "tertiary_color": "#695e49",
-        "background_image": "shopify://shop_images/dark-bg.png"
+        "tertiary_color": "#695e49"
       }
     },
     "app_card3_KmkpTM": {
@@ -354,9 +351,7 @@
         },
         "supporters_T8dg7C": {
           "type": "supporters",
-          "settings": {
-            "logo": "shopify://shop_images/imgi_12_9ab5019f-203f-404b-89b1-a6411e681421.png"
-          }
+          "settings": {}
         },
         "supporters_n9Qfzg": {
           "type": "supporters",
@@ -393,8 +388,7 @@
       "name": "Testimony Card",
       "settings": {
         "primary_color": "#afa38e",
-        "secondary_color": "#7b0f23",
-        "background_image": "shopify://shop_images/dark-bg.png"
+        "secondary_color": "#7b0f23"
       }
     },
     "app_card4_nttdBQ": {
