@@ -906,6 +906,9 @@
   .bg-\[\#0d0d0d7a\] {
     background-color: #0d0d0d7a;
   }
+  .bg-\[\#0d0d0d33\] {
+    background-color: #0d0d0d33;
+  }
   .bg-\[\#0d0d0d\] {
     background-color: #0d0d0d;
   }
@@ -914,6 +917,12 @@
   }
   .bg-\[\#0d0d0d\]\/50 {
     background-color: color-mix(in oklab, #0d0d0d 50%, transparent);
+  }
+  .bg-\[\#0d0d0da8\] {
+    background-color: #0d0d0da8;
+  }
+  .bg-\[\#0d0d0db4\] {
+    background-color: #0d0d0db4;
   }
   .bg-\[\#7b0f23\] {
     background-color: #7b0f23;
