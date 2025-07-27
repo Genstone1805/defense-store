@@ -119,8 +119,8 @@
           "type": "card",
           "settings": {
             "title": "3D Ear Scans",
-            "text": "Comms-integrated custom earpiece for real-time clarity",
-            "badge": "Get scanned onsite — scale across your workforce",
+            "text": "Get scanned onsite — scale across your workforce",
+            "badge": "",
             "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
             "bg_color": "#0d0d0d",
             "collection": ""
