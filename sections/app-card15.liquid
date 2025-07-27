@@ -40,8 +40,21 @@
                 >
               {% endif %}
 
-              <p class="font-bold text-4xl uppercase mb-6">{{ block.settings.title }}</p>
-              <p class="text-2xl">{{ block.settings.text }}</p>
+              {% if collection %}
+                <p class="font-bold text-4xl uppercase mb-6">{{ collections[collection].title }}</p>
+                <p class="text-2xl">{{ collections[collection].description | truncatewords: 20 }}</p>
+
+                <a
+                  href="{{ collections[collection].url }}"
+                  class="mt-4 inline-block text-xl underline text-white"
+                  style="color: {{ section.settings.secondary_color }}"
+                >
+                  View Products →
+                </a>
+              {% else %}
+                <p class="font-bold text-4xl uppercase mb-6">{{ block.settings.title }}</p>
+                <p class="text-2xl">{{ block.settings.text }}</p>
+              {% endif %}
               {% if block.settings.badge != blank %}
                 <div
                   class="absolute size-18 rounded-full -top-8 -left-8 flex items-center justify-center text-4xl font-semibold z-20"
@@ -217,6 +230,11 @@
           "id": "bg_color",
           "label": "Background Color",
           "default": "#0d0d0d"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Product Category (Collection)"
         }
       ]
     }
