@@ -55,15 +55,16 @@
             {% assign is_first = forloop.first %}
             {% if link.links != blank %}
               <div class="mother">
-                <button
+                <a
+                  href="{{ link.url }}"
                   class="cursor-pointer uppercase transition-colors duration-150"
                   onmouseover="this.style.color='{{ section.settings.tertiary_color }}'"
                   onmouseout="this.style.color=''"
                 >
                   {{ link.title }} ▾
-                </button>
+                </a>
                 <div
-                  class="absolute child border-[0.0000002vw] z-[999999999] mt-2 min-w-96 z-50"
+                  class="absolute child border-[0.0000002vw] mt-2 min-w-96 z-50"
                   style="background-color:{{ section.settings.primary_color }}"
                 >
                   <ul class="space-y-2 py-6 px-4 font-normal capitalize">
@@ -207,26 +208,27 @@
           CONTACT US
         </a>
         <div class="mobile-nav" id="hamburgerToggle">
-  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h14M5 12h14M5 7h14"/>
-  </svg>
-</div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h14M5 12h14M5 7h14"/>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
-
 </header>
-      <!-- <div
-  id="customMobileMenu"
-  class="absolute top-0 right-0 w-3/4 h-full bottom-0 max-w-sm bg-white shadow-lg transition-transform duration-300 z-50 "
-  style="background-color:white"
->
-  <div class="p-4">
-    <p>This is the mobile menu content</p>
+<!--
+  <div
+    id="customMobileMenu"
+    class="absolute top-0 right-0 w-3/4 h-full bottom-0 max-w-sm bg-white shadow-lg transition-transform duration-300 z-50 "
+    style="background-color:white"
+  >
+    <div class="p-4">
+      <p>This is the mobile menu content</p>
+    </div>
   </div>
-</div> -->
+-->
 
-              <script>
+<script>
   document.addEventListener('DOMContentLoaded', function () {
     var toggleBtn = document.getElementById('hamburgerToggle');
     var menu = document.getElementById('customMobileMenu');
@@ -244,14 +246,14 @@
 </script>
 
 <style>
-    .mother .child {
-      display: none;
-    }
-    .mother:hover .child {
-      display: block;
-    }
+  .mother .child {
+    display: none;
+  }
+  .mother:hover .child {
+    display: block;
+  }
 
-    .computer-nav {
+  .computer-nav {
     display: none;
   }
 
@@ -260,7 +262,7 @@
       display: flex;
     }
   }
-    .mobile-nav {
+  .mobile-nav {
     display: block;
   }
 
