@@ -36,7 +36,7 @@
       "name": "App Header",
       "settings": {
         "menu": "header-menu",
-        "page_menu": "header-menu-copy",
+        "page_menu": "mini-header-menu",
         "header_color": "scheme-1",
         "primary_color": "#0d0d0d",
         "secondary_color": "#afa38e",
