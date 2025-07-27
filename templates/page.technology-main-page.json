@@ -31,13 +31,13 @@
         "left_text": "Our scanner captures precise ear canal geometry in under 2 minutes — no foam, no silicone, and zero infection risk.",
         "left_button_text": "LEARN ABOUT EFIT SCANNING",
         "left_button_url": "shopify://products/aware-earshield",
-        "right_image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+        "right_image": "shopify://shop_images/imgi_2_4b42e1ce-24c0-46cc-beee-1f4ea95bc5ec.png",
         "right_title": "FUTURE-READY SENSOR INTEGRATION",
         "right_text": "Our platform is built for next-gen performance: biometric data, EEG sensing, readiness tracking, and cognitive monitoring.",
         "right_button_text": "LEARN ABOUT BIOMETRICS",
         "right_button_url": "shopify://products/aware-musicfilters",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23",
         "tertiary_color": "#695e49"
       }
     },
@@ -52,8 +52,8 @@
         "text4": "Comms compatibility built into design",
         "text5": "Digitally stored profiles for lifetime access",
         "text6": "Mission-grade durability standards",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23",
         "tertiary_color": "#695e49"
       }
     },
@@ -117,8 +117,8 @@
       "settings": {
         "title": "THE ONLY FDA-CLEARED NON-CONTACT SYSTEM",
         "sub_title": "Compare our patented scanner and data platform to outdated foam plug workflows. Trust the tech that elite units rely on.",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23",
         "tertiary_color": "#695e49"
       }
     },
@@ -153,8 +153,8 @@
         "text": "We'll show you how Aware's platform deploys fast, scales efficiently, and delivers unmatched results in the field.",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#B6AC87",
-        "secondary_color": "#7B0F23"
+        "primary_color": "#b6ac87",
+        "secondary_color": "#7b0f23"
       }
     }
   },
