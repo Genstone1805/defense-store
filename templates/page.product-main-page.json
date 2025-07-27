@@ -30,60 +30,8 @@
         "left_text": "Only Aware accurately captures the second bend of the ear for superior fit and performance, even beyond traditional silicone pour methods.",
         "right_title": "WHY CUSTOM FIT MATTERS",
         "right_text": "Every ear is unique. Our patented FDA-cleared 3D scanner creates a precise ear profile, enabling superior protection, comfort, and sensor integration. With zero risk, and 100% fit. ",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
-        "tertiary_color": "#695e49"
-      }
-    },
-    "app_card15_kEnd3P": {
-      "type": "app-card15",
-      "blocks": {
-        "card_YpydCM": {
-          "type": "card",
-          "settings": {
-            "title": "EarShield",
-            "text": "Highest NRR, comms-compatible, all-day mission endurance",
-            "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
-            "bg_color": "#0d0d0d"
-          }
-        },
-        "card_xebVhG": {
-          "type": "card",
-          "settings": {
-            "title": "EarDefender",
-            "text": "Reliable tactical protection with sealed fit for high-noise ops",
-            "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
-            "bg_color": "#0d0d0d"
-          }
-        },
-        "card_QjQMif": {
-          "type": "card",
-          "settings": {
-            "title": "RADIOCOMM",
-            "text": "Comms-integrated custom earpiece for real-time clarity",
-            "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
-            "bg_color": "#0d0d0d"
-          }
-        }
-      },
-      "block_order": [
-        "card_YpydCM",
-        "card_xebVhG",
-        "card_QjQMif"
-      ],
-      "name": "Three Cols Card",
-      "settings": {
-        "card_title": "FOR WARFIGHTERS, AVIATORS, AND TACTICAL OPERATORS",
-        "card_sub_title": "",
-        "text": "",
-        "button_text": "",
-        "button_url": "",
-        "button_style": "outline",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23",
         "tertiary_color": "#695e49"
       }
     },
@@ -96,8 +44,9 @@
             "title": "EarShield",
             "text": "Highest NRR, comms-compatible, all-day mission endurance",
             "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
-            "bg_color": "#0d0d0d"
+            "image": "shopify://shop_images/black_blue_buds.png",
+            "bg_color": "#0d0d0d",
+            "collection": ""
           }
         },
         "card_Q7hYhn": {
@@ -106,8 +55,9 @@
             "title": "EarDefender",
             "text": "Reliable tactical protection with sealed fit for high-noise ops",
             "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
-            "bg_color": "#0d0d0d"
+            "image": "shopify://shop_images/blue_bud.png",
+            "bg_color": "#0d0d0d",
+            "collection": ""
           }
         },
         "card_jr9rti": {
@@ -116,8 +66,9 @@
             "title": "RADIOCOMM",
             "text": "Comms-integrated custom earpiece for real-time clarity",
             "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
-            "bg_color": "#0d0d0d"
+            "image": "shopify://shop_images/white_buds.png",
+            "bg_color": "#0d0d0d",
+            "collection": ""
           }
         }
       },
@@ -128,14 +79,69 @@
       ],
       "name": "Three Cols Card",
       "settings": {
+        "card_title": "FOR WARFIGHTERS, AVIATORS, AND TACTICAL OPERATORS",
+        "card_sub_title": "",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "outline",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23",
+        "tertiary_color": "#695e49"
+      }
+    },
+    "app_card15_kEnd3P": {
+      "type": "app-card15",
+      "blocks": {
+        "card_YpydCM": {
+          "type": "card",
+          "settings": {
+            "title": "EarDefender Vented A & B",
+            "text": "Protection + communication for variable-noise zones",
+            "badge": "",
+            "image": "shopify://shop_images/imgi_5_9db2ccc3-d00b-475a-9cd2-77903091e325.png",
+            "bg_color": "#0d0d0d",
+            "collection": ""
+          }
+        },
+        "card_xebVhG": {
+          "type": "card",
+          "settings": {
+            "title": "CEP (Comm Earpiece)",
+            "text": "Connect securely to radios in the field or factory",
+            "badge": "",
+            "image": "shopify://shop_images/yellow_bud.png",
+            "bg_color": "#0d0d0d",
+            "collection": ""
+          }
+        },
+        "card_QjQMif": {
+          "type": "card",
+          "settings": {
+            "title": "3D Ear Scans",
+            "text": "Comms-integrated custom earpiece for real-time clarity",
+            "badge": "Get scanned onsite — scale across your workforce",
+            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "bg_color": "#0d0d0d",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_YpydCM",
+        "card_xebVhG",
+        "card_QjQMif"
+      ],
+      "name": "Three Cols Card",
+      "settings": {
         "card_title": "INDUSTRIAL-GRADE SAFETY FOR DEMANDING ENVIRONMENTS",
         "card_sub_title": "",
         "text": "",
         "button_text": "",
         "button_url": "",
         "button_style": "outline",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23",
         "tertiary_color": "#695e49"
       }
     },
@@ -148,37 +154,37 @@
             "title": "MusicPlugs",
             "text": "Audio protection with crystal clarity",
             "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "image": "shopify://shop_images/blackWhite_bud.png",
             "bg_color": "#0d0d0d"
           }
         },
         "card_JHDETY": {
           "type": "card",
           "settings": {
-            "title": "MusicPlugs",
-            "text": "Audio protection with crystal clarity",
+            "title": "MusicFilters",
+            "text": "Interchangeable filter levels for performers",
             "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "image": "shopify://shop_images/whiteSmallBuds.png",
             "bg_color": "#0d0d0d"
           }
         },
         "card_TiwNJ6": {
           "type": "card",
           "settings": {
-            "title": "MusicPlugs",
-            "text": "Audio protection with crystal clarity",
+            "title": "SleepPlug",
+            "text": "Low-profile comfort for deep sleep",
             "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "image": "shopify://shop_images/black_buds.png",
             "bg_color": "#0d0d0d"
           }
         },
         "card_B8Ct9U": {
           "type": "card",
           "settings": {
-            "title": "MusicPlugs",
-            "text": "Audio protection with crystal clarity",
+            "title": "SwimPlug",
+            "text": "Water-blocking custom fit for athletes",
             "badge": "",
-            "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
+            "image": "shopify://shop_images/waterblue_bud.png",
             "bg_color": "#0d0d0d"
           }
         }
@@ -197,8 +203,8 @@
         "button_text": "",
         "button_url": "",
         "button_style": "outline",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23",
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23",
         "tertiary_color": "#695e49"
       }
     },
@@ -233,16 +239,16 @@
         "text": "Custom-fit comfort. Field-tested performance. Future-ready gear.",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#B6AC87",
-        "secondary_color": "#7B0F23"
+        "primary_color": "#b6ac87",
+        "secondary_color": "#7b0f23"
       }
     }
   },
   "order": [
     "main",
     "app_card17_Ygt79P",
-    "app_card15_kEnd3P",
     "app_card15_3T8JKx",
+    "app_card15_kEnd3P",
     "app_card16_JDTjnh",
     "app_card_9_b88DMD"
   ]
