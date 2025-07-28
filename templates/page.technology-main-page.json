@@ -11,17 +11,31 @@
   "sections": {
     "main": {
       "type": "app-page",
+      "blocks": {
+        "button_Vz4Vrg": {
+          "type": "button",
+          "settings": {
+            "button_text": "REQUEST A DEMO",
+            "button_url": "",
+            "button_type": "fill",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "button_Vz4Vrg"
+      ],
       "settings": {
         "banner_height": "300",
-        "btitle": "eFit 3D Scanner",
-        "title": "",
+        "btitle": "",
+        "title": "TECH THAT FITS. TECH THAT PERFORMS.",
         "sub_title": "",
         "ctitle": "",
         "text": "",
-        "ctext": "Revolutionizing Ear Scanning with Medical-Grade Precision",
+        "ctext": "The only platform that unites precision scanning, mission-grade hearing protection, and biometric upgrade paths — all built for field use.",
         "primary_color": "#7b0f23",
         "secondary_color": "#7b0f23",
-        "background_image": "shopify://shop_images/jakub-zerdzicki-kVuzH0KFs1w-unsplash.jpg"
+        "background_image": "shopify://shop_images/imgi_25_photo-1518770660439-4636190af475.jpg"
       }
     },
     "app_card18_XzzcWU": {
