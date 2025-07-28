@@ -139,12 +139,43 @@
         "primary_color": "#afa38e",
         "secondary_color": "#7b0f23"
       }
+    },
+    "app_card_9_wJnyPH": {
+      "type": "app-card-9",
+      "blocks": {
+        "button_QKPtb8": {
+          "type": "button",
+          "settings": {
+            "button_text": "TALK TO OUR TEAM",
+            "button_url": "",
+            "button_type": "secondary_fill",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "button_QKPtb8"
+      ],
+      "name": "Full Width Card",
+      "settings": {
+        "background_color": "#0d0d0dd7",
+        "ctitle": "",
+        "title": "",
+        "sub_title": "",
+        "text": "",
+        "ctext": "",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#B6AC87",
+        "secondary_color": "#7B0F23"
+      }
     }
   },
   "order": [
     "main",
     "app_about1_jmHPHi",
     "app_about2_c4f9NW",
-    "app_card3_eQqRLh"
+    "app_card3_eQqRLh",
+    "app_card_9_wJnyPH"
   ]
 }
