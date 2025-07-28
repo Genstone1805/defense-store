@@ -33,7 +33,7 @@
         "ctitle": "",
         "text": "Our FDA-cleared eFit 3D scanner captures the exact geometry of your ear — no contact, no silicone. Just perfect fit, every time.",
         "ctext": "",
-        "primary_color": "#b6ac87",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23",
         "background_image": "shopify://shop_images/imgi_21_68ac4c95-84ec-4119-a846-03be89b8204c.png"
       }
@@ -75,7 +75,7 @@
       "name": "Image Left Cols Card",
       "settings": {
         "title": "WHY eFIT MATTERS",
-        "primary_color": "#b6ac87",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23",
         "right_image": "shopify://shop_images/manEar.png"
       }
@@ -121,7 +121,7 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
-        "primary_color": "#afa38e",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23"
       }
     },
@@ -153,7 +153,7 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
-        "primary_color": "#afa38e",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23"
       }
     },
@@ -192,7 +192,7 @@
         "ctext": "",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#b6ac87",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23"
       }
     }
