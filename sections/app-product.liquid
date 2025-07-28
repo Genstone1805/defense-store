@@ -1,170 +1,263 @@
-g<div class="min-h-screen w-full">
-  <!-- <div class="bg-background py-4 px-6">
+<div class="mt-20">
+  <div class="bg-[#0d0d0d] py-4 px-6">
     <div class="max-w-7xl mx-auto">
       <a
-        class="inline-flex items-center text-secondary hover:text-primary transition-colors"
+        class="inline-flex items-center text-[#afa38e] hover:text-[#695e49] transition-colors"
         href="/products"
       >
-        <svg ...class="lucide lucide-arrow-left w-4 h-4 mr-2">
-          ...
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-left w-4 h-4 mr-2"
+        >
+          <path d="m12 19-7-7 7-7"></path>
+          <path d="M19 12H5"></path>
         </svg>
-        Back to Products
-      </a>
+        Back to Products</a
+      >
     </div>
-  </div> -->
-
+  </div>
   <section
-  class="py-20 px-6 relative scroll-fade-in visible"
-  style="
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('{{ "dark-bg.png" | asset_img_url }}');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  "
->
-  <div class="max-w-7xl mx-auto">
-    <div class="product-detail-grid gap-16 items-start">
-      
-      <!-- LEFT SIDE -->
-      <div class="space-y-6">
-        <!-- PRODUCT IMAGE -->
-        <div class="aspect-square bg-[#695e49]/30 rounded-lg overflow-hidden border-2 border-[#6C6846]">
-          <img
-            src="{{ product.featured_image | image_url }}"
-            alt="{{ product.title }}"
-            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-          />
+    class="py-20 px-6 relative scroll-fade-in visible"
+    style="
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url('./blackDark.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    "
+    data-measuring="true"
+  >
+    <div class="max-w-[1100px] mx-auto">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start mb-16"
+      >
+        <div class="space-y lg:col-span-2">
+          <!-- Main Image -->
+          <div
+            class="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846] transform scale-85"
+          >
+            <img
+              id="mainProductImage"
+              src="{{ product.featured_image | image_url }}"
+              alt="Main product image"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              width="100%"
+              height="100%"
+            >
+          </div>
+
+          <!-- Thumbnails -->
+          <div class="flex gap-3 justify-center">
+            {% for media in product.media %}
+              <button
+                type="button"
+                class="size-20 rounded-lg overflow-hidden border-2 transition-all duration-200 border-[#afa38e] shadow-lg scale-105"
+                data-image="{{ media.preview_image | image_url }}"
+              >
+                <img
+                  src="{{ media.preview_image | image_url }}"
+                  alt="{{ media.alt | escape }}"
+                  class="w-full h-full object-cover"
+                  width="100%"
+                  height="100%"
+                >
+              </button>
+            {% endfor %}
+          </div>
         </div>
 
-        <!-- PRODUCT CONTENT -->
-        <div class="space-y-6 bg-[#695e49]/20 p-6 rounded-lg border border-[#6C6846]">
-          <div>
-            <h3 class="heading-tactical text-[#695e49] text-xl mb-3">Overview</h3>
-            <p class="body-tactical text-white leading-relaxed">
-              {{ product.description }}
+        <div class="space-y-8 lg:col-span-3">
+          <div class="space-y-4">
+            <p
+              class=" text-white uppercase text-[38px] md:text-[48px] font-bold"
+            >
+              {{ product.title }}
             </p>
           </div>
 
-          {% if product.metafields.custom.protection_features %}
-          <div>
-            <h3 class="heading-tactical text-[#695e49] text-xl mb-3">Revolutionary Protection Technology</h3>
-            <ul class="space-y-2 text-white">
-              {% for feature in product.metafields.custom.protection_features.value %}
-              <li class="flex items-start gap-3">
-                <span class="text-[#afa38e] mt-1">•</span><span>{{ feature }}</span>
-              </li>
-              {% endfor %}
-            </ul>
+          <form class="w-full space-y-8" id="productForm">
+            <input type="hidden" name="id" id="selectedVariantId" value="{{ product.variants.first.id }}">
+            <div class="space-y-6">
+              <div class="product-detail-selection-grid gap-y-4">
+                {% for option in product.options_with_values %}
+                  <div>
+                    <label class="text-white mb-2 block text-[14px] font-semibold">{{ option.name }}</label>
+                    <select
+                      name="option-{{ forloop.index0 }}"
+                      class="w-full h-16 rounded-xl bg-[#0d0d0d] text-white font-semibold border border-[#4a4939] px-4 text-[13px] focus:outline-[#4a4939] focus:ring-2 focus:ring-[#4a4939] focus:border-[#4a4939] transition-colors duration-200"
+                    >
+                      <option disabled selected hidden>Select {{ option.name }}</option>
+                      {% for value in option.values %}
+                        <option
+                          class="hover:bg-[#4a4939]transition-colors duration-200"
+                          value="{{ value }}"
+                        >
+                          {{ value }}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="space-y-4">
+              <a href="/request-consultation"
+                ><button
+                  class="inline-flex border-[#7b0f23] border items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium px-4 text-white bg-black hover:bg-[#7b0f23] text-[14px] transition-all duration-300 w-full py-2"
+                >
+                  REQUEST CONSULTATION TO SCAN MY TEAM
+                </button></a
+              >
+              <div class="flex items-center space-x-3 py-2 mt-">
+                <input
+                  type="checkbox"
+                  id="scan-confirm"
+                  class="peer size-14 shrink-0 rounded-sm border border-[#695e49] bg-[#695e49] text-transparent  focus:ring-2 focus:ring-[#695e49]"
+                >
+                <label
+                  for="scan-confirm"
+                  class="text-white text-[14px] cursor-pointer select-none peer-checked:font-semibold"
+                >
+                  Confirm 3D Scan On-File
+                </label>
+              </div>
+              <button
+                id="addToCartBtn"
+                class="inline-flex items-center justify-center bg-[#1a1a19] text-[#58554e]  gap-2 whitespace-nowrap rounded-md font-medium  px-4 w-full py-3 text-[14px] transition-all duration-300 bg-muted text-muted-foreground cursor-not-allowed"
+                disabled
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </form>
+          <div class="pt-4 border-t border-[#6C6846]">
+            <p class="text-[#afa38e] text-[14px]">
+              Individual scanning opportunities available at events, or coordinated with team scanning locations. Check
+              out our upcoming events, or reach out to the team to coordinate your scan.
+            </p>
           </div>
-          {% endif %}
-
-          <!-- Repeat similar blocks for other metafields like military, industrial, etc -->
         </div>
       </div>
-
-      <!-- RIGHT SIDE -->
-      <div class="space-y-8">
-        <!-- PRODUCT HEADER -->
-        <div class="space-y-4">
-          <h1 class="heading-tactical text-[#695e49] text-4xl md:text-5xl">
-            {{ product.title }}
-          </h1>
-          <p class="body-tactical text-white text-lg leading-relaxed">
-            {{ product.metafields.custom.tagline }}
-          </p>
-          <div class="flex items-center justify-between pt-2">
-            <div class="inline-flex items-center rounded-full border bg-[#afa38e] text-background text-sm px-4 py-2 font-semibold">
-              NRR {{ product.metafields.custom.nrr_db }} dB
-            </div>
-            <div class="text-right">
-              <span class="text-[#695e49] text-2xl font-bold">{{ product.price | money }}</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- SELECT OPTIONS -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="space-y-2">
-            <label class="text-white text-sm font-medium">Color</label>
-            {% form 'product', product %}
-              {{ form | product_options }}
-            {% endform %}
-          </div>
-          <div class="space-y-2">
-            <label class="text-white text-sm font-medium">Finish</label>
-            <!-- Assuming options[1] is Finish -->
-            {% if product.options.size > 1 %}
-              {% assign finish_index = 1 %}
-              {% for value in product.options_with_values[finish_index].values %}
-                <span class="block text-white">{{ value }}</span>
-              {% endfor %}
-            {% endif %}
-          </div>
-        </div>
-
-        <!-- SPECIFICATIONS -->
-        {% if product.metafields.custom.specifications %}
-        <div class="rounded-lg border text-card-foreground shadow-sm bg-[#695e49]/30 border-[#6C6846]">
-          <div class="p-6">
-            <h3 class="heading-tactical text-[#695e49] text-xl mb-4">Specifications</h3>
-            <ul class="space-y-3">
-              {% for item in product.metafields.custom.specifications.value %}
-              <li class="flex items-start gap-3 text-white">
-                <svg class="lucide w-5 h-5 text-[#afa38e] mt-0.5 flex-shrink-0">...</svg>
-                <span>{{ item }}</span>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-        {% endif %}
-
-        <!-- CTA BUTTONS -->
-        <div class="space-y-4">
-          <button class="btn-hero-cta w-full py-4">REQUEST CONSULTATION TO SCAN MY TEAM</button>
-          <div class="flex items-center space-x-3 py-2">
-            <input type="checkbox" id="scan-confirm" class="h-4 w-4" />
-            <label for="scan-confirm" class="text-white text-sm cursor-pointer">Confirm 3D Scan On-File</label>
-          </div>
-          <button
-            class="bg-[#695e49] text-white w-full py-4 cursor-not-allowed"
-            disabled
+      <div
+        class="space-y-6 bg-muted/20 p-8 rounded-lg border border-[#6C6846]"
+      >
+        <div>
+          <p class="heading-tactical text-[#695e49] text-4xl uppercase mb-4">Overview</p>
+          <div
+            class="body-tactical text-white leading-relaxed text-3xl mb-6"
           >
-            ADD TO CART
-          </button>
-        </div>
-
-        <!-- FOOTNOTE -->
-        <div class="pt-4 border-t border-[#6C6846]">
-          <p class="text-[#afa38e] text-sm">
-            {{ product.metafields.custom.scan_note }}
-          </p>
+            {{ product.description }}
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-</section>
-
+  </section>
 </div>
 
+<script>
+  document.getElementById("productForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  <style>
-  .product-detail-grid {
+    const form = e.target;
+    const formData = new FormData(form);
+    const variantId = formData.get("id");
+
+    fetch("/cart/add.js", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Accept": "application/json",
+      },
+      body: new URLSearchParams(formData),
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error("Add to cart failed");
+        return res.json();
+      })
+      .then((data) => {
+        console.log("Added to cart");
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  });
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const mainImage = document.getElementById('mainProductImage');
+    const thumbnails = document.querySelectorAll('button[data-image]');
+
+    thumbnails.forEach((button) => {
+      button.addEventListener('click', function () {
+        const newSrc = this.getAttribute('data-image');
+        mainImage.src = newSrc;
+      });
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const checkbox = document.getElementById('scan-confirm');
+    const button = document.getElementById('addToCartBtn');
+
+    checkbox.addEventListener('change', function () {
+      button.disabled = !this.checked;
+
+      // Optional: change cursor and styling dynamically
+      if (this.checked) {
+        button.classList.remove('cursor-not-allowed', 'text-muted-foreground', 'bg-[#1a1a19]', 'text-[#58554e]');
+        button.classList.add('cursor-pointer', 'text-white', 'bg-[#695e49]', 'text-white');
+      } else {
+        button.classList.add('cursor-not-allowed', 'text-muted-foreground', 'bg-[#1a1a19]', 'text-[#58554e]');
+        button.classList.remove('cursor-pointer', 'text-white', 'bg-[#695e49]');
+      }
+    });
+  });
+
+  const productVariants = {{ product.variants | json }};
+  const optionSelectors = document.querySelectorAll('.product-option');
+  const variantIdInput = document.getElementById('selectedVariantId');
+
+  optionSelectors.forEach(select => {
+    select.addEventListener('change', () => {
+      const selectedOptions = Array.from(optionSelectors).map(s => s.value);
+
+      const matchedVariant = productVariants.find(variant =>
+        JSON.stringify(variant.options) === JSON.stringify(selectedOptions)
+      );
+
+      if (matchedVariant) {
+        variantIdInput.value = matchedVariant.id;
+      }
+    });
+  });
+</script>
+
+<style>
+  .product-detail-selection-grid {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 640px) {
-    .product-detail-grid {
+  {% comment %} @media (min-width: 640px) {
+    .product-detail-selection-grid {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+  } {% endcomment %}
   }
 </style>
-
 
 {% schema %}
 {
