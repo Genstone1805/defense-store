@@ -932,11 +932,35 @@
   .border-gray-500 {
     border-color: var(--color-gray-500);
   }
+  .bg-\[\#0d0d0d2d\] {
+    background-color: #0d0d0d2d;
+  }
+  .bg-\[\#0d0d0d3a\] {
+    background-color: #0d0d0d3a;
+  }
+  .bg-\[\#0d0d0d4f\] {
+    background-color: #0d0d0d4f;
+  }
   .bg-\[\#0d0d0d7a\] {
     background-color: #0d0d0d7a;
   }
+  .bg-\[\#0d0d0d8e\] {
+    background-color: #0d0d0d8e;
+  }
+  .bg-\[\#0d0d0d25\] {
+    background-color: #0d0d0d25;
+  }
   .bg-\[\#0d0d0d33\] {
     background-color: #0d0d0d33;
+  }
+  .bg-\[\#0d0d0d57\] {
+    background-color: #0d0d0d57;
+  }
+  .bg-\[\#0d0d0d75\] {
+    background-color: #0d0d0d75;
+  }
+  .bg-\[\#0d0d0d81\] {
+    background-color: #0d0d0d81;
   }
   .bg-\[\#0d0d0d\] {
     background-color: #0d0d0d;
@@ -947,14 +971,26 @@
   .bg-\[\#0d0d0d\]\/50 {
     background-color: color-mix(in oklab, #0d0d0d 50%, transparent);
   }
+  .bg-\[\#0d0d0da6\] {
+    background-color: #0d0d0da6;
+  }
   .bg-\[\#0d0d0da8\] {
     background-color: #0d0d0da8;
   }
   .bg-\[\#0d0d0db4\] {
     background-color: #0d0d0db4;
   }
+  .bg-\[\#0d0d0dc2\] {
+    background-color: #0d0d0dc2;
+  }
   .bg-\[\#0d0d0dc9\] {
     background-color: #0d0d0dc9;
+  }
+  .bg-\[\#0d0d0dcb\] {
+    background-color: #0d0d0dcb;
+  }
+  .bg-\[\#0d0d0dce\] {
+    background-color: #0d0d0dce;
   }
   .bg-\[\#0d0d0dd2\] {
     background-color: #0d0d0dd2;

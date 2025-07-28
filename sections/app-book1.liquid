@@ -1,10 +1,16 @@
 <section
-  class="py-20 transition-all scroll-trigger animate--slide-in duration-1000 delay-200 opacity-100 bg-[#0d0d0d] translate-y-0"
+  class="py-20 transition-all scroll-trigger animate--slide-in duration-1000 delay-200 opacity-100 translate-y-0"
+  style="
+          background: rgba(0, 0, 0, 7.24);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 2%, rgba(0, 0, 0, 0.64) 15%, rgba(0, 0, 0, 0.64) 83%, rgba(0, 0, 0, 0.78) 98%);
+  "
 >
   <div class="container mx-auto px-4">
     <div class="max-w-7xl mx-auto text-center">
-      <p class="text-2xl text-white leading-relaxed mb-12">{{ section.settings.top_text }}</p>
-      <div class="bg-muted/10 p-8 rounded-xl mb-12">
+      <p class="text-[17px] text-white leading-relaxed mb-12">{{ section.settings.top_text }}</p>
+      <div
+        class="p-8 rounded-xl mb-12 bg-[#0d0d0d4f]"
+      >
         <h2 class="text-3xl font-bold text-[#afa38e] mb-6">{{ section.settings.video_title }}</h2>
         <div class="mb-6">
           <div
