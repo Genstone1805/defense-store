@@ -11,12 +11,27 @@
   "sections": {
     "main": {
       "type": "app-page",
+      "blocks": {
+        "button_zpqQxk": {
+          "type": "button",
+          "settings": {
+            "button_text": "SCHEDULE A TECHNOLOGY DEMO",
+            "button_url": "",
+            "button_type": "secondary_fill",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "button_zpqQxk"
+      ],
       "settings": {
-        "background_color": "#0d0d0d",
-        "title": "Banner Title",
-        "text": "Banner Text",
-        "button_text": "Button Text",
-        "button_url": "",
+        "banner_height": "440",
+        "btitle": "",
+        "title": "BEYOND HEARING PROTECTION",
+        "ctitle": "",
+        "text": "Aware custom-fit ear gear becomes a passive platform for in-ear sensing — no added steps, no added equipment. Your ear is the window.",
+        "ctext": "",
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23"
       }
