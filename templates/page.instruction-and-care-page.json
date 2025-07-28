@@ -12,11 +12,13 @@
     "main": {
       "type": "app-page",
       "settings": {
-        "background_color": "#0d0d0d",
-        "title": "Banner Title",
-        "text": "Banner Text",
-        "button_text": "Button Text",
-        "button_url": "",
+        "banner_height": "300",
+        "btitle": "",
+        "title": "",
+        "sub_title": "",
+        "ctitle": "INSTRUCTIONS & CARE GUIDE",
+        "text": "",
+        "ctext": "Get the most from your Aware Defense gear. Follow these steps to ensure a secure fit, proper function, and long-lasting protection.",
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23"
       }
@@ -137,8 +139,8 @@
         "bottom_text2": "Air dry fully before storing",
         "bottom_text3": "Never submerge electronic components (e.g., CEP inserts)",
         "background_color": "#0d0d0d",
-        "primary_color": "#AFA38E",
-        "secondary_color": "#7B0F23"
+        "primary_color": "#afa38e",
+        "secondary_color": "#7b0f23"
       }
     }
   },
