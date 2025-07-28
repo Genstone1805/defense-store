@@ -2,13 +2,13 @@
   class=" py-20 text-center scroll-trigger animate--slide-in text-white object-cover"
   style="
           background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.79) 98%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.74) 98%);
   "
 >
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto">
     <div class="mx-auto mb-12 px-8">
-      <p class="text-[48px]/20 font-semibold uppercase" style="color:{{ section.settings.primary_color }}">
+      <p class="text-[44px]/20 font-semibold uppercase" style="color:{{ section.settings.primary_color }}">
         {{ section.settings.card_title }}
       </p>
       <p
@@ -50,10 +50,10 @@
                 </div>
               {% endif %}
 
-              <p class="font-bold text-5xl capitalize mb-6" style="color:{{ section.settings.primary_color }}">
+              <p class="font-bold text-[24px] capitalize mb-6" style="color:{{ section.settings.primary_color }}">
                 {{ block.settings.title }}
               </p>
-              <p class="text-3xl">{{ block.settings.text }}</p>
+              <p class="text-[17px]">{{ block.settings.text }}</p>
               {% if block.settings.button_text != blank %}
                 <a
                   href="{{ block.settings.button_url }}"
@@ -120,7 +120,7 @@
 
 {% schema %}
 {
-  "name": "instrument and care cards",
+  "name": "Two Cols Card No Image",
   "tag": "section",
   "settings": [
     {

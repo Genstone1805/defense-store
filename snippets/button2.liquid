@@ -1,0 +1,57 @@
+{% if type == 'fill' %}
+  <a
+    href="{{button_url }}"
+    class="gap-2 px-8 py-2 whitespace-nowrap rounded-md flex items-center justify-center"
+    style="background-color:{{ primary_color }}"
+  >
+    {{ button_text }}
+    {% if showArrow %}
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
+      </svg>
+    {% endif %}
+  </a>
+{% elsif type == 'outline' %}
+  <a
+    href="{{ button_url }}"
+    class="gap-2 px-8 py-2 whitespace-nowrap rounded-md bg-black flex items-center justify-center text-white border"
+    style="border-color:{{ primary_color }}"
+    onmouseover="this.style.backgroundColor='{{ primary_color }}'"
+    onmouseout="this.style.backgroundColor=''"
+  >
+    {{ button_text }}
+    {% if showArrow %}
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
+      </svg>
+    {% endif %}
+  </a>
+{% elsif type == 'secondary_fill' %}
+  <a
+    href="{{button_url }}"
+    class="gap-2 px-8 py-2 whitespace-nowrap rounded-md flex items-center justify-center"
+    style="background-color:{{ secondary_color }}"
+  >
+    {{ button_text }}
+    {% if showArrow %}
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
+      </svg>
+    {% endif %}
+  </a>
+{% elsif type == 'secondary_outline' %}
+  <a
+    href="{{ button_url }}"
+    class="gap-2 px-8 py-2 whitespace-nowrap rounded-md text-white bg-black flex items-center justify-center border"
+    style="border-color:{{ secondary_color }}"
+    onmouseover="this.style.backgroundColor='{{ secondary_color }}'"
+    onmouseout="this.style.backgroundColor=''"
+  >
+    {{ button_text }}
+    {% if showArrow %}
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
+      </svg>
+    {% endif %}
+  </a>
+{% endif %}
