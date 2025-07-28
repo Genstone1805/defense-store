@@ -12,9 +12,10 @@
     "main": {
       "type": "app-page",
       "settings": {
-        "banner_height": "440",
+        "banner_height": "300",
         "btitle": "eFit 3D Scanner",
         "title": "",
+        "sub_title": "",
         "ctitle": "",
         "text": "",
         "ctext": "Revolutionizing Ear Scanning with Medical-Grade Precision",
