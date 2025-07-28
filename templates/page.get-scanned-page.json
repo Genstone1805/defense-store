@@ -75,7 +75,6 @@
       "name": "Image Left Cols Card",
       "settings": {
         "title": "WHY eFIT MATTERS",
-        "background_color": "#0d0d0d",
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23",
         "right_image": "shopify://shop_images/manEar.png"
@@ -187,10 +186,10 @@
       "name": "Full With Card",
       "settings": {
         "background_color": "#0d0d0d",
-        "ctitle": "Banner Title",
+        "ctitle": "",
         "title": "GET YOUR TEAM MISSION-READY",
         "text": "Schedule a scan, get gear that fits, and prepare for the next evolution in protection.",
-        "ctext": "Banner Text",
+        "ctext": "",
         "button_text": "",
         "button_url": "",
         "primary_color": "#b6ac87",
