@@ -1,9 +1,9 @@
-<div class="mt-20">
-  <div class="bg-[#0d0d0d] py-4 px-6">
-    <div class="max-w-7xl mx-auto">
+<div class="mt-32 bg-[#000000b6]">
+  <div class="py-4 px-6">
+    <div class="max-w-[1100px] mx-auto">
       <a
         class="inline-flex items-center text-[#afa38e] hover:text-[#695e49] transition-colors"
-        href="/products"
+        href="javascript:history.back();"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,17 +26,6 @@
   </div>
   <section
     class="py-20 px-6 relative scroll-fade-in visible"
-    style="
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.8),
-          rgba(0, 0, 0, 0.8)
-        ),
-        url('./blackDark.png');
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    "
-    data-measuring="true"
   >
     <div class="max-w-[1100px] mx-auto">
       <div
@@ -112,7 +101,7 @@
               </div>
             </div>
             <div class="space-y-4">
-              <a href="/request-consultation"
+              <a href="{{section.settings.consultation_url}}"
                 ><button
                   class="inline-flex border-[#7b0f23] border items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium px-4 text-white bg-black hover:bg-[#7b0f23] text-[14px] transition-all duration-300 w-full py-2"
                 >
@@ -258,7 +247,13 @@
 {
   "name": "App Product",
   "tag": "section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "url",
+      "id": "consultation_url",
+      "label": "Consultation URL"
+    }
+  ],
   "blocks": [],
   "presets": [
     {

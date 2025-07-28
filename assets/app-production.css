@@ -328,6 +328,9 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mt-32 {
+    margin-top: calc(var(--spacing) * 32);
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -920,6 +923,9 @@
   .bg-\[\#0d0d0dc9\] {
     background-color: #0d0d0dc9;
   }
+  .bg-\[\#000000b6\] {
+    background-color: #000000b6;
+  }
   .bg-\[\#1a1a19\] {
     background-color: #1a1a19;
   }
@@ -934,6 +940,9 @@
   }
   .bg-\[\#8c7a57\] {
     background-color: #8c7a57;
+  }
+  .bg-\[\#0000009f\] {
+    background-color: #0000009f;
   }
   .bg-\[\#695e49\] {
     background-color: #695e49;
