@@ -11,14 +11,31 @@
   "sections": {
     "main": {
       "type": "app-page",
+      "blocks": {
+        "button_hyGPUA": {
+          "type": "button",
+          "settings": {
+            "button_text": "REQUEST A SCAN CONSULTATION",
+            "button_url": "",
+            "button_type": "fill",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "button_hyGPUA"
+      ],
       "settings": {
-        "background_color": "#0d0d0d",
+        "banner_height": "440",
+        "btitle": "",
         "title": "GET SCANNED FOR CUSTOM-FIT GEAR IN JUST 90 SECONDS",
+        "sub_title": "",
+        "ctitle": "",
         "text": "Our FDA-cleared eFit 3D scanner captures the exact geometry of your ear — no contact, no silicone. Just perfect fit, every time.",
-        "button_text": "REQUEST A SCAN CONSULTATION",
-        "button_url": "shopify://collections/all",
+        "ctext": "",
         "primary_color": "#b6ac87",
-        "secondary_color": "#7b0f23"
+        "secondary_color": "#7b0f23",
+        "background_image": "shopify://shop_images/imgi_21_68ac4c95-84ec-4119-a846-03be89b8204c.png"
       }
     },
     "app_card6_kh8mFt": {
@@ -106,8 +123,7 @@
         "button_style": "outline",
         "background_color": "#0d0d0d",
         "primary_color": "#afa38e",
-        "secondary_color": "#7b0f23",
-        "background_image": "shopify://shop_images/dark-bg.png"
+        "secondary_color": "#7b0f23"
       }
     },
     "app_card8_ynrjeb": {
@@ -150,7 +166,8 @@
           "settings": {
             "button_text": "REQUEST A CONSULTATION",
             "button_url": "",
-            "button_type": "fill"
+            "button_type": "fill",
+            "show_arrow": false
           }
         },
         "button_BrtLTb": {
@@ -158,7 +175,8 @@
           "settings": {
             "button_text": "CONTACT US",
             "button_url": "",
-            "button_type": "outline"
+            "button_type": "outline",
+            "show_arrow": false
           }
         }
       },
@@ -169,8 +187,10 @@
       "name": "Full With Card",
       "settings": {
         "background_color": "#0d0d0d",
+        "ctitle": "Banner Title",
         "title": "GET YOUR TEAM MISSION-READY",
         "text": "Schedule a scan, get gear that fits, and prepare for the next evolution in protection.",
+        "ctext": "Banner Text",
         "button_text": "",
         "button_url": "",
         "primary_color": "#b6ac87",
