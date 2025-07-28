@@ -8,7 +8,12 @@
       <p class="md:text-[48px]/20 text-[40px]/20 font-bold leading-tight">
         {{ section.settings.title }}
       </p>
-      <p class="text-4xl">{{ section.settings.text }}</p>
+      {% if section.settings.text != blank %}
+        <p class="text-4xl">{{ section.settings.text }}</p>
+      {% endif %}
+      {% if section.settings.ctext != blank %}
+        <p class="text-4xl" style="background-clor:#afa38e">{{ section.settings.ctext }}</p>
+      {% endif %}
       {% if section.settings.button_text != blank %}
         <a
           href="{{ section.settings.button_url }}"
@@ -64,8 +69,12 @@
     {
       "type": "text",
       "id": "text",
-      "label": "Banner Text",
-      "default": "Banner Text"
+      "label": "Banner Text"
+    },
+    {
+      "type": "text",
+      "id": "ctext",
+      "label": "Colored Banner Text"
     },
     {
       "type": "text",
