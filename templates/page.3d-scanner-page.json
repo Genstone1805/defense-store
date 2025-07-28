@@ -12,11 +12,12 @@
     "main": {
       "type": "app-page",
       "settings": {
-        "background_color": "#0d0d0d",
-        "title": "GET SCANNED FOR CUSTOM-FIT GEAR IN JUST 90 SECONDS",
-        "text": "Our FDA-cleared eFit 3D scanner captures the exact geometry of your ear — no contact, no silicone. Just perfect fit, every time.",
-        "button_text": "REQUEST A SCAN CONSULTATION",
-        "button_url": "",
+        "banner_height": "440",
+        "btitle": "eFit 3D Scanner",
+        "title": "",
+        "ctitle": "",
+        "text": "",
+        "ctext": "Revolutionizing Ear Scanning with Medical-Grade Precision",
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23",
         "background_image": "shopify://shop_images/manEar.png"
