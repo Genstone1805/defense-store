@@ -11,14 +11,31 @@
   "sections": {
     "main": {
       "type": "app-page",
+      "blocks": {
+        "button_X3xpRA": {
+          "type": "button",
+          "settings": {
+            "button_text": "REQUEST A CONSULTATION",
+            "button_url": "",
+            "button_type": "secondary_fill",
+            "show_arrow": true
+          }
+        }
+      },
+      "block_order": [
+        "button_X3xpRA"
+      ],
       "settings": {
-        "background_color": "#000000",
+        "banner_height": "300",
+        "btitle": "",
         "title": "READY TO OUTFIT YOUR TEAM?",
-        "text": "Whether you're buying for a unit, department, or yourself, Aware Defense makes it easy to deploy custom-fit gear at scale.",
-        "button_text": "REQUEST A CONSULTATION",
-        "button_url": "",
+        "sub_title": "",
+        "ctitle": "",
+        "text": "",
+        "ctext": "Whether you're buying for a unit, department, or yourself, Aware Defense makes it easy to deploy custom-fit gear at scale.",
         "primary_color": "#7b0f23",
-        "secondary_color": "#7b0f23"
+        "secondary_color": "#7b0f23",
+        "background_image": "shopify://shop_images/smallMan.png"
       }
     },
     "app_card11_QnfmTz": {
@@ -195,7 +212,8 @@
           "settings": {
             "button_text": "TALK TO OUR TEAM",
             "button_url": "",
-            "button_type": "outline"
+            "button_type": "outline",
+            "show_arrow": false
           }
         },
         "button_gLJKFk": {
@@ -203,7 +221,8 @@
           "settings": {
             "button_text": "REQUEST A QUOTE",
             "button_url": "",
-            "button_type": "fill"
+            "button_type": "fill",
+            "show_arrow": false
           }
         }
       },
@@ -214,8 +233,10 @@
       "name": "Full With Card",
       "settings": {
         "background_color": "#0d0d0d",
+        "ctitle": "Banner Title",
         "title": "HAVE QUESTIONS BEFORE YOU BUY?",
         "text": "We'll walk you through what to order, how to scan, and how to deploy Aware products fast.",
+        "ctext": "Banner Text",
         "button_text": "",
         "button_url": "",
         "primary_color": "#b6ac87",
