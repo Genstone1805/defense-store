@@ -23,6 +23,65 @@
         "secondary_color": "#7b0f23"
       }
     },
+    "app_card9_aGTD7F": {
+      "type": "app-card9",
+      "blocks": {
+        "card_KDtgm6": {
+          "type": "card",
+          "settings": {
+            "title": "Check L/R Marking",
+            "text": "Ensure you have the correct side before insertion.",
+            "badge": "",
+            "button_text": "",
+            "button_url": "",
+            "image": "shopify://shop_images/svgviewer-png-output_5.png",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_jEKCiF": {
+          "type": "card",
+          "settings": {
+            "title": "Align & Insert Gently",
+            "text": "Rotate slightly to seat properly into ear canal.",
+            "badge": "",
+            "button_text": "",
+            "button_url": "",
+            "image": "shopify://shop_images/svgviewer-png-output_8.png",
+            "bg_color": "#0d0d0d"
+          }
+        },
+        "card_RVkFyt": {
+          "type": "card",
+          "settings": {
+            "title": "Confirm Fit",
+            "text": "A correct seal will feel snug but not pressured.",
+            "badge": "",
+            "button_text": "",
+            "button_url": "",
+            "image": "shopify://shop_images/svgviewer-png-output_9.png",
+            "bg_color": "#0d0d0d"
+          }
+        }
+      },
+      "block_order": [
+        "card_KDtgm6",
+        "card_jEKCiF",
+        "card_RVkFyt"
+      ],
+      "name": "Three Cols Card No Image",
+      "settings": {
+        "card_title": "",
+        "card_sub_title": "",
+        "ccard_sub_title": "INSERTING YOUR CUSTOM EARPIECES",
+        "text": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "outline",
+        "background_color": "#0d0d0d",
+        "primary_color": "#AFA38E",
+        "secondary_color": "#7B0F23"
+      }
+    },
     "app_card13_ikmnrq": {
       "type": "app-card13",
       "blocks": {
@@ -146,6 +205,7 @@
   },
   "order": [
     "main",
+    "app_card9_aGTD7F",
     "app_card13_ikmnrq",
     "app_card13_hfXKR4",
     "app_card14_DMG6mM"
