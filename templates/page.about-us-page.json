@@ -12,11 +12,13 @@
     "main": {
       "type": "app-page",
       "settings": {
-        "background_color": "#0d0d0d",
+        "banner_height": "300",
+        "btitle": "",
         "title": "BUILT BY OPERATORS",
+        "sub_title": "",
+        "ctitle": "",
         "text": "TRUSTED BY ELITE UNITS",
-        "button_text": "",
-        "button_url": "",
+        "ctext": "",
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23",
         "background_image": "shopify://shop_images/imgi_27_fe973eea-926b-4ab5-9991-92cb270bd128.png"
@@ -88,9 +90,7 @@
         },
         "supporters_VA4YGf": {
           "type": "supporters",
-          "settings": {
-            "logo": "shopify://shop_images/imgi_12_9ab5019f-203f-404b-89b1-a6411e681421.png"
-          }
+          "settings": {}
         },
         "supporters_Mn6XHp": {
           "type": "supporters",
@@ -106,9 +106,7 @@
         },
         "supporters_aaBfzp": {
           "type": "supporters",
-          "settings": {
-            "logo": "shopify://shop_images/imgi_10_a8e2387b-c26e-4705-9bf5-6050903737c5.png"
-          }
+          "settings": {}
         },
         "supporters_4WPwzQ": {
           "type": "supporters",
