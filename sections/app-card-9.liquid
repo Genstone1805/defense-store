@@ -1,39 +1,47 @@
 <section
   class="py-20 scroll-trigger animate--slide-in text-white"
-  style="background-color:{{ section.settings.background_color }}"
+  style="
+          background: rgba(0, 0, 0, 7.24);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 2%, rgba(0, 0, 0, 0.67) 53%, rgba(0, 0, 0, 0.72) 98%);
+  "
 >
   <div class="container mx-auto px-4">
     <div class="max-w-7xl mx-auto text-center space-y-8">
-      <p
-        class="lg:text-[48px]/20 text-[40px]/20 font-bold leading-tight uppercase"
-        style="color:{{ section.settings.primary_color }}"
-      >
-        {{ section.settings.title }}
-      </p>
-      <p class="text-3xl leading-relaxed text-white">
-        {{ section.settings.text }}
-      </p>
+      {% if section.settings.title != blank %}
+        <p
+          class="lg:text-[44px]/20 text-[40px]/20 font-bold leading-tight uppercase"
+          style="color:{{ section.settings.primary_color }}"
+        >
+          {{ section.settings.title }}
+        </p>
+      {% endif %}
+      {% if section.settings.ctitle != blank %}
+        <p
+          class="lg:text-[44px]/20 text-[40px]/20 font-bold leading-tight uppercase text-white"
+        >
+          {{ section.settings.ctitle }}
+        </p>
+      {% endif %}
+      {% if section.settings.ctext != blank %}
+        <p class="text-3xl leading-relaxed text-[#a0937d]">
+          {{ section.settings.ctext }}
+        </p>
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <p class="text-3xl leading-relaxed text-white">
+          {{ section.settings.text }}
+        </p>
+      {% endif %}
       <div class="flex gap-4 w-full justify-center items-center mx-auto">
         {% for block in section.blocks %}
-          {% if block.settings.button_type == 'fill' %}
-            <a
-              href="{{block.setting.button_url }}"
-              class="gap-2 px-8 py-2 whitespace-nowrap rounded-md"
-              style="background-color:{{ section.settings.primary_color }}"
-            >
-              {{ block.settings.button_text }}
-            </a>
-          {% else %}
-            <a
-              href="{{ block.settings.buttom_url }}"
-              class="border px-8 py-2 gap-2 whitespace-nowrap rounded-md"
-              style="border-color:{{ section.settings.primary_color }}"
-              onmouseover="this.style.backgroundColor='{{ section.settings.primary_color }}'"
-              onmouseout="this.style.backgroundColor=''"
-            >
-              {{ block.settings.button_text }}
-            </a>
-          {% endif %}
+          {% render 'button',
+            secondary_color: section.settings.secondary_color,
+            primary_color: section.settings.primary_color,
+            button_text: block.settings.button_text,
+            button_url: block.settings.button_url,
+            type: block.settings.button_type,
+            showArrow: block.settings.show_arrow
+          %}
         {% endfor %}
       </div>
     </div>
@@ -61,7 +69,13 @@
       "type": "color",
       "id": "background_color",
       "label": "Background Color",
-      "default": "#0d0d0d"
+      "default": "#0d0d0dd7"
+    },
+    {
+      "type": "text",
+      "id": "ctitle",
+      "label": "White Banner Title",
+      "default": "Banner Title"
     },
     {
       "type": "text",
@@ -73,6 +87,12 @@
       "type": "text",
       "id": "text",
       "label": "Banner Text",
+      "default": "Banner Text"
+    },
+    {
+      "type": "text",
+      "id": "ctext",
+      "label": "Coloured Banner Text",
       "default": "Banner Text"
     },
     {
@@ -132,16 +152,30 @@
             {
               "value": "fill",
               "label": "Fill"
+            },
+            {
+              "value": "secondary_fill",
+              "label": "Secondary Fill"
+            },
+            {
+              "value": "secondary_outline",
+              "label": "Secondary Outline"
             }
           ],
           "default": "fill"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "label": "Show Arrow",
+          "default": false
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Full With Card",
+      "name": "Full Width Card",
       "category": "Custom"
     }
   ]

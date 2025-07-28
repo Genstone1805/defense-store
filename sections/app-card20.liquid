@@ -1,62 +1,66 @@
 <section
-  class="py-20 transition-all scroll-trigger animate--slide-in duration-1000 delay-400 opacity-100 translate-y-0 bg-black"
+  class="py-28 transition-all scroll-trigger animate--slide-in duration-1000 delay-400 opacity-100 translate-y-0"
+  style="
+          background: rgba(0, 0, 0, 7.24);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 2%, rgba(0, 0, 0, 0.72) 53%, rgba(0, 0, 0, 0.80) 98%);
+  "
 >
   <div class="mx-auto px-4">
     <div class="max-w-7xl mx-auto text-center">
       <p class="text-5xl font-bold text-white mb-8 uppercase">{{ section.settings.title }}</p>
       <p class="text-3xl text-[#afa38e] leading-relaxed mb-10">{{ section.settings.sub_title }}</p>
       <div
-        class="bg-combat-black/80 border border-[#afa38e]/30 rounded-xl overflow-hidden"
+        class="bg-combat-black/80 border  rounded-xl overflow-hidden"
+        style="border-color:{{ section.settings.secondary_color }}"
       >
-        <table class="w-full">
+        <table
+          class="w-full border border-collapse text-xl md:text-2xl"
+          style="border-color:{{ section.settings.secondary_color }}; color:{{section.settings.primary_color }}"
+        >
           <thead>
-            <tr class="bg-[#7b0f23]/20 border-b border-[#afa38e]/20">
+            <tr class="uppercase" style="background-color:{{section.settings.background_color }}">
               <th
-                class="text-left p-4 text-[#afa38e] font-semibold uppercase tracking-wide"
+                class="border  px-4 py-3 font-semibold text-center text-white"
+                style="border-color:{{section.settings.secondary_color }}"
               >
-                FEATURE
+                Feature
               </th>
               <th
-                class="text-center p-4 text-[#7b0f23] font-bold uppercase tracking-wide"
+                class="border px-8 py-3 text-white font-semibold"
+                style="border-color:{{section.settings.secondary_color }}"
               >
-                AWARE
+                Aware
               </th>
-              <th
-                class="text-center p-4 text-[#afa38e] font-semibold uppercase tracking-wide"
-              >
-                TRADITIONAL
+              <th class="border px-4 py-3 font-semibold" style="border-color:{{section.settings.secondary_color }}">
+                Traditional
               </th>
-              <th
-                class="text-center p-4 text-[#afa38e] font-semibold uppercase tracking-wide"
-              >
-                FOAM
+              <th class="border px-8 py-3 font-semibold" style="border-color:{{section.settings.secondary_color }}">
+                Foam
               </th>
             </tr>
           </thead>
           <tbody>
             {% for block in section.blocks %}
               {% if block.type == 'table' %}
-                <tr class="border-b border-[#afa38e]/10">
-                  <td class="p-4 text-left text-white text-xl">{{ block.settings.featured }}</td>
+                <tr style="background-color:{{ section.settings.background_color }}">
+                  <!-- Feature Name -->
+                  <td
+                    class="border px-4 max-w-48 py-3 text-white text-2xl"
+                    style="border-color:{{section.settings.secondary_color}}; padding-top:20px; padding-bottom:20px"
+                  >
+                    {{ block.settings.featured }}
+                  </td>
 
-                  <td class="p-4 text-center">
+                  <!-- Aware Column -->
+                  <td class="border text-center" style="border-color:{{section.settings.secondary_color}}">
                     {% case block.settings.aware %}
                       {% when 'yes' %}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-circle-check-big size-6 text-[#7b0f23] mx-auto"
-                        >
-                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                          <path d="m9 11 3 3L22 4"></path>
-                        </svg>
+                        <span class="flex items-center justify-center text-white">
+                          <!-- Checkmark -->
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32">
+                            <path fill="currentColor" fill-rule="evenodd" d="M28.928 10.3a3.25 3.25 0 0 1-.137 4.595L13.94 28.89a3.25 3.25 0 0 1-4.557-.098l-6.264-6.435a3.25 3.25 0 0 1 4.658-4.534l4.033 4.143l12.525-11.802a3.25 3.25 0 0 1 4.594.136" clip-rule="evenodd"/>
+                          </svg>
+                        </span>
                       {% when 'no' %}
                         <span class="text-2xl font-semibold flex items-center justify-center">
                           <!-- Cross -->
@@ -68,27 +72,18 @@
                         <span class="uppercase">Limited</span>
                     {% endcase %}
                   </td>
-                  <td class="p-4 text-center">
+
+                  <!-- Traditional Column -->
+                  <td class="border text-center" style="border-color:{{section.settings.secondary_color}}">
                     {% case block.settings.traditional %}
                       {% when 'yes' %}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-circle-check-big size-6 text-[#7b0f23] mx-auto"
-                        >
-                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                          <path d="m9 11 3 3L22 4"></path>
-                        </svg>
+                        <span class="flex items-center justify-center text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                            <path fill="currentColor" fill-rule="evenodd" d="M28.928 10.3a3.25 3.25 0 0 1-.137 4.595L13.94 28.89a3.25 3.25 0 0 1-4.557-.098l-6.264-6.435a3.25 3.25 0 0 1 4.658-4.534l4.033 4.143l12.525-11.802a3.25 3.25 0 0 1 4.594.136" clip-rule="evenodd"/>
+                          </svg>
+                        </span>
                       {% when 'no' %}
                         <span class="text-2xl font-semibold flex items-center justify-center">
-                          <!-- Cross -->
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
                             <path fill="currentColor" d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94z"/>
                           </svg>
@@ -97,27 +92,18 @@
                         <span class="uppercase">Limited</span>
                     {% endcase %}
                   </td>
-                  <td class="p-4 text-center">
+
+                  <!-- Foam Column -->
+                  <td class="border text-center" style="border-color:{{section.settings.secondary_color}}">
                     {% case block.settings.foam %}
                       {% when 'yes' %}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="lucide lucide-circle-check-big size-6 text-[#7b0f23] mx-auto"
-                        >
-                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                          <path d="m9 11 3 3L22 4"></path>
-                        </svg>
+                        <span class="flex items-center justify-center text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+                            <path fill="currentColor" fill-rule="evenodd" d="M28.928 10.3a3.25 3.25 0 0 1-.137 4.595L13.94 28.89a3.25 3.25 0 0 1-4.557-.098l-6.264-6.435a3.25 3.25 0 0 1 4.658-4.534l4.033 4.143l12.525-11.802a3.25 3.25 0 0 1 4.594.136" clip-rule="evenodd"/>
+                          </svg>
+                        </span>
                       {% when 'no' %}
                         <span class="text-2xl font-semibold flex items-center justify-center">
-                          <!-- Cross -->
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
                             <path fill="currentColor" d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94z"/>
                           </svg>

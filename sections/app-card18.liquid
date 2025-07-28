@@ -1,7 +1,11 @@
 <section
-  class="py-20 transition-all duration-1000 delay-200 opacity-100 translate-y-0 bg-[#0d0d0d]"
+  class="py-20 transition-all duration-1000 delay-200 opacity-100 translate-y-0"
+  style="
+          background: rgba(0, 0, 0, 7.24);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 2%, rgba(0, 0, 0, 0.78) 53%, rgba(0, 0, 0, 0.78) 98%);
+  "
 >
-  <div class="mx-auto px-4 bg-[#0d0d0d]">
+  <div class="mx-auto px-4">
     <div class="max-w-[1100px] mx-auto">
       <div class="app-card-18-grid">
         <div
@@ -15,14 +19,14 @@
               {{ section.settings.left_title }}
             </p>
             <div
-              class="w-48 h-48 mx-auto mb-6 bg-combat-black rounded-lg flex items-center justify-center overflow-hidden"
+              class="size-72 mx-auto mb-6 bg-black bg-combat-black rounded-lg flex items-center justify-center overflow-hidden"
             >
               {% if section.settings.left_image %}
                 <img
                   src="{{ section.settings.left_image | image_url  }}"
                   alt="Image"
                   alt="eFit 3D Scanner"
-                  class="w-full h-full object-contain p-4"
+                  class="w-48 h-48 object-contain p-4"
                   width="50"
                   height="50"
                 >
@@ -31,7 +35,7 @@
             <p class="text-[#afa38e] mb-8 leading-relaxed">{{ section.settings.left_text }}</p>
             <a
               href="{{ section.settings.left_button_url }}"
-              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-[#0d0d0d] h-10 px-4 py-2 w-full font-semibold uppercase tracking-wide border-[#827867] text-[#827867] hover:bg-[#827867] hover:text-white"
+              class="inline-flex items-center justify-center gap-2 py-6 whitespace-nowrap rounded-md text-2xl ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-[#0d0d0d] h-10 px-4 w-full font-semibold uppercase tracking-wide border-[#827867] text-[#827867] hover:bg-[#827867] hover:text-white"
             >
               {{ section.settings.left_button_text }}
             </a>
@@ -43,14 +47,14 @@
           <div class="p-8 text-center">
             <p class="text-4xl font-bold text-white mb-6">{{ section.settings.right_title }}</p>
             <div
-              class="w-48 h-48 mx-auto mb-6 bg-combat-black rounded-lg flex items-center justify-center overflow-hidden"
+              class="size-72 bg-black mx-auto mb-6 bg-combat-black rounded-lg flex items-center justify-center overflow-hidden"
             >
               {% if section.settings.right_image %}
                 <img
                   src="{{ section.settings.right_image | image_url  }}"
                   alt="Image"
                   alt="eFit 3D Scanner"
-                  class="w-full h-full object-contain p-4"
+                  class="w-48 h-48 object-contain p-4"
                   width="50"
                   height="50"
                 >
@@ -59,7 +63,7 @@
             <p class="text-[#afa38e] mb-8 leading-relaxed">{{ section.settings.right_text }}</p>
             <a
               href="{{ section.settings.right_button_url }}"
-              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-[#0d0d0d] h-10 px-4 py-2 w-full font-semibold uppercase tracking-wide border-[#827867] text-[#827867] hover:bg-[#827867] hover:text-white"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-2xl ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-[#0d0d0d] h-10 px-4 py-6 w-full font-semibold uppercase tracking-wide border-[#827867] text-[#827867] hover:bg-[#827867] hover:text-white"
             >
               {{ section.settings.right_button_text }}
             </a>
