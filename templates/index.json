@@ -262,22 +262,25 @@
         "card_BXyBXB": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/imgi_4_3a90284f-b504-4a79-aec4-72a9b5469446.png",
-            "bg_color": "#000000"
+            "text": "EarShield",
+            "image": "shopify://shop_images/imgi_4_2bf1dbd2-9f57-4571-8ec2-448676c5817b.png",
+            "bg_color": "#ffffff"
           }
         },
         "card_eiYNUn": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/imgi_5_71a992fd-155b-4df3-a294-21f188459041.png",
-            "bg_color": "#000000"
+            "text": "Aviation CEP",
+            "image": "shopify://shop_images/imgi_5_1353552f-30af-4dd7-b89e-848918e19da8.png",
+            "bg_color": "#ffffff"
           }
         },
         "card_b6yLAL": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/imgi_6_bed92e28-b372-401f-b191-c06f75d54160.png",
-            "bg_color": "#000000"
+            "text": "Custom Overmold",
+            "image": "shopify://shop_images/imgi_6_85b4c708-ab5b-4849-a9f6-5887c9bd50b2.png",
+            "bg_color": "#ffffff"
           }
         }
       },
@@ -294,7 +297,7 @@
         "button_text": "",
         "button_url": "",
         "button_style": "outline",
-        "primary_color": "#afa38e",
+        "primary_color": "#ffffff",
         "secondary_color": "#7b0f23",
         "tertiary_color": "#695e49"
       }
