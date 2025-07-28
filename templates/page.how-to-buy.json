@@ -92,7 +92,7 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
-        "primary_color": "#afa38e",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23"
       }
     },
@@ -200,7 +200,7 @@
         "order": "Bulk orders: Priority timelines available",
         "store": "Digital scan files stored for remakes",
         "background_color": "#0d0d0d",
-        "primary_color": "#afa38e",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23"
       }
     },
@@ -212,8 +212,8 @@
           "settings": {
             "button_text": "TALK TO OUR TEAM",
             "button_url": "",
-            "button_type": "outline",
-            "show_arrow": false
+            "button_type": "secondary_fill",
+            "show_arrow": true
           }
         },
         "button_gLJKFk": {
@@ -233,13 +233,13 @@
       "name": "Full With Card",
       "settings": {
         "background_color": "#0d0d0d",
-        "ctitle": "Banner Title",
-        "title": "HAVE QUESTIONS BEFORE YOU BUY?",
-        "text": "We'll walk you through what to order, how to scan, and how to deploy Aware products fast.",
-        "ctext": "Banner Text",
+        "ctitle": "HAVE QUESTIONS BEFORE YOU BUY?",
+        "title": "",
+        "text": "",
+        "ctext": "We'll walk you through what to order, how to scan, and how to deploy Aware products fast.",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#b6ac87",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23"
       }
     }
