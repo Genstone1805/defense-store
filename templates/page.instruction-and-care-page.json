@@ -78,7 +78,7 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
-        "primary_color": "#AFA38E",
+        "primary_color": "#695e4a",
         "secondary_color": "#7B0F23"
       }
     },
@@ -123,7 +123,7 @@
         "button_url": "",
         "button_style": "outline",
         "background_color": "#0d0d0d",
-        "primary_color": "#afa38e",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23"
       }
     },
@@ -140,7 +140,7 @@
         "bottom_text2": "Air dry fully before storing",
         "bottom_text3": "Never submerge electronic components (e.g., CEP inserts)",
         "background_color": "#0d0d0d",
-        "primary_color": "#afa38e",
+        "primary_color": "#695e4a",
         "secondary_color": "#7b0f23"
       }
     }
