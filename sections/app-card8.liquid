@@ -1,6 +1,9 @@
 <section
   class=" py-20 text-center text-white object-cover scroll-trigger animate--slide-in"
-  style="background-color:{{ section.settings.background_color }}"
+  style="
+          background: rgba(0, 0, 0, 7.24);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.74) 98%);
+  "
 >
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto">
@@ -78,7 +81,7 @@
                 </p>
                 <a
                   href="{{ block.settings.button_url }}"
-                  class="inline-flex w-full items-center justify-center gap-2 whitespace-nowrap px-4  text-lg py-3 rounded-lg font-semibold uppercase tracking-wide"
+                  class="inline-flex w-full  items-center justify-center gap-2 whitespace-nowrap px-4  text-2xl py-4 rounded-lg font-semibold uppercase tracking-wide"
                   style="background-color:{{section.settings.primary_color }}"
                 >
                   {{ block.settings.button_text }}
@@ -108,7 +111,7 @@
         {% if section.settings.button_style == 'outline' %}
           <a
             href="{{ section.settings.button_url }}"
-            class="text-white px-4 py-2 text-4xl border-2 bg-black transition-color duration-150"
+            class="text-white px-4 text-4xl border-2 py-4 bg-black transition-color duration-150"
             style="border-color:{{ section.settings.secondary_color }}"
             onmouseover="this.style.backgroundColor='{{ section.settings.secondary_color }}'"
             onmouseout="this.style.backgroundColor=''"
@@ -119,7 +122,7 @@
         {% else %}
           <a
             href="{{ section.settings.button_url }}"
-            class="text-white px-4 py-2 text-4xl transition-transform duration-150 hover:-translate-y-0.5"
+            class="text-white px-4 py-4 text-4xl transition-transform duration-150 hover:-translate-y-0.5"
             style="background-color:{{ section.settings.primary_color }}"
           >
             {{ section.settings.button_text }}

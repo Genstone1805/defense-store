@@ -1,9 +1,12 @@
 <section
-  class="py-16 px-6 w-full scroll-trigger animate--slide-in items-center justify-center text-white"
-  style="background-color:{{section.settings.background_color }}"
+  class="py-32 px-6 w-full scroll-trigger animate--slide-in items-center justify-center text-white"
+  style="
+          background: rgba(0, 0, 0, 7.24);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.74) 98%);
+  "
 >
   <div
-    class="mx-auto app-grid gap-10 items-center max-w-7xl"
+    class="mx-auto app-grid gap-10 items-center max-w-[1100px]"
   >
     <img
       src="{{ section.settings.right_image | image_url }}"
@@ -14,7 +17,7 @@
     >
     <div class="w-full">
       <p class="text-6xl mb-4" style="color:{{ section.settings.primary_color }}">{{ section.settings.title }}</p>
-      <ul class="space-y-3">
+      <ul class="space-y-6">
         {% for block in section.blocks %}
           <li class="flex gap-x-3 items-center">
             <svg
@@ -29,6 +32,17 @@
             <span> {{ block.settings.text }} </span>
           </li>
         {% endfor %}
+
+        <a
+          href="{{section.settings.button_url }}"
+          class="gap-2 px-8 py-4 my-6 text-black font-bold whitespace-nowrap rounded-md flex items-center justify-center w-1/2"
+          style="background-color:{{ section.settings.primary_color }}"
+        >
+          {{ section.settings.button_text }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
+          </svg>
+        </a>
       </ul>
     </div>
   </div>
@@ -61,10 +75,15 @@
       "default": "Title"
     },
     {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background Color",
-      "default": "#0d0d0d"
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Learn more about eFIT"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"
     },
     {
       "type": "color",
