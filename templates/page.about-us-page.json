@@ -13,12 +13,12 @@
       "type": "app-page",
       "settings": {
         "banner_height": "300",
-        "btitle": "",
-        "title": "BUILT BY OPERATORS",
+        "btitle": "BUILT BY OPERATORS",
+        "title": "",
         "sub_title": "",
-        "ctitle": "",
-        "text": "TRUSTED BY ELITE UNITS",
-        "ctext": "",
+        "ctitle": "TRUSTED BY ELITE UNITS",
+        "text": "",
+        "ctext": "We created Aware Defense to solve the problem we lived with — gear that's uncomfortable, non-compliant, and gets tossed mid-mission.",
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23",
         "background_image": "shopify://shop_images/imgi_27_fe973eea-926b-4ab5-9991-92cb270bd128.png"
