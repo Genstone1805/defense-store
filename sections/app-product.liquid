@@ -89,7 +89,7 @@
           <form class="w-full space-y-8" id="productForm">
             <input type="hidden" name="id" id="selectedVariantId" value="{{ product.variants.first.id }}">
             <div class="space-y-6">
-              <div class="product-detail-selection-grid gap-y-4">
+              <div class="product-detail-selection-grid">
                 {% for option in product.options_with_values %}
                   <div>
                     <label class="text-white mb-2 block text-[14px] font-semibold">{{ option.name }}</label>
@@ -247,15 +247,10 @@
 <style>
   .product-detail-selection-grid {
     display: grid;
-    gap: 30px;
+    gap: 10px;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  {% comment %} @media (min-width: 640px) {
-    .product-detail-selection-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  } {% endcomment %}
   }
 </style>
 
