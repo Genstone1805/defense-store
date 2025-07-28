@@ -12,12 +12,12 @@
     "main": {
       "type": "app-page",
       "settings": {
-        "banner_height": "440",
-        "btitle": "",
-        "title": "TECH THAT FITS. TECH THAT PERFORMS.",
-        "ctitle": "",
+        "banner_height": "300",
+        "btitle": "eFit 3D Scanner",
+        "title": "",
+        "ctitle": "Revolutionizing Ear Scanning with Medical-Grade Precision",
         "text": "",
-        "ctext": "The only platform that unites precision scanning, mission-grade hearing protection, and biometric upgrade paths — all built for field use.",
+        "ctext": "",
         "primary_color": "#7b0f23",
         "secondary_color": "#7b0f23",
         "background_image": "shopify://shop_images/jakub-zerdzicki-kVuzH0KFs1w-unsplash.jpg"
