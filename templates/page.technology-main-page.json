@@ -12,11 +12,12 @@
     "main": {
       "type": "app-page",
       "settings": {
-        "background_color": "#0d0d0d",
+        "banner_height": "440",
+        "btitle": "",
         "title": "TECH THAT FITS. TECH THAT PERFORMS.",
+        "ctitle": "",
         "text": "The only platform that unites precision scanning, mission-grade hearing protection, and biometric upgrade paths — all built for field use.",
-        "button_text": "REQUEST A DEMO",
-        "button_url": "shopify://collections",
+        "ctext": "",
         "primary_color": "#7b0f23",
         "secondary_color": "#7b0f23",
         "background_image": "shopify://shop_images/jakub-zerdzicki-kVuzH0KFs1w-unsplash.jpg"
@@ -130,7 +131,8 @@
           "settings": {
             "button_text": "REQUEST A TECHNOLOGY DEMO",
             "button_url": "",
-            "button_type": "fill"
+            "button_type": "secondary_fill",
+            "show_arrow": true
           }
         },
         "button_GAfnr6": {
@@ -138,7 +140,8 @@
           "settings": {
             "button_text": "CONTACT OUR TEAM",
             "button_url": "shopify://products/aware-cep",
-            "button_type": "outline"
+            "button_type": "outline",
+            "show_arrow": false
           }
         }
       },
@@ -149,8 +152,10 @@
       "name": "Full With Card",
       "settings": {
         "background_color": "#0d0d0d",
-        "title": "WANT TO SEE IT IN ACTION?",
-        "text": "We'll show you how Aware's platform deploys fast, scales efficiently, and delivers unmatched results in the field.",
+        "ctitle": "WANT TO SEE IT IN ACTION?",
+        "title": "",
+        "text": "",
+        "ctext": "We'll show you how Aware's platform deploys fast, scales efficiently, and delivers unmatched results in the field.",
         "button_text": "",
         "button_url": "",
         "primary_color": "#b6ac87",
