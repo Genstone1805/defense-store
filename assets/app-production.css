@@ -1339,6 +1339,10 @@
     font-size: 32px;
     line-height: calc(var(--spacing) * 20);
   }
+  .text-\[35px\]\/20 {
+    font-size: 35px;
+    line-height: calc(var(--spacing) * 20);
+  }
   .text-\[36px\]\/20 {
     font-size: 36px;
     line-height: calc(var(--spacing) * 20);
@@ -1812,6 +1816,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .md\:text-\[40px\]\/20 {
+    @media (width >= 48rem) {
+      font-size: 40px;
+      line-height: calc(var(--spacing) * 20);
     }
   }
   .md\:text-\[43px\]\/20 {
