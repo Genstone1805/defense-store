@@ -50,6 +50,14 @@
                   {{ block.settings.badge }}
                 </div>
               {% endif %}
+
+              <a
+                href="{{section.settings.button_url }}"
+                class="inline-flex w-11/12 py-8 font-semibold my-10 items-center justify-center gap-2 whitespace-nowrap rounded-md text-2xl  text-white ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 btn-olive-outline"
+                style="background-color:{{ section.settings.primary_color }}"
+              >
+                VIEW {{ block.settings.title | upcase }}
+              </a>
             </div>
           {% endif %}
         {% endfor %}
@@ -217,6 +225,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Card Icon"
+        },
+        {
+          "type": "url",
+          "id": "button_text",
+          "label": "Button Text"
         },
         {
           "type": "color",
