@@ -1,8 +1,9 @@
 <section
   class="py-20 bg-muted/10 scroll-trigger animate--slide-in transition-all duration-1000 delay-300 opacity-100 translate-y-0"
-  style="background-color:{{ section.settings.background_color }}"
-  data-selected="true"
-  data-label-id="0"
+  style="
+          background: rgba(0, 0, 0, 7.24);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 2%, rgba(0, 0, 0, 0.73) 53%, rgba(0, 0, 0, 0.76) 98%);
+  "
 >
   <div class="mx-auto px-4">
     <div class="max-w-[1200px] mx-auto">
@@ -10,15 +11,15 @@
       <div class="card-grid gap-12 mb-16 w-full">
         <div
           class="border text-card-foreground shadow-sm rounded-xl transition-all duration-700 delay-500 opacity-100 translate-x-0"
-          style="background-color: rgba(153, 153, 153, 0.2);"
+          style="background-color: rgba(153, 153, 153, 0.1);"
         >
           <div class="p-8">
             <p class="text-4xl font-extrabold text-white text-signal-white mb-6">{{ section.settings.left_title }}</p>
-            <div class="space-y-4 text-signal-white">
+            <div class="space-y-5 text-signal-white">
               <p class="text-desert-tan font-semibold" style="color:{{ section.settings.primary_color }}">
                 {{ section.settings.left_sub_title }}
               </p>
-              <div class="space-y-3 text-white">
+              <div class="text-white space-y-6">
                 {% for block in section.blocks %}
                   {% if block.type == 'left_option' %}
                     <div class="flex items-start space-x-3">
@@ -33,7 +34,7 @@
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-circle-check-big size-5 text-scarlet mt-1 flex-shrink-0"
+                        class="lucide lucide-circle-check-big size-8 text-scarlet mt-1 flex-shrink-0"
                       >
                         <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path>
                       </svg>
@@ -47,7 +48,7 @@
         </div>
         <div
           class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-700 opacity-100 translate-x-0"
-          style="background-color: rgba(153, 153, 153, 0.2);"
+          style="background-color: rgba(153, 153, 153, 0.1);"
         >
           <div class="p-8">
             <p class="text-4xl font-bold text-signal-white text-white mb-6">{{ section.settings.Right_title }}</p>
@@ -59,7 +60,8 @@
                 {% if block.type == 'right_option' %}
                   {% if block.settings.show_bg %}
                     <div
-                      class="p-4 rounded-lg mt-4 text-white bg-black"
+                      class="p-4 rounded-lg mt-4 text-white"
+                      style="background-color: rgba(0, 0, 0, 0.1);"
                     >
                       <p class="text-signal-white">
                         {{ block.settings.text }}
@@ -77,8 +79,8 @@
         </div>
       </div>
       <div
-        class="border text-card-foreground shadow-sm bg-scarlet/10 border-scarlet/30 rounded-xl transition-all duration-700 delay-900 opacity-100 translate-y-0"
-        style="background-color: rgba(123, 15, 35, 0.2); border-color:rgba(123, 15, 35, 0.3);"
+        class="border text-card-foreground py-8 shadow-sm bg-scarlet/10 border-scarlet/30 rounded-xl transition-all duration-700 delay-900 opacity-100 translate-y-0"
+        style="background-color: rgba(123, 15, 35, 0.1); border-color:rgba(123, 15, 35, 0.3);"
       >
         <div class="p-8">
           <p class="text-4xl text-white font-bold text-signal-white text-center mb-8">
@@ -90,7 +92,7 @@
                 <div class="text-center space-y-4">
                   {% if block.settings.card_icon %}
                     <div
-                      class=" rounded-lg mx-auto w-48 flex items-center p-6 mb-8 justify-center"
+                      class=" rounded-lg mx-auto w-28 flex items-center p-6 mb-8 justify-center"
                       style="background-color:{{ section.settings.secondary_color }}"
                     >
                       <img
@@ -102,8 +104,8 @@
                       >
                     </div>
                   {% endif %}
-                  <p class="font-bold text-3xl" style="color: rgb(182, 166, 135);">{{ block.settings.title }}</p>
-                  <p class="text-signal-white text-2xl">{{ block.settings.text }}</p>
+                  <p class="font-bold text-[17px]" style="color: rgb(182, 166, 135);">{{ block.settings.title }}</p>
+                  <p class="text-signal-white text-[14px]/7 text-white">{{ block.settings.text }}</p>
                 </div>
               {% endif %}
             {% endfor %}
