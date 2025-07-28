@@ -924,6 +924,12 @@
   .bg-\[\#0d0d0db4\] {
     background-color: #0d0d0db4;
   }
+  .bg-\[\#0d0d0dc9\] {
+    background-color: #0d0d0dc9;
+  }
+  .bg-\[\#0d0d0de0\] {
+    background-color: #0d0d0de0;
+  }
   .bg-\[\#7b0f23\] {
     background-color: #7b0f23;
   }
@@ -1006,6 +1012,15 @@
   .bg-gradient-to-tr {
     --tw-gradient-position: to top right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[linear-gradient\(to_bottom\,_\#0d0d0db4_0\%\,_\#444444_30\%\,_\#cccccc_50\%\,_\#444444_70\%\,_\#0d0d0db4_100\%\)\] {
+    background-image: linear-gradient(to bottom, #0d0d0db4 0%, #444444 30%, #cccccc 50%, #444444 70%, #0d0d0db4 100%);
+  }
+  .bg-\[linear-gradient\(to_bottom\,_\#000000_0\%\,_\#444444_30\%\,_\#cccccc_50\%\,_\#444444_70\%\,_\#000000_100\%\)\] {
+    background-image: linear-gradient(to bottom, #000000 0%, #444444 30%, #cccccc 50%, #444444 70%, #000000 100%);
+  }
+  .bg-\[linear-gradient\(to_bottom\,_\#1a1a1a_0\%\,_\#4b4b4b_25\%\,_\#e5e5e5_50\%\,_\#4b4b4b_75\%\,_\#1a1a1a_100\%\)\] {
+    background-image: linear-gradient(to bottom, #1a1a1a 0%, #4b4b4b 25%, #e5e5e5 50%, #4b4b4b 75%, #1a1a1a 100%);
   }
   .bg-\[url\(\'\/your-bg-pattern\.png\'\)\] {
     background-image: url('/your-bg-pattern.png');
