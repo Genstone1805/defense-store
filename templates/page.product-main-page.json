@@ -46,6 +46,7 @@
             "badge": "",
             "image": "shopify://shop_images/black_blue_buds.png",
             "bg_color": "#0d0d0d",
+            "button_url": "shopify://products/aware-earshield",
             "collection": ""
           }
         },
@@ -57,6 +58,7 @@
             "badge": "",
             "image": "shopify://shop_images/blue_bud.png",
             "bg_color": "#0d0d0d",
+            "button_url": "shopify://products/eardefender",
             "collection": ""
           }
         },
@@ -68,6 +70,7 @@
             "badge": "",
             "image": "shopify://shop_images/white_buds.png",
             "bg_color": "#0d0d0d",
+            "button_url": "shopify://products/aware-radiocomm",
             "collection": ""
           }
         }
@@ -101,6 +104,7 @@
             "badge": "",
             "image": "shopify://shop_images/imgi_5_9db2ccc3-d00b-475a-9cd2-77903091e325.png",
             "bg_color": "#0d0d0d",
+            "button_url": "shopify://products/aware-eardefender-vented-b",
             "collection": ""
           }
         },
@@ -112,6 +116,7 @@
             "badge": "",
             "image": "shopify://shop_images/yellow_bud.png",
             "bg_color": "#0d0d0d",
+            "button_url": "shopify://products/aware-cep",
             "collection": ""
           }
         },
@@ -123,6 +128,7 @@
             "badge": "",
             "image": "shopify://shop_images/imgi_14_3e5c206b-e96b-4d8d-8f27-a668823b9cbb.png",
             "bg_color": "#0d0d0d",
+            "button_url": "",
             "collection": ""
           }
         }
@@ -155,6 +161,7 @@
             "text": "Audio protection with crystal clarity",
             "badge": "",
             "image": "shopify://shop_images/blackWhite_bud.png",
+            "button_text": "shopify://products/aware-musicplugs",
             "bg_color": "#0d0d0d"
           }
         },
@@ -165,6 +172,7 @@
             "text": "Interchangeable filter levels for performers",
             "badge": "",
             "image": "shopify://shop_images/whiteSmallBuds.png",
+            "button_text": "shopify://products/aware-musicfilters",
             "bg_color": "#0d0d0d"
           }
         },
@@ -175,6 +183,7 @@
             "text": "Low-profile comfort for deep sleep",
             "badge": "",
             "image": "shopify://shop_images/black_buds.png",
+            "button_text": "shopify://products/aware-sleepplug",
             "bg_color": "#0d0d0d"
           }
         },
@@ -185,6 +194,7 @@
             "text": "Water-blocking custom fit for athletes",
             "badge": "",
             "image": "shopify://shop_images/waterblue_bud.png",
+            "button_text": "shopify://products/aware-swimplugs",
             "bg_color": "#0d0d0d"
           }
         }
