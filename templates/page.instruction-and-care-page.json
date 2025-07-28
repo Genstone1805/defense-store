@@ -82,109 +82,6 @@
         "secondary_color": "#7B0F23"
       }
     },
-    "app_card13_ikmnrq": {
-      "type": "app-card13",
-      "blocks": {
-        "card_jLYarU": {
-          "type": "card",
-          "settings": {
-            "title": "Check L/R Marking",
-            "text": "Ensure you have the correct side before insertion.",
-            "badge": "",
-            "button_text": "",
-            "button_url": "",
-            "image": "shopify://shop_images/svgviewer-png-output_5.png",
-            "bg_color": "#0d0d0d"
-          }
-        },
-        "card_UifYGH": {
-          "type": "card",
-          "settings": {
-            "title": "Align & Insert Gently",
-            "text": "Rotate slightly to seat properly into ear canal.",
-            "badge": "",
-            "button_text": "",
-            "button_url": "",
-            "image": "shopify://shop_images/svgviewer-png-output_9.png",
-            "bg_color": "#0d0d0d"
-          }
-        },
-        "card_aUDjF9": {
-          "type": "card",
-          "settings": {
-            "title": "Confirm Fit",
-            "text": "A correct seal will feel snug but not pressured.",
-            "badge": "",
-            "button_text": "",
-            "button_url": "",
-            "image": "shopify://shop_images/svgviewer-png-output_7.png",
-            "bg_color": "#0d0d0d"
-          }
-        }
-      },
-      "block_order": [
-        "card_jLYarU",
-        "card_UifYGH",
-        "card_aUDjF9"
-      ],
-      "name": "Two Cols Card No Image",
-      "settings": {
-        "card_title": "INSERTING YOUR CUSTOM EARPIECES",
-        "card_sub_title": "",
-        "text": "",
-        "button_text": "",
-        "button_url": "",
-        "button_style": "outline",
-        "background_color": "#0d0d0d",
-        "primary_color": "#afa38e",
-        "secondary_color": "#7b0f23"
-      }
-    },
-    "app_card13_hfXKR4": {
-      "type": "app-card13",
-      "blocks": {
-        "card_6xwiRb": {
-          "type": "card",
-          "settings": {
-            "title": "Twist Slightly",
-            "text": "Break the seal gently before pulling.",
-            "badge": "",
-            "button_text": "",
-            "button_url": "",
-            "image": "shopify://shop_images/svgviewer-png-output_8.png",
-            "bg_color": "#0d0d0d"
-          }
-        },
-        "card_9CxkQt": {
-          "type": "card",
-          "settings": {
-            "title": "Pull from Base",
-            "text": "Do not tug from comms cord or tubing.",
-            "badge": "",
-            "button_text": "",
-            "button_url": "",
-            "image": "shopify://shop_images/svgviewer-png-output_7.png",
-            "bg_color": "#0d0d0d"
-          }
-        }
-      },
-      "block_order": [
-        "card_6xwiRb",
-        "card_9CxkQt"
-      ],
-      "name": "Two Cols Card No Image",
-      "settings": {
-        "card_title": "REMOVING SAFELY",
-        "card_sub_title": "",
-        "text": "",
-        "button_text": "",
-        "button_url": "",
-        "button_style": "outline",
-        "background_color": "#0d0d0d",
-        "primary_color": "#afa38e",
-        "secondary_color": "#7b0f23"
-      }
-    },
     "app_card14_DMG6mM": {
       "type": "app-card14",
       "name": "Daily Cleaning Card",
@@ -206,8 +103,6 @@
   "order": [
     "main",
     "app_card9_aGTD7F",
-    "app_card13_ikmnrq",
-    "app_card13_hfXKR4",
     "app_card14_DMG6mM"
   ]
 }
