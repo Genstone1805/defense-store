@@ -143,12 +143,52 @@
         "primary_color": "#695e4a",
         "secondary_color": "#7b0f23"
       }
+    },
+    "app_card_9_EeEdkb": {
+      "type": "app-card-9",
+      "blocks": {
+        "button_cWUaFb": {
+          "type": "button",
+          "settings": {
+            "button_text": "SCHEDULE A MEETING",
+            "button_url": "",
+            "button_type": "secondary_outline",
+            "show_arrow": false
+          }
+        },
+        "button_VDk83e": {
+          "type": "button",
+          "settings": {
+            "button_text": "LEARN ABOUT OUR SCANNER",
+            "button_url": "",
+            "button_type": "outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "button_cWUaFb",
+        "button_VDk83e"
+      ],
+      "name": "Full Width Card",
+      "settings": {
+        "background_color": "#0d0d0dd7",
+        "ctitle": "",
+        "title": "READY TO PROTECT YOUR TEAM AND YOUR HEARING?",
+        "text": "",
+        "ctext": "Custom-fit comfort. Field-tested performance. Future-ready gear.",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#695e4a",
+        "secondary_color": "#7B0F23"
+      }
     }
   },
   "order": [
     "main",
     "app_card9_aGTD7F",
     "app_card13_hfXKR4",
-    "app_card14_DMG6mM"
+    "app_card14_DMG6mM",
+    "app_card_9_EeEdkb"
   ]
 }
