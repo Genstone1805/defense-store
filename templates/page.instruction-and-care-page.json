@@ -20,7 +20,8 @@
         "text": "",
         "ctext": "Get the most from your Aware Defense gear. Follow these steps to ensure a secure fit, proper function, and long-lasting protection.",
         "primary_color": "#695e4a",
-        "secondary_color": "#7b0f23"
+        "secondary_color": "#7b0f23",
+        "background_image": "shopify://shop_images/imgi_22_585fd23f-f43a-49ab-ab65-676067bcc1e1.png"
       }
     },
     "app_card9_aGTD7F": {
@@ -212,7 +213,7 @@
       ],
       "name": "Full Width Card",
       "settings": {
-        "background_color": "#0d0d0dd7",
+        "background_color": "#0d0d0dd6",
         "ctitle": "",
         "title": "READY TO PROTECT YOUR TEAM AND YOUR HEARING?",
         "sub_title": "Custom-fit comfort. Field-tested performance. Future-ready gear.",
@@ -221,7 +222,7 @@
         "button_text": "",
         "button_url": "",
         "primary_color": "#695e49",
-        "secondary_color": "#7B0F23"
+        "secondary_color": "#7b0f23"
       }
     }
   },
