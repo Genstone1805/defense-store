@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Shopify/dawn#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "tailwindcss-animate": "^1.0.7"
   }
 }
