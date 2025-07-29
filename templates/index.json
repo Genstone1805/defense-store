@@ -16,7 +16,7 @@
           "type": "button",
           "settings": {
             "label": "Schedule A Meeting",
-            "link": "",
+            "link": "shopify://pages/meeting",
             "button_color": "secondary"
           }
         },
@@ -24,7 +24,7 @@
           "type": "button",
           "settings": {
             "label": "Learn How Our Tech Works",
-            "link": "",
+            "link": "shopify://pages/technology",
             "button_color": "primary"
           }
         }
