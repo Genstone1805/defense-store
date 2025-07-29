@@ -12,11 +12,13 @@
     "main": {
       "type": "app-page",
       "settings": {
-        "background_color": "#0d0d0d",
+        "banner_height": "440",
+        "btitle": "",
         "title": "REVOLUTIONIZING HEARING PROTECTION",
+        "sub_title": "",
+        "ctitle": "",
         "text": "FOR MISSION-CRITICAL ENVIRONMENTS",
-        "button_text": "LEARN ABOUT OUR TECHNOLOGY",
-        "button_url": "shopify://products/aware-musicplugs",
+        "ctext": "",
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23"
       }
@@ -226,7 +228,8 @@
           "settings": {
             "button_text": "SCHEDULE A MEETING",
             "button_url": "shopify://collections/all",
-            "button_type": "outline"
+            "button_type": "outline",
+            "show_arrow": false
           }
         },
         "button_EWeWCi": {
@@ -234,7 +237,8 @@
           "settings": {
             "button_text": "LEARN ABOUT OUR SCANNER",
             "button_url": "shopify://products/aware-cep",
-            "button_type": "fill"
+            "button_type": "fill",
+            "show_arrow": false
           }
         }
       },
@@ -245,8 +249,11 @@
       "name": "Full With Card",
       "settings": {
         "background_color": "#0d0d0d",
+        "ctitle": "",
         "title": "READY TO PROTECT YOUR TEAM AND YOUR HEARING?",
-        "text": "Custom-fit comfort. Field-tested performance. Future-ready gear.",
+        "sub_title": "Custom-fit comfort. Field-tested performance. Future-ready gear.",
+        "text": "",
+        "ctext": "",
         "button_text": "",
         "button_url": "",
         "primary_color": "#b6ac87",
