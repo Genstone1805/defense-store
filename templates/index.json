@@ -248,7 +248,7 @@
         "card_sub_title": "",
         "text": "",
         "button_text": "BOOK YOUR EXPERT CONSULTATION",
-        "button_url": "",
+        "button_url": "shopify://pages/meeting",
         "button_style": "fill",
         "background_color": "#262626",
         "primary_color": "#afa38e",
