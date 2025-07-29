@@ -28,31 +28,20 @@
       <div class="app-card-1-grid gap-10 w-full mx-auto px-4">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
-            <!-- Card 1 -->
             <div
               class="border p-6 hover:shadow-lg min-h-83 flex items-center justify-center flex-col relative bg-[#0d0d0d7a]"
-              style="border-color:{{section.settings.tertiary_color }};"
+              style="border-color:#695e49;"
             >
-              {% if block.settings.image %}
-                <img
-                  src="{{ block.settings.image | image_url  }}"
-                  alt="{{ block.settings.title }}"
-                  class="w-full h-20 object-contain rounded mb-4"
-                  width="50"
-                  height="50"
-                >
-              {% endif %}
+              <img
+                src="{{ block.settings.image | image_url  }}"
+                alt="{{ block.settings.title }}"
+                class="w-full h-20 object-contain rounded mb-4"
+                width="50"
+                height="50"
+              >
 
               <p class="font-bold text-4xl uppercase mb-6">{{ block.settings.title }}</p>
               <p class="text-2xl">{{ block.settings.text }}</p>
-              {% if block.settings.badge != blank %}
-                <div
-                  class="absolute size-18 rounded-full -top-8 -left-8 flex items-center justify-center text-4xl font-semibold z-20"
-                  style="background-color:{{ section.settings.secondary_color }}"
-                >
-                  {{ block.settings.badge }}
-                </div>
-              {% endif %}
             </div>
           {% endif %}
         {% endfor %}
@@ -73,9 +62,8 @@
           </a>
         {% else %}
           <a
-            href="{{ section.settings.button_url }}"
-            class="text-white px-4 py-2 text-4xl transition-transform duration-150 hover:-translate-y-0.5"
-            style="background-color:{{ section.settings.primary_color }}"
+            {{ section.settings.button_url }}
+            class="inline-flex uppercase items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 btn-scarlet cta-tactical px-10 py-2 text-[16px] rounded-sm"
           >
             {{ section.settings.button_text }}
           </a>

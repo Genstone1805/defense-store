@@ -10,11 +10,13 @@
       <!-- Left: Text Content -->
       <div class="w-full">
         <p class="font-extrabold mb-2 text-7xl/20">{{ section.settings.title }}</p>
-        <p class="text-5xl font-semibold mb-6 uppercase" style="color: rgb(108, 104, 70);">
+        <p class="text-5xl font-semibold mt-1 mb-6 uppercase" style="color: rgb(108, 104, 70);">
           {{ section.settings.sub_title }}
         </p>
-
-        <p class="mb-8 font-semibold">{{ section.settings.text }}</p>
+        <p class="body-tactical text-foreground py-6 text-[18px]/10 md:text-[20px]/10 mb-10 leading-relaxed">
+          {{ section.settings.text }}
+        </p>
+        {% comment %} <p class="mb-8 font-semibold">{{ section.settings.text }}</p> {% endcomment %}
 
         <ul class="space-y-6 mb-10">
           {% for block in section.blocks %}
@@ -28,20 +30,18 @@
                 <h4 class="heading-tactical text-3xl font-bold tracking-wide" style="color: rgb(182, 166, 135);">
                   {{ block.settings.title }}
                 </h4>
-                {% comment %}
-                  <p class="text-white font-semibold text-3xl" style="color:{{ section.settings.primary_color }}; ">
-                    {{ block.settings.title }}
-                  </p>
-                {% endcomment %}
-                <p class="">{{ block.settings.text }}</p>
+                <p class="mt-2">{{ block.settings.text }}</p>
               </div>
             </li>
           {% endfor %}
         </ul>
         {% if section.settings.button_text != blank %}
-          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 btn-olive-outline uppercase cta-tactical px-8 py-1 text-[16px] rounded-sm">
+          <a
+            href="{{ section.settings.button_url }}"
+            class="inline-flex items-center justify-center uppercase gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 btn-olive-outline cta-tactical px-8 py-1 text-[16px] rounded-sm"
+          >
             See additional use cases
-          </button>
+          </a>
         {% endif %}
       </div>
 
