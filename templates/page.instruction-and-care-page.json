@@ -152,7 +152,7 @@
           "type": "button",
           "settings": {
             "button_text": "SCHEDULE A MEETING",
-            "button_url": "",
+            "button_url": "shopify://pages/meeting",
             "button_type": "secondary_outline",
             "show_arrow": false
           }
@@ -161,7 +161,7 @@
           "type": "button",
           "settings": {
             "button_text": "LEARN ABOUT OUR SCANNER",
-            "button_url": "",
+            "button_url": "shopify://pages/efit-3d-scanner",
             "button_type": "outline",
             "show_arrow": false
           }
