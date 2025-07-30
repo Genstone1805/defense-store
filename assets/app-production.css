@@ -585,6 +585,9 @@
   .min-h-\[3rem\] {
     min-height: 3rem !important;
   }
+  .min-h-\[150px\] {
+    min-height: 150px !important;
+  }
   .min-h-\[200px\] {
     min-height: 200px !important;
   }
@@ -2177,6 +2180,11 @@
   .lg\:col-span-3 {
     @media (width >= 64rem) {
       grid-column: span 3 / span 3 !important;
+    }
+  }
+  .lg\:min-h-\[200px\] {
+    @media (width >= 64rem) {
+      min-height: 200px !important;
     }
   }
   .lg\:min-h-\[254px\] {
