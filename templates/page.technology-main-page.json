@@ -16,7 +16,7 @@
           "type": "button",
           "settings": {
             "button_text": "REQUEST A DEMO",
-            "button_url": "",
+            "button_url": "shopify://pages/meeting",
             "button_type": "fill",
             "show_arrow": true
           }
@@ -148,7 +148,7 @@
           "type": "button",
           "settings": {
             "button_text": "REQUEST A TECHNOLOGY DEMO",
-            "button_url": "",
+            "button_url": "shopify://pages/meeting",
             "button_type": "secondary_fill",
             "show_arrow": true
           }
