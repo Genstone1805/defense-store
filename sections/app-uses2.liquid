@@ -51,7 +51,8 @@
                     <div class="flex space-x-3">
                       {% for block in section.blocks %}
                         {% if block.type == 'image' %}
-                          <div
+                          <a
+                            href="{{ block.settings.image_url }}"
                             class="size-24 bg-white rounded-lg overflow-hidden"
                           >
                             <img
@@ -61,7 +62,7 @@
                               alt="featured product"
                               class="w-full h-full object-cover"
                             >
-                          </div>
+                          </a>
                         {% endif %}
                       {% endfor %}
                     </div>
@@ -160,6 +161,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "image_url",
+          "label": "Image url"
         }
       ]
     }
