@@ -7,6 +7,16 @@
     style="min-height: {{ section.settings.banner_height }}px;"
   >
     <div class="max-w-7xl scape-y-3 mx-auto text-center">
+      {% if section.settings.small_title != blank %}
+        <h1 class="heading-tactical text-white text-[30px] uppercase font-semibold md:text-[36px] mb-4 leading-tight">
+          {{ section.settings.small_title }}
+        </h1>
+      {% endif %}
+      {% if section.settings.scsub_title != blank %}
+        <h2 class="subheading-tactical text-secondary uppercase font-semibold text-[20px] md:text-[24px] mb-8">
+          {{ section.settings.scsub_title }}
+        </h2>
+      {% endif %}
       {% if section.settings.title != blank %}
         <h1 class="text-[48px]/20 font-bold text-signal-white mb-8 leading-tight md:text-[48px]/20">
           {{ section.settings.title }}
@@ -119,7 +129,17 @@
     },
     {
       "type": "text",
+      "id": "small_title",
+      "label": "Small Banner Title"
+    },
+    {
+      "type": "text",
       "id": "sub_title",
+      "label": "Banner Sub Title"
+    },
+    {
+      "type": "text",
+      "id": "scsub_title",
       "label": "Banner Sub Title"
     },
     {
