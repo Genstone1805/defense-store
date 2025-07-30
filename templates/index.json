@@ -263,6 +263,7 @@
           "type": "card",
           "settings": {
             "text": "EarShield",
+            "link_url": "shopify://products/aware-earshield",
             "image": "shopify://shop_images/imgi_4_2bf1dbd2-9f57-4571-8ec2-448676c5817b.png",
             "bg_color": "#ffffff"
           }
@@ -271,6 +272,7 @@
           "type": "card",
           "settings": {
             "text": "Aviation CEP",
+            "link_url": "shopify://products/aware-cep",
             "image": "shopify://shop_images/imgi_5_1353552f-30af-4dd7-b89e-848918e19da8.png",
             "bg_color": "#ffffff"
           }
@@ -279,6 +281,7 @@
           "type": "card",
           "settings": {
             "text": "Custom Overmold",
+            "link_url": "shopify://products/aliqua-incididunt-lorem-dolore-eiusmod-elit-do-consectetur-sit-sit-copy",
             "image": "shopify://shop_images/imgi_6_85b4c708-ab5b-4849-a9f6-5887c9bd50b2.png",
             "bg_color": "#ffffff"
           }
