@@ -594,16 +594,16 @@
           "type": "button",
           "settings": {
             "button_text": "REQUEST A CONSULTATION",
-            "button_url": "",
-            "button_type": "fill",
-            "show_arrow": false
+            "button_url": "shopify://pages/meeting",
+            "button_type": "secondary_fill",
+            "show_arrow": true
           }
         },
         "button_ahLaJw": {
           "type": "button",
           "settings": {
             "button_text": "CONTACT OUR TEAM",
-            "button_url": "",
+            "button_url": "shopify://pages/meeting",
             "button_type": "outline",
             "show_arrow": false
           }
@@ -616,11 +616,11 @@
       "name": "Full With Card",
       "settings": {
         "background_color": "#0d0d0d",
-        "ctitle": "Banner Title",
-        "title": "HAVE A SPECIFIC USE CASE?",
-        "sub_title": "Banner Title",
+        "ctitle": "HAVE A SPECIFIC USE CASE?",
+        "title": "",
+        "sub_title": "",
         "text": "",
-        "ctext": "Banner Text",
+        "ctext": "",
         "button_text": "",
         "button_url": "",
         "primary_color": "#b6ac87",
