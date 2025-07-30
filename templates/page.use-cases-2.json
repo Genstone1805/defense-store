@@ -15,7 +15,10 @@
         "banner_height": "300",
         "btitle": "",
         "title": "PROVEN IN THE FIELD",
+        "small_title": "",
         "sub_title": "",
+        "scsub_title": "",
+        "small_text": "",
         "ctitle": "",
         "text": "Explore how Aware Defense supports real-world missions across military, aviation, industrial, and medical domains.",
         "ctext": "",
@@ -62,31 +65,36 @@
         "image_iXKQLB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_2_f3ca1a0a-0b90-4aea-90c0-d793af035f66.png"
+            "image": "shopify://shop_images/imgi_2_f3ca1a0a-0b90-4aea-90c0-d793af035f66.png",
+            "image_url": "shopify://products/aware-cep"
           }
         },
         "image_EarpKP": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png"
+            "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png",
+            "image_url": "shopify://products/et-dolore-dolore-dolore-tempor"
           }
         },
         "image_gwzWUf": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png"
+            "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png",
+            "image_url": "shopify://products/aliqua-incididunt-lorem-dolore-eiusmod-elit-do-consectetur-sit-sit"
           }
         },
         "image_YKKEzQ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png"
+            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png",
+            "image_url": "shopify://products/aware-swimplugs"
           }
         },
         "image_ydejm7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_10_1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png"
+            "image": "shopify://shop_images/imgi_10_1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png",
+            "image_url": "shopify://products/eardefender"
           }
         }
       },
@@ -140,19 +148,22 @@
         "image_NGXbLB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_2_f3ca1a0a-0b90-4aea-90c0-d793af035f66.png"
+            "image": "shopify://shop_images/imgi_2_f3ca1a0a-0b90-4aea-90c0-d793af035f66.png",
+            "image_url": "shopify://products/aware-cep"
           }
         },
         "image_KwPpQT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png"
+            "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png",
+            "image_url": "shopify://products/et-dolore-dolore-dolore-tempor"
           }
         },
         "image_3gA6BC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_10_1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png"
+            "image": "shopify://shop_images/imgi_10_1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png",
+            "image_url": "shopify://products/eardefender"
           }
         }
       },
@@ -204,19 +215,22 @@
         "image_ytrgyk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_12_2fb8b4fd-e6de-4d0f-b680-df22b6d05b76.png"
+            "image": "shopify://shop_images/imgi_12_2fb8b4fd-e6de-4d0f-b680-df22b6d05b76.png",
+            "image_url": "shopify://products/aware-radiocomm"
           }
         },
         "image_tHRQ6g": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png"
+            "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png",
+            "image_url": "shopify://products/3d-ear-scans"
           }
         },
         "image_p3TUkM": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_10_1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png"
+            "image": "shopify://shop_images/imgi_10_1fac4378-15bb-4fa2-aa7d-4413a5f32ed1.png",
+            "image_url": "shopify://products/eardefender"
           }
         }
       },
@@ -268,19 +282,22 @@
         "image_wVp87x": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png"
+            "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png",
+            "image_url": ""
           }
         },
         "image_kT9pc4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_16_ef310f2d-7afe-464d-816e-302392b965e4.png"
+            "image": "shopify://shop_images/imgi_16_ef310f2d-7afe-464d-816e-302392b965e4.png",
+            "image_url": ""
           }
         },
         "image_HmAdfg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png"
+            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png",
+            "image_url": ""
           }
         }
       },
@@ -332,19 +349,22 @@
         "image_m9HENf": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_20_4b95c70a-27c5-400a-a838-b2203455961f.png"
+            "image": "shopify://shop_images/imgi_20_4b95c70a-27c5-400a-a838-b2203455961f.png",
+            "image_url": ""
           }
         },
         "image_9rDf88": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png"
+            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png",
+            "image_url": ""
           }
         },
         "image_QwMcAB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png"
+            "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png",
+            "image_url": ""
           }
         }
       },
@@ -396,19 +416,22 @@
         "image_DHjXJH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_24_46f89658-3f71-426b-922d-d3d4d545d211.png"
+            "image": "shopify://shop_images/imgi_24_46f89658-3f71-426b-922d-d3d4d545d211.png",
+            "image_url": ""
           }
         },
         "image_f7Hi44": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png"
+            "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png",
+            "image_url": ""
           }
         },
         "image_qzdWRH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png"
+            "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png",
+            "image_url": ""
           }
         }
       },
@@ -460,18 +483,22 @@
         "image_Ea8xeX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png"
+            "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png",
+            "image_url": ""
           }
         },
         "image_DTcQEk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_29_be18c3de-9beb-44fe-81a8-625c16ec03d9.png"
+            "image": "shopify://shop_images/imgi_29_be18c3de-9beb-44fe-81a8-625c16ec03d9.png",
+            "image_url": ""
           }
         },
         "image_dG3xk4": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image_url": ""
+          }
         }
       },
       "block_order": [
@@ -522,17 +549,21 @@
         "image_NcMy4Y": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/manEar.png"
+            "image": "shopify://shop_images/manEar.png",
+            "image_url": ""
           }
         },
         "image_aU4KUc": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image_url": ""
+          }
         },
         "image_yLMWPn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png"
+            "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png",
+            "image_url": ""
           }
         }
       },
