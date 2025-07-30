@@ -240,7 +240,7 @@
         "left_title": "Deployment Advantages:",
         "right_title": "Operational Validation:",
         "button_text": "SEE OTHER USE CASES",
-        "button_url": ""
+        "button_url": "shopify://pages/use-cases"
       }
     },
     "app_book6_jhk38i": {
@@ -305,6 +305,7 @@
         "right_option_VeaDj6",
         "right_option_cq3Uji"
       ],
+      "disabled": true,
       "name": "Proof Architecture",
       "settings": {
         "card_title": "Future-Proof Platform Architecture",
