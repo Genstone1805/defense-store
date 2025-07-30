@@ -17,6 +17,11 @@
           {{ section.settings.scsub_title }}
         </h2>
       {% endif %}
+      {% if section.settings.small_text != blank %}
+        <p class="body-tactical text-signal-white text-[18px] mb-12 max-w-6xl mx-auto">
+          {{ section.settings.small_text }}
+        </p>
+      {% endif %}
       {% if section.settings.title != blank %}
         <h1 class="text-[48px]/20 font-bold text-signal-white mb-8 leading-tight md:text-[48px]/20">
           {{ section.settings.title }}
@@ -141,6 +146,11 @@
       "type": "text",
       "id": "scsub_title",
       "label": "Banner Sub Title"
+    },
+    {
+      "type": "text",
+      "id": "small_text",
+      "label": "Banner Small Text"
     },
     {
       "type": "text",
