@@ -91,8 +91,8 @@
             "title": "Teams & Organizations",
             "text": "Schedule a scanner deployment to your unit or facility.",
             "badge": "",
-            "button_text": "Request a scanning event for your team",
-            "button_url": "",
+            "button_text": "Request a scanning event",
+            "button_url": "shopify://pages/meeting",
             "image": "shopify://shop_images/svgviewer-png-output.png",
             "bg_color": "#0d0d0d"
           }
@@ -152,7 +152,7 @@
         "card_sub_title": "",
         "text": "",
         "button_text": "",
-        "button_url": "",
+        "button_url": "https://sofweek.org/",
         "button_style": "outline",
         "background_color": "#0d0d0d",
         "primary_color": "#695e4a",
