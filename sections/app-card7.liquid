@@ -1,105 +1,51 @@
 <section
+  class="py-20 transition-all duration-1000 delay-400 opacity-100 translate-y-0"
   class=" py-20 scroll-trigger animate--slide-in text-center text-white object-cover"
   style="
           background: rgba(0, 0, 0, 7.24);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.73) 98%);
   "
 >
-  <!-- Section Title -->
-  <div class="max-w-[1100px] mx-auto">
-    <div class="mx-auto mb-12 px-8">
-      <p class="text-[48px]/20 font-semibold uppercase" style="color:{{ section.settings.primary_color }}">
+  <div class="mx-auto px-4">
+    <div class="max-w-[750px] mx-auto">
+      <h2 class="text-[36px]/15 md:text-[48px]/20 font-bold text-olive-drab text-center mb-16">
         {{ section.settings.card_title }}
-      </p>
-      <p
-        class="text-[32px]/20 text-gray-300 font-semibold mt-2 mb-4 tracking-wide uppercase"
-        style="color:{{section.settings.secondary_color }}"
-      >
-        {{ section.settings.card_sub_title }}
-      </p>
-      <p
-        class="text-[22px] tracking-wide"
-        style="color:{{section.settings.primary_color }}"
-      >
-        {{ section.settings.text }}
-      </p>
-    </div>
-
-    <!-- Cards -->
-    <div class="w-full flex items-center px-12 md:px-4 mb-10">
-      <div class="card-7-grid gap-10 space-y-6 w-full mx-auto px-4">
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
-            <!-- Card 1 -->
-            <div
-              class="border spacce-y-5 p-6 hover:shadow-lg min-h-83 flex items-center justify-center  flex-col relative rounded-2xl"
-              style="border-color:{{section.settings.primary_color }}; background-color:{{ block.settings.bg_color }}; background-color: rgba(153, 153, 153, 0.08);"
-            >
-              {% if block.settings.image %}
-                <div
-                  class=" rounded-lg mx-auto flex items-center p-6 mb-8 justify-center"
-                  style="background-color:{{ section.settings.primary_color }}"
-                >
-                  <img
-                    src="{{ block.settings.image | image_url  }}"
-                    alt="{{ block.settings.title }}"
-                    class="size-[32px] object-contain rounded"
-                    width="32"
-                    height="32"
+            <div class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-xl overflow-hidden">
+              <div class="p-8 text-center flex flex-col justify-between h-full space-y-6">
+                <div class="size-20 bg-olive-drab rounded-lg mx-auto flex items-center justify-center">
+                  {% if block.settings.image %}
+                    <img
+                      src="{{ block.settings.image | image_url  }}"
+                      alt="{{ block.settings.title }}"
+                      class="size-10 object-contain rounded"
+                      width="32"
+                      height="32"
+                    >
+                  {% endif %}
+                </div>
+                <div class="space-y-6">
+                  <h3 class="text-[24px] font-bold text-olive-drab">{{ block.settings.title }}</h3>
+                  <p class="text-signal-white text-[16px] leading-relaxed">
+                    {{ block.settings.text }}
+                  </p>
+                </div>
+                <div class="mt-8">
+                  <a href="{{ block.settings.button_url }}"
+                    ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-10 btn-scarlet w-full text-[16px] py-1 font-semibold uppercase tracking-wide">
+                      {{ block.settings.button_text }}
+                    </button></a
                   >
                 </div>
-              {% endif %}
-
-              <p class="font-bold text-5xl capitalize mb-6" style="color:{{ section.settings.primary_color }}">
-                {{ block.settings.title }}
-              </p>
-              <p class="text-3xl">{{ block.settings.text }}</p>
-              {% if block.settings.button_text != blank %}
-                <a
-                  href="{{ block.settings.button_url }}"
-                  class="text-white px-4 w-9/12 text-2xl py-5 font-bold rounded-lg uppercase mt-6 transition-color duration-150"
-                  style="background-color:{{ section.settings.primary_color }}"
-                >
-                  {{ block.settings.button_text }}
-                </a>
-              {% endif %}
-              {% if block.settings.badge != blank %}
-                <div
-                  class="absolute size-18 rounded-full -top-8 -left-8 flex items-center justify-center text-4xl font-semibold z-20"
-                  style="background-color:{{ section.settings.secondary_color }}"
-                >
-                  {{ block.settings.badge }}
-                </div>
-              {% endif %}
+              </div>
             </div>
           {% endif %}
         {% endfor %}
       </div>
     </div>
-    {% if section.settings.button_text != blank %}
-      <div class="w-full flex justify-center">
-        {% if section.settings.button_style == 'outline' %}
-          <a
-            href="{{ section.settings.button_url }}"
-            class="text-white px-4 py-2 text-4xl border-2 bg-black transition-color duration-150"
-            style="border-color:{{ section.settings.secondary_color }}"
-            onmouseover="this.style.backgroundColor='{{ section.settings.secondary_color }}'"
-            onmouseout="this.style.backgroundColor=''"
-            *
-          >
-            {{ section.settings.button_text }}
-          </a>
-        {% else %}
-          <a
-            href="{{ section.settings.button_url }}"
-            class="text-white px-4 py-2 text-4xl transition-transform duration-150 hover:-translate-y-0.5"
-            style="background-color:{{ section.settings.primary_color }}"
-          >
-            {{ section.settings.button_text }}
-          </a>
-        {% endif %}
-      </div>
-    {% endif %}
   </div>
 </section>
 

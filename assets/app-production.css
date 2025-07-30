@@ -8,12 +8,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-200: oklch(88.5% 0.062 18.334);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-xs: 20rem;
     --container-sm: 24rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
@@ -23,8 +21,6 @@
     --container-7xl: 80rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
-    --text-base: 1rem;
-    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -51,7 +47,6 @@
     --font-weight-extrabold: 800;
     --font-weight-black: 900;
     --tracking-wide: 0.025em;
-    --tracking-wider: 0.05em;
     --leading-tight: 1.25;
     --leading-relaxed: 1.625;
     --radius-sm: calc(var(--radius) - 4px);
@@ -74,7 +69,9 @@
     --color-foreground: hsl(var(--foreground));
     --color-primary: hsl(var(--primary));
     --color-desert-tan: hsl(var(--desert-tan));
-    --color-primary-foreground: hhsl(var(--primary-foreground));
+    --color-combat-black: hsl(var(--combat-black));
+    --color-primary-foreground: hsl(var(--primary-foreground ));
+    --color-olive-drab: hsl(var(--olive-drab));
     --color-secondary: hsl(var(--secondary));
     --color-muted: hsl(var(--muted));
     --color-muted-foreground: hsl(var(--muted-foreground));
@@ -554,9 +551,6 @@
   .min-h-screen {
     min-height: 100vh !important;
   }
-  .w-1\/2 {
-    width: calc(1/2 * 100%) !important;
-  }
   .w-1\/3 {
     width: calc(1/3 * 100%) !important;
   }
@@ -605,6 +599,9 @@
   .max-w-4xl {
     max-width: var(--container-4xl) !important;
   }
+  .max-w-5xl {
+    max-width: var(--container-5xl) !important;
+  }
   .max-w-6xl {
     max-width: var(--container-6xl) !important;
   }
@@ -622,6 +619,9 @@
   }
   .max-w-\[55px\] {
     max-width: 55px !important;
+  }
+  .max-w-\[750px\] {
+    max-width: 750px !important;
   }
   .max-w-\[1100px\] {
     max-width: 1100px !important;
@@ -807,9 +807,6 @@
       margin-block-end: calc(calc(var(--spacing) * 16) * calc(1 - var(--tw-space-y-reverse))) !important;
     }
   }
-  .gap-x-3 {
-    column-gap: calc(var(--spacing) * 3) !important;
-  }
   .gap-x-6 {
     column-gap: calc(var(--spacing) * 6) !important;
   }
@@ -967,11 +964,17 @@
   .border-border {
     border-color: var(--color-border) !important;
   }
+  .border-desert-tan {
+    border-color: var(--color-desert-tan) !important;
+  }
   .border-desert-tan\/30 {
     border-color: color-mix(in srgb, hsl(var(--desert-tan)) 30%, transparent) !important;
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-desert-tan) 30%, transparent) !important;
     }
+  }
+  .border-olive-drab {
+    border-color: var(--color-olive-drab) !important;
   }
   .border-scarlet-red {
     border-color: var(--color-scarlet-red) !important;
@@ -1066,6 +1069,15 @@
   .bg-border {
     background-color: var(--color-border) !important;
   }
+  .bg-combat-black {
+    background-color: var(--color-combat-black) !important;
+  }
+  .bg-combat-black\/80 {
+    background-color: color-mix(in srgb, hsl(var(--combat-black)) 80%, transparent) !important;
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-combat-black) 80%, transparent) !important;
+    }
+  }
   .bg-desert-tan {
     background-color: var(--color-desert-tan) !important;
   }
@@ -1101,6 +1113,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-muted) 30%, transparent) !important;
     }
+  }
+  .bg-olive-drab {
+    background-color: var(--color-olive-drab) !important;
   }
   .bg-primary {
     background-color: var(--color-primary) !important;
@@ -1170,9 +1185,6 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4) !important;
-  }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5) !important;
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6) !important;
@@ -1451,6 +1463,9 @@
   .text-card-foreground {
     color: var(--color-card-foreground) !important;
   }
+  .text-combat-black {
+    color: var(--color-combat-black) !important;
+  }
   .text-desert-tan {
     color: var(--color-desert-tan) !important;
   }
@@ -1462,6 +1477,9 @@
   }
   .text-muted-foreground {
     color: var(--color-muted-foreground) !important;
+  }
+  .text-olive-drab {
+    color: var(--color-olive-drab) !important;
   }
   .text-primary {
     color: var(--color-primary) !important;
@@ -1750,6 +1768,13 @@
       }
     }
   }
+  .hover\:bg-desert-tan {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-desert-tan) !important;
+      }
+    }
+  }
   .hover\:bg-desert-tan\/90 {
     &:hover {
       @media (hover: hover) {
@@ -1788,6 +1813,13 @@
     &:hover {
       @media (hover: hover) {
         color: #695e49 !important;
+      }
+    }
+  }
+  .hover\:text-combat-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-combat-black) !important;
       }
     }
   }
@@ -1907,6 +1939,11 @@
       height: 100% !important;
     }
   }
+  .sm\:w-auto {
+    @media (width >= 40rem) {
+      width: auto !important;
+    }
+  }
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row !important;
@@ -1915,11 +1952,6 @@
   .md\:mt-0 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 0) !important;
-    }
-  }
-  .md\:w-10\/12 {
-    @media (width >= 48rem) {
-      width: calc(10/12 * 100%) !important;
     }
   }
   .md\:grid-cols-2 {
@@ -1951,12 +1983,6 @@
     @media (width >= 48rem) {
       font-size: var(--text-2xl) !important;
       line-height: var(--tw-leading, var(--text-2xl--line-height)) !important;
-    }
-  }
-  .md\:text-4xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-4xl) !important;
-      line-height: var(--tw-leading, var(--text-4xl--line-height)) !important;
     }
   }
   .md\:text-5xl {
@@ -2046,11 +2072,6 @@
   .lg\:min-h-\[350px\] {
     @media (width >= 64rem) {
       min-height: 350px !important;
-    }
-  }
-  .lg\:w-\[670px\] {
-    @media (width >= 64rem) {
-      width: 670px !important;
     }
   }
   .lg\:grid-cols-5 {

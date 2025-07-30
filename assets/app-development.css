@@ -24,7 +24,9 @@
   --color-foreground: hsl(var(--foreground));
   --color-primary: hsl(var(--primary));
   --color-desert-tan: hsl(var(--desert-tan));
-  --color-primary-foreground: hhsl(var(--primary-foreground));
+  --color-combat-black: hsl(var(--combat-black));
+  --color-primary-foreground : hsl(var(--primary-foreground ));
+  --color-olive-drab: hsl(var(--olive-drab));
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
   --color-destructive: hsl(var(--destructive));
