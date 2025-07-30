@@ -15,7 +15,10 @@
         "banner_height": "300",
         "btitle": "BUILT BY OPERATORS",
         "title": "",
+        "small_title": "",
         "sub_title": "",
+        "scsub_title": "",
+        "small_text": "",
         "ctitle": "TRUSTED BY ELITE UNITS",
         "text": "",
         "ctext": "We created Aware Defense to solve the problem we lived with — gear that's uncomfortable, non-compliant, and gets tossed mid-mission.",
@@ -147,7 +150,7 @@
           "type": "button",
           "settings": {
             "button_text": "TALK TO OUR TEAM",
-            "button_url": "",
+            "button_url": "shopify://pages/meeting",
             "button_type": "secondary_fill",
             "show_arrow": false
           }
@@ -158,7 +161,7 @@
       ],
       "name": "Full Width Card",
       "settings": {
-        "background_color": "#0d0d0dd7",
+        "background_color": "#0d0d0dd6",
         "ctitle": "",
         "title": "",
         "sub_title": "",
@@ -166,8 +169,8 @@
         "ctext": "",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#B6AC87",
-        "secondary_color": "#7B0F23"
+        "primary_color": "#b6ac87",
+        "secondary_color": "#7b0f23"
       }
     }
   },
