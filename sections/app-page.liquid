@@ -6,12 +6,15 @@
     class="bg-black/70 flex items-center justify-center px-6 text-center"
     style="min-height: {{ section.settings.banner_height }}px;"
   >
-    <div class="max-w-7xl mx-auto text-center">
+    <div class="max-w-7xl scape-y-3 mx-auto text-center">
       <h1 class="text-[48px]/20 font-bold text-signal-white mb-8 leading-tight md:text-[48px]/20">
         {{ section.settings.title }}
       </h1>
       <p class="text-[20px]/10 md:text-[24px]/12 text-signal-white mb-12 leading-relaxed max-w-6xl mx-auto">
         {{ section.settings.text }}
+      </p>
+      <p class="text-[20px] text-desert-tan leading-relaxed max-w-6xl mx-auto mb-10">
+        {{ section.settings.ctext }}
       </p>
 
       <div class="flex gap-4 w-full justify-center items-center mx-auto">
