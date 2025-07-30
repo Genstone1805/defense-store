@@ -26,10 +26,13 @@
         "button_Vz4Vrg"
       ],
       "settings": {
-        "banner_height": "300",
+        "banner_height": "440",
         "btitle": "",
         "title": "TECH THAT FITS. TECH THAT PERFORMS.",
+        "small_title": "",
         "sub_title": "",
+        "scsub_title": "",
+        "small_text": "",
         "ctitle": "",
         "text": "",
         "ctext": "The only platform that unites precision scanning, mission-grade hearing protection, and biometric upgrade paths — all built for field use.",
