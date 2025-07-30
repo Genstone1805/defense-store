@@ -7,9 +7,16 @@
     style="min-height: {{ section.settings.banner_height }}px;"
   >
     <div class="max-w-7xl scape-y-3 mx-auto text-center">
-      <h1 class="text-[48px]/20 font-bold text-signal-white mb-8 leading-tight md:text-[48px]/20">
-        {{ section.settings.title }}
-      </h1>
+      {% if section.settings.title != blank %}
+        <h1 class="text-[48px]/20 font-bold text-signal-white mb-8 leading-tight md:text-[48px]/20">
+          {{ section.settings.title }}
+        </h1>
+      {% endif %}
+      {% if section.settings.ctitle != blank %}
+        <h1 class="text-[48px]/20 font-bold text-olive-drab mb-8 leading-tight md:text-[48px]/20">
+          {{ section.settings.ctitle }}
+        </h1>
+      {% endif %}
       <p class="text-[20px]/10 md:text-[24px]/12 text-signal-white mb-12 leading-relaxed max-w-6xl mx-auto">
         {{ section.settings.text }}
       </p>
