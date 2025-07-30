@@ -16,7 +16,7 @@
           "type": "button",
           "settings": {
             "button_text": "REQUEST A SCAN CONSULTATION",
-            "button_url": "",
+            "button_url": "shopify://pages/meeting",
             "button_type": "fill",
             "show_arrow": true
           }
@@ -75,6 +75,8 @@
       "name": "Image Left Cols Card",
       "settings": {
         "title": "WHY eFIT MATTERS",
+        "button_text": "Learn more about eFIT",
+        "button_url": "",
         "primary_color": "#695e4a",
         "secondary_color": "#7b0f23",
         "right_image": "shopify://shop_images/manEar.png"
@@ -188,6 +190,7 @@
         "background_color": "#0d0d0d",
         "ctitle": "",
         "title": "GET YOUR TEAM MISSION-READY",
+        "sub_title": "Banner Title",
         "text": "Schedule a scan, get gear that fits, and prepare for the next evolution in protection.",
         "ctext": "",
         "button_text": "",
