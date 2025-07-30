@@ -16,7 +16,7 @@
           "type": "button",
           "settings": {
             "button_text": "LEARN ABOUT OUR TECHNOLOGY",
-            "button_url": "",
+            "button_url": "shopify://pages/efit-3d-scanner",
             "button_type": "secondary_outline",
             "show_arrow": false
           }
@@ -38,10 +38,12 @@
       "settings": {
         "banner_height": "440",
         "btitle": "",
-        "title": "REVOLUTIONIZING HEARING PROTECTION",
+        "title": "",
+        "small_title": "REVOLUTIONIZING HEARING PROTECTION",
         "sub_title": "",
+        "scsub_title": "FOR MISSION-CRITICAL ENVIRONMENTS",
         "ctitle": "",
-        "text": "FOR MISSION-CRITICAL ENVIRONMENTS",
+        "text": "From warfighters to industrial operators and musicians — Aware Defense delivers the comfort, protection, and integration that universal products can't.",
         "ctext": "",
         "primary_color": "#b6ac87",
         "secondary_color": "#7b0f23",
@@ -252,8 +254,8 @@
           "type": "button",
           "settings": {
             "button_text": "SCHEDULE A MEETING",
-            "button_url": "shopify://collections/all",
-            "button_type": "outline",
+            "button_url": "shopify://pages/meeting",
+            "button_type": "secondary_outline",
             "show_arrow": false
           }
         },
