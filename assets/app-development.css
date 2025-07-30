@@ -16,6 +16,7 @@
   --animate-scroll-left: scroll-left 30s linear infinite;
   --animate-scroll: scroll 20s linear infinite;
   --color-border: hsl(var(--border));
+  --color-scarlet-red: hsl(var(--scarlet-red));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
   --color-background: hsl(var(--background));

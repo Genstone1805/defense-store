@@ -7,10 +7,10 @@
 >
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto">
-    <div class="mx-auto mb-12 px-8">
+    <div class="mx-auto pb-16 px-8">
       <p class="text-[48px]/20 font-extrabold uppercase">{{ section.settings.card_title }}</p>
       <p
-        class="text-[32px]/20 text-gray-300 font-semibold mt-2 mb-4 tracking-wide uppercase"
+        class="text-[32px]/20 text-gray-300 font-semibold mt-2 tracking-wide uppercase"
         style="color:{{section.settings.tertiary_color }}"
       >
         {{ section.settings.card_sub_title }}
@@ -28,46 +28,40 @@
       <div class="app-card-2-grid gap-10 w-full mx-auto px-4">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
-            <!-- Card 1 -->
-            <div
-              class="border p-6 hover:shadow-lg min-h-83 flex items-center justify-center flex-col relative bg-[#0d0d0d7a]"
-              style="border-color:{{section.settings.tertiary_color }};"
-            >
-              {% if block.settings.image %}
-                <img
-                  src="{{ block.settings.image | image_url  }}"
-                  alt="{{ block.settings.title }}"
-                  class="w-full h-20 object-contain rounded mb-4"
-                  width="50"
-                  height="50"
-                >
-              {% endif %}
-
-              <p class="font-bold text-4xl uppercase mb-6">{{ block.settings.title }}</p>
-              <p class="text-2xl">{{ block.settings.text }}</p>
-              {% if block.settings.badge != blank %}
-                <div
-                  class="absolute size-18 rounded-full -top-8 -left-8 flex items-center justify-center text-4xl font-semibold z-20"
-                  style="background-color:{{ section.settings.secondary_color }}"
-                >
-                  {{ block.settings.badge }}
-                </div>
-              {% endif %}
+            <div class="text-center relative">
+              <div class="absolute -top-6 -left-6 font-sans size-18 bg-[#7b1024] rounded-full flex items-center justify-center">
+                <span class="cta-tactical text-signal-white text-[20px] font-bold">{{ block.settings.badge }}</span>
+              </div>
+              <div class="bg-black/55 p-8 rounded-lg border-2" style="border-color: rgb(108, 104, 70);">
+                {% if block.settings.image %}
+                  <div class="pb-4">
+                    <img
+                      src="{{ block.settings.image | image_url  }}"
+                      alt="{{ block.settings.title }}"
+                      class="w-full h-20 object-contain rounded mb-4"
+                      width="50"
+                      height="50"
+                    >
+                  </div>
+                {% endif %}
+                <h3 class="subheading-tactical font-semibold text-white text-[20px] uppercase mb-4">
+                  {{ block.settings.title }}
+                </h3>
+                <p class="body-tactical text-white font-thin text-[14px]">
+                  {{ block.settings.text }}
+                </p>
+              </div>
             </div>
           {% endif %}
         {% endfor %}
       </div>
     </div>
     {% if section.settings.button_text != blank %}
-      <div class="w-full flex justify-center">
+      <div class="w-full flex justify-center pt-6">
         {% if section.settings.button_style == 'outline' %}
           <a
             href="{{ section.settings.button_url }}"
-            class="text-white px-4 py-2 text-4xl border-2 bg-black transition-color duration-150"
-            style="border-color:{{ section.settings.secondary_color }}"
-            onmouseover="this.style.backgroundColor='{{ section.settings.secondary_color }}'"
-            onmouseout="this.style.backgroundColor=''"
-            *
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 px-10 uppercase py-1 btn-hero-cta text-white bg-black hover:bg-scarlet-red text-[16px] transition-all duration-300"
           >
             {{ section.settings.button_text }}
           </a>
@@ -111,7 +105,7 @@
 
 {% schema %}
 {
-  "name": "Three Cols Card2",
+  "name": "Three Cols Card (Badge)",
   "tag": "section",
   "settings": [
     {
@@ -224,7 +218,7 @@
   ],
   "presets": [
     {
-      "name": "Three Cols Card2",
+      "name": "Three Cols Card (Badge)",
       "category": "Custom"
     }
   ]

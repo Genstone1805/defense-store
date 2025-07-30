@@ -62,8 +62,8 @@
           </a>
         {% else %}
           <a
-            {{ section.settings.button_url }}
-            class="inline-flex uppercase items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 btn-scarlet cta-tactical px-10 py-2 text-[16px] rounded-sm"
+            href="{{ section.settings.button_url }}"
+            class="inline-flex uppercase items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 btn-scarlet cta-tactical px-10 py-1 text-[16px] rounded-sm"
           >
             {{ section.settings.button_text }}
           </a>
