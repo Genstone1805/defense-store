@@ -8,7 +8,7 @@
   <!-- Section Title -->
   <div class="container mx-auto px-4 py-32">
     <div class="text-center mb-16">
-      <h2 class="heading-tactical text-signal-white font-bold text-white text-[36px] md:text-[48px] mb-6">
+      <h2 class="heading-tactical text-signal-white font-bold text-[36px] md:text-[48px] mb-6">
         {{ section.settings.card_title }}
       </h2>
     </div>
@@ -17,7 +17,7 @@
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
             <a class="group p-4 block" href="{{block.settings.link_url}}">
-              <div class="w-full h-64 bg-black rounded-[16px] min-w-[243px] min-h-[254px] flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20 overflow-hidden cursor-pointer">
+              <div class="w-full h-64 bg-white rounded-[16px] min-w-[243px] min-h-[254px] flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20 overflow-hidden cursor-pointer">
                 <div class="relative overflow-hidden w-full  h-full object-cover filter drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300 rounded-[16px]">
                   <img
                     src="{{ block.settings.image | image_url  }}"
@@ -30,7 +30,7 @@
                   >
                 </div>
               </div>
-              <h3 class="text-center mt-4 text-[18px] text-white font-semibold text-signal-white group-hover:text-primary transition-colors duration-300">
+              <h3 class="text-center mt-4 text-[18px] font-semibold text-signal-white group-hover:text-primary transition-colors duration-300">
                 {{ block.settings.text }}
               </h3>
             </a>
