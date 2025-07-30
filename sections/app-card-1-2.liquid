@@ -17,7 +17,7 @@
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
             <a class="group p-4 block" href="{{block.settings.link_url}}">
-              <div class="w-full h-64 bg-white rounded-[16px] min-w-[243px] min-h-[254px] flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20 overflow-hidden cursor-pointer">
+              <div class="w-full h-64 bg-white rounded-[16px] min-h-[200px] flex items-center justify-center shadow-2xl border-2 border-[#6C6846] transition-all duration-300 hover:scale-105 hover:shadow-primary/20 overflow-hidden cursor-pointer">
                 <div class="relative overflow-hidden w-full  h-full object-cover filter drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300 rounded-[16px]">
                   <img
                     src="{{ block.settings.image | image_url  }}"
