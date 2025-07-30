@@ -87,8 +87,7 @@
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
         <a
           href="{{ section.settings.button1_url }}"
-          class="inline-flex text-[17px] items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors bg-primary hover:bg-primary/90  text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
-          style="background-color: rgb(149, 24, 43)"
+          class="inline-flex bg-[#96192b] items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-[18px] px-10 py-1 font-semibold uppercase tracking-wide text-white"
         >
           {{ section.settings.button1_text }}
           <svg
@@ -101,10 +100,9 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-arrow-right ml-2 size-7"
+            class="lucide lucide-arrow-right ml-2 h-5 w-5"
           >
-            <path d="M5 12h14"></path>
-            <path d="m12 5 7 7-7 7"></path>
+            <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
           </svg>
         </a>
         <a
