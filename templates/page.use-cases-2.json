@@ -283,21 +283,21 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png",
-            "image_url": ""
+            "image_url": "shopify://products/aliqua-incididunt-lorem-dolore-eiusmod-elit-do-consectetur-sit-sit"
           }
         },
         "image_kT9pc4": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_16_ef310f2d-7afe-464d-816e-302392b965e4.png",
-            "image_url": ""
+            "image_url": "shopify://products/et-dolore-dolore-dolore-tempor"
           }
         },
         "image_HmAdfg": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png",
-            "image_url": ""
+            "image_url": "shopify://products/aware-swimplugs"
           }
         }
       },
@@ -350,21 +350,21 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_20_4b95c70a-27c5-400a-a838-b2203455961f.png",
-            "image_url": ""
+            "image_url": "shopify://products/earbud"
           }
         },
         "image_9rDf88": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png",
-            "image_url": ""
+            "image_url": "shopify://products/aware-swimplugs"
           }
         },
         "image_QwMcAB": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_22_4292650a-69ee-427d-8ccf-bc2e4433f736.png",
-            "image_url": ""
+            "image_url": "shopify://products/et-dolore-dolore-dolore-tempor"
           }
         }
       },
@@ -417,21 +417,21 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_24_46f89658-3f71-426b-922d-d3d4d545d211.png",
-            "image_url": ""
+            "image_url": "shopify://products/eardefender"
           }
         },
         "image_f7Hi44": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_25_8656c4f5-a409-4d5f-8cd1-f4c642eba875.png",
-            "image_url": ""
+            "image_url": "shopify://products/aware-swimplugs"
           }
         },
         "image_qzdWRH": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png",
-            "image_url": ""
+            "image_url": "shopify://products/3d-ear-scans"
           }
         }
       },
@@ -484,20 +484,21 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_13_cbf5a753-bdd5-4a75-98c6-20e80a09c659.png",
-            "image_url": ""
+            "image_url": "shopify://products/3d-ear-scans"
           }
         },
         "image_DTcQEk": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_29_be18c3de-9beb-44fe-81a8-625c16ec03d9.png",
-            "image_url": ""
+            "image_url": "shopify://products/et-dolore-dolore-dolore-tempor"
           }
         },
         "image_dG3xk4": {
           "type": "image",
           "settings": {
-            "image_url": ""
+            "image": "shopify://shop_images/imgi_5_1353552f-30af-4dd7-b89e-848918e19da8.png",
+            "image_url": "shopify://products/aware-swimplugs"
           }
         }
       },
@@ -550,20 +551,21 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/manEar.png",
-            "image_url": ""
+            "image_url": "shopify://products/aliqua-incididunt-lorem-dolore-eiusmod-elit-do-consectetur-sit-sit-copy"
           }
         },
         "image_aU4KUc": {
           "type": "image",
           "settings": {
-            "image_url": ""
+            "image": "shopify://shop_images/imgi_4_2bf1dbd2-9f57-4571-8ec2-448676c5817b.png",
+            "image_url": "shopify://products/earbud"
           }
         },
         "image_yLMWPn": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/imgi_4_749b2910-71a3-4bb3-b5ce-a6138b01476f.png",
-            "image_url": ""
+            "image_url": "shopify://products/aware-eardefender-vented-a"
           }
         }
       },
