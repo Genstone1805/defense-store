@@ -1044,6 +1044,9 @@
   .bg-\[\#695e49\]\/30 {
     background-color: color-mix(in oklab, #695e49 30%, transparent) !important;
   }
+  .bg-\[\#96192b\] {
+    background-color: #96192b !important;
+  }
   .bg-\[\#827867\] {
     background-color: #827867 !important;
   }
@@ -1408,6 +1411,9 @@
   .text-\[38px\] {
     font-size: 38px !important;
   }
+  .text-\[60px\] {
+    font-size: 60px !important;
+  }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed) !important;
     line-height: var(--leading-relaxed) !important;
@@ -1477,6 +1483,9 @@
   }
   .text-\[\#afa38e\]\/60 {
     color: color-mix(in oklab, #afa38e 60%, transparent) !important;
+  }
+  .text-\[18pm\] {
+    color: 18pm !important;
   }
   .text-\[hsl\(var\(--signal-white\)\)\] {
     color: hsl(var(--signal-white)) !important;
@@ -2126,6 +2135,11 @@
   .lg\:min-h-\[350px\] {
     @media (width >= 64rem) {
       min-height: 350px !important;
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     }
   }
   .lg\:grid-cols-5 {
