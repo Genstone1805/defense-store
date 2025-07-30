@@ -15,7 +15,10 @@
         "banner_height": "300",
         "btitle": "eFit 3D Scanner",
         "title": "",
+        "small_title": "",
         "sub_title": "",
+        "scsub_title": "",
+        "small_text": "",
         "ctitle": "",
         "text": "",
         "ctext": "Revolutionizing Ear Scanning with Medical-Grade Precision",
@@ -324,7 +327,7 @@
         "title3": "Best Value",
         "text3": "Lower cost than foam in just 12 months",
         "button1_text": "SCHEDULE A CONSULTATION",
-        "button1_url": "",
+        "button1_url": "shopify://pages/meeting",
         "button2_text": "LEARN MORE ABOUT OUR TECHNOLOGY",
         "button2_url": ""
       }
