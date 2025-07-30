@@ -11,6 +11,30 @@
   "sections": {
     "main": {
       "type": "app-page",
+      "blocks": {
+        "button_zaAqhp": {
+          "type": "button",
+          "settings": {
+            "button_text": "LEARN ABOUT OUR TECHNOLOGY",
+            "button_url": "",
+            "button_type": "secondary_outline",
+            "show_arrow": false
+          }
+        },
+        "button_3CGa4J": {
+          "type": "button",
+          "settings": {
+            "button_text": "SCHEDULE A CONSULTATION",
+            "button_url": "shopify://pages/meeting",
+            "button_type": "outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "button_zaAqhp",
+        "button_3CGa4J"
+      ],
       "settings": {
         "banner_height": "440",
         "btitle": "",
@@ -20,7 +44,8 @@
         "text": "FOR MISSION-CRITICAL ENVIRONMENTS",
         "ctext": "",
         "primary_color": "#b6ac87",
-        "secondary_color": "#7b0f23"
+        "secondary_color": "#7b0f23",
+        "background_image": "shopify://shop_images/c79eda20-92ba-4d64-a9d7-4e46f5cbd353.png"
       }
     },
     "app_card17_Ygt79P": {
