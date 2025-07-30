@@ -23,6 +23,7 @@
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-primary: hsl(var(--primary));
+  --color-desert-tan: hsl(var(--desert-tan));
   --color-primary-foreground: hhsl(var(--primary-foreground));
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));

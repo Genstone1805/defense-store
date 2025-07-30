@@ -15,35 +15,50 @@
       width="606"
       height="318"
     >
-    <div class="w-full">
-      <p class="text-6xl mb-4" style="color:{{ section.settings.primary_color }}">{{ section.settings.title }}</p>
-      <ul class="space-y-6">
+    <div class="space-y-8">
+      <h2 class="text-[36px] font-bold text-olive-drab leading-tight md:text-[36px]">{{ section.settings.title }}</h2>
+      <div class="space-y-6">
         {% for block in section.blocks %}
-          <li class="flex gap-x-3 items-center">
+          <div class="flex items-start space-x-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check-big size-8 text-scarlet mt-1 flex-shrink-0"
               style="color:{{section.settings.secondary_color }}"
             >
-              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="m9 11l3 3l8-8"/><path d="M20 12a8 8 0 1 1-5.3-7.533"/></g>
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path>
             </svg>
-            <span> {{ block.settings.text }} </span>
-          </li>
+            <p class="text-[18px] text-signal-white">{{ block.settings.text }}</p>
+          </div>
         {% endfor %}
-
-        <a
-          href="{{section.settings.button_url }}"
-          class="gap-2 px-8 py-4 my-6 text-black font-bold whitespace-nowrap rounded-md flex items-center justify-center w-1/2"
-          style="background-color:{{ section.settings.primary_color }}"
-        >
-          {{ section.settings.button_text }}
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
-          </svg>
-        </a>
-      </ul>
+      </div>
+      <div class="mt-8">
+        <a href="{{section.settings.button_url }}"
+          ><button class="inline-flex text-black items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-desert-tan text-combat-black hover:bg-desert-tan/90 text-[18px] px-10 py-1 font-semibold uppercase tracking-wide">
+            {{ section.settings.button_text }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right ml-2 h-5 w-5"
+            >
+              <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+            </svg></button
+        ></a>
+      </div>
     </div>
   </div>
 </section>

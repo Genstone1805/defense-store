@@ -1,15 +1,24 @@
 {% if type == 'fill' %}
-  <a
-    href="{{button_url }}"
-    class="gap-2 px-8 py-2 whitespace-nowrap rounded-md flex items-center justify-center"
-    style="background-color:{{ primary_color }}"
-  >
-    {{ button_text }}
-    {% if showArrow %}
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
-      </svg>
-    {% endif %}
+  <a href="{{button_url }}"
+    ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 uppercase btn-scarlet text-[18px] px-10 py-1 font-semibold tracking-wide">
+      {{ button_text }}
+      {% if showArrow %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-right ml-2 h-5 w-5"
+        >
+          <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+        </svg>
+      {% endif %}
+    </button>
   </a>
 {% elsif type == 'outline' %}
   <a

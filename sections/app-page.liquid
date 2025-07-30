@@ -6,25 +6,14 @@
     class="bg-black/70 flex items-center justify-center px-6 text-center"
     style="min-height: {{ section.settings.banner_height }}px;"
   >
-    <div class="max-w-7xl space-y-6">
-      <p class="md:text-[72px]/20 text-[40px]/20 font-bold leading-tight">
-        {{ section.settings.btitle }}
-      </p>
-      <p class="md:text-[48px]/20 text-[40px]/20 font-bold leading-tight">
+    <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-[48px]/20 font-bold text-signal-white mb-8 leading-tight md:text-[48px]/20">
         {{ section.settings.title }}
+      </h1>
+      <p class="text-[20px]/10 md:text-[24px]/12 text-signal-white mb-12 leading-relaxed max-w-6xl mx-auto">
+        {{ section.settings.text }}
       </p>
-      <p class="md:text-[40px]/20 text-[35px]/20 font-bold leading-tight">
-        {{ section.settings.sub_title }}
-      </p>
-      <p class="md:text-[48px]/20 text-[#9d9580] text-[40px]/20 font-bold leading-tight">
-        {{ section.settings.ctitle }}
-      </p>
-      {% if section.settings.text != blank %}
-        <p class="text-4xl">{{ section.settings.text }}</p>
-      {% endif %}
-      {% if section.settings.ctext != blank %}
-        <p class="text-4xl text-[#afa38e]">{{ section.settings.ctext }}</p>
-      {% endif %}
+
       <div class="flex gap-4 w-full justify-center items-center mx-auto">
         {% for block in section.blocks %}
           {% render 'button',
@@ -38,6 +27,40 @@
         {% endfor %}
       </div>
     </div>
+    {% comment %}
+      <div class="max-w-7xl space-y-6">
+        <p class="md:text-[72px]/20 text-[40px]/20 font-bold leading-tight">
+          {{ section.settings.btitle }}
+        </p>
+        <p class="md:text-[48px]/20 text-[40px]/20 font-bold leading-tight">
+          {{ section.settings.title }}
+        </p>
+        <p class="md:text-[40px]/20 text-[35px]/20 font-bold leading-tight">
+          {{ section.settings.sub_title }}
+        </p>
+        <p class="md:text-[48px]/20 text-[#9d9580] text-[40px]/20 font-bold leading-tight">
+          {{ section.settings.ctitle }}
+        </p>
+        {% if section.settings.text != blank %}
+          <p class="text-4xl">{{ section.settings.text }}</p>
+        {% endif %}
+        {% if section.settings.ctext != blank %}
+          <p class="text-4xl text-[#afa38e]">{{ section.settings.ctext }}</p>
+        {% endif %}
+        <div class="flex gap-4 w-full justify-center items-center mx-auto">
+          {% for block in section.blocks %}
+            {% render 'button',
+              secondary_color: section.settings.secondary_color,
+              primary_color: section.settings.primary_color,
+              button_text: block.settings.button_text,
+              button_url: block.settings.button_url,
+              type: block.settings.button_type,
+              showArrow: block.settings.show_arrow
+            %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endcomment %}
   </div>
 </section>
 
@@ -87,7 +110,7 @@
     {
       "type": "text",
       "id": "sub_title",
-      "label": "Banner Sub Title",
+      "label": "Banner Sub Title"
     },
     {
       "type": "text",
