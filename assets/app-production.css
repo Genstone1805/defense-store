@@ -473,6 +473,10 @@
     width: 50px !important;
     height: 50px !important;
   }
+  .size-\[128px\] {
+    width: 128px !important;
+    height: 128px !important;
+  }
   .size-\[264px\] {
     width: 264px !important;
     height: 264px !important;

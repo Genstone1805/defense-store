@@ -8,7 +8,9 @@
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto">
     <div class="mx-auto mb-12 px-8">
-      <p class="text-[48px]/20 font-extrabold uppercase">{{ section.settings.card_title }}</p>
+      <h2 class="heading-tactical text-primary font-semibold text-[30px] md:text-[36px] text-center mb-16">
+        {{ section.settings.card_title }}
+      </h2>
       <p
         class="text-[32px]/20 text-gray-300 font-semibold mt-2 mb-4 tracking-wide uppercase"
         style="color:{{section.settings.tertiary_color }}"
@@ -30,7 +32,7 @@
           {% if block.type == 'card' %}
             <!-- Card 1 -->
             <div
-              class="border p-6 hover:shadow-lg item-card15 min-h-83 flex items-center justify-center flex-col relative bg-[#0d0d0d7a]"
+              class="border p-6 hover:shadow-lg item-card15 rounded-[8px] min-h-83 flex items-center justify-center flex-col relative bg-[#0d0d0d7a]"
             >
               {% if block.settings.image %}
                 <img
