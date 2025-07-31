@@ -1447,6 +1447,9 @@
   .text-\[38px\] {
     font-size: 38px !important;
   }
+  .text-\[48px\] {
+    font-size: 48px !important;
+  }
   .text-\[60px\] {
     font-size: 60px !important;
   }
@@ -2149,6 +2152,11 @@
   .md\:text-\[48px\] {
     @media (width >= 48rem) {
       font-size: 48px !important;
+    }
+  }
+  .md\:text-\[60px\] {
+    @media (width >= 48rem) {
+      font-size: 60px !important;
     }
   }
   .lg\:col-span-2 {

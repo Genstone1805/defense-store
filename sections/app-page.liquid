@@ -10,6 +10,11 @@
       class=" transition-all scroll-trigger animate--slide-in duration-1000 delay-200"
     >
       <div class="max-w-7xl scape-y-3 mx-auto text-center">
+        {% if section.settings.btitle != blank %}
+          <h1 class="text-[48px] font-bold text-signal-white mb-8 leading-tight md:text-[60px]">
+            {{ section.settings.btitle }}
+          </h1>
+        {% endif %}
         {% if section.settings.small_title != blank %}
           <h1 class="heading-tactical text-white text-[30px] uppercase font-semibold md:text-[36px] mb-4 leading-tight">
             {{ section.settings.small_title }}
@@ -56,40 +61,6 @@
         </div>
       </div>
     </div>
-    {% comment %}
-      <div class="max-w-7xl space-y-6">
-        <p class="md:text-[72px]/20 text-[40px]/20 font-bold leading-tight">
-          {{ section.settings.btitle }}
-        </p>
-        <p class="md:text-[48px]/20 text-[40px]/20 font-bold leading-tight">
-          {{ section.settings.title }}
-        </p>
-        <p class="md:text-[40px]/20 text-[35px]/20 font-bold leading-tight">
-          {{ section.settings.sub_title }}
-        </p>
-        <p class="md:text-[48px]/20 text-[#9d9580] text-[40px]/20 font-bold leading-tight">
-          {{ section.settings.ctitle }}
-        </p>
-        {% if section.settings.text != blank %}
-          <p class="text-4xl">{{ section.settings.text }}</p>
-        {% endif %}
-        {% if section.settings.ctext != blank %}
-          <p class="text-4xl text-[#afa38e]">{{ section.settings.ctext }}</p>
-        {% endif %}
-        <div class="flex gap-4 w-full justify-center items-center mx-auto">
-          {% for block in section.blocks %}
-            {% render 'button',
-              secondary_color: section.settings.secondary_color,
-              primary_color: section.settings.primary_color,
-              button_text: block.settings.button_text,
-              button_url: block.settings.button_url,
-              type: block.settings.button_type,
-              showArrow: block.settings.show_arrow
-            %}
-          {% endfor %}
-        </div>
-      </div>
-    {% endcomment %}
   </div>
 </section>
 
