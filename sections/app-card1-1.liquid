@@ -24,12 +24,12 @@
     </div>
 
     <!-- Cards -->
-    <div class="w-full flex items-center px-12 md:px-4 mb-10">
+    <div class="w-full flex items-center px-12 md:px-4 mb-10 ">
       <div class="app-card-1-grid gap-10 w-full mx-auto px-4">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
             <div
-              class="border p-6 hover:shadow-lg min-h-83 flex items-center justify-center flex-col relative bg-[#0d0d0d7a]"
+              class="border p-6 hover:shadow-lg min-h-83 flex items-center justify-center flex-col relative rounded-[6px] bg-[#0d0d0d7a]"
               style="border-color:#695e49;"
             >
               <img

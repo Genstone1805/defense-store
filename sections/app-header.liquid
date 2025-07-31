@@ -1,4 +1,179 @@
+{% comment %}
+  <nav class="sticky top-0 z-50 bg-combat-black py-5">
+    <div class="mx-auto px-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          {%- if section.settings.logo_position != 'middle-center' -%}
+            {%- if request.page_type == 'index' -%}
+              <h1 class="header__heading">
+            {%- endif -%}
+            <a
+              href="{{ routes.root_url }}"
+              class="header__heading-link link link--text focus-inset"
+            >
+              {%- if settings.logo != blank -%}
+                <div class="header__heading-logo-wrapper">
+                  {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                  {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                  {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+                  {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                  {{
+                    settings.logo
+                    | image_url: width: 600
+                    | image_tag:
+                      class: 'header__heading-logo motion-reduce',
+                      widths: widths,
+                      height: logo_height,
+                      width: settings.logo_width,
+                      alt: logo_alt,
+                      sizes: sizes,
+                      preload: true
+                  }}
+                </div>
+              {%- else -%}
+                <span
+                  class="h2"
+                >
+                  {{- shop.name -}}
+                </span>
+              {%- endif -%}
+            </a>
+            {%- if request.page_type == 'index' -%}
+              </h1>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+        <div class="hidden md:flex items-center justify-center flex-1">
+          <div class="flex items-center space-x-8">
+            <div class="relative">
+              <a
+                class="flex items-center text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
+                href="/products"
+                >Products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down ml-1 h-3 w-3"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="relative">
+              <a
+                class="flex items-center text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
+                href="/technology"
+                >Technology
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down ml-1 h-3 w-3"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </a>
+            </div>
+            <a
+              class="text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
+              href="/use-cases"
+              >Use Cases</a
+            ><a
+              class="text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
+              href="/about"
+              >About Us</a
+            >
+          </div>
+        </div>
+        <div class="flex items-center space-x-6">
+          <div class="hidden md:flex items-center space-x-4">
+            <button class="text-desert-tan hover:text-scarlet-red transition-colors duration-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search h-5 w-5"
+              >
+                <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path>
+              </svg></button
+            ><button class="text-desert-tan hover:text-scarlet-red transition-colors duration-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user h-5 w-5"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+              </svg></button
+            ><button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 relative"
+              type="button"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="radix-:rk:"
+              data-state="closed"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shopping-cart h-4 w-4"
+              >
+                <circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+              </svg>
+            </button>
+          </div>
+          <a
+            class="btn-scarlet px-6 py-2 text-sm font-semibold uppercase tracking-wide transition-all duration-200"
+            href="/request-consultation"
+            >Contact Us</a
+          >
+          <div class="md:hidden">
+            <button class="text-desert-tan hover:text-scarlet-red">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+{% endcomment %}
+
 {% comment %} class="color-{{ section.settings.header_color }} px-6 py-4 flex justify-between items-center font-medium" {% endcomment %}
+
 <header
   class="px-6 py-4 fixed justify-between w-full items-center font-medium"
   style="color:{{ section.settings.secondary_color }}; background-color:{{ section.settings.primary_color }}; justify-content:center"
@@ -216,6 +391,7 @@
     </div>
   </div>
 </header>
+
 <!--
   <div
     id="customMobileMenu"
