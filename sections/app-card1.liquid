@@ -25,12 +25,12 @@
     <div class="grid-tactical max-w-7xl mx-auto">
       {% for block in section.blocks %}
         {% if block.type == 'card' %}
-          <div class="bg-black/55 p-6 rounded-lg text-center border-2" style="border-color: rgb(108, 104, 70);">
+          <div class="bg-black/55 p-6 rounded-[8px] text-center border-2" style="border-color: rgb(108, 104, 70);">
             {% if block.settings.image %}
               <img
                 src="{{ block.settings.image | image_url  }}"
                 alt="{{ block.settings.title }}"
-                class="w-full h-20 object-contain rounded mb-8"
+                class="w-full h-20 object-contain rounded-[4px] mb-8"
                 width="50"
                 height="50"
               >

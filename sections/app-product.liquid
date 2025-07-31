@@ -34,7 +34,7 @@
         <div class="space-y lg:col-span-2">
           <!-- Main Image -->
           <div
-            class="aspect-square bg-muted/30 rounded-lg overflow-hidden border-2 border-[#6C6846] transform scale-85"
+            class="aspect-square bg-muted/30 rounded-[8px] overflow-hidden border-2 border-[#6C6846] transform scale-85"
           >
             <img
               id="mainProductImage"
@@ -51,7 +51,7 @@
             {% for media in product.media %}
               <button
                 type="button"
-                class="size-20 rounded-lg overflow-hidden border-2 transition-all duration-200 border-[#afa38e] shadow-lg scale-105"
+                class="size-20 rounded-[8px] overflow-hidden border-2 transition-all duration-200 border-[#afa38e] shadow-lg scale-105"
                 data-image="{{ media.preview_image | image_url }}"
               >
                 <img
@@ -103,7 +103,7 @@
             <div class="space-y-4">
               <a href="{{section.settings.consultation_url}}"
                 ><button
-                  class="inline-flex border-[#7b0f23] border items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium px-4 text-white bg-black hover:bg-[#7b0f23] text-[14px] transition-all duration-300 w-full py-2"
+                  class="inline-flex border-[#7b0f23] border items-center justify-center gap-2 whitespace-nowrap rounded-[6px] font-medium px-4 text-white bg-black hover:bg-[#7b0f23] text-[14px] transition-all duration-300 w-full py-2"
                 >
                   REQUEST CONSULTATION TO SCAN MY TEAM
                 </button></a
@@ -112,7 +112,7 @@
                 <input
                   type="checkbox"
                   id="scan-confirm"
-                  class="peer size-14 shrink-0 rounded-sm border border-[#695e49] bg-[#695e49] text-transparent  focus:ring-2 focus:ring-[#695e49]"
+                  class="peer size-6 shrink-0 rounded-[4px] border border-[#695e49] bg-[#695e49] text-transparent  focus:ring-2 focus:ring-[#695e49]"
                 >
                 <label
                   for="scan-confirm"
@@ -123,7 +123,7 @@
               </div>
               <button
                 id="addToCartBtn"
-                class="inline-flex items-center justify-center bg-[#1a1a19] text-[#58554e]  gap-2 whitespace-nowrap rounded-md font-medium  px-4 w-full py-3 text-[14px] transition-all duration-300 bg-muted text-muted-foreground cursor-not-allowed"
+                class="inline-flex items-center justify-center  gap-2 whitespace-nowrap rounded-[6px] font-medium  px-4 w-full py-3 text-[14px] transition-all duration-300 bg-muted text-muted-foreground cursor-not-allowed"
                 disabled
               >
                 ADD TO CART
@@ -139,7 +139,7 @@
         </div>
       </div>
       <div
-        class="space-y-6 bg-muted/20 p-8 rounded-lg border border-[#6C6846]"
+        class="space-y-6 bg-muted/20 p-8 rounded-[8px] border border-[#6C6846]"
       >
         <div>
           <p class="heading-tactical text-[#695e49] text-4xl uppercase mb-4">Overview</p>

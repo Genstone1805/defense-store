@@ -7,21 +7,21 @@
   "
 >
   <div class="mx-auto px-4">
-    <div class="max-w-[750px] mx-auto">
+    <div class="max-w-[950px] mx-auto">
       <h2 class="text-[36px]/15 md:text-[48px]/20 font-bold text-olive-drab text-center mb-16">
         {{ section.settings.card_title }}
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
-            <div class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-xl overflow-hidden">
+            <div class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-[12px] overflow-hidden">
               <div class="p-8 text-center flex flex-col justify-between h-full space-y-6">
-                <div class="size-20 bg-olive-drab rounded-lg mx-auto flex items-center justify-center">
+                <div class="size-20 bg-olive-drab rounded-[8px] mx-auto flex items-center justify-center">
                   {% if block.settings.image %}
                     <img
                       src="{{ block.settings.image | image_url  }}"
                       alt="{{ block.settings.title }}"
-                      class="size-10 object-contain rounded"
+                      class="size-10 object-contain rounded-[4px]"
                       width="32"
                       height="32"
                     >
@@ -35,7 +35,7 @@
                 </div>
                 <div class="mt-8">
                   <a href="{{ block.settings.button_url }}"
-                    ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-10 btn-scarlet w-full text-[16px] py-1 font-semibold uppercase tracking-wide">
+                    ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-10 btn-scarlet w-full text-[16px] py-1 font-semibold uppercase tracking-wide">
                       {{ block.settings.button_text }}
                     </button></a
                   >

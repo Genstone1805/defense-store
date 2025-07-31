@@ -38,9 +38,9 @@
         {% if section.settings.button_text != blank %}
           <a
             href="{{ section.settings.button_url }}"
-            class="inline-flex items-center justify-center uppercase gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 btn-olive-outline cta-tactical px-8 py-1 text-[16px] rounded-sm"
+            class="inline-flex items-center justify-center uppercase gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 btn-olive-outline cta-tactical px-8 py-1 text-[16px] rounded-[4px]"
           >
-            See additional use cases
+            {{ section.settings.button_text }}
           </a>
         {% endif %}
       </div>
@@ -51,7 +51,7 @@
           <img
             src="{{ section.settings.side_image | image_url}}"
             alt="banner Image size-full"
-            class="rounded-lg"
+            class="rounded-[8px]"
             width="100%"
             height="100%"
           >

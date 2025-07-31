@@ -10,11 +10,11 @@
       <p class="text-6xl font-bold text-signal-white text-center mb-16">{{ section.settings.title }}</p>
       <div class="card-grid gap-12 mb-16 w-full">
         <div
-          class="border text-card-foreground shadow-sm rounded-xl transition-all duration-700 delay-500 opacity-100 translate-x-0"
+          class="border text-card-foreground shadow-sm rounded-[12px] transition-all duration-700 delay-500 opacity-100 translate-x-0"
           style="background-color: rgba(153, 153, 153, 0.1);"
         >
           <div class="p-8">
-            <p class="text-4xl font-extrabold text-white text-signal-white mb-6">{{ section.settings.left_title }}</p>
+            <p class="text-4xl font-extrabold text-signal-white mb-6">{{ section.settings.left_title }}</p>
             <div class="space-y-5 text-signal-white">
               <p class="text-desert-tan font-semibold" style="color:{{ section.settings.primary_color }}">
                 {{ section.settings.left_sub_title }}
@@ -47,11 +47,11 @@
           </div>
         </div>
         <div
-          class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-700 opacity-100 translate-x-0"
+          class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-[12px] transition-all duration-700 delay-700 opacity-100 translate-x-0"
           style="background-color: rgba(153, 153, 153, 0.1);"
         >
           <div class="p-8">
-            <p class="text-4xl font-bold text-signal-white text-white mb-6">{{ section.settings.Right_title }}</p>
+            <p class="text-4xl font-bold text-signal-white mb-6">{{ section.settings.Right_title }}</p>
             <div class="space-y-4 text-signal-white">
               <p class="font-semibold text-desert-tan" style="color:{{ section.settings.primary_color }}">
                 {{ section.settings.right_sub_title }}
@@ -60,7 +60,7 @@
                 {% if block.type == 'right_option' %}
                   {% if block.settings.show_bg %}
                     <div
-                      class="p-4 rounded-lg mt-4 text-white"
+                      class="p-4 rounded-[8px] mt-4 text-white"
                       style="background-color: rgba(0, 0, 0, 0.1);"
                     >
                       <p class="text-signal-white">
@@ -79,11 +79,11 @@
         </div>
       </div>
       <div
-        class="border text-card-foreground py-8 shadow-sm bg-scarlet/10 border-scarlet/30 rounded-xl transition-all duration-700 delay-900 opacity-100 translate-y-0"
+        class="border text-card-foreground py-8 shadow-sm bg-scarlet/10 border-scarlet/30 rounded-[12px] transition-all duration-700 delay-900 opacity-100 translate-y-0"
         style="background-color: rgba(123, 15, 35, 0.1); border-color:rgba(123, 15, 35, 0.3);"
       >
         <div class="p-8">
-          <p class="text-4xl text-white font-bold text-signal-white text-center mb-8">
+          <p class="text-4xl font-bold text-signal-white text-center mb-8">
             {{ section.settings.bottom_sub_title }}
           </p>
           <div class="child-card-grid gap-8">
@@ -92,20 +92,20 @@
                 <div class="text-center space-y-4">
                   {% if block.settings.card_icon %}
                     <div
-                      class=" rounded-lg mx-auto w-28 flex items-center p-6 mb-8 justify-center"
+                      class=" rounded-[8px] mx-auto w-28 flex items-center p-6 mb-8 justify-center"
                       style="background-color:{{ section.settings.secondary_color }}"
                     >
                       <img
                         src="{{ block.settings.card_icon | image_url  }}"
                         alt="icon"
-                        class="size-[32px] object-contain rounded"
+                        class="size-[32px] object-contain rounded-[2px]"
                         width="32"
                         height="32"
                       >
                     </div>
                   {% endif %}
                   <p class="font-bold text-[17px]" style="color: rgb(182, 166, 135);">{{ block.settings.title }}</p>
-                  <p class="text-signal-white text-[14px]/7 text-white">{{ block.settings.text }}</p>
+                  <p class="text-signal-white text-[14px]/7 ">{{ block.settings.text }}</p>
                 </div>
               {% endif %}
             {% endfor %}

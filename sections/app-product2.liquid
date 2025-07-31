@@ -31,16 +31,18 @@ g
         <!-- LEFT SIDE -->
         <div class="space-y-6">
           <!-- PRODUCT IMAGE -->
-          <div class="aspect-square bg-[#695e49]/30 rounded-lg overflow-hidden border-2 border-[#6C6846]">
+          <div class="aspect-square bg-[#695e49]/30 rounded-[8px] overflow-hidden border-2 border-[#6C6846]">
             <img
               src="{{ product.featured_image | image_url }}"
               alt="{{ product.title }}"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              height="100%"
+              width="100%"
             >
           </div>
 
           <!-- PRODUCT CONTENT -->
-          <div class="space-y-6 bg-[#695e49]/20 p-6 rounded-lg border border-[#6C6846]">
+          <div class="space-y-6 bg-[#695e49]/20 p-6 rounded-[8px] border border-[#6C6846]">
             <div>
               <h3 class="heading-tactical text-[#695e49] text-xl mb-3">Overview</h3>
               <p class="body-tactical text-white leading-relaxed">
@@ -107,7 +109,7 @@ g
 
           <!-- SPECIFICATIONS -->
           {% if product.metafields.custom.specifications %}
-            <div class="rounded-lg border text-card-foreground shadow-sm bg-[#695e49]/30 border-[#6C6846]">
+            <div class="rounded-[8px] border text-card-foreground shadow-sm bg-[#695e49]/30 border-[#6C6846]">
               <div class="p-6">
                 <h3 class="heading-tactical text-[#695e49] text-xl mb-4">Specifications</h3>
                 <ul class="space-y-3">

@@ -40,11 +40,11 @@
         <div class="supporters-slider flex gap-12 animate-card-scroll whitespace-nowrap">
           {% for block in section.blocks %}
             {% if block.type == 'supporters' and block.settings.logo != blank %}
-              <div class="supporter-logo flex-shrink-0 bg-signal-white rounded-lg p-4 shadow-sm border-2 border-olive-drab">
+              <div class="supporter-logo flex-shrink-0 bg-signal-white rounded-[8px] p-4 shadow-sm border-2 border-olive-drab">
                 <img
                   src="{{ block.settings.logo | image_url }}"
                   alt="Supporter Logo"
-                  class="h-[64px] w-[128px] object-contain rounded-lg bg-white"
+                  class="h-[64px] w-[128px] object-contain rounded-[8px] bg-white"
 
                   loading="lazy"
                   width="100%"
@@ -56,11 +56,11 @@
           <!-- Duplicate logos for seamless infinite scroll -->
           {% for block in section.blocks %}
             {% if block.type == 'supporters' and block.settings.logo != blank %}
-              <div class="supporter-logo flex-shrink-0 bg-signal-white rounded-lg p-4 shadow-sm border-2 border-olive-drab">
+              <div class="supporter-logo flex-shrink-0 bg-signal-white rounded-[8px] p-4 shadow-sm border-2 border-olive-drab">
                 <img
                   src="{{ block.settings.logo | image_url}}"
                   alt="Supporter Logo"
-                  class="h-[64px] bg-white w-[128px] object-contain rounded-lg"
+                  class="h-[64px] bg-white w-[128px] object-contain rounded-[8px]"
                   loading="lazy"
                   width="100%"
                   height="100%"

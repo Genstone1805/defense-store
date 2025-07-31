@@ -8,7 +8,7 @@
           class="transition-all duration-700 delay-400 opacity-100 translate-y-0"
         >
           <div
-            class="border text-card-foreground shadow-sm bg-[#afa38e]/5 border-[#afa38e]/20 rounded-xl overflow-hidden"
+            class="border text-card-foreground shadow-sm bg-[#afa38e]/5 border-[#afa38e]/20 rounded-[12px] overflow-hidden"
           >
             <div class="p-0">
               <div class="app-uses-2-grid">
@@ -53,7 +53,7 @@
                         {% if block.type == 'image' %}
                           <a
                             href="{{ block.settings.image_url }}"
-                            class="size-24 bg-white rounded-lg overflow-hidden"
+                            class="size-24 bg-white rounded-[8px] overflow-hidden"
                           >
                             <img
                               src="{{block.settings.image | image_url}}"

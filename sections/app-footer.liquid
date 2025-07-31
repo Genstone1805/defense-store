@@ -3,7 +3,7 @@
   style="background-color:{{ section.settings.background_color }}; color:{{section.settings.primary_color }}"
 >
   <div class="w-full items-center justify-center border-t h-0.5 opacity-40"><p></p></div>
-  <div class="grid flex-col items-center justify-center md:grid-cols-3 gap-8 my-20 max-w-[1200px]">
+  <div class="footer-grid flex-col items-center justify-center gap-8 my-20 max-w-[1200px]">
     <div class="flex flex-col md:flex-row justify-between items-center">
       <div class="flex items-center flex-col justify-center">
         <img
@@ -89,11 +89,12 @@
 </footer>
 
 <style>
-  .grid {
+  .footer-grid {
     display: flex;
-
-    /* Small screens (≥640px) */
-    @media (min-width: 640px) {
+  }
+  /* Small screens (≥640px) */
+  @media (min-width: 640px) {
+    .footer-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr); /* 2 columns */
     }
