@@ -1,77 +1,79 @@
 <section
-  class="text-white flex items-center space-y-4 justify-center flex-col scroll-trigger w-full animate--slide-in py-20 px-4 text-center font-sans"
+  class="text-white flex items-center space-y-4 justify-center flex-col scroll-trigger w-full  py-20 px-4 text-center font-sans"
   style="
           background: rgba(0, 0, 0, 7.24);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 2%, rgba(0, 0, 0, 0.65) 53%, rgba(0, 0, 0, 0.74) 98%);
   "
 >
-  {%- comment -%} Headline {%- endcomment -%}
-  {% if section.settings.headline %}
-    <p class="text-[36px]/10 md:text-[60px]/25 max-w-[1100px] font-bold uppercase">
-      {{ section.settings.headline }}
-    </p>
-  {% endif %}
-
-  {%- comment -%} Subtext {%- endcomment -%}
-  {% if section.settings.subtext %}
-    <p class="mt-4 text-[17px]" style="color:{{ section.settings.primary_color }}">
-      {{ section.settings.subtext }}
-    </p>
-  {% endif %}
-
-  {%- comment -%} Buttons {%- endcomment -%}
-  {% assign button_blocks = section.blocks | where: 'type', 'button' %}
-  {% if button_blocks.size > 0 %}
-    <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
-      {% for block in button_blocks %}
-        {% if block.settings.button_color == 'primary' %}
-          <a href="{{ block.settings.button_link }}"
-            ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 uppercase btn-olive-outline cta-tactical px-10 py-1 text-[16px] rounded-[4px] text-white bg-black">
-              {{ block.settings.button_text }}
-            </button></a
-          >
-        {% else %}
-          <a href="{{ block.settings.button_link }}"
-            ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[6px] font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 px-10 py-1 uppercase btn-hero-cta text-white bg-black hover:bg-scarlet-red text-[16px] transition-all duration-300">
-              {{ block.settings.button_text }}
-            </button></a
-          >
-        {% endif %}
-      {% endfor %}
-    </div>
-  {% endif %}
-
-  {% assign result_blocks = section.blocks | where: 'type', 'result' %}
-  {% if result_blocks.size > 0 %}
-    <div class="card-5-grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-14 mt-16 max-w-[1100px] mx-auto">
-      {% for block in result_blocks %}
-        <div
-          class="flex items-start justify-start text-left flex-col border-l-2 px-3"
-          style="border-color: {{ section.settings.secondary_color }}"
-        >
-          <h3 class="heading-tactical text-primary font-semibold text-[18px] mb-2 uppercase">
-            {{ block.settings.title }}
-          </h3>
-          <p class="text-secondary text-[14px]">{{ block.settings.text }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  {% endif %}
-
-  {%- comment -%} Footer CTA {%- endcomment -%}
-  {% if section.settings.footer_cta %}
-    <div
-      class="mt-20 w-full border-t border-secondary/20 pt-12 max-w-[1100px]"
-      style="border-color:{{section.settings.primary_color }}"
-    >
-      <p
-        class="font-bold text-4xl uppercase tracking-wide text-center"
-        style="color:{{ section.settings.secondary_color }}"
-      >
-        {{ section.settings.footer_cta }}
+  <div class="mx-auto transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
+    {%- comment -%} Headline {%- endcomment -%}
+    {% if section.settings.headline %}
+      <p class="text-[36px]/10 md:text-[60px]/25 max-w-[1100px] font-bold uppercase">
+        {{ section.settings.headline }}
       </p>
-    </div>
-  {% endif %}
+    {% endif %}
+
+    {%- comment -%} Subtext {%- endcomment -%}
+    {% if section.settings.subtext %}
+      <p class="mt-4 text-[17px]" style="color:{{ section.settings.primary_color }}">
+        {{ section.settings.subtext }}
+      </p>
+    {% endif %}
+
+    {%- comment -%} Buttons {%- endcomment -%}
+    {% assign button_blocks = section.blocks | where: 'type', 'button' %}
+    {% if button_blocks.size > 0 %}
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
+        {% for block in button_blocks %}
+          {% if block.settings.button_color == 'primary' %}
+            <a href="{{ block.settings.button_link }}"
+              ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 uppercase btn-olive-outline cta-tactical px-10 py-1 text-[16px] rounded-[4px] text-white bg-black">
+                {{ block.settings.button_text }}
+              </button></a
+            >
+          {% else %}
+            <a href="{{ block.settings.button_link }}"
+              ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[6px] font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 px-10 py-1 uppercase btn-hero-cta text-white bg-black hover:bg-scarlet-red text-[16px] transition-all duration-300">
+                {{ block.settings.button_text }}
+              </button></a
+            >
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% assign result_blocks = section.blocks | where: 'type', 'result' %}
+    {% if result_blocks.size > 0 %}
+      <div class="card-5-grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-14 mt-16 max-w-[1100px] mx-auto">
+        {% for block in result_blocks %}
+          <div
+            class="flex items-start justify-start text-left flex-col border-l-2 px-3"
+            style="border-color: {{ section.settings.secondary_color }}"
+          >
+            <h3 class="heading-tactical text-primary font-semibold text-[18px] mb-2 uppercase">
+              {{ block.settings.title }}
+            </h3>
+            <p class="text-secondary text-[14px]">{{ block.settings.text }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {%- comment -%} Footer CTA {%- endcomment -%}
+    {% if section.settings.footer_cta %}
+      <div
+        class="mt-20 w-full border-t border-secondary/20 pt-12 max-w-[1100px]"
+        style="border-color:{{section.settings.primary_color }}"
+      >
+        <p
+          class="font-bold text-4xl uppercase tracking-wide text-center"
+          style="color:{{ section.settings.secondary_color }}"
+        >
+          {{ section.settings.footer_cta }}
+        </p>
+      </div>
+    {% endif %}
+  </div>
 </section>
 
 <style>

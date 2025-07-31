@@ -6,50 +6,54 @@
     class="bg-black/70 flex items-center justify-center px-6 text-center"
     style="min-height: {{ section.settings.banner_height }}px;"
   >
-    <div class="max-w-7xl scape-y-3 mx-auto text-center">
-      {% if section.settings.small_title != blank %}
-        <h1 class="heading-tactical text-white text-[30px] uppercase font-semibold md:text-[36px] mb-4 leading-tight">
-          {{ section.settings.small_title }}
-        </h1>
-      {% endif %}
-      {% if section.settings.scsub_title != blank %}
-        <h2 class="subheading-tactical text-secondary uppercase font-semibold text-[20px] md:text-[24px] mb-8">
-          {{ section.settings.scsub_title }}
-        </h2>
-      {% endif %}
-      {% if section.settings.small_text != blank %}
-        <p class="body-tactical text-signal-white text-[18px] mb-12 max-w-6xl mx-auto">
-          {{ section.settings.small_text }}
+    <div
+      class=" transition-all scroll-trigger animate--slide-in duration-1000 delay-200"
+    >
+      <div class="max-w-7xl scape-y-3 mx-auto text-center">
+        {% if section.settings.small_title != blank %}
+          <h1 class="heading-tactical text-white text-[30px] uppercase font-semibold md:text-[36px] mb-4 leading-tight">
+            {{ section.settings.small_title }}
+          </h1>
+        {% endif %}
+        {% if section.settings.scsub_title != blank %}
+          <h2 class="subheading-tactical text-secondary uppercase font-semibold text-[20px] md:text-[24px] mb-8">
+            {{ section.settings.scsub_title }}
+          </h2>
+        {% endif %}
+        {% if section.settings.small_text != blank %}
+          <p class="body-tactical text-signal-white text-[18px] mb-12 max-w-6xl mx-auto">
+            {{ section.settings.small_text }}
+          </p>
+        {% endif %}
+        {% if section.settings.title != blank %}
+          <h1 class="text-[48px]/20 font-bold text-signal-white mb-8 leading-tight md:text-[48px]/20">
+            {{ section.settings.title }}
+          </h1>
+        {% endif %}
+        {% if section.settings.ctitle != blank %}
+          <h1 class="text-[48px]/20 font-bold text-olive-drab mb-8 leading-tight md:text-[48px]/20">
+            {{ section.settings.ctitle }}
+          </h1>
+        {% endif %}
+        <p class="text-[20px]/10 md:text-[24px]/12 text-signal-white mb-12 leading-relaxed max-w-6xl mx-auto">
+          {{ section.settings.text }}
         </p>
-      {% endif %}
-      {% if section.settings.title != blank %}
-        <h1 class="text-[48px]/20 font-bold text-signal-white mb-8 leading-tight md:text-[48px]/20">
-          {{ section.settings.title }}
-        </h1>
-      {% endif %}
-      {% if section.settings.ctitle != blank %}
-        <h1 class="text-[48px]/20 font-bold text-olive-drab mb-8 leading-tight md:text-[48px]/20">
-          {{ section.settings.ctitle }}
-        </h1>
-      {% endif %}
-      <p class="text-[20px]/10 md:text-[24px]/12 text-signal-white mb-12 leading-relaxed max-w-6xl mx-auto">
-        {{ section.settings.text }}
-      </p>
-      <p class="text-[20px] text-desert-tan leading-relaxed max-w-6xl mx-auto mb-10">
-        {{ section.settings.ctext }}
-      </p>
+        <p class="text-[20px] text-desert-tan leading-relaxed max-w-6xl mx-auto mb-10">
+          {{ section.settings.ctext }}
+        </p>
 
-      <div class="flex gap-4 w-full justify-center items-center mx-auto">
-        {% for block in section.blocks %}
-          {% render 'button',
-            secondary_color: section.settings.secondary_color,
-            primary_color: section.settings.primary_color,
-            button_text: block.settings.button_text,
-            button_url: block.settings.button_url,
-            type: block.settings.button_type,
-            showArrow: block.settings.show_arrow
-          %}
-        {% endfor %}
+        <div class="flex gap-4 w-full justify-center items-center mx-auto">
+          {% for block in section.blocks %}
+            {% render 'button',
+              secondary_color: section.settings.secondary_color,
+              primary_color: section.settings.primary_color,
+              button_text: block.settings.button_text,
+              button_url: block.settings.button_url,
+              type: block.settings.button_type,
+              showArrow: block.settings.show_arrow
+            %}
+          {% endfor %}
+        </div>
       </div>
     </div>
     {% comment %}
