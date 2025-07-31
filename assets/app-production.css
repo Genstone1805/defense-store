@@ -985,17 +985,33 @@
     border-top-style: var(--tw-border-style) !important;
     border-top-width: 1px !important;
   }
+  .border-t-0 {
+    border-top-style: var(--tw-border-style) !important;
+    border-top-width: 0px !important;
+  }
   .border-r {
     border-right-style: var(--tw-border-style) !important;
     border-right-width: 1px !important;
+  }
+  .border-r-0 {
+    border-right-style: var(--tw-border-style) !important;
+    border-right-width: 0px !important;
   }
   .border-b {
     border-bottom-style: var(--tw-border-style) !important;
     border-bottom-width: 1px !important;
   }
+  .border-b-0 {
+    border-bottom-style: var(--tw-border-style) !important;
+    border-bottom-width: 0px !important;
+  }
   .border-l {
     border-left-style: var(--tw-border-style) !important;
     border-left-width: 1px !important;
+  }
+  .border-l-0 {
+    border-left-style: var(--tw-border-style) !important;
+    border-left-width: 0px !important;
   }
   .border-l-2 {
     border-left-style: var(--tw-border-style) !important;
