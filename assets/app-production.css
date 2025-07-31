@@ -321,6 +321,18 @@
   .my-20 {
     margin-block: calc(var(--spacing) * 20) !important;
   }
+  .-mt-0\.5 {
+    margin-top: calc(var(--spacing) * -0.5) !important;
+  }
+  .-mt-1 {
+    margin-top: calc(var(--spacing) * -1) !important;
+  }
+  .-mt-1\.5 {
+    margin-top: calc(var(--spacing) * -1.5) !important;
+  }
+  .-mt-2 {
+    margin-top: calc(var(--spacing) * -2) !important;
+  }
   .-mt-6 {
     margin-top: calc(var(--spacing) * -6) !important;
   }
