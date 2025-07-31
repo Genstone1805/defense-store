@@ -5,247 +5,115 @@
 >
   <div class="w-full flex item-center justify-center">
     <div class="flex items-center w-full self-center justify-between max-w-[1200px]">
-      <nav class="sticky top-0 z-50 bg-combat-black py-5">
-        <div class="container mx-auto px-4">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              {%- if section.settings.logo_position != 'middle-center' -%}
-                {%- if request.page_type == 'index' -%}
-                  <h1 class="header__heading">
-                {%- endif -%}
-                <a
-                  href="{{ routes.root_url }}"
-                  class="header__heading-link link link--text focus-inset"
-                >
-                  {%- if settings.logo != blank -%}
-                    <div class="header__heading-logo-wrapper">
-                      {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                      {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                      {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
-                      {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                      {{
-                        settings.logo
-                        | image_url: width: 600
-                        | image_tag:
-                          class: 'header__heading-logo motion-reduce',
-                          widths: widths,
-                          height: logo_height,
-                          width: settings.logo_width,
-                          alt: logo_alt,
-                          sizes: sizes,
-                          preload: true
-                      }}
-                    </div>
-                  {%- else -%}
-                    <span
-                      class="h2"
-                    >
-                      {{- shop.name -}}
-                    </span>
-                  {%- endif -%}
-                </a>
-                {%- if request.page_type == 'index' -%}
-                  </h1>
-                {%- endif -%}
-              {%- endif -%}
-            </div>
-            <div class="hidden md:flex items-center justify-center flex-1">
-              <div class="flex items-center space-x-8">
-                <div class="relative">
-                  <a
-                    class="flex items-center text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
-                    href="/products"
-                    >Products
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-chevron-down ml-1 h-3 w-3"
-                    >
-                      <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="relative">
-                  <a
-                    class="flex items-center text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
-                    href="/technology"
-                    >Technology
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-chevron-down ml-1 h-3 w-3"
-                    >
-                      <path d="m6 9 6 6 6-6"></path>
-                    </svg>
-                  </a>
-                </div>
-                <a
-                  class="text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
-                  href="/use-cases"
-                  >Use Cases</a
-                ><a
-                  class="text-desert-tan hover:text-scarlet-red font-semibold text-sm uppercase tracking-wide transition-colors duration-200"
-                  href="/about"
-                  >About Us</a
-                >
+      <div class="">
+        {%- if section.settings.logo_position != 'middle-center' -%}
+          {%- if request.page_type == 'index' -%}
+            <h1 class="header__heading">
+          {%- endif -%}
+          <a
+            href="{{ routes.root_url }}"
+            class="header__heading-link link link--text focus-inset"
+          >
+            {%- if settings.logo != blank -%}
+              <div class="header__heading-logo-wrapper">
+                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                {{
+                  settings.logo
+                  | image_url: width: 600
+                  | image_tag:
+                    class: 'header__heading-logo motion-reduce',
+                    widths: widths,
+                    height: logo_height,
+                    width: settings.logo_width,
+                    alt: logo_alt,
+                    sizes: sizes,
+                    preload: true
+                }}
               </div>
-            </div>
-            <div class="flex items-center space-x-6">
-              <div class="hidden md:flex items-center space-x-4">
-                <button class="text-desert-tan hover:text-scarlet-red transition-colors duration-200">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-search h-5 w-5"
-                  >
-                    <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path>
-                  </svg></button
-                ><button class="text-desert-tan hover:text-scarlet-red transition-colors duration-200">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-user h-5 w-5"
-                  >
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
-                  </svg></button
-                ><button
-                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 relative"
-                  type="button"
-                  aria-haspopup="dialog"
-                  aria-expanded="false"
-                  aria-controls="radix-:r6:"
-                  data-state="closed"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-shopping-cart h-4 w-4"
-                  >
-                    <circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                  </svg>
-                </button>
-              </div>
-              <a
-                class="btn-scarlet px-6 py-2 text-sm font-semibold uppercase tracking-wide transition-all duration-200"
-                href="/request-consultation"
-                >Contact Us</a
+            {%- else -%}
+              <span
+                class="h2"
               >
-              <div class="md:hidden">
-                <button class="text-desert-tan hover:text-scarlet-red">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+                {{- shop.name -}}
+              </span>
+            {%- endif -%}
+          </a>
+          {%- if request.page_type == 'index' -%}
+            </h1>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
 
       <!-- Navigation -->
-      {% comment %}
-        <nav class="relative computer-nav text-[14px] font-bold space-x-6 uppercase">
-          {% assign menu = linklists[section.settings.menu] %}
-          {% if menu.links != blank %}
-            {% for link in menu.links %}
-              {% assign is_first = forloop.first %}
-              {% if link.links != blank %}
-                <div class="mother">
-                  <a
-                    href="{{ link.url }}"
-                    class="cursor-pointer uppercase transition-colors duration-150"
-                    onmouseover="this.style.color='{{ section.settings.tertiary_color }}'"
-                    onmouseout="this.style.color=''"
-                  >
-                    {{ link.title }} ▾
-                  </a>
-                  <div
-                    class="absolute child border-[0.0000002vw]  min-w-96 z-50"
-                    style="background-color:{{ section.settings.primary_color }}"
-                  >
-                    <ul class="space-y-2 py-6 px-4 font-normal capitalize">
-                      {% for subLink in link.links %}
-                        <li>
-                          <a
-                            href="{{subLink.url }}"
-                            class="cursor-pointer transition-colors duration-150"
-                            onmouseover="this.style.color='{{ section.settings.tertiary_color }}'"
-                            onmouseout="this.style.color=''"
-                          >
-                            {{- subLink.title -}}
-                          </a>
-                        </li>
-                      {% endfor %}
-                      {% if is_first %}
-                        {% assign page = linklists[section.settings.page_menu] %}
-                        {% if page.links != blank %}
-                          <li class="border-t my-2"></li>
-                          {% for page in page.links %}
-                            <li>
-                              <a
-                                href="{{page.url }}"
-                                class="cursor-pointer transition-colors duration-150"
-                                onmouseover="this.style.color='{{ section.settings.tertiary_color }}'"
-                                onmouseout="this.style.color=''"
-                              >
-                                {{- page.title -}}
-                              </a>
-                            </li>
-                          {% endfor %}
-                        {% endif %}
-                      {% endif %}
-                    </ul>
-                  </div>
-                </div>
-              {% else %}
+      <nav class="relative computer-nav text-[14px] font-bold space-x-6 uppercase">
+        {% assign menu = linklists[section.settings.menu] %}
+        {% if menu.links != blank %}
+          {% for link in menu.links %}
+            {% assign is_first = forloop.first %}
+            {% if link.links != blank %}
+              <div class="mother">
                 <a
-                  href="{{link.url}}"
-                  class="cursor-pointer transition-colors duration-150"
+                  href="{{ link.url }}"
+                  class="cursor-pointer uppercase transition-colors duration-150"
                   onmouseover="this.style.color='{{ section.settings.tertiary_color }}'"
                   onmouseout="this.style.color=''"
                 >
-                  {{- link.title -}}
+                  {{ link.title }} ▾
                 </a>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-        </nav>
-      {% endcomment %}
+                <div
+                  class="absolute child border-[0.0000002vw] mt-2 min-w-96 z-50"
+                  style="background-color:{{ section.settings.primary_color }}"
+                >
+                  <ul class="space-y-2 py-6 px-4 font-normal capitalize">
+                    {% for subLink in link.links %}
+                      <li>
+                        <a
+                          href="{{subLink.url }}"
+                          class="cursor-pointer transition-colors duration-150"
+                          onmouseover="this.style.color='{{ section.settings.tertiary_color }}'"
+                          onmouseout="this.style.color=''"
+                        >
+                          {{- subLink.title -}}
+                        </a>
+                      </li>
+                    {% endfor %}
+                    {% if is_first %}
+                      {% assign page = linklists[section.settings.page_menu] %}
+                      {% if page.links != blank %}
+                        <li class="border-t my-2"></li>
+                        {% for page in page.links %}
+                          <li>
+                            <a
+                              href="{{page.url }}"
+                              class="cursor-pointer transition-colors duration-150"
+                              onmouseover="this.style.color='{{ section.settings.tertiary_color }}'"
+                              onmouseout="this.style.color=''"
+                            >
+                              {{- page.title -}}
+                            </a>
+                          </li>
+                        {% endfor %}
+                      {% endif %}
+                    {% endif %}
+                  </ul>
+                </div>
+              </div>
+            {% else %}
+              <a
+                href="{{link.url}}"
+                class="cursor-pointer transition-colors duration-150"
+                onmouseover="this.style.color='{{ section.settings.tertiary_color }}'"
+                onmouseout="this.style.color=''"
+              >
+                {{- link.title -}}
+              </a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </nav>
 
       <!-- Icons and CTA -->
       <div class="flex items-center gap-4 ">
@@ -334,7 +202,7 @@
         </div>
         <a
           href="#"
-          class="text-white font-semibold  px-4 py-2 rounded-[2px] transition-transform duration-300 hover:-translate-y-0.5"
+          class="text-white font-semibold  px-4 py-2 rounded transition-transform duration-300 hover:-translate-y-0.5"
           style="background-color:{{ section.settings.tertiary_color }}"
         >
           CONTACT US
