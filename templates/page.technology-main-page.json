@@ -17,7 +17,7 @@
           "settings": {
             "button_text": "REQUEST A DEMO",
             "button_url": "shopify://pages/meeting",
-            "button_type": "fill",
+            "button_type": "secondary_fill",
             "show_arrow": true
           }
         }
