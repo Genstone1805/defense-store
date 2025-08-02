@@ -1,0 +1,261 @@
+<div class="mt-32 bg-[#000000b6]">
+  <div class="py-4 px-6">
+    <div class="max-w-[1100px] mx-auto">
+      <a
+        class="inline-flex items-center text-[#afa38e] hover:text-[#695e49] transition-colors"
+        href="javascript:history.back();"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-left w-4 h-4 mr-2"
+        >
+          <path d="m12 19-7-7 7-7"></path>
+          <path d="M19 12H5"></path>
+        </svg>
+        Back to Products</a
+      >
+    </div>
+  </div>
+  <section
+    class="py-20 px-6 relative scroll-fade-in visible"
+  >
+    <div class="max-w-[1100px] mx-auto">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start mb-16"
+      >
+        <div class="space-y lg:col-span-2">
+          <!-- Main Image -->
+          <div
+            class="aspect-square bg-muted/30 rounded-[8px] overflow-hidden border-2 border-[#6C6846] transform scale-85"
+          >
+            <img
+              id="mainProductImage"
+              src="{{ product.featured_image | image_url }}"
+              alt="Main product image"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              width="100%"
+              height="100%"
+            >
+          </div>
+
+          <!-- Thumbnails -->
+          <div class="flex gap-3 justify-center">
+            {% for media in product.media %}
+              <button
+                type="button"
+                class="size-20 rounded-[8px] overflow-hidden border-2 transition-all duration-200 border-[#afa38e] shadow-lg scale-105"
+                data-image="{{ media.preview_image | image_url }}"
+              >
+                <img
+                  src="{{ media.preview_image | image_url }}"
+                  alt="{{ media.alt | escape }}"
+                  class="w-full h-full object-cover"
+                  width="100%"
+                  height="100%"
+                >
+              </button>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="space-y-8 lg:col-span-3">
+          <div class="space-y-4">
+            <p
+              class=" text-white uppercase text-[38px] md:text-[48px] font-bold"
+            >
+              {{ product.title }}
+            </p>
+          </div>
+
+          <form class="w-full space-y-8" id="productForm">
+            <input type="hidden" name="id" id="selectedVariantId" value="{{ product.variants.first.id }}">
+            <div class="space-y-6">
+              <div class="product-detail-selection-grid">
+                {% for option in product.options_with_values %}
+                  <div>
+                    <label class="text-white mb-2 block text-[14px] font-semibold">{{ option.name }}</label>
+                    <select
+                      name="option-{{ forloop.index0 }}"
+                      class="w-full h-16 rounded-xl bg-[#0d0d0d] text-white font-semibold border border-[#4a4939] px-4 text-[13px] focus:outline-[#4a4939] focus:ring-2 focus:ring-[#4a4939] focus:border-[#4a4939] transition-colors duration-200"
+                    >
+                      <option disabled selected hidden>Select {{ option.name }}</option>
+                      {% for value in option.values %}
+                        <option
+                          class="hover:bg-[#4a4939]transition-colors duration-200"
+                          value="{{ value }}"
+                        >
+                          {{ value }}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="space-y-4">
+              <a href="{{section.settings.consultation_url}}"
+                ><button
+                  class="inline-flex border-[#7b0f23] border items-center justify-center gap-2 whitespace-nowrap rounded-[6px] font-medium px-4 text-white bg-black hover:bg-[#7b0f23] text-[14px] transition-all duration-300 w-full py-2"
+                >
+                  REQUEST CONSULTATION TO SCAN MY TEAM
+                </button></a
+              >
+              <div class="flex items-center space-x-3 py-2 mt-">
+                <input
+                  type="checkbox"
+                  id="scan-confirm"
+                  class="peer size-6 shrink-0 rounded-[4px] border border-[#695e49] bg-[#695e49] text-transparent  focus:ring-2 focus:ring-[#695e49]"
+                >
+                <label
+                  for="scan-confirm"
+                  class="text-white text-[14px] cursor-pointer select-none peer-checked:font-semibold"
+                >
+                  Confirm 3D Scan On-File
+                </label>
+              </div>
+              <button
+                id="addToCartBtn"
+                class="inline-flex items-center justify-center  gap-2 whitespace-nowrap rounded-[6px] font-medium  px-4 w-full py-3 text-[14px] transition-all duration-300 bg-muted text-muted-foreground cursor-not-allowed"
+                disabled
+              >
+                ADD TO CART
+              </button>
+            </div>
+          </form>
+          <div class="pt-4 border-t border-[#6C6846]">
+            <p class="text-[#afa38e] text-[14px]">
+              Individual scanning opportunities available at events, or coordinated with team scanning locations. Check
+              out our upcoming events, or reach out to the team to coordinate your scan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="space-y-6 bg-muted/20 p-8 rounded-[8px] border border-[#6C6846]"
+      >
+        <div>
+          <p class="heading-tactical text-[#695e49] text-4xl uppercase mb-4">Overview</p>
+          {{ page.content }}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  document.getElementById("productForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const variantId = formData.get("id");
+
+    fetch("/cart/add.js", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Accept": "application/json",
+      },
+      body: new URLSearchParams(formData),
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error("Add to cart failed");
+        return res.json();
+      })
+      .then((data) => {
+        console.log("Added to cart");
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  });
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const mainImage = document.getElementById('mainProductImage');
+    const thumbnails = document.querySelectorAll('button[data-image]');
+
+    thumbnails.forEach((button) => {
+      button.addEventListener('click', function () {
+        const newSrc = this.getAttribute('data-image');
+        mainImage.src = newSrc;
+      });
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const checkbox = document.getElementById('scan-confirm');
+    const button = document.getElementById('addToCartBtn');
+
+    checkbox.addEventListener('change', function () {
+      button.disabled = !this.checked;
+
+      // Optional: change cursor and styling dynamically
+      if (this.checked) {
+        button.classList.remove('cursor-not-allowed', 'text-muted-foreground', 'bg-[#1a1a19]', 'text-[#58554e]');
+        button.classList.add('cursor-pointer', 'text-white', 'bg-[#695e49]', 'text-white');
+      } else {
+        button.classList.add('cursor-not-allowed', 'text-muted-foreground', 'bg-[#1a1a19]', 'text-[#58554e]');
+        button.classList.remove('cursor-pointer', 'text-white', 'bg-[#695e49]');
+      }
+    });
+  });
+
+  const productVariants = {{ product.variants | json }};
+  const optionSelectors = document.querySelectorAll('.product-option');
+  const variantIdInput = document.getElementById('selectedVariantId');
+
+  optionSelectors.forEach(select => {
+    select.addEventListener('change', () => {
+      const selectedOptions = Array.from(optionSelectors).map(s => s.value);
+
+      const matchedVariant = productVariants.find(variant =>
+        JSON.stringify(variant.options) === JSON.stringify(selectedOptions)
+      );
+
+      if (matchedVariant) {
+        variantIdInput.value = matchedVariant.id;
+      }
+    });
+  });
+</script>
+
+<style>
+  .product-detail-selection-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  }
+</style>
+
+{% schema %}
+{
+  "name": "App Product",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "url",
+      "id": "consultation_url",
+      "label": "Consultation URL"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "App Product",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
