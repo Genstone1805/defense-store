@@ -1,10 +1,8 @@
-<div
-  class="flex items-center justify-center flex-col text-white py-16 px-4 font-sans"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 2%, rgba(0, 0, 0, 0.65) 53%, rgba(0, 0, 0, 0.74) 98%);
-  "
+<section
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-center flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="max-w-7xl  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <p class="text-center text-[36px]/15 md:text-[48px]/20 font-semibold uppercase">
       Don't Compromise When the Mission Depends On It
@@ -159,7 +157,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <style>
   .card-4-grid {

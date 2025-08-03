@@ -1,12 +1,10 @@
 <section
-  class="text-center flex items-center justify-center flex-col w-full relative  text-white object-cover"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: rgba(0, 0, 0, 0.58);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-center flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.6)] bg-blend-color-darken"><p></p></div>
   <!-- Section Title -->
-  <div class="mx-auto px-4 py-32  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
+  <div class="mx-auto px-4 transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="text-center mb-16">
       <h2 class="heading-tactical text-signal-white font-bold text-[36px]/15 md:text-[48px]/20 mb-6">
         {{ section.settings.card_title }}

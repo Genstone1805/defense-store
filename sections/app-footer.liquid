@@ -1,92 +1,226 @@
-<footer
-  class="px-8 py-12 flex items-center flex-col justify-center text-center"
-  style="background-color:{{ section.settings.background_color }}; color:{{section.settings.primary_color }}"
->
-  <div class="w-full items-center justify-center border-t h-0.5 opacity-40"><p></p></div>
-  <div class="footer-grid flex-col items-center justify-center gap-8 my-20 max-w-[1200px]">
-    <div class="flex flex-col md:flex-row justify-between items-center">
-      <div class="flex items-center flex-col justify-center">
-        <img
-          src="{{ section.settings.store_logo | image_url }}"
-          alt="Aware Defense Logo"
-          class="h-[64px] w-[192px] object-contain"
-          width="192"
-          height="64"
-        >
-        <img
-          src="{{ section.settings.store_location | image_url }}"
-          alt="Aware Defense Logo"
-          class="h-[96px] w-[128px] object-contain"
-          width="128"
-          height="96"
-        >
-      </div>
-      <div class="flex space-x-6 mt-6 md:mt-0">
-        {% render 'social-icons' %}
-      </div>
-    </div>
-    <div class="flex flex-col md:flex-row justify-between items-center">
-      <div class="flex items-center flex-col justify-center">
-        <img
-          src="{{ section.settings.store_icon | image_url }}"
-          alt="Aware Defense Logo"
-          class="h-[160px] w-[160px] object-contain"
-          width="160"
-          height="160"
-        >
-      </div>
-      <div class="flex space-x-6 mt-6 md:mt-0">
-        {% render 'social-icons' %}
-      </div>
-    </div>
-    {% for block in section.blocks %}
-      <div>
-        <p class="font-semibold text-3xl mb-2 uppercase opacity-80">{{ block.settings.office_name }}</p>
-        <p>
-          {{ block.settings.office_address -}}
-          <br>
-          {{ block.settings.office_state -}}
-          <br>
-          {{ block.settings.office_box }}
-        </p>
-        {% if block.settings.office_email != blank %}
-          <a
-            href="mailto:{{block.settings.office_email }}"
-            class="hover:underline"
-            style="color:{{section.settings.secondary_color }}"
-          >
-            {{- block.settings.office_email -}}
+<footer class="bg-[#0d0d0d] border-t border-secondary/20">
+  <div class="max-w-[1280px] mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div class="flex flex-col items-center text-center">
+        <a class="block" href="{{ routes.root_url }}">
+          <div class="w-192px h-[64px]">
+            <img
+              src="{{ section.settings.store_logo | image_url }}"
+              alt="Aware Defense"
+              class="w-full h-full object-contain"
+              width="192"
+              height="64"
+            >
+          </div>
+        </a>
+        <div class="flex items-center gap-4 mb-4">
+          <a class="block" href="{{ routes.root_url }}">
+            <div class="h-[96px] w-[128px]">
+              <img
+                src="{{ section.settings.store_location | image_url }}"
+                alt="Made in USA"
+                class="size-full object-contain"
+                width="128"
+                height="96"
+              >
+            </div></a
+          ><a class="block" href="{{ routes.root_url }}"
+            ><img
+              src="{{ section.settings.store_icon | image_url }}"
+              alt="eFit 3D Scanner"
+              class="w-[64px] h-auto object-contain hover:opacity-80 transition-opacity"
+              width="64px"
+              height="100%"
+          ></a>
+        </div>
+        <div class="flex space-x-4">
+          <a href="{{section.settings.twitter_url }}">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-twitter size-[20px] text-secondary hover:text-primary cursor-pointer transition-colors"
+            >
+              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+            </svg>
           </a>
-        {% endif %}
+          <a href="{{section.settings.instagram_url }}">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-instagram size-[20px] text-secondary hover:text-primary cursor-pointer transition-colors"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="{{section.settings.linkedin_url }}">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-linkedin size-[20px] text-secondary hover:text-primary cursor-pointer transition-colors"
+            >
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
       </div>
-    {% endfor %}
+      <div class="text-center">
+        <h3 class="heading-tactical text-primary text-[18px] font-semibold mb-2 uppercase">NAVIGATION</h3>
+        <div class="space-y-2 text-secondary text-[14px]">
+          {% for block in section.blocks %}
+            {% if block.type == 'navigation' %}
+              {% assign menu_handle = block.settings.link %}
+              {% if linklists[menu_handle] != blank %}
+                {% for link in linklists[menu_handle].links %}
+                  <a
+                    class="block hover:text-scarlet-red transition-colors uppercase font-medium"
+                    href="{{ link.url }}"
+                  >
+                    {{ link.title }}
+                  </a>
+                {% endfor %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% for block in section.blocks %}
+        {% if block.type == 'office' %}
+          <div class="text-center">
+            <h3 class="heading-tactical text-primary text-[18px] font-semibold mb-2 uppercase">OFFICES</h3>
+            <div class="space-y-2 text-secondary text-[14px]">
+              <p>{{ block.settings.office_name }}</p>
+              <p>{{ block.settings.office_address -}}</p>
+              <p>{{ block.settings.office_box }}</p>
+              <h4 class="heading-tactical text-primary text-[14px] mt-4 mb-2 uppercase">CONTACT US</h4>
+              <div class="flex items-center justify-center">
+                <span>{{ block.settings.office_contact }}</span>
+              </div>
+              {% if block.settings.office_email != blank %}
+                <a
+                  href="mailto:{{block.settings.office_email }}"
+                  class="text-scarlet-red hover:text-scarlet-red/80 transition-colors"
+                >
+                  {{- block.settings.office_email -}}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
 
-    <div>
-      <p class="font-semibold text-3xl mb-2 uppercase opacity-80">STAY UPDATED</p>
-      <p class="mb-4">Find out more about our Ear-Powered Innovations!</p>
-      <form class="flex space-x-2">
-        <input
-          type="email"
-          placeholder="your-email@example.com"
-          class="flex-grow p-2 border rounded-l focus:outline-none"
+      <div class="text-center">
+        <h3 class="heading-tactical text-primary text-[18px] font-semibold mb-2 uppercase">STAY UPDATED</h3>
+        <p class="text-secondary text-[14px] mb-4">Find out more about our Ear-Powered Innovations!</p>
+        <form
+          id="newsletter-form"
+          method="POST"
+          action="#"
+          class="w-full flex items-center justify-center flex-col"
         >
-        <button
-          type="submit"
-          class="p-2 rounded-r text-white transition-transform duration-300 hover:-translate-y-0.5"
-          style="background-color:{{ section.settings.primary_color }}"
-        >
-          →
-        </button>
-      </form>
+          <div class="flex gap-2 w-full items-center justify-center">
+            <input
+              type="email"
+              name="contact[email]"
+              id="newsletter-email"
+              class="flex w-full rounded-[4px] max-w-2/3 border px-2 py-3 text-[16px] ring-offset-background file:border-0 file:bg-transparent file:text-[14px] file:font-medium file:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-[14px] bg-background border-secondary/40 text-primary placeholder:text-secondary/60"
+              placeholder="your-email@example.com"
+              required
+
+            ><button
+              type="submit"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[4px] text-[14px] font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 p-6 btn-scarlet"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right size-[16px]"
+              >
+                <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+          <p id="newsletter-message" class="text-[12px] text-center mt-4 text-secondary hidden"></p>
+        </form>
+      </div>
     </div>
-  </div>
-
-  <div class="w-full items-center justify-center border-t h-0.5 opacity-40"><p></p></div>
-  <div class="mt-10 mb-20 text-center text-lg flex w-full justify-between max-w-[1200px]">
-    <p class="text-xl">© AWARE DEFENSE 2025</p>
-    <p>This site is protected by hCaptcha and the hCaptcha Privacy Policy and Terms of Service apply.</p>
+    <div class="border-t border-secondary/20 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-secondary text-[14px]">© AWARE DEFENSE 2025</p>
+        <p class="text-secondary text-[12px] font-medium text-right">
+          This site is protected by hCaptcha and the hCaptcha Privacy Policy and Terms of Service apply.
+        </p>
+      </div>
+    </div>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('newsletter-form');
+    const emailInput = document.getElementById('newsletter-email');
+    const message = document.getElementById('newsletter-message');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // ⛔ Stop page refresh
+      message.classList.add('hidden'); // Hide old messages
+
+      const formData = new FormData();
+      formData.append('form_type', 'customer');
+      formData.append('contact[email]', emailInput.value);
+
+      fetch('/contact', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+        .then((res) => {
+          if (res.ok) {
+            message.textContent = '✅ Thank you for subscribing!';
+            message.classList.remove('hidden');
+            message.classList.add('text-green-500');
+            form.reset();
+          } else {
+            throw new Error('Subscription failed');
+          }
+        })
+        .catch((err) => {
+          message.textContent = '⚠️ Subscription failed. Please try again.';
+          message.classList.remove('hidden');
+          message.classList.add('text-red-500');
+        });
+    });
+  });
+</script>
 
 <style>
   .footer-grid {
@@ -117,6 +251,21 @@
       "id": "primary_color",
       "label": "Primary Color",
       "default": "#B6AC87"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram Url"
+    },
+    {
+      "type": "url",
+      "id": "twitter_url",
+      "label": "Facebook Url"
+    },
+    {
+      "type": "url",
+      "id": "linkedin_url",
+      "label": "Linkedin Url"
     },
     {
       "type": "color",
@@ -170,6 +319,12 @@
         },
         {
           "type": "text",
+          "id": "office_contact",
+          "label": "Office Contact Number",
+          "default": "(855)EAR-SCAN"
+        },
+        {
+          "type": "text",
           "id": "office_box",
           "label": "Office Box",
           "default": "Office Box"
@@ -179,6 +334,17 @@
           "id": "office_email",
           "label": "Office Email",
           "default": "Office E-mail"
+        }
+      ]
+    },
+    {
+      "type": "navigation",
+      "name": "Quick Links",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "link",
+          "label": "Quick Links"
         }
       ]
     }

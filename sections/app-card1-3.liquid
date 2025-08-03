@@ -1,14 +1,15 @@
 <section
-  class=" py-20 text-center text-white"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 2%, rgba(0, 0, 0, 0.65) 53%, rgba(0, 0, 0, 0.68) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="mx-auto pb-16 px-8">
-      <p class="lg:text-[48px]/20 text-[36px]/15 font-extrabold uppercase">{{ section.settings.card_title }}</p>
+      <h2 class="heading-tactical text-signal-white text-[36px]/15 md:text-[48px]/20 mb-6 font-semibold">
+        {{ section.settings.card_title }}
+      </h2>
+      {% comment %} <p class="lg:text-[48px]/20 text-[36px]/15 font-extrabold uppercase">{{ section.settings.card_title }}</p> {% endcomment %}
       <p
         class="text-[32px]/20 text-gray-300 font-semibold mt-2 tracking-wide uppercase"
         style="color:{{section.settings.tertiary_color }}"
@@ -30,7 +31,9 @@
           {% if block.type == 'card' %}
             <div class="text-center relative">
               <div class="absolute -top-6 -left-6 font-sans size-18 bg-[#7b1024] rounded-full flex items-center justify-center">
-                <span class="cta-tactical text-signal-white text-[20px] font-bold">{{ block.settings.badge }}</span>
+                <span class="cta-tactical bg-transparent text-signal-white text-[20px] font-bold">
+                  {{- block.settings.badge -}}
+                </span>
               </div>
               <div class="bg-black/55 p-8 rounded-[8px] border-2" style="border-color: rgb(108, 104, 70);">
                 {% if block.settings.image %}
@@ -61,7 +64,7 @@
         {% if section.settings.button_style == 'outline' %}
           <a
             href="{{ section.settings.button_url }}"
-            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[4px] font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 px-10 uppercase py-1 btn-hero-cta text-white bg-black hover:bg-scarlet-red text-[16px] transition-all duration-300"
+            class="inline-flex items-center border border-destructive justify-center gap-2 whitespace-nowrap rounded-[4px] font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 px-10 uppercase py-1 btn-hero-cta text-white bg-black hover:bg-scarlet-red text-[16px] transition-all duration-300"
           >
             {{ section.settings.button_text }}
           </a>

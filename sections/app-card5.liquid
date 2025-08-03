@@ -1,10 +1,8 @@
 <section
-  class="text-white flex items-center space-y-4 justify-center flex-col scroll-trigger w-full  py-20 px-4 text-center font-sans"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 2%, rgba(0, 0, 0, 0.65) 53%, rgba(0, 0, 0, 0.74) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-center flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="mx-auto transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     {%- comment -%} Headline {%- endcomment -%}
     {% if section.settings.headline %}
@@ -15,7 +13,7 @@
 
     {%- comment -%} Subtext {%- endcomment -%}
     {% if section.settings.subtext %}
-      <p class="mt-4 text-[17px]" style="color:{{ section.settings.primary_color }}">
+      <p class="mt-4 text-[17px] font-medium" style="color:{{ section.settings.primary_color }}">
         {{ section.settings.subtext }}
       </p>
     {% endif %}
@@ -27,13 +25,13 @@
         {% for block in button_blocks %}
           {% if block.settings.button_color == 'primary' %}
             <a href="{{ block.settings.button_link }}"
-              ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 uppercase btn-olive-outline cta-tactical px-10 py-1 text-[16px] rounded-[4px] text-white bg-black">
+              ><button class="inline-flex items-center justify-center border border-primary gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 uppercase btn-olive-outline cta-tactical px-10 py-1 text-[16px] rounded-[4px] text-white bg-black">
                 {{ block.settings.button_text }}
               </button></a
             >
           {% else %}
             <a href="{{ block.settings.button_link }}"
-              ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[6px] font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 px-10 py-1 uppercase btn-hero-cta text-white bg-black hover:bg-scarlet-red text-[16px] transition-all duration-300">
+              ><button class="inline-flex items-center justify-center border-destructive border gap-2 whitespace-nowrap rounded-[6px] font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 px-10 py-1 uppercase btn-hero-cta text-white bg-black hover:bg-scarlet-red text-[16px] transition-all duration-300">
                 {{ block.settings.button_text }}
               </button></a
             >
