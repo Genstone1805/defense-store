@@ -1,21 +1,19 @@
 <section
-  class=" py-20text-center text-white object-cover"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.73) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-center flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="max-w-[950px] mx-auto">
-      <h2 class="text-[36px]/15 md:text-[48px]/20 font-bold text-olive-drab text-center mb-16">
+      <h2 class="text-[36px]/15 md:text-[48px]/20 font-semibold text-olive-drab text-center mb-16">
         {{ section.settings.card_title }}
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
-            <div class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-[12px] overflow-hidden">
-              <div class="p-8 text-center flex flex-col justify-between h-full space-y-6">
-                <div class="size-20 bg-olive-drab rounded-[8px] mx-auto flex items-center justify-center">
+            <div class="border px-8 py-12 text-card-foreground shadow-sm bg-desert-tan/10  border-desert-tan/30 rounded-[12px] overflow-hidden">
+              <div class="text-center flex flex-col justify-between h-full space-y-6">
+                <div class="size-24 bg-olive-drab rounded-[8px] mx-auto flex items-center justify-center">
                   {% if block.settings.image %}
                     <img
                       src="{{ block.settings.image | image_url  }}"
@@ -34,7 +32,7 @@
                 </div>
                 <div class="mt-8">
                   <a href="{{ block.settings.button_url }}"
-                    ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-10 btn-scarlet w-full text-[16px] py-1 font-semibold uppercase tracking-wide">
+                    ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-10 btn-scarlet w-full text-[18px] py-2 font-medium uppercase tracking-wide">
                       {{ block.settings.button_text }}
                     </button></a
                   >

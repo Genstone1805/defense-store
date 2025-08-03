@@ -1,16 +1,14 @@
 <section
-  class="py-20"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.74) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-center flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken border-b border-desert-tan/10"><p></p></div>
   <div class="container mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="max-w-7px mx-auto">
-      <h2 class="text-[36px]/15 md:text-[48px]/20 font-bold text-olive-drab text-center mb-16">
+      <h2 class="text-[36px]/15 md:text-[48px]/20 font-semibold text-olive-drab text-center mb-16">
         {{ section.settings.card_title }}
       </h2>
-      <div class="border text-card-foreground shadow-sm bg-muted/20 border-desert-tan/30 rounded-[12px] overflow-hidden max-w-5xl mx-auto">
+      <div class="border text-card-foreground shadow-sm border-desert-tan/30 rounded-[12px] overflow-hidden max-w-5xl mx-auto">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}
             <div class="p-8 space-y-6">
@@ -53,7 +51,7 @@
               </p>
               <div class="mt-8">
                 <a href="{{ block.settings.button_url }}" target="_blank" rel="noopener noreferrer"
-                  ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-10 btn-scarlet w-full text-[18px] py-1 font-semibold uppercase tracking-wide">
+                  ><button class="inline-flex items-center text-medium justify-center gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-10 btn-scarlet w-full text-[18px] py-2 font-semibold uppercase tracking-wide">
                     {{ block.settings.button_text }}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

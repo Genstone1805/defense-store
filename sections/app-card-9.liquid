@@ -1,10 +1,8 @@
 <section
-  class="py-20 text-white"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 2%, rgba(0, 0, 0, 0.67) 53%, rgba(0, 0, 0, 0.72) 98%);
-  "
+  class="relative py-32 px-6 scroll-fade-in visible font-sans text-center flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="container mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="max-w-7xl mx-auto text-center space-y-8">
       {% if section.settings.title != blank %}

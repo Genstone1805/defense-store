@@ -1,10 +1,8 @@
 <section
-  class=" py-20 text-white object-cover"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.74) 98%);
-  "
+  class="relative py-32 px-6 scroll-fade-in visible font-sans text-center flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken border-b border-desert-tan/10"><p></p></div>
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="mx-auto mb-12 px-8">
@@ -31,12 +29,12 @@
           {% if block.type == 'card' %}
             <!-- Card 1 -->
             <div
-              class="border spacce-y-5 py-6 px-8 hover:shadow-lg min-h-83 flex items-center justify-center  flex-col relative rounded-2xl"
+              class="border py-12 px-8 space-y-14  hover:shadow-lg min-h-83 flex items-center justify-center  flex-col relative rounded-2xl"
               style="border-color:{{section.settings.primary_color }}; background-color:{{ block.settings.bg_color }}; background-color: rgba(153, 153, 153, 0.08);"
             >
               {% if block.settings.image %}
                 <div
-                  class=" rounded-[8px] mx-auto flex items-center p-6 mb-8 justify-center"
+                  class=" rounded-[8px] mx-auto flex items-center p-6 mb-10 justify-center"
                   style="background-color:{{ section.settings.secondary_color }}"
                 >
                   <img
@@ -50,19 +48,17 @@
               {% endif %}
 
               <p
-                class="font-bold text-5xl capitalize text-[22px] mb-6"
+                class="font-bold text-5xl capitalize text-[22px] mb-10"
                 style="color:{{ section.settings.primary_color }}"
               >
                 {{ block.settings.title }}
               </p>
               <p class="text-[14px]">{{ block.settings.text }}</p>
               {% if block.settings.button_text != blank %}
-                <a
-                  href="{{ block.settings.button_url }}"
-                  class="text-white px-4 py-4  w-9/12 text-[14px]/7 font-bold rounded-[8px] uppercase mt-6 transition-color duration-150"
-                  style="background-color:{{ section.settings.primary_color }}"
-                >
-                  {{ block.settings.button_text }}
+                <a href="{{ block.settings.button_url }}" class="w-full">
+                  <div class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[4px] text-[14px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-2 btn-outline-olive w-full font-semibold uppercase tracking-wide">
+                    {{ block.settings.button_text }}
+                  </div>
                 </a>
               {% endif %}
               {% if block.settings.badge != blank %}
@@ -91,6 +87,9 @@
           >
             {{ section.settings.button_text }}
           </a>
+          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 btn-outline-olive w-full font-semibold uppercase tracking-wide">
+            Contact our Procurement team
+          </button>
         {% else %}
           <a
             href="{{ section.settings.button_url }}"

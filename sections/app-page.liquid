@@ -1,13 +1,13 @@
 <section
-  class="relative page-banner bg-cover bg-center text-white mt-20 page-card"
+  class="relative page-banner bg-cover bg-center text-white pt-24 page-card"
   style="min-height: {{ section.settings.banner_height }}px;"
 >
   <div
-    class="bg-black/70 flex items-center justify-center px-6 text-center"
+    class="bg-black/70 flex items-center justify-center pt-24 h-full text-center"
     style="min-height: {{ section.settings.banner_height }}px;"
   >
     <div
-      class=" transition-all scroll-trigger animate--slide-in duration-1000 delay-200"
+      class=" transition-all py-20 scroll-trigger animate--slide-in duration-1000 delay-200"
     >
       <div class="max-w-7xl scape-y-3 mx-auto text-center">
         {% if section.settings.btitle != blank %}
@@ -72,9 +72,9 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media (min-width: 640px) {
+    {% comment %} @media (min-width: 640px) {
       background-size: 130%;
-    }
+    } {% endcomment %}
   }
 </style>
 

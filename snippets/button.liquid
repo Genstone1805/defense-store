@@ -1,6 +1,6 @@
 {% if type == 'fill' %}
   <a href="{{button_url }}">
-    <div class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 uppercase btn-scarlet text-[18px] px-10 py-1 font-semibold tracking-wide">
+    <div class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[4px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 uppercase btn-scarlet text-[18px] px-10 py-2 font-semibold tracking-wide">
       {{ button_text }}
       {% if showArrow %}
         <svg
@@ -22,7 +22,7 @@
   </a>
 {% elsif type == 'outline' %}
   <a href="{{button_url }}"
-    ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 btn-olive-outline cta-tactical px-10 py-1 text-[18px] rounded-sm text-white bg-black">
+    ><button class="inline-flex items-center justify-center border border-desert-tan text-desert-tan rounded-[4px] gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-desert-tan btn-olive-outline cta-tactical px-10 py-2 text-[18px] hover:text-black  bg-black">
       {{ button_text }}
       {% if showArrow %}
         <svg
@@ -41,33 +41,9 @@
         </svg>
       {% endif %}</button
   ></a>
-  {% comment %}
-    <a
-      href="{{button_url }}"
-      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background border-desert-tan text-desert-tan hover:bg-desert-tan hover:text-combat-black text-[18px] px-10 py-1 font-semibold uppercase tracking-wide w-full sm:w-auto"
-    >
-      {{ button_text }}
-      {% if showArrow %}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-arrow-right ml-2 h-5 w-5"
-        >
-          <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
-        </svg>
-      {% endif %}
-    </a>
-  {% endcomment %}
 {% elsif type == 'secondary_fill' %}
   <a href="{{button_url }}">
-    <div class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[hsl(var(--scarlet-red))] text-[hsl(var(--signal-white))] hover:bg-[hsl(349_70%_38%)] shadow-[var(--shadow-alert)] transition-[var(--transition-tactical)] text-[18px] px-10 py-1 font-semibold uppercase tracking-wide">
+    <div class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[4px] ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[hsl(var(--scarlet-red))] text-[hsl(var(--signal-white))] hover:bg-[hsl(349_70%_38%)] shadow-[var(--shadow-alert)] transition-[var(--transition-tactical)] text-[18px] px-10 py-2 font-semibold uppercase tracking-wide">
       {{ button_text }}
       {% if showArrow %}
         <svg
@@ -89,7 +65,7 @@
   </a>
 {% elsif type == 'secondary_outline' %}
   <a href="{{ button_url }}"
-    ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 uppercase px-10 py-1 btn-hero-cta text-white bg-black hover:bg-scarlet-red text-[18px] transition-all duration-300">
+    ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[4px] font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 uppercase px-10 py-2 btn-hero-cta text-white bg-black hover:bg-scarlet-red text-[18px] transition-all duration-300">
       LEARN ABOUT OUR TECHNOLOGY
       {% if showArrow %}
         <svg
