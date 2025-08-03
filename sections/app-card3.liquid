@@ -16,7 +16,7 @@
             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1a6 6 0 0 0 6-6V5a2 2 0 0 0-2-2zM5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1a6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/>
           </svg>
         </div>
-        <div id="testimony-container">
+        <div id="testimony-container" class="border-none">
           <!-- Testimonies will be inserted here dynamically -->
         </div>
       </div>
@@ -97,7 +97,7 @@
   function showTestimony(index) {
     const t = testimonies[index];
     container.innerHTML = `
-    <blockquote class="body-tactical text-signal-white text-[20px]/12 md:text-[24px]/12 mb-6 italic leading-relaxed">${t.text}</blockquote>
+    <blockquote class="body-tactical text-signal-white text-[20px]/12 md:text-[24px]/12 mb-6 italic font-sans font-normal border-none leading-relaxed">${t.text}</blockquote>
         <cite class="subheading-tactical uppercase font-semibold text-secondary text-[18px]"> ${t.name}</cite>
     `;
 

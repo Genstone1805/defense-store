@@ -44,6 +44,7 @@
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --font-weight-thin: 100;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -1030,6 +1031,10 @@
     border-left-style: var(--tw-border-style) !important;
     border-left-width: 2px !important;
   }
+  .border-none {
+    --tw-border-style: none !important;
+    border-style: none !important;
+  }
   .border-\[\#4a4939\] {
     border-color: #4a4939 !important;
   }
@@ -1627,6 +1632,10 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium) !important;
     font-weight: var(--font-weight-medium) !important;
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal) !important;
+    font-weight: var(--font-weight-normal) !important;
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold) !important;
@@ -2415,6 +2424,18 @@
     @media (width >= 48rem) {
       font-size: 18px !important;
       line-height: calc(var(--spacing) * 10) !important;
+    }
+  }
+  .md\:text-\[20px\]\/10 {
+    @media (width >= 48rem) {
+      font-size: 20px !important;
+      line-height: calc(var(--spacing) * 10) !important;
+    }
+  }
+  .md\:text-\[20px\]\/20 {
+    @media (width >= 48rem) {
+      font-size: 20px !important;
+      line-height: calc(var(--spacing) * 20) !important;
     }
   }
   .md\:text-\[24px\]\/12 {
