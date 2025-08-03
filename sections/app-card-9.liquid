@@ -4,7 +4,7 @@
 >
   <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="container mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
-    <div class="max-w-7xl mx-auto text-center space-y-8">
+    <div class="max-w-[1100px] mx-auto text-center space-y-8">
       {% if section.settings.title != blank %}
         <p
           class="lg:text-[44px]/20 text-[40px]/20 font-bold leading-tight uppercase"
@@ -12,6 +12,9 @@
         >
           {{ section.settings.title }}
         </p>
+      {% endif %}
+      {% if section.settings.qtitle != blank %}
+        <h2 class="text-[36px]/10 font-bold text-signal-white mb-8">{{ section.settings.qtitle }}</h2>
       {% endif %}
       {% if section.settings.sub_title != blank %}
         <p
@@ -28,14 +31,10 @@
         </p>
       {% endif %}
       {% if section.settings.ctext != blank %}
-        <p class="text-3xl leading-relaxed text-[#a0937d]">
-          {{ section.settings.ctext }}
-        </p>
+        <p class="text-[20px] text-desert-tan leading-relaxed font-medium mb-10">{{ section.settings.ctext }}</p>
       {% endif %}
       {% if section.settings.text != blank %}
-        <p class="text-3xl leading-relaxed text-white">
-          {{ section.settings.text }}
-        </p>
+        <p class="text-[20px] text-signal-white leading-relaxed font-medium mb-10">{{ section.settings.text }}</p>
       {% endif %}
       <div class="flex gap-4 w-full justify-center items-center mx-auto">
         {% for block in section.blocks %}
@@ -81,6 +80,11 @@
       "id": "ctitle",
       "label": "White Banner Title",
       "default": "Banner Title"
+    },
+    {
+      "type": "text",
+      "id": "qtitle",
+      "label": "Question Title"
     },
     {
       "type": "text",

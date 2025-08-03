@@ -3,26 +3,24 @@
   style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
   <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
-  <div class="mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
+  <div class="mx-auto px-4 relative">
     <div class="max-w-[1100px] mx-auto">
-      <p class="text-6xl font-semibold text-signal-white text-center mb-16">{{ section.settings.title }}</p>
-      <div class="card-grid gap-12 mb-16 w-full">
-        <div
-          class="border text-card-foreground shadow-sm rounded-[12px] transition-all duration-700 delay-500 opacity-100 translate-x-0"
-          style="background-color: rgba(153, 153, 153, 0.1);"
-        >
-          <div class="p-8">
-            <p class="text-4xl font-semibold text-signal-white mb-6">{{ section.settings.left_title }}</p>
-            <div class="space-y-5 text-signal-white">
-              <p class="text-desert-tan font-semibold" style="color:{{ section.settings.primary_color }}">
+      <h2 class="text-[36px] font-bold text-signal-white text-center mb-16">{{ section.settings.title }}</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 mb-16">
+        <div class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-500 opacity-100 translate-x-0">
+          <div class="p-12">
+            <h3 class="text-[24px] text-left font-semibold uppercase text-signal-white mb-6">
+              {{ section.settings.left_title }}
+            </h3>
+            <div class="space-y-8 text-signal-white">
+              <p class="font-semibold text-desert-tan leading-10 text-left">
                 {{ section.settings.left_sub_title }}
               </p>
-              <div class="text-signal-white space-y-6">
+              <div class="space-y-4">
                 {% for block in section.blocks %}
                   {% if block.type == 'left_option' %}
                     <div class="flex items-start space-x-3">
                       <svg
-                        style="color:{{ section.settings.secondary_color }}"
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
                         height="24"
@@ -32,11 +30,11 @@
                         stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="lucide lucide-circle-check-big size-8 text-scarlet mt-1 flex-shrink-0"
+                        class="lucide lucide-circle-check-big size-[20px] text-scarlet-red mt-1 flex-shrink-0"
                       >
                         <path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path>
                       </svg>
-                      <p>{{ block.settings.text }}</p>
+                      <p class="text-left leading-10">{{ block.settings.text }}</p>
                     </div>
                   {% endif %}
                 {% endfor %}
@@ -44,29 +42,25 @@
             </div>
           </div>
         </div>
-        <div
-          class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-[12px] transition-all duration-700 delay-700 opacity-100 translate-x-0"
-          style="background-color: rgba(153, 153, 153, 0.1);"
-        >
-          <div class="p-8">
-            <p class="text-4xl font-bold text-signal-white mb-6">{{ section.settings.Right_title }}</p>
-            <div class="space-y-4 text-signal-white">
-              <p class="font-semibold text-desert-tan" style="color:{{ section.settings.primary_color }}">
+        <div class="border text-card-foreground shadow-sm bg-desert-tan/10 border-desert-tan/30 rounded-xl transition-all duration-700 delay-700 opacity-100 translate-x-0">
+          <div class="p-12">
+            <h3 class="text-[24px] text-left font-semibold text-signal-white mb-6 uppercase">
+              {{ section.settings.Right_title }}
+            </h3>
+            <div class="space-y-4 text-signal-white text-left">
+              <p class="font-semibold text-desert-tan text-left leadng-10">
                 {{ section.settings.right_sub_title }}
               </p>
               {% for block in section.blocks %}
                 {% if block.type == 'right_option' %}
                   {% if block.settings.show_bg %}
-                    <div
-                      class="p-4 rounded-[8px] mt-4 text-white"
-                      style="background-color: rgba(0, 0, 0, 0.1);"
-                    >
+                    <div class="bg-combat-black/30 p-4 rounded-[8px] leading-10 mt-4">
                       <p class="text-signal-white">
                         {{ block.settings.text }}
                       </p>
                     </div>
                   {% else %}
-                    <p class="text-white">
+                    <p class="leading-10">
                       {{ block.settings.text }}
                     </p>
                   {% endif %}
@@ -76,15 +70,12 @@
           </div>
         </div>
       </div>
-      <div
-        class="border text-card-foreground py-8 shadow-sm bg-scarlet/10 border-scarlet/30 rounded-[12px] transition-all duration-700 delay-900 opacity-100 translate-y-0"
-        style="background-color: rgba(123, 15, 35, 0.1); border-color:rgba(123, 15, 35, 0.3);"
-      >
-        <div class="p-8">
-          <p class="text-4xl font-bold text-signal-white text-center mb-8">
+      <div class="border text-card-foreground shadow-sm bg-scarlet-red/10 border-scarlet-red/30 rounded-xl transition-all duration-700 delay-900 opacity-100 translate-y-0">
+        <div class="px-8 py-12">
+          <h3 class="text-[23px] font-bold text-signal-white text-center mb-8">
             {{ section.settings.bottom_sub_title }}
-          </p>
-          <div class="child-card-grid gap-8">
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             {% for block in section.blocks %}
               {% if block.type == 'bottom_option' %}
                 <div class="text-center space-y-4">
