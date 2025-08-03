@@ -20,6 +20,8 @@
     --container-7xl: 80rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -1129,6 +1131,9 @@
   .bg-\[hsl\(var\(--scarlet-red\)\)\] {
     background-color: hsl(var(--scarlet-red)) !important;
   }
+  .bg-\[rgba\(0\,0\,0\,0\.3\)\] {
+    background-color: rgba(0,0,0,0.3) !important;
+  }
   .bg-\[rgba\(0\,0\,0\,0\.5\)\] {
     background-color: rgba(0,0,0,0.5) !important;
   }
@@ -1137,6 +1142,18 @@
   }
   .bg-\[rgba\(0\,0\,0\,0\.8\)\] {
     background-color: rgba(0,0,0,0.8) !important;
+  }
+  .bg-\[rgba\(0\,0\,0\,0\.9\)\] {
+    background-color: rgba(0,0,0,0.9) !important;
+  }
+  .bg-\[rgba\(0\,0\,0\,1\.0\)\] {
+    background-color: rgba(0,0,0,1.0) !important;
+  }
+  .bg-\[rgba\(0\,0\,0\,1\.9\)\] {
+    background-color: rgba(0,0,0,1.9) !important;
+  }
+  .bg-\[rgba\(0\,0\,0\,3\.0\)\] {
+    background-color: rgba(0,0,0,3.0) !important;
   }
   .bg-background {
     background-color: var(--color-background) !important;
@@ -1422,6 +1439,10 @@
     font-size: 48px !important;
     line-height: calc(var(--spacing) * 20) !important;
   }
+  .text-base {
+    font-size: var(--text-base) !important;
+    line-height: var(--tw-leading, var(--text-base--line-height)) !important;
+  }
   .text-lg {
     font-size: var(--text-lg) !important;
     line-height: var(--tw-leading, var(--text-lg--line-height)) !important;
@@ -1632,8 +1653,23 @@
   .opacity-100 {
     opacity: 100% !important;
   }
+  .bg-blend-color-burn {
+    background-blend-mode: color-burn !important;
+  }
+  .bg-blend-luminosity {
+    background-blend-mode: luminosity !important;
+  }
+  .mix-blend-darken {
+    mix-blend-mode: darken !important;
+  }
   .mix-blend-lighten {
     mix-blend-mode: lighten !important;
+  }
+  .mix-blend-multiply {
+    mix-blend-mode: multiply !important;
+  }
+  .mix-blend-overlay {
+    mix-blend-mode: overlay !important;
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)) !important;
