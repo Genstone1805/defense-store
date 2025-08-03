@@ -1,14 +1,12 @@
 <section
-  class="py-28 "
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 2%, rgba(0, 0, 0, 0.72) 53%, rgba(0, 0, 0, 0.80) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-center flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="max-w-7xl mx-auto text-center">
-      <p class="text-5xl font-bold text-white mb-8 uppercase">{{ section.settings.title }}</p>
-      <p class="text-3xl text-[#afa38e] leading-relaxed mb-10">{{ section.settings.sub_title }}</p>
+      <h2 class="text-[36px] font-bold text-signal-white mb-8">{{ section.settings.title }}</h2>
+      <p class="text-[20px] text-desert-tan leading-relaxed mb-10">{{ section.settings.sub_title }}</p>
       <div
         class="bg-combat-black/80 border  rounded-[12px] overflow-hidden"
         style="border-color:{{ section.settings.secondary_color }}"
@@ -20,21 +18,21 @@
           <thead>
             <tr class="uppercase" style="background-color:{{section.settings.background_color }}">
               <th
-                class="border  px-4 py-3 font-semibold text-center text-white"
+                class="border  px-4 py-8 font-semibold text-center text-white"
                 style="border-color:{{section.settings.secondary_color }}"
               >
                 Feature
               </th>
               <th
-                class="border px-8 py-3 text-white font-semibold"
+                class="border px-8 py-8 text-white font-semibold"
                 style="border-color:{{section.settings.secondary_color }}"
               >
                 Aware
               </th>
-              <th class="border px-4 py-3 font-semibold" style="border-color:{{section.settings.secondary_color }}">
+              <th class="border px-4 py-8 font-semibold" style="border-color:{{section.settings.secondary_color }}">
                 Traditional
               </th>
-              <th class="border px-8 py-3 font-semibold" style="border-color:{{section.settings.secondary_color }}">
+              <th class="border px-8 py-8 font-semibold" style="border-color:{{section.settings.secondary_color }}">
                 Foam
               </th>
             </tr>
@@ -45,7 +43,7 @@
                 <tr style="background-color:{{ section.settings.background_color }}">
                   <!-- Feature Name -->
                   <td
-                    class="border px-4 max-w-48 py-3 text-white text-2xl"
+                    class="border px-4 max-w-48 py- text-white text-2xl"
                     style="border-color:{{section.settings.secondary_color}}; padding-top:20px; padding-bottom:20px"
                   >
                     {{ block.settings.featured }}

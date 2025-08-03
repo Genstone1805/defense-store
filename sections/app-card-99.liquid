@@ -1,15 +1,13 @@
 <section
-  class="py-20  text-white"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 2%, rgba(0, 0, 0, 0.67) 53%, rgba(0, 0, 0, 0.72) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-left flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="container mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
-    <div class="max-w-7xl mx-auto text-center space-y-8">
+    <div class="max-w-[1100px] mx-auto text-center space-y-8">
       {% if section.settings.title != blank %}
         <p
-          class="lg:text-[44px]/20 text-[40px]/20 font-bold leading-tight uppercase"
+          class="lg:text-[48px]/20 text-[40px]/20 font-bold uppercase"
           style="color:{{ section.settings.primary_color }}"
         >
           {{ section.settings.title }}
@@ -39,15 +37,16 @@
           {{ section.settings.text }}
         </p>
       {% endif %}
-      <div class="flex gap-4 w-full justify-center items-center mx-auto">
+      <div class="flex gap-4 pt-12 w-full justify-center items-center mx-auto">
         {% for block in section.blocks %}
-          {% render 'button2',
+          {% render 'button',
             secondary_color: section.settings.secondary_color,
             primary_color: section.settings.primary_color,
             button_text: block.settings.button_text,
             button_url: block.settings.button_url,
             type: block.settings.button_type,
-            showArrow: block.settings.show_arrow
+            showArrow: block.settings.show_arrow,
+            isWhite: true
           %}
         {% endfor %}
       </div>

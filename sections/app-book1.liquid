@@ -1,17 +1,15 @@
 <section
-  class="py-20"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 2%, rgba(0, 0, 0, 0.64) 15%, rgba(0, 0, 0, 0.64) 83%, rgba(0, 0, 0, 0.78) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-left flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="container mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="max-w-7xl mx-auto text-center">
       <p class="text-[17px] text-white leading-relaxed mb-12">{{ section.settings.top_text }}</p>
       <div
         class="p-8 rounded-[8px] mb-12 bg-[#0d0d0d4f]"
       >
-        <h2 class="text-3xl font-bold text-[#afa38e] mb-6">{{ section.settings.video_title }}</h2>
+        <h2 class="text-[30px] font-bold text-[#afa38e] mb-6">{{ section.settings.video_title }}</h2>
         <div class="mb-6">
           <div
             class="relative w-full h-0 pb-[56.25%] rounded-[8px] overflow-hidden"

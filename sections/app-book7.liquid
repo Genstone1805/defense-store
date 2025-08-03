@@ -1,10 +1,8 @@
 <section
-  class="py-20"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.79) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-left flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="container mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="max-w-7xl mx-auto text-center">
       <p class="text-6xl font-bold text-white mb-8">{{ section.settings.card_title }}</p>
@@ -87,7 +85,7 @@
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
         <a
           href="{{ section.settings.button1_url }}"
-          class="inline-flex bg-[#96192b] items-center justify-center gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-[18px] px-10 py-1 font-semibold uppercase tracking-wide text-white"
+          class="inline-flex bg-[#96192b] items-center justify-center gap-2 whitespace-nowrap rounded-[6px] h-[40px] ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 text-[18px] px-10 py-1 font-semibold uppercase tracking-wide text-white"
         >
           {{ section.settings.button1_text }}
           <svg
@@ -107,7 +105,7 @@
         </a>
         <a
           href="{{ section.settings.button1_url }}"
-          class="inline-flex items-center justify-center border gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors bg-background text-[17px] px-8 py-3 font-semibold uppercase tracking-wide border-[#695e49] text-[#695e49] hover:bg-[#695e49] hover:text-white"
+          class="inline-flex items-center justify-center border gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors bg-background text-[17px] h-[40px] px-8 py-3 font-semibold uppercase tracking-wide border-[#695e49] text-[#695e49] hover:bg-[#695e49] hover:text-white"
         >
           {{ section.settings.button2_text }}
         </a>

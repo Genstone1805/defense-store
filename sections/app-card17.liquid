@@ -1,19 +1,19 @@
 <section
-  class="py-20 px-6 relative"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 2%, rgba(0, 0, 0, 0.76) 53%, rgba(0, 0, 0, 0.76) 98%);
-  "
+  class="relative py-32 px-6 scroll-fade-in visible font-sans flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="max-w-[1100px] mx-auto  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div class="space-y-8">
-        <div class="bg-background rounded-[12px] p-8 border-2 border-[#6C6846]">
+        <div class="bg-background rounded-[8px] px-12 pb-6 border-2 border-[#6C6846]">
           <div class="text-center space-y-6">
             <div class="text-[60px] font-bold text-scarlet-red">{{ section.settings.left_percentage }}</div>
-            <h3 class="heading-tactical font-semibold text-primary text-[24px]">{{ section.settings.left_title }}</h3>
+            <h3 class="heading-tactical px-3 flex items-center justify-center font-semibold text-justify text-primary text-[24px]">
+              {{ section.settings.left_title }}
+            </h3>
             <div class="mt-8">
-              <p class="text-secondary text-[18px]/10 pb-4 text-center">
+              <p class="text-secondary text-center text-[18px]/10 pb-4 ">
                 {{ section.settings.left_text }}
               </p>
             </div>
@@ -21,12 +21,14 @@
         </div>
       </div>
       <div class="space-y-6">
-        <h2 class="heading-tactical text-primary text-[30px] font-semibold md:text-[36px]">
+        <h2 class="heading-tactical text-primary text-left text-[30px] font-[600] md:text-[36px]">
           {{ section.settings.right_title }}
         </h2>
-        <p class="body-tactical text-signal-white text-[18px] leading-relaxed">{{ section.settings.right_text }}</p>
+        <p class="body-tactical text-signal-white text-[18px] text-justify tracking-tight font-normal leading-12">
+          {{ section.settings.right_text }}
+        </p>
         <a href="{{section.settings.button_url}}"
-          ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[6px] text-[14px] uppercase font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-1 btn-olive-outline mt-6">
+          ><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[4px] text-[14px] uppercase font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-10 py-2 h-[40px] btn-olive-outline mt-6">
             {{ section.settings.button_text }}
           </button></a
         >

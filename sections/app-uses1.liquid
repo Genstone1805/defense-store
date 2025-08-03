@@ -1,9 +1,13 @@
 <section
-  class="py-32 bg-[#0d0d0ddc]"
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-left flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
-    <div class="max-w-7xl mx-auto text-center">
-      <p class="text-5xl font-black text-white mb-6 uppercase">{{ section.settings.card_title }}</p>
+    <div class=" mx-auto max-w-[1000px] text-center flex items-center flex-col">
+      <h2 class="text-[30px] max-w-[928px] font-black text-signal-white mb-6 uppercase">
+        {{ section.settings.card_title }}
+      </h2>
       <p class="text-[16px] text-[#afa38e] leading-relaxed mb-8">{{ section.settings.text }}</p>
     </div>
   </div>

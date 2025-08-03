@@ -1,21 +1,17 @@
 <section
-  class="py-20"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: rgba(0, 0, 0, 0.78);
-  "
-  8
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-left flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="container mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="max-w-4xl mx-auto text-center">
-      <p class="text-6xl font-black text-white mb-8 uppercase">JOIN US</p>
+      <p class="text-6xl font-bold text-white mb-8 uppercase">JOIN US</p>
       <p class="text-[18px] text-[#afa38e] leading-relaxed mb-10">Let's evolve together.</p>
       <div class="flex justify-center">
         <div class="text-center mt-12">
           <a
             href="{{ section.settings.button_url }}"
-            class="inline-flex text-[17px] items-center justify-center gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors  bg-primary hover:bg-primary/90  text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
-            style="background-color: rgb(149, 24, 43)"
+            class="inline-flex text-[17px] items-center bg-scarlet-red justify-center gap-2 whitespace-nowrap rounded-[6px] ring-offset-background transition-colors  text-lg px-8 py-3 font-semibold uppercase tracking-wide text-white"
           >
             {{ section.settings.button_text }}
             <svg

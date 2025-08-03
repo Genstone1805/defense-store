@@ -1,16 +1,12 @@
 <section
-  class=" py-20 text-center text-white object-cover"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.70) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.74) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-center flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="mx-auto mb-12 px-8">
-      <p class="text-[44px]/20 font-semibold uppercase" style="color:{{ section.settings.primary_color }}">
-        {{ section.settings.card_title }}
-      </p>
+      <h2 class="text-[36px] font-bold text-olive-drab text-center mb-12">{{ section.settings.card_title }}</h2>
       <p
         class="text-[32px]/20 text-gray-300 font-semibold mt-2 mb-4 tracking-wide uppercase"
         style="color:{{section.settings.secondary_color }}"
@@ -26,7 +22,7 @@
     </div>
 
     <!-- Cards -->
-    <div class="w-full flex items-center px-12 md:px-4 mb-10">
+    <div class="w-full flex items-center px-12 md:px-4 ">
       <div class="card-7-grid gap-10 w-full mx-auto px-4">
         {% for block in section.blocks %}
           {% if block.type == 'card' %}

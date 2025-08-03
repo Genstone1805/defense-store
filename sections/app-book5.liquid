@@ -1,22 +1,22 @@
 <section
-  class="py-20"
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 2%, rgba(0, 0, 0, 0.70) 53%, rgba(0, 0, 0, 0.79) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans text-left flex items-center justify-center flex-col text-signal-white object-cover"
+  style="background-image: url('{{ "site-banner-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] bg-blend-color-darken"><p></p></div>
   <div class="mx-auto px-4  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="max-w-7xl mx-auto">
-      <p class="text-5xl font-bold text-white text-center mb-8">{{ section.settings.left_title }}</p>
-      <p class="text-4xl font-bold text-[#695e49] text-center mb-8">{{ section.settings.left_sub_title }}</p>
+      <h2 class="text-[36px] font-bold text-signal-white text-center mb-8">{{ section.settings.left_title }}</h2>
+      <h3 class="text-[24px] font-bold text-olive-drab text-center mb-8">
+        {{ section.settings.left_sub_title }}
+      </h3>
       <p
         class="text-[16px] text-[#afa38e] leading-relaxed text-center mb-12"
       >
         {{ section.settings.top_text }}
       </p>
       <div class="app-book-5-grid">
-        <div>
-          <p class="font-bold text-white mb-4">{{ section.settings.left_title }}</p>
+        <div class="bg-scarlet-red/10 rounded-[12px] p-8 border border-scarlet-red/20">
+          <h3 class="text-[20px] font-bold text-signal-white mb-6">{{ section.settings.left_title }}</h3>
           <div class="space-y-3">
             {% for block in section.blocks %}
               {% if block.type == 'left_option' %}
@@ -36,14 +36,14 @@
                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                     <path d="m9 11 3 3L22 4"></path>
                   </svg>
-                  <p class="text-[#afa38e]">{{ block.settings.text }}</p>
+                  <p class="text-[#afa38e] text-[14px]">{{ block.settings.text }}</p>
                 </div>
               {% endif %}
             {% endfor %}
           </div>
         </div>
-        <div>
-          <p class="font-bold text-white mb-4">Operational Validation:</p>
+        <div class="bg-scarlet-red/10 rounded-[12px] p-8 border border-scarlet-red/20 ">
+          <h3 class="text-[20px] font-bold text-signal-white mb-6">{{ section.settings.right_title }}</h3>
           <div class="space-y-3">
             {% for block in section.blocks %}
               {% if block.type == 'right_option' %}
@@ -63,7 +63,7 @@
                     <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                     <path d="m9 11 3 3L22 4"></path>
                   </svg>
-                  <p class="text-[#afa38e]">{{ block.settings.text }}</p>
+                  <p class="text-[#afa38e] text-[14px]">{{ block.settings.text }}</p>
                 </div>
               {% endif %}
             {% endfor %}
