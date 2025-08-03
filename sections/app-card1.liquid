@@ -1,28 +1,32 @@
 <section
-  class="relative py-20 px-6 scroll-fade-in visible"
+  class="relative py-20 px-6 scroll-fade-in visible font-sans"
   style="background-image: url('{{ "site-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
-  <div class="max-w-7xl mx-auto  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] mix-blend-lighten"><p></p></div>
+  <div class="max-w-[928px] mx-auto  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="text-center mb-16">
       <div class="mb-6">
-        <h2 class="heading-tactical text-[36px] uppercase font-bold md:text-[48px] text-white">
+        <h2 class="heading-tactical text-[36px]/14 uppercase font-bold md:text-[48px]/18 text-white">
           {{ section.settings.card_title }}
         </h2>
         <h3
-          class="subheading-tactical uppercase -mt-6 font-semibold text-[24px] md:text-[30px]"
+          class="subheading-tactical font-semibold text-[24px] md:text-[30px]"
           style="color: rgb(108, 104, 70);"
         >
           {{ section.settings.card_sub_title }}
         </h3>
       </div>
-      <p class="body-tactical text-secondary font-semibold text-[16px]/8 max-w-6xl mx-auto">
+      <p class="body-tactical text-secondary font-medium text-[16px]/9 max-w-[796px] mx-auto">
         {{ section.settings.text }}
       </p>
     </div>
-    <div class="grid-tactical max-w-7xl mx-auto">
+    <div class="grid-tactical max-w-[928px] mx-auto">
       {% for block in section.blocks %}
         {% if block.type == 'card' %}
-          <div class="bg-black/55 p-6 rounded-[8px] text-center border-2" style="border-color: rgb(108, 104, 70);">
+          <div
+            class="bg-black/55 px-6 py-12 rounded-[8px] text-center border-2"
+            style="border-color: rgb(108, 104, 70);"
+          >
             {% if block.settings.image %}
               <img
                 src="{{ block.settings.image | image_url  }}"
@@ -35,7 +39,7 @@
             <h3 class="subheading-tactical text-white uppercase font-semibold text-[20px] mb-10 h-16 flex items-center justify-center">
               {{ block.settings.title }}
             </h3>
-            <p class="body-tactical text-white font-thin text-[14px]/8">
+            <p class="body-tactical text-white font-medium text-[14px]/8">
               {{ block.settings.text }}
             </p>
           </div>

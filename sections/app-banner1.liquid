@@ -1,7 +1,8 @@
 <section
-  class="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
-  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ "site-bg.png" | asset_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
+  class="relative min-h-screen w-full flex items-center pt-20 justify-center overflow-hidden"
+  style="background-image: linear-gradient(rgba(0, 0, 0, 0.0005), rgba(0, 0, 0, 0.00005)), url('{{ "site-banner-bg.png" | asset_url }}');  background-size: cover; background-position: center center; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.5)]"><p></p></div>
   <div class="overflow-hidden absolute inset-0 w-full h-full object-cover">
     <img
       src="{{section.settings.background_image | image_url}}"
@@ -14,7 +15,7 @@
     >
   </div>
   <div class="absolute inset-0 hero-overlay"><p></p></div>
-  <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
+  <div class="relative z-10 max-w-[1280px] mx-auto px-6 py-20 text-center transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <h1 class="heading-tactical text-[48px] mb-6 max-w-[1024px] uppercase font-semibold mx-auto leading-tight text-stone-50">
       {{ section.settings.main_header -}}
       <br>
@@ -25,7 +26,7 @@
     <p class="text-secondary mb-8 max-w-[768px] mx-auto font-semibold text-[16px] normal-case md:text-[18px]">
       {{ section.settings.text1 }}
     </p>
-    <p class="body-tactical text-signal-white text-[18px] md:text-[20px] mb-12 max-w-[896px] mx-auto opacity-90">
+    <p class="body-tactical text-signal-white text-[18px] md:text-[20px] mb-12 max-w-7xl mx-auto opacity-90">
       {{ section.settings.text2 }}
     </p>
 
@@ -34,14 +35,14 @@
         {% if block.settings.button_color == 'primary' %}
           <a
             href="{{block.settings.link}}"
-            class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 uppercase btn-olive-outline cta-tactical px-10 py-1 text-[16px] rounded-[4px] text-white bg-black"
+            class="inline-flex items-center justify-center border border-primary gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 uppercase btn-olive-outline cta-tactical px-10 py-2 text-[16px] rounded-[4px] text-white bg-black"
           >
             {{ block.settings.label -}}
           </a>
         {% else %}
           <a
             href="{{block.settings.link}}"
-            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[6px] font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 px-10 py-1 btn-hero-cta text-white uppercase bg-black hover:bg-scarlet-red text-[16px] transition-all duration-300"
+            class="inline-flex items-center justify-center border border-destructive gap-2 whitespace-nowrap rounded-[6px] font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 px-10 py-2 btn-hero-cta text-white uppercase bg-black hover:bg-scarlet-red text-[16px] transition-all duration-300"
           >
             {{ block.settings.label }}
           </a>

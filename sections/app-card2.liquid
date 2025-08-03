@@ -1,22 +1,24 @@
 <section
-  class="text-white px-6 py-20 "
-  style="
-          background: rgba(0, 0, 0, 7.24);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 2%, rgba(0, 0, 0, 0.65) 53%, rgba(0, 0, 0, 0.68) 98%);
-  "
+  class="relative py-20 px-6 scroll-fade-in visible font-sans"
+  style="background-image: url('{{ "site-bg.png" | asset_url }}'); background-size: cover; background-position: center right; background-repeat: no-repeat;"
 >
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.6)] "><p></p></div>
   <div class="flex px-3 items-center justify-center  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="app-card-3-grid justify-center items-center px-8 gap-8 space-y-10 max-w-[1200px]">
       <!-- Left: Text Content -->
       <div class="w-full">
-        <p class="font-extrabold mb-2 text-7xl/20">{{ section.settings.title }}</p>
-        <p class="text-5xl font-semibold mt-1 mb-6 uppercase" style="color: rgb(108, 104, 70);">
+        <h2 class="heading-tactical text-[36px]/14 text-left md:text-[48px]/16 text-white font-bold">
+          {{ section.settings.title }}
+        </h2>
+        <h3
+          class="subheading-tactical text-left font-semibold mb-6 text-[24px] md:text-[30px]"
+          style="color: rgb(108, 104, 70);"
+        >
           {{ section.settings.sub_title }}
-        </p>
-        <p class="body-tactical text-foreground py-6 text-[18px]/10 md:text-[20px]/10 mb-10 leading-relaxed">
+        </h3>
+        <p class="body-tactical text- text-signal-white text-left text-[18px] font-medium md:text-[18px]/10 mb-10 leading-relaxed">
           {{ section.settings.text }}
         </p>
-        {% comment %} <p class="mb-8 font-semibold">{{ section.settings.text }}</p> {% endcomment %}
 
         <ul class="space-y-6 mb-10">
           {% for block in section.blocks %}
@@ -27,10 +29,13 @@
                 </svg>
               </span>
               <div>
-                <h4 class="heading-tactical text-3xl font-bold tracking-wide" style="color: rgb(182, 166, 135);">
+                <h4
+                  class="heading-tactical text-left text-[18px] font-bold tracking-wide"
+                  style="color: rgb(182, 166, 135);"
+                >
                   {{ block.settings.title }}
                 </h4>
-                <p class="mt-2">{{ block.settings.text }}</p>
+                <p class="body-tactical text-white mt-1 text-[16px] leading-relaxed">{{ block.settings.text }}</p>
               </div>
             </li>
           {% endfor %}
@@ -38,7 +43,7 @@
         {% if section.settings.button_text != blank %}
           <a
             href="{{ section.settings.button_url }}"
-            class="inline-flex items-center justify-center uppercase gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 btn-olive-outline cta-tactical px-8 py-1 text-[16px] rounded-[4px]"
+            class="inline-flex items-center justify-center uppercase gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 btn-olive-outline cta-tactical px-8 py-2 text-[16px] rounded-[4px]"
           >
             {{ section.settings.button_text }}
           </a>
@@ -47,7 +52,7 @@
 
       <!-- Right: Image -->
       {% if section.settings.side_image != blank %}
-        <div class="">
+        <div class="shadow-2xl shadow-muted/10">
           <img
             src="{{ section.settings.side_image | image_url}}"
             alt="banner Image size-full"

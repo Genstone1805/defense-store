@@ -8,23 +8,18 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-200: oklch(88.5% 0.062 18.334);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-stone-50: oklch(98.5% 0.001 106.423);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-sm: 24rem;
     --container-lg: 32rem;
-    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-5xl: 64rem;
     --container-6xl: 72rem;
     --container-7xl: 80rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
-    --text-base: 1rem;
-    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -42,7 +37,6 @@
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --font-weight-thin: 100;
-    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -56,9 +50,9 @@
     --radius-lg: var(--radius);
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
     --drop-shadow-xl: 0 9px 7px rgb(0 0 0 / 0.1);
-    --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
@@ -78,6 +72,7 @@
     --color-primary-foreground: hsl(var(--primary-foreground ));
     --color-olive-drab: hsl(var(--olive-drab));
     --color-secondary: hsl(var(--secondary));
+    --color-destructive: hsl(var(--destructive));
     --color-muted: hsl(var(--muted));
     --color-muted-foreground: hsl(var(--muted-foreground));
     --color-accent: hsl(var(--accent));
@@ -334,9 +329,6 @@
   }
   .my-20 {
     margin-block: calc(var(--spacing) * 20) !important;
-  }
-  .-mt-6 {
-    margin-top: calc(var(--spacing) * -6) !important;
   }
   .mt-0\.5 {
     margin-top: calc(var(--spacing) * 0.5) !important;
@@ -661,8 +653,11 @@
   .max-w-\[768px\] {
     max-width: 768px !important;
   }
-  .max-w-\[896px\] {
-    max-width: 896px !important;
+  .max-w-\[796px\] {
+    max-width: 796px !important;
+  }
+  .max-w-\[928px\] {
+    max-width: 928px !important;
   }
   .max-w-\[950px\] {
     max-width: 950px !important;
@@ -678,9 +673,6 @@
   }
   .max-w-\[1280px\] {
     max-width: 1280px !important;
-  }
-  .max-w-\[1400px\] {
-    max-width: 1400px !important;
   }
   .min-w-\[222px\] {
     min-width: 222px !important;
@@ -1050,11 +1042,17 @@
       border-color: color-mix(in oklab, var(--color-desert-tan) 30%, transparent) !important;
     }
   }
+  .border-destructive {
+    border-color: var(--color-destructive) !important;
+  }
   .border-input {
     border-color: var(--color-input) !important;
   }
   .border-olive-drab {
     border-color: var(--color-olive-drab) !important;
+  }
+  .border-primary {
+    border-color: var(--color-primary) !important;
   }
   .border-secondary\/20 {
     border-color: color-mix(in srgb, hsl(var(--secondary)) 20%, transparent) !important;
@@ -1130,6 +1128,15 @@
   }
   .bg-\[hsl\(var\(--scarlet-red\)\)\] {
     background-color: hsl(var(--scarlet-red)) !important;
+  }
+  .bg-\[rgba\(0\,0\,0\,0\.5\)\] {
+    background-color: rgba(0,0,0,0.5) !important;
+  }
+  .bg-\[rgba\(0\,0\,0\,0\.6\)\] {
+    background-color: rgba(0,0,0,0.6) !important;
+  }
+  .bg-\[rgba\(0\,0\,0\,0\.8\)\] {
+    background-color: rgba(0,0,0,0.8) !important;
   }
   .bg-background {
     background-color: var(--color-background) !important;
@@ -1311,6 +1318,9 @@
   .pt-12 {
     padding-top: calc(var(--spacing) * 12) !important;
   }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20) !important;
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4) !important;
   }
@@ -1356,10 +1366,6 @@
     font-size: var(--text-7xl) !important;
     line-height: var(--tw-leading, var(--text-7xl--line-height)) !important;
   }
-  .text-7xl\/20 {
-    font-size: var(--text-7xl) !important;
-    line-height: calc(var(--spacing) * 20) !important;
-  }
   .text-\[14px\]\/7 {
     font-size: 14px !important;
     line-height: calc(var(--spacing) * 7) !important;
@@ -1368,9 +1374,9 @@
     font-size: 14px !important;
     line-height: calc(var(--spacing) * 8) !important;
   }
-  .text-\[16px\]\/8 {
+  .text-\[16px\]\/9 {
     font-size: 16px !important;
-    line-height: calc(var(--spacing) * 8) !important;
+    line-height: calc(var(--spacing) * 9) !important;
   }
   .text-\[18px\]\/10 {
     font-size: 18px !important;
@@ -1395,6 +1401,10 @@
   .text-\[36px\]\/10 {
     font-size: 36px !important;
     line-height: calc(var(--spacing) * 10) !important;
+  }
+  .text-\[36px\]\/14 {
+    font-size: 36px !important;
+    line-height: calc(var(--spacing) * 14) !important;
   }
   .text-\[36px\]\/15 {
     font-size: 36px !important;
@@ -1556,9 +1566,6 @@
       color: color-mix(in oklab, var(--color-desert-tan) 80%, transparent) !important;
     }
   }
-  .text-foreground {
-    color: var(--color-foreground) !important;
-  }
   .text-gray-300 {
     color: var(--color-gray-300) !important;
   }
@@ -1625,6 +1632,9 @@
   .opacity-100 {
     opacity: 100% !important;
   }
+  .mix-blend-lighten {
+    mix-blend-mode: lighten !important;
+  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)) !important;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
@@ -1652,6 +1662,12 @@
   .ring {
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor) !important;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
+  }
+  .shadow-muted\/10 {
+    --tw-shadow-color: color-mix(in srgb, hsl(var(--muted)) 10%, transparent) !important;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-muted) 10%, transparent) var(--tw-shadow-alpha), transparent) !important;
+    }
   }
   .ring-offset-background {
     --tw-ring-offset-color: var(--color-background) !important;
@@ -2174,9 +2190,9 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height)) !important;
     }
   }
-  .md\:text-\[20px\]\/10 {
+  .md\:text-\[18px\]\/10 {
     @media (width >= 48rem) {
-      font-size: 20px !important;
+      font-size: 18px !important;
       line-height: calc(var(--spacing) * 10) !important;
     }
   }
@@ -2184,6 +2200,18 @@
     @media (width >= 48rem) {
       font-size: 24px !important;
       line-height: calc(var(--spacing) * 12) !important;
+    }
+  }
+  .md\:text-\[48px\]\/16 {
+    @media (width >= 48rem) {
+      font-size: 48px !important;
+      line-height: calc(var(--spacing) * 16) !important;
+    }
+  }
+  .md\:text-\[48px\]\/18 {
+    @media (width >= 48rem) {
+      font-size: 48px !important;
+      line-height: calc(var(--spacing) * 18) !important;
     }
   }
   .md\:text-\[48px\]\/20 {
@@ -2233,11 +2261,6 @@
       font-size: 60px !important;
     }
   }
-  .md\:text-\[768px\] {
-    @media (width >= 48rem) {
-      font-size: 768px !important;
-    }
-  }
   .lg\:col-span-2 {
     @media (width >= 64rem) {
       grid-column: span 2 / span 2 !important;
@@ -2285,294 +2308,6 @@
       line-height: calc(var(--spacing) * 20) !important;
     }
   }
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/inter/v19/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @layer base {
   :root {
@@ -2712,79 +2447,132 @@
   html {
     scroll-behavior: smooth;
   }
-  .card-tactical {
-    background: var(--gradient-card);
-    box-shadow: var(--shadow-tactical);
-    border: 1px solid hsl(var(--border));
-    transition: var(--transition-tactical);
-  }
-  .card-tactical:hover {
-    box-shadow: var(--shadow-command);
-    transform: translateY(-2px);
-  }
-  .btn-scarlet {
-    background: hsl(var(--scarlet-red));
-    color: hsl(var(--signal-white));
-    box-shadow: var(--shadow-alert);
-    transition: var(--transition-tactical);
-  }
-  .btn-scarlet:hover {
-    background: hsl(349 70% 38%);
-    box-shadow: 0 0 30px hsl(var(--scarlet-red) / 0.6);
-    transform: translateY(-1px);
-  }
-  .btn-hero-cta {
-    background: #0D0D0D;
-    border: 2px solid #95182B;
-    color: hsl(var(--signal-white));
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    border-radius: 8px;
-    padding: 12px 24px;
-    transition: var(--transition-tactical);
-  }
-  .btn-hero-cta:hover {
-    background: #95182B;
-    border: 2px solid #95182B;
-    color: hsl(var(--signal-white));
-    box-shadow: var(--shadow-alert);
-    transform: translateY(-1px);
-  }
-  .btn-olive-outline {
-    border: 2px solid hsl(var(--olive-drab));
-    color: hsl(var(--olive-drab));
-    background: transparent;
-    transition: var(--transition-tactical);
-  }
-  .btn-olive-outline:hover {
-    background: hsl(var(--olive-drab));
-    color: hsl(var(--signal-white));
-    box-shadow: var(--shadow-command);
-  }
-  .hero-overlay {
-    background: var(--gradient-overlay);
-  }
-  .grid-tactical {
-    display: grid;
-    gap: 2rem;
-  }
-  @media (min-width: 640px) {
-    .grid-tactical {
-      grid-template-columns: repeat(2, 1fr);
+  @layer components {
+    .card {
+      background-color: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: calc(var(--spacing) * 6);
+      box-shadow: var(--shadow-xl);
     }
-  }
-  @media (min-width: 1024px) {
-    .grid-tactical {
-      grid-template-columns: repeat(3, 1fr);
+    .card-tactical {
+      background: var(--gradient-card);
+      box-shadow: var(--shadow-tactical);
+      border: 1px solid hsl(var(--border));
+      transition: var(--transition-tactical);
     }
-  }
-  .grid-tactical-4 {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .cta-tactical {
+      align-items: center;
+      background-color: #000;
+      border-color: #95182b;
+      border-radius: 4px;
+      border-style: solid;
+      border-width: 1.11111px;
+      box-shadow: #0000 0px 0px 0px 0px;
+      color: #fff;
+      display: inline-flex;
+      font-family: var(--montserrat);
+      font-weight: 500;
+      gap: 8px;
+      justify-content: center;
+      letter-spacing: 1.6px;
+      line-height: 24px;
+      padding: 8px 16px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .subheading-tactical {
+      letter-spacing: 0.72px;
+      line-height: 36px;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+    .heading-tactical {
+      color: var(--signal-white);
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+      line-height: 60px;
+      margin: 0px 0px 24px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .body-tactical {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 100;
+      line-height: 20px;
+      text-align: center;
+    }
+    .card-tactical:hover {
+      box-shadow: var(--shadow-command);
+      transform: translateY(-2px);
+    }
+    .btn-scarlet {
+      background: hsl(var(--scarlet-red));
+      color: hsl(var(--signal-white));
+      box-shadow: var(--shadow-alert);
+      transition: var(--transition-tactical);
+    }
+    .btn-scarlet:hover {
+      background: hsl(349 70% 38%);
+      box-shadow: 0 0 30px hsl(var(--scarlet-red) / 0.6);
+      transform: translateY(-1px);
+    }
+    .btn-hero-cta {
+      background: #0D0D0D;
+      border: 2px solid #95182B;
+      color: hsl(var(--signal-white));
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-radius: 8px;
+      padding: 12px 24px;
+      transition: var(--transition-tactical);
+    }
+    .btn-hero-cta:hover {
+      background: #95182B;
+      border: 2px solid #95182B;
+      color: hsl(var(--signal-white));
+      box-shadow: var(--shadow-alert);
+      transform: translateY(-1px);
+    }
+    .btn-olive-outline {
+      border: 2px solid hsl(var(--olive-drab));
+      color: hsl(var(--olive-drab));
+      background: transparent;
+      transition: var(--transition-tactical);
+    }
+    .btn-olive-outline:hover {
+      background: hsl(var(--olive-drab));
+      color: hsl(var(--signal-white));
+      box-shadow: var(--shadow-command);
+    }
+    .hero-overlay {
+      background: var(--gradient-overlay);
+    }
+    .grid-tactical {
+      display: grid;
+      gap: 2rem;
+    }
+    @media (min-width: 640px) {
+      .grid-tactical {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .grid-tactical {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .grid-tactical-4 {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
   }
 }
 @keyframes enter {

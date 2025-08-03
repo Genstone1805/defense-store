@@ -8,7 +8,9 @@
   <!-- Section Title -->
   <div class="max-w-[1100px] mx-auto  transition-all scroll-trigger animate--slide-in duration-1000 delay-200">
     <div class="mx-auto mb-12 px-8">
-      <p class="lg:text-[48px]/20 text-[36px]/15 font-extrabold uppercase">{{ section.settings.card_title }}</p>
+      <h2 class="heading-tactical text-[36px]/14 font-semibold md:text-[48px]/20 mb-6 text-white">
+        {{ section.settings.card_title }}
+      </h2>
       <p
         class="text-[32px]/20 text-gray-300 font-semibold mt-2 mb-4 tracking-wide uppercase"
         style="color:{{section.settings.tertiary_color }}"
@@ -39,9 +41,8 @@
                 width="50"
                 height="50"
               >
-
-              <p class="font-bold text-4xl uppercase mb-6">{{ block.settings.title }}</p>
-              <p class="text-2xl">{{ block.settings.text }}</p>
+              <h3 class="subheading-tactical text-white text-[20px]  mb-4">{{ block.settings.title }}</h3>
+              <p class="body-tactical text-white font-thin text-[14px] text-center">{{ block.settings.text }}</p>
             </div>
           {% endif %}
         {% endfor %}
